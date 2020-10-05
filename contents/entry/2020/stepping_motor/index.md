@@ -17,31 +17,31 @@ tags:
 ## 機材
 - Arduino UNO（中華）
 - ロータリエンコーダ付きステッピングモータ
-  - PKP214U06A-R2EL
-  - [PKP214U06A-R2EL-L｜PKPシリーズ／PKシリーズ｜ステッピングモーター｜オリエンタルモーター株式会社](https://www.orientalmotor.co.jp/products/detail.action?hinmei=PKP214U06A-R2EL-L)
-    - モータ部説明書（PDF、HM-7433J.pdf）
-    - ロータリエンコーダ部説明書（PDF、HM-7439JE.pdf）
-    - [特性図（画像）](https://www.orientalmotor.co.jp/file_addon/products/st/image/tj_pkp214u06a-r2el-l_d.gif)（DC24V駆動時）
-    - モータ部
-      - 2相
-      - ユニポーラ5本リード線
-      - 基本ステップ角度1.8°
-      - AC 50/60Hz 0.5kV 絶縁耐圧（1分間）
-    - ロータリエンコーダ部
-      - 分解能 200 パルス/回転（pulse/revolution）
-      - A相、B相、Z相：3チャンネル出力
-      - DC5V駆動
+    - PKP214U06A-R2EL
+    - [PKP214U06A-R2EL-L｜PKPシリーズ／PKシリーズ｜ステッピングモーター｜オリエンタルモーター株式会社](https://www.orientalmotor.co.jp/products/detail.action?hinmei=PKP214U06A-R2EL-L)
+      - モータ部説明書（PDF、HM-7433J.pdf）
+      - ロータリエンコーダ部説明書（PDF、HM-7439JE.pdf）
+      - [特性図（画像）](https://www.orientalmotor.co.jp/file_addon/products/st/image/tj_pkp214u06a-r2el-l_d.gif)（DC24V駆動時）
+      - モータ部
+        - 2相
+        - ユニポーラ5本リード線
+        - 基本ステップ角度1.8°
+        - AC 50/60Hz 0.5kV 絶縁耐圧（1分間）
+      - ロータリエンコーダ部
+        - 分解能 200 パルス/回転（pulse/revolution）
+        - A相、B相、Z相：3チャンネル出力
+        - DC5V駆動
 - モータドライバ
-  - SLA7078MPRT
-  - [SLA7078MPRT ｜サンケン電気](https://www.semicon.sanken-ele.co.jp/ctrl/product/category/2Ph_StepMotorUnp/detail/?product=SLA7078MPRT)
-  - [２相ステッピングモータードライバー　ユニポーラ駆動用　ＳＬＡ７０７８ＭＰＲＴ: 半導体 秋月電子通商-電子部品・ネット通販](https://akizukidenshi.com/catalog/g/gI-08015/)
-  - [データシート（PDF、sla7073mprt_ds_jp.pdf）](https://www.semicon.sanken-ele.co.jp/sk_content/sla7073mprt_ds_jp.pdf)
-  - μステップ対応品
-  - 実使用電圧 10-44V
+    - SLA7078MPRT
+    - [SLA7078MPRT ｜サンケン電気](https://www.semicon.sanken-ele.co.jp/ctrl/product/category/2Ph_StepMotorUnp/detail/?product=SLA7078MPRT)
+    - [２相ステッピングモータードライバー　ユニポーラ駆動用　ＳＬＡ７０７８ＭＰＲＴ: 半導体 秋月電子通商-電子部品・ネット通販](https://akizukidenshi.com/catalog/g/gI-08015/)
+    - [データシート（PDF、sla7073mprt_ds_jp.pdf）](https://www.semicon.sanken-ele.co.jp/sk_content/sla7073mprt_ds_jp.pdf)
+    - μステップ対応品
+    - 実使用電圧 10-44V
 - モータドライバ基板
-  - SEC20120330A
-  - [エレ・メカ・ホビーショップＳＥＣ 資料置き場](http://sec-suzuki.com/newpage333.htm)
-    - [新型 ２相ステップドライバ資料（PDF、step-2p-v1.pdf）](http://sec-suzuki.com/step-2p-v1.pdf)
+    - SEC20120330A
+    - [エレ・メカ・ホビーショップＳＥＣ 資料置き場](http://sec-suzuki.com/newpage333.htm)
+        - [新型 ２相ステップドライバ資料（PDF、step-2p-v1.pdf）](http://sec-suzuki.com/step-2p-v1.pdf)
 
 ## ステッピングモータの制御
 ### 配線
