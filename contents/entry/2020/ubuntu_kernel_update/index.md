@@ -471,7 +471,7 @@ dkms.conf
 PACKAGE_NAME="e1000e"
 PACKAGE_VERSION="3.8.4"
 CLEAN="cd src; make clean"
-BUILD_MODULE_NAME[0]="e1000e"
+BUILT_MODULE_NAME[0]="e1000e"
 BUILT_MODULE_LOCATION[0]="src/"
 DEST_MODULE_NAME[0]="e1000e-dkms"
 MAKE[0]="cd src; make -j$(nproc)"
