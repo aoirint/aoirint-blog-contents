@@ -12,7 +12,7 @@ tags:
   - Static Website
   - GitHub
   - GitHub Actions
-  - CI/CD
+  - 'CI CD'
 ---
 # 静的サイトジェネレータMiyadaiku + GitHub Actions + GitHub Pagesでブログを作る
 
