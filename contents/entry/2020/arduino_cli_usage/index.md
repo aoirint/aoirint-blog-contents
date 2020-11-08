@@ -46,6 +46,8 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 
 一応テンプレート付きのスケッチを作成するには、`arduino-cli sketch new SKETCH_NAME`を実行する。
 
+以下、`arduino-cli`のコマンドはスケッチのディレクトリで実行する。
+
 
 ## FQBNの確認
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
@@ -97,6 +99,9 @@ arduino-cli compile -b arduino:avr:uno
 ```bash
 arduino-cli upload -b arduino:avr:uno -p /dev/ttyACM0
 ```
+
+コンパイル成果物はデフォルトで`./build`ディレクトリに書き出されるので、
+`.gitignore`などに追加しておく。
 
 
 ## シリアルモニタ
