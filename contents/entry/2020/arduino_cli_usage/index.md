@@ -16,7 +16,7 @@ tags:
 
 ### FQBNの確認
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
-Arduino系のボードならば`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる。
+（対応しているボードならば？）`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる。
 
 - Arduino UNO: `arduino:avr:uno`
 - ESP32-DevKitC: `esp32:esp32:esp32`
