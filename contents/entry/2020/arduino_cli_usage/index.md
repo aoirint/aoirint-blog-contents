@@ -12,9 +12,24 @@ tags:
 - 'arduino-cli'
 ---
 
-## arduino-cliの使い方
+# arduino-cliの使い方
+- [[Arduino] arduino-cli初期設定(内蔵LEDでLチカ) - Life with IT](https://l-w-i.net/t/arduino/cli_001.txt)
 
-### FQBNの確認
+## インストール
+- [Installation - Arduino CLI](https://arduino.github.io/arduino-cli/latest/installation/)
+
+[Arduino CLIの公式ドキュメント](https://arduino.github.io/arduino-cli/latest/)に従ってインストールする。後述する`screen`コマンドも合わせてインストールする。
+`arduino-cli`はDockerイメージも配布されているのでお好みで。
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
+echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
+source ~/.bashrc
+
+sudo apt install screen
+```
+
+## FQBNの確認
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
 （対応しているボードならば？）`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる。
 
@@ -22,7 +37,7 @@ tags:
 - ESP32-DevKitC: `esp32:esp32:esp32`
 
 
-### ボード情報のインストール
+## ボード情報のインストール
 
 コンパイルには別途ボード情報をインストールする必要があり、以下のようにコマンドを実行する。
 
@@ -35,7 +50,7 @@ arduino-cli core install esp32:esp32
 ```
 
 
-### ライブラリのインストール
+## ライブラリのインストール
 
 ライブラリの導入には、`arduino-cli lib`コマンドを使う。
 例えば、`ArduinoJson`ライブラリを導入するときは、
@@ -48,7 +63,7 @@ arduino-cli lib install ArduinoJson
 ```
 
 
-### スケッチのコンパイル
+## スケッチのコンパイル
 
 ボードに書き込む前に、まずスケッチ（ソースコード）をコンパイルする。
 Arduino UNO（FQBN：`arduino:avr:uno`）に書き込むためのスケッチをコンパイルする。
@@ -65,7 +80,7 @@ arduino-cli upload -b arduino:avr:uno -p /dev/ttyACM0
 ```
 
 
-### シリアルモニタ
+## シリアルモニタ
 
 `arduino-cli`にはシリアルモニタ機能がない（追加される予定もない）ので、
 ほかのツールを使う必要がある。
@@ -82,7 +97,9 @@ screen /dev/ttyACM0 115200
 ```
 
 
-### プロキシ設定
+## プロキシ設定
+- ["board list" command doesn't follow proxy configuration · Issue #660 · arduino/arduino-cli](https://github.com/arduino/arduino-cli/issues/660)
+- [how to use net proxy? · Issue #271 · arduino/arduino-pro-ide](https://github.com/arduino/arduino-pro-ide/issues/271)
 
 `arduino-cli`の通信にプロキシを設定するには、
 コンフィグファイルを作成する必要がある。
