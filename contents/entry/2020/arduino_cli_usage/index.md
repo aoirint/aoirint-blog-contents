@@ -84,6 +84,7 @@ arduino-cli lib install ArduinoJson
 ## スケッチのコンパイル
 
 ボードに書き込む前に、まずスケッチ（ソースコード）をコンパイルする。
+
 Arduino UNO（FQBN：`arduino:avr:uno`）に書き込むためのスケッチをコンパイルする。
 
 ```bash
