@@ -6,7 +6,7 @@ title: ソース公開するArduinoプログラムに秘密情報を埋め込む
 og_description: ソース公開するArduinoプログラムに秘密情報を埋め込む
 date: '2020-11-09 08:10:00'
 draft: false
-category: スニペット
+category: 記事
 tags:
   - Arduino
 ---
