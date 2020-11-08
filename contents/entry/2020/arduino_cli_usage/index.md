@@ -33,7 +33,7 @@ source ~/.bashrc
 sudo apt install screen
 ```
 
-ボード一覧を更新しておく。
+プラットフォーム一覧を更新しておく。
 
 ```bash
 arduino-cli core update-index
@@ -46,20 +46,30 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 
 一応テンプレート付きのスケッチを作成するには、`arduino-cli sketch new SKETCH_NAME`を実行する。
 
+手動で作成する場合にはArduino IDEと同様、
+スケッチ名（ディレクトリ名）と同じ名前で、`SKETCH_NAME.ino`のように
+メインのソースコードを作成する。
+
 以下、`arduino-cli`のコマンドはスケッチのディレクトリで実行する。
 
 
 ## FQBNの確認
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
-（対応しているボードならば？）`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる。
+
+`arduino-cli board listall`コマンドで
+`arduino-cli`が対応しているボードのFQBN一覧が出力される。
+`arduino-cli board listall esp32`のようにキーワードを追加して、
+絞り込むこともできる。
+
+また、`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる場合がある（Arduino系ボードの場合？）。
 
 - Arduino UNO: `arduino:avr:uno`
 - ESP32-DevKitC: `esp32:esp32:esp32`
 
 
-## ボード情報のインストール
+## プラットフォームコアのインストール
 
-コンパイルには別途ボード情報をインストールする必要があり、以下のようにコマンドを実行する。
+コンパイルには別途ボードに対応するビルドツールセット（プラットフォームコア）をインストールする必要があり、FQBNから以下のようにコマンドを実行する。
 
 ```bash
 # Arduino (AVR)
