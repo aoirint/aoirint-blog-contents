@@ -31,7 +31,11 @@ echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt install screen
+```
 
+ボード一覧を更新しておく。
+
+```bash
 arduino-cli core update-index
 ```
 
