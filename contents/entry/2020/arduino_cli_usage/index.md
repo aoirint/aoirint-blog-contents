@@ -13,7 +13,11 @@ tags:
 ---
 
 # arduino-cliの使い方
-- [[Arduino] arduino-cli初期設定(内蔵LEDでLチカ) - Life with IT](https://l-w-i.net/t/arduino/cli_001.txt)
+
+```
+$ arduino-cli version
+arduino-cli Version: 0.13.0 Commit: 693a045
+```
 
 ## インストール
 - [Installation - Arduino CLI](https://arduino.github.io/arduino-cli/latest/installation/)
@@ -27,7 +31,17 @@ echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt install screen
+
+arduino-cli core update-index
 ```
+
+
+## スケッチの作成
+特に特殊なファイルを必要としたりはしないので、
+Arduino IDEで作成しても、好きなテキストエディタで作成してもよい。
+
+一応テンプレート付きのスケッチを作成するには、`arduino-cli sketch new SKETCH_NAME`を実行する。
+
 
 ## FQBNの確認
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
@@ -118,3 +132,7 @@ board_manager:
 network:
   proxy: http://proxy:port
 ```
+
+
+## 関連
+- [[Arduino] arduino-cli初期設定(内蔵LEDでLチカ) - Life with IT](https://l-w-i.net/t/arduino/cli_001.txt)
