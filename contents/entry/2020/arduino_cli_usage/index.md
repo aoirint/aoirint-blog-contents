@@ -103,15 +103,18 @@ Arduino UNO（FQBN：`arduino:avr:uno`）に書き込むためのスケッチを
 arduino-cli compile -b arduino:avr:uno
 ```
 
+コンパイル成果物はデフォルトで`./build`ディレクトリに書き出されるので、
+`.gitignore`などに追加しておく。
+
+
+## スケッチの書き込み
+
 ボードにコンパイルしたスケッチを書き込む。
 シリアルポートを`-p`オプションで指定する。
 
 ```bash
 arduino-cli upload -b arduino:avr:uno -p /dev/ttyACM0
 ```
-
-コンパイル成果物はデフォルトで`./build`ディレクトリに書き出されるので、
-`.gitignore`などに追加しておく。
 
 
 ## シリアルモニタ
