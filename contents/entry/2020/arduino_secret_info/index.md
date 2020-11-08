@@ -25,10 +25,17 @@ Arduinoプログラム（`.ino`）にWiFiパスワード・APIキーなどの秘
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
 Arduino系のボードならば`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる。
 
+- Arduino UNO: `arduino:avr:uno`
+- ESP32-DevKitC: `esp32:esp32:esp32`
+
 コンパイルには別途ボード情報をインストールする必要があり、以下のようにコマンドを実行する。
 
 ```bash
+# Arduino (AVR)
 arduino-cli core install arduino:avr
+
+# ESP32
+arduino-cli core install esp32:esp32
 ```
 
 ライブラリの導入には、`arduino-cli lib`コマンドを使う。
