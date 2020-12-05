@@ -212,6 +212,8 @@ sudo rm -rf postgres/ public/ redis/
 
 ## 参考
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
+- [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/)
+  - Docker用のドキュメントはないのか?
 - [tootsuite/mastodon - Docker Hub](https://hub.docker.com/r/tootsuite/mastodon)
 - [postgres - Docker Hub](https://hub.docker.com/_/postgres)
 - [redis - Docker Hub](https://hub.docker.com/_/redis)
