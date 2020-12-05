@@ -218,3 +218,4 @@ sudo rm -rf postgres/ public/ redis/
 - docker-compose 2 時代の記事
   - [Docker応用チュートリアル：Mastodon - Qiita](https://qiita.com/zembutsu/items/f1f1ede26102ba27fce2)
   - [Dockerで雑にMastodonを起動する方法 - Qiita](https://qiita.com/zembutsu/items/fd52a504321dd5d6f0b8)
+- [Rails5をproduction（本番環境）で起動する時に嵌ったこと - Qiita](https://qiita.com/qqhann/items/7cd01f4b5cff4a31e053)
