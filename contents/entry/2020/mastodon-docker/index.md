@@ -210,6 +210,17 @@ sudo rm -rf postgres/ public/ redis/
 ```
 
 
+HTTP 3000番から接続し、ブラウザ上でアカウントを作成する。
+検証メールが届く。
+
+
+アカウント`MY_USERNAME`を管理者に設定する。
+
+```
+docker-compose run --rm web bundle exec bin/tootctl accounts modify MY_USERNAME --role admin
+```
+
+
 ## 参考
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
 - [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/)
@@ -221,3 +232,6 @@ sudo rm -rf postgres/ public/ redis/
   - [Docker応用チュートリアル：Mastodon - Qiita](https://qiita.com/zembutsu/items/f1f1ede26102ba27fce2)
   - [Dockerで雑にMastodonを起動する方法 - Qiita](https://qiita.com/zembutsu/items/fd52a504321dd5d6f0b8)
 - [Rails5をproduction（本番環境）で起動する時に嵌ったこと - Qiita](https://qiita.com/qqhann/items/7cd01f4b5cff4a31e053)
+- [Mastodon 保守メモ - Qiita](https://qiita.com/kumasun/items/bf4997f181f893130041)
+  - [勝手 Mastodon tootctl リファレンス - Qiita](https://qiita.com/kumasun/items/870769d7db4d95cde238)
+  - 出回っている情報はMastodonが流行った2017年前後のものが多いと思われるが、ここはかなり新しい情報が載っている
