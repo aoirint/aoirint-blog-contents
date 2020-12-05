@@ -234,4 +234,4 @@ docker-compose run --rm web bundle exec bin/tootctl accounts modify MY_USERNAME 
 - [Rails5をproduction（本番環境）で起動する時に嵌ったこと - Qiita](https://qiita.com/qqhann/items/7cd01f4b5cff4a31e053)
 - [Mastodon 保守メモ - Qiita](https://qiita.com/kumasun/items/bf4997f181f893130041)
   - [勝手 Mastodon tootctl リファレンス - Qiita](https://qiita.com/kumasun/items/870769d7db4d95cde238)
-  - 出回っている情報はMastodonが流行った2017年前後のものが多いと思われるが、ここはかなり新しい情報が載っている
+  - 出回っている情報はMastodonが流行った2017年前後のものが多いと思われるが、ここはかなり新しい情報が載っているようだ
