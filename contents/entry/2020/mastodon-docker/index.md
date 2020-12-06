@@ -4,7 +4,7 @@ title: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 # og_image:
 # twitter_card: summary_large_image
 og_description: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
-date: '2020-12-06 08:40:00'
+date: '2020-12-06 11:00:00'
 draft: false
 category: 記事
 tags:
