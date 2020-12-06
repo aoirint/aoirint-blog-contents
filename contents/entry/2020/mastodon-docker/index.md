@@ -242,6 +242,13 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 多人数が利用する OR 長期的に利用する予定で、VPSでホストするような場合、添付ファイルがVPSの容量を喰いつぶしてしまうことが想定されるので、そのような場合オブジェクトストレージを用意したい。
 
 
+一人専用サーバの場合、`.env.production`に以下の設定を追加すると便利。`/`へのアクセスをユーザページにリダイレクトしてくれるようになり、新規登録を停止する。
+
+```
+SINGLE_USER_MODE=true
+```
+
+
 HTTPS化のためnginxによるリバースプロキシを設定する。
 GitHub上にあった設定ファイルを参考にしている。
 おそらく`X-Forwarded-Proto https`を設定しないと`https://localhost`にリダイレクトされるという事象が起こるので注意。
