@@ -160,7 +160,7 @@ docker run --rm --env-file ./.env.production tootsuite/mastodon bundle exec rake
 
 メールアドレス検証・通知などに使うメールサーバ（SMTPサーバ）を設定する。
 今回は面倒なので自分のGoogleアカウントを使用する。
-Googleアカウントの二要素認証が有効になっていることを確認し、
+Googleアカウントの二段階認証が有効になっていることを確認し、
 Googleアカウント設定からメールに使用するアプリパスワードを生成する。
 
 ```env
