@@ -218,10 +218,10 @@ sudo rm -rf postgres/ public/ redis/
 
 HTTP 3000番から接続し、ブラウザ上でアカウントを作成する。
 検証メールが届く。
-その後アカウント`MY_USERNAME`を管理者に設定する。
+その後アカウント`hoge`を管理者に設定する。
 
 ```
-docker-compose run --rm web bundle exec bin/tootctl accounts modify MY_USERNAME --role admin
+docker-compose run --rm web bundle exec bin/tootctl accounts modify hoge --role admin
 ```
 
 またはコマンドで管理者アカウントを作成する。ランダムパスワードが生成され、標準出力に出力される。
