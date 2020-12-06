@@ -79,7 +79,7 @@ pwgen 32
     networks:
       - internal_network
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "mastodon"]
+      test: ["CMD", "pg_isready", "-U", "mastodon", "-D", "mastodon_production"]
     volumes:
       - ./postgres:/var/lib/postgresql/data
     environment:
