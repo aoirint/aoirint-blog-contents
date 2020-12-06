@@ -69,7 +69,7 @@ pwgen 32
 
 `docker-compose.yml`中のDB部分にDB名・ユーザ名・パスワードを設定する
 （`docker-compose.yml`に直接書きたくない場合は`.env.db`などを作成、`env_file: `以下にファイルパスを設定する。または`docker-compose.override.yml`を作成する）。
-`healthcheck`のところのユーザ名を書き換え忘れないように注意（`FATAL: role "postgres" does not exist`）。
+`healthcheck`のところのユーザ名の書き換え、DB名の書き換えを忘れないように注意（`FATAL: role "postgres" does not exist`、`FATAL:  database "mastodon" does not exist`）。
 
 ```yaml
   db:
