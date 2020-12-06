@@ -16,6 +16,7 @@ tags:
 
 # Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
+- [Mastodon documentation](https://docs.joinmastodon.org/)
 
 内容はコミットID`44d5c6bc8ffd92cd201380dabe35748e50b6af68`、Mastodon Dockerイメージバージョン`v3.2.1`（Digest：`sha256:41cd5fb48d8b15ec806f08ab06fec98df33ec9b83a1f879e0fb30da9994018dc`）におけるもの。`docker-compose`の設定ファイルバージョンは`3`。
 
