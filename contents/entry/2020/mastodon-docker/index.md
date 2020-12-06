@@ -237,8 +237,90 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 ```
 
 `docker-compose run --rm web id -u`の出力は`991`だったので、ホスト側で`sudo chown -R 991:991 ./public`を実行して所有者を書き換えて解決した。
+
 多人数が利用する OR 長期的に利用する予定で、VPSでホストするような場合、添付ファイルがVPSの容量を喰いつぶしてしまうことが想定されるので、そのような場合オブジェクトストレージを用意したい。
 
+
+HTTPS化のためnginxによるリバースプロキシを設定する。
+GitHub上にあった設定ファイルを参考にしている。
+おそらく`X-Forwarded-Proto https`を設定しないと`https://localhost`にリダイレクトされるという事象が起こるので注意。
+
+
+```nginx
+# https://github.com/tootsuite/mastodon/blob/master/nanobox/nginx-local.conf
+# https://github.com/tootsuite/mastodon/blob/54192a9b6f8ee68114e3bc9ebf241099456e85f6/nanobox/nginx-local.conf
+
+upstream rails {
+  server 127.0.0.1:3000;
+}
+
+upstream node {
+  server 127.0.0.1:4000;
+}
+
+map $http_upgrade $connection_upgrade {
+  default upgrade;
+  ''      close;
+}
+
+server {
+  server_name mstdn.aoirint.com;
+
+  keepalive_timeout 70;
+  client_max_body_size 80M;
+
+  add_header Strict-Transport-Security "max-age=31536000";
+
+  location / {
+    try_files $uri @rails;
+  }
+
+  location @rails {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Host $host;
+    proxy_set_header X-Forwarded-Server $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header Proxy "";
+    proxy_pass_header Server;
+
+    proxy_pass http://rails;
+    proxy_buffering off;
+    proxy_redirect off;
+
+    # WebSocket
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $connection_upgrade;
+    
+    tcp_nodelay on;
+  }
+
+  location /api/v1/streaming {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Host $host;
+    proxy_set_header X-Forwarded-Server $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header Proxy "";
+    proxy_pass_header Server;
+
+    proxy_pass http://node;
+    proxy_buffering off;
+    proxy_redirect off;
+
+    # WebSocket
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $connection_upgrade;
+    
+    tcp_nodelay on;
+  }
+
+}
+```
 
 
 ## 参考
