@@ -244,7 +244,7 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 HTTPS化のためnginxによるリバースプロキシを設定する。
 GitHub上にあった設定ファイルを参考にしている。
 おそらく`X-Forwarded-Proto https`を設定しないと`https://localhost`にリダイレクトされるという事象が起こるので注意。
-証明書の設定は書いていないが、`certbot`を使用する場合`sudo certbot --nginx`で自動挿入してくれる。
+証明書の設定は書いていないが、`certbot`（Let's Encrypt）を使用する場合`sudo certbot --nginx`で自動挿入してくれる。
 
 
 ```nginx
