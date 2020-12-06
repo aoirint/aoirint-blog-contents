@@ -101,7 +101,7 @@ Federationのセクションにいき、`LOCAL_DOMAIN`を編集する。
 # ----------
 # This identifies your server and cannot be changed safely later
 # ----------
-LOCAL_DOMAIN=hogehoge.ngrok.io
+LOCAL_DOMAIN=mstdn.example.com
 ```
 
 
@@ -264,7 +264,7 @@ map $http_upgrade $connection_upgrade {
 }
 
 server {
-  server_name hogehoge.example.com;
+  server_name mstdn.example.com;
 
   keepalive_timeout 70;
   client_max_body_size 80M;
