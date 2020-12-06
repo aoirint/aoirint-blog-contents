@@ -217,13 +217,28 @@ sudo rm -rf postgres/ public/ redis/
 
 HTTP 3000番から接続し、ブラウザ上でアカウントを作成する。
 検証メールが届く。
-
-
-アカウント`MY_USERNAME`を管理者に設定する。
+その後アカウント`MY_USERNAME`を管理者に設定する。
 
 ```
 docker-compose run --rm web bundle exec bin/tootctl accounts modify MY_USERNAME --role admin
 ```
+
+またはコマンドで管理者アカウントを作成する。ランダムパスワードが生成され、標準出力に出力される。
+
+```bash
+sudo docker-compose run --rm web bundle exec bin/tootctl accounts create hoge --email hoge@example.com --confirmed --role admin
+```
+
+プロフィール画像アップロード時にエラーが出てしまった。
+`./public/system`をマウント時にdockerが作成しているために`root`所有になっているのが原因。
+
+```
+Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/accounts)
+```
+
+`docker-compose run --rm web id -u`の出力は`991`だったので、ホスト側で`sudo chown -R 991:991 ./public`を実行して所有者を書き換えて解決した。
+
+
 
 
 ## 参考
