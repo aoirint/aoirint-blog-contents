@@ -17,7 +17,7 @@ tags:
 # Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
 
-内容はコミットID`44d5c6bc8ffd92cd201380dabe35748e50b6af68`におけるもの。`docker-compose`の設定ファイルバージョンは`3`。
+内容はコミットID`44d5c6bc8ffd92cd201380dabe35748e50b6af68`、Mastodon Dockerイメージバージョン`v3.2.1`（``）におけるもの。`docker-compose`の設定ファイルバージョンは`3`。
 
 ```
 $ lsb_release -a
@@ -35,6 +35,10 @@ Docker version 19.03.14, build 5eb3275d40
 
 $ docker-compose -v
 docker-compose version 1.27.1, build 509cfb99
+
+$ docker images tootsuite/mastodon --digests
+REPOSITORY           TAG                 DIGEST                                                                    IMAGE ID            CREATED             SIZE
+tootsuite/mastodon   v3.2.1              sha256:41cd5fb48d8b15ec806f08ab06fec98df33ec9b83a1f879e0fb30da9994018dc   37ca50fc92bd        6 weeks ago         1.86GB
 ```
 
 
@@ -45,7 +49,8 @@ Mastodonのリポジトリから`docker-compose.yml`、`.env.production.sample`�
 
 環境変数設定ファイルである`.env.production.sample`を`.env.production`にリネームする。
 
-ローカルビルドはしないので、web、streaming、sidekiqから`build: .`の行を削除しておく。
+ローカルビルドはしないので、web、streaming、sidekiqから`build: .`の行を削除する。
+また、`image: tootsuite/mastodon:v3.2.1`のようにバージョンを固定しておく（実運用する場合は定期的に書き換えてバージョンアップ）。
 
 DB、Redis、Mastodon各サービスの最新のDockerイメージを取得する。
 
