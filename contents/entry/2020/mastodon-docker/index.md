@@ -264,7 +264,7 @@ map $http_upgrade $connection_upgrade {
 }
 
 server {
-  server_name mstdn.aoirint.com;
+  server_name hogehoge.example.com;
 
   keepalive_timeout 70;
   client_max_body_size 80M;
