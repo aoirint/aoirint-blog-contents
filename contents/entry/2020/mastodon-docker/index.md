@@ -237,7 +237,7 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 ```
 
 `docker-compose run --rm web id -u`の出力は`991`だったので、ホスト側で`sudo chown -R 991:991 ./public`を実行して所有者を書き換えて解決した。
-
+多人数が利用する OR 長期的に利用する予定で、VPSでホストするような場合、添付ファイルがVPSの容量を喰いつぶしてしまうことが想定されるので、そのような場合オブジェクトストレージを用意したい。
 
 
 
