@@ -1,6 +1,6 @@
 ---
 canonical_url: ./
-title: Ubuntu 18.04のKernelをアップデートした（HWE Kernel） + e1000eのDKMS設定
+title: Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
 # og_image:
 # twitter_card: summary_large_image
 og_description: UbuntuのKernelをアップデートしたメモ
@@ -13,7 +13,7 @@ tags:
   - e1000e
   - DKMS
 ---
-# Ubuntu 18.04のKernelをアップデートした（HWE Kernel） + e1000eのDKMS設定
+# Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
 環境の整理を兼ねて、UbuntuのKernelのアップデートをしたので、そのときのメモ。
 
 ## Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
@@ -292,7 +292,7 @@ UKUUは特殊なことをしていないとわかったので、
 一度別のカーネル（HWEでOK）で起動して、UKUUのGUIを使ってUKUU側の5.4.xを削除（ふつうに選択してRemove）すればデフォルトでもっとも新しいHWEカーネルが起動するようになる。
 
 
-## e1000eのDKMS設定
+## （準備中）e1000eのDKMS設定
 ### Intel NICのドライバe1000eについて
 ```sh
 $ find /lib/modules/5.4.0-47-generic -name e1000e*
