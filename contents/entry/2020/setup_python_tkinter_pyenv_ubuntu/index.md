@@ -1,18 +1,18 @@
 ---
 canonical_url: ./
-title: 'スニペット: Ubuntu, pyenv環境でtkinterを使う'
+title: 'Ubuntu, pyenv環境でtkinterを使う'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'Ubuntu, pyenv環境でtkinterを使う'
 date: '2020-10-04 03:30:00'
 draft: false
-category: スニペット
+category: Tkinter
 tags:
   - Ubuntu
   - pyenv
   - tkinter
 ---
-# スニペット: Ubuntu, pyenv環境でtkinterを使う
+# Ubuntu, pyenv環境でtkinterを使う
 
 ```sh
 sudo apt install tk-dev python-tk python3-tk

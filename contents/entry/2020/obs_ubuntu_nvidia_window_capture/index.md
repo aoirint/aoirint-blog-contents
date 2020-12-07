@@ -6,7 +6,7 @@ title: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
 og_description: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
 date: '2020-11-09 06:10:00'
 draft: false
-category: スニペット
+category: OBS Studio
 tags:
   - 'OBS Studio'
   - 'Ubuntu'

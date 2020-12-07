@@ -6,7 +6,7 @@ title: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 og_description: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 date: '2020-12-06 11:00:00'
 draft: false
-category: 記事
+category: Mastodon
 tags:
   - Mastodon
   - docker-compose
@@ -303,7 +303,7 @@ server {
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection $connection_upgrade;
-    
+
     tcp_nodelay on;
   }
 
@@ -325,7 +325,7 @@ server {
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection $connection_upgrade;
-    
+
     tcp_nodelay on;
   }
 

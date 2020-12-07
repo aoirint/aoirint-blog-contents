@@ -6,7 +6,7 @@ title: Atom + LaTeX in Docker
 og_description: AtomからLaTeX in Dockerを呼び出してTeX環境を整備する
 date: '2020-09-17 08:35:00'
 draft: false
-category: 記事
+category: LaTeX
 tags:
   - Atom
   - LaTeX

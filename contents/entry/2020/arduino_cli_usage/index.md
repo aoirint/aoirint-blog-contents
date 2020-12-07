@@ -6,7 +6,7 @@ title: arduino-cliの使い方
 og_description: arduino-cliの使い方
 date: '2020-11-09 08:00:00'
 draft: false
-category: 記事
+category: Arduino
 tags:
 - Arduino
 - 'arduino-cli'

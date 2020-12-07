@@ -1,17 +1,17 @@
 ---
 canonical_url: ./
-title: 'スニペット: docker-compose run --rm終了時に他のコンテナも削除するシェルスクリプト'
+title: 'docker-compose run --rm終了時に他のコンテナも削除するシェルスクリプト'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'docker-compose run --rm終了時に他のコンテナも削除するシェルスクリプト'
 date: '2020-09-28 10:10:00'
 draft: false
-category: スニペット
+category: Docker
 tags:
   - Docker
   - Docker Compose
 ---
-# スニペット: docker-compose run --rm終了時に他のコンテナも削除するシェルスクリプト
+# docker-compose run --rm終了時に他のコンテナも削除するシェルスクリプト
 
 `docker-compose run --rm app`を実行するとサービスappが起動してコンテナが作られ、実行が終わり次第コンテナは削除される。
 このとき削除されるコンテナはforegroundで実行されたもののみで、

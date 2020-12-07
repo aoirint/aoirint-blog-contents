@@ -1,19 +1,19 @@
 ---
 canonical_url: ./
-title: 'スニペット: docker-composeによるPython + Selenium環境'
+title: 'docker-composeによるPython + Selenium環境'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'docker-composeでPython + Seleniumを使える環境を整備する'
 date: '2020-09-28 11:00:00'
 draft: false
-category: スニペット
+category: スクレイピング
 tags:
   - Docker
   - Docker Compose
   - Python
   - Selenium
 ---
-# スニペット: docker-composeによるPython + Selenium環境
+# docker-composeによるPython + Selenium環境
 
 docker-compose.yml
 ```

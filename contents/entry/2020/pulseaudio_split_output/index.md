@@ -6,7 +6,7 @@ title: PulseAudioで特定のアプリケーションからの音声出力だけ
 og_description: PulseAudioで特定のアプリケーションからの音声出力だけを分離する
 date: '2020-11-09 06:00:00'
 draft: false
-category: スニペット
+category: PulseAudio
 tags:
   - PulseAudio
   - 'Virtual Audio'

@@ -6,7 +6,7 @@ title: ESP32でFirebase Realtime Databaseを使う
 og_description: ESP32でFirebase Realtime Databaseを使う
 date: '2020-11-09 07:00:00'
 draft: true
-category: スニペット
+category: ESP32
 tags:
   - ESP32
   - Firebase

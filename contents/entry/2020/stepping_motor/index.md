@@ -6,7 +6,7 @@ title: ロータリエンコーダ付きステッピングモータをArduinoで
 og_description: ロータリエンコーダ付きステッピングモータをArduinoで制御して角度を取得する
 date: '2020-10-06 07:00:00'
 draft: false
-category: 記事
+category: Arduino
 tags:
   - ステッピングモータ
   - ロータリエンコーダ

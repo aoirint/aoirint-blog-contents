@@ -6,7 +6,7 @@ title: Imagemagickで画像のDPIを変更する
 og_description: Imagemagickで画像のDPIを変更する
 date: '2020-11-09 06:30:00'
 draft: false
-category: スニペット
+category: LaTeX
 tags:
   - '画像'
   - 'Imagemagick'

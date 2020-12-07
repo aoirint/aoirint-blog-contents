@@ -6,7 +6,7 @@ title: Ubuntu 18.04のKernelをアップデートした（HWE Kernel） + e1000e
 og_description: UbuntuのKernelをアップデートしたメモ
 date: '2020-09-21 00:00:00'
 draft: false
-category: 記事
+category: Ubuntu
 tags:
   - Ubuntu
   - Linux Kernel
