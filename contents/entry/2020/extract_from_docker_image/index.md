@@ -22,5 +22,7 @@ mkdir out
 tar xvf out.tar -C out/
 cd out/6709f754bd0ccbbea9a7481e92772a494cca1543b3421978edff62bc5de16662
 tar xvf layer.tar -C layer/
+
 cd layer
+# here is root directory
 ```
