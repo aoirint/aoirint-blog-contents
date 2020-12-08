@@ -17,13 +17,16 @@ tags:
 pyenvは部品を使うだけで最終的には削除します（Pythonは/usr/localに導入）
 
 ```dockerfile
+FROM ubuntu:bionic
+
+
+ARG DEBIAN_FRONTEND=noninteractive
 ARG PYTHON_VERSION=3.9.0
 ARG PYTHON_ROOT=/usr/local
 ARG PYENV_ROOT=/tmp/.pyenv
 ARG PYBUILD_ROOT=/tmp/python-build
 
-RUN apt-get update -qq && apt-get upgrade -y \
-  && apt-get install -y \
+RUN apt update && apt install -y \
     build-essential \
     libssl-dev \
     zlib1g-dev \
@@ -45,4 +48,5 @@ RUN apt-get update -qq && apt-get upgrade -y \
   && PREFIX=$PYBUILD_ROOT $PYENV_ROOT/plugins/python-build/install.sh \
   && $PYBUILD_ROOT/bin/python-build -v $PYTHON_VERSION $PYTHON_ROOT \
   && rm -rf $PYBUILD_ROOT $PYENV_ROOT
+
 ```
