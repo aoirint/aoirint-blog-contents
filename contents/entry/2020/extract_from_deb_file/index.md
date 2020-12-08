@@ -23,7 +23,7 @@ mkdir bash
 tar xvf bash_5.0-4_amd64.deb -C bash/
 cd bash
 mkdir data
-tar xvf data.tar.xz
+tar xvf data.tar.xz -C data/
 
 cd data
 # here is root directory
