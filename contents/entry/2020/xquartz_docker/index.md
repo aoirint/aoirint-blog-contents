@@ -114,7 +114,7 @@ dial tcp 54.236.131.166:443: i/o timeout
 - [dns - How to solve i/o timeout error in docker pull - Stack Overflow](https://stackoverflow.com/questions/48042184/how-to-solve-i-o-timeout-error-in-docker-pull)
 
 この状態では、以下のhost.docker.internalを使う方法・hostnameを使う方法が動作せず、この設定は削除する必要があった。
-なお最初に起きていた事象は、ネットワークのファイアウォールによってOB53P（DNS）が塞がれていたのが原因と思われるが、
+なお最初に起きていた事象は、ネットワークのファイアウォールによってOP53B（DNSブロック）されていたのが原因と思われるが、
 この設定を削除しても同様のネットワークで事象は復活しなかった（ネットワークの切り替え直後だったために起きていた一時的な問題？）。
 
 
