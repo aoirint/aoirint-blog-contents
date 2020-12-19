@@ -96,7 +96,7 @@ docker build . -t xeyes
 ```
 
 ## 確認：Docker Desktop for MacのDNS設定
-以下のようなdocker pullに失敗する事象のため、Docker daemonのDNSを変更していた。
+以下のようなdocker pullに失敗する事象のため、Docker daemonのDNS設定を変更していた。
 具体的には、Docker Desktop for Macのタスクバーアイコン > Preferences > Docker EngineのJSON設定欄に
 `"dns": [ "primary dns address", "secondary dns adderss" ]`のように設定を書き足して解決していた。
 
