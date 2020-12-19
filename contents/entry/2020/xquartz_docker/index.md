@@ -12,7 +12,7 @@ tags:
   - macOS
 ---
 
-# Docker Desktop for Mac＋XQuartz（X Window Server）でX Clientを動かす
+# Docker Desktop for Mac上のX ClientをホストのXQuartz（X Window Server）上で表示する
 
 ```
 $ docker -v
