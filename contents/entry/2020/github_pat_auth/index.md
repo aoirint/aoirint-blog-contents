@@ -52,7 +52,7 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/libs
 ```
 
 
-## gnone-keyringの場合（非推奨）
+## libgnone-keyringの場合（非推奨）
 [zenn:tlls/gnome-keyringでgitクレデンシャルを保存する](https://zenn.dev/tlls/articles/gnome-keyring-git-credential)
 
 ```sh
