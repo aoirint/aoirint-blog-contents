@@ -54,7 +54,7 @@ Warning: Calling brew cask install is deprecated! Use brew install [--cask] inst
 - [homebrew-cask/USAGE.md at master · Homebrew/homebrew-cask](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
 
 Homebrewは、開発元からソースコードが配布されていて、そのコンパイル済みのバイナリ（またはソースダウンロード＋自動ローカルビルド）を提供するもので、
-Homebrew Caskは、`dmg`が配布されていてマウントして`.app`を`/Applications`にコピーする操作（実際には`/usr/local/Caskroom`にインストールする）のを自動化する、というものなのだろうか?
+Homebrew Caskは、`*.dmg`が配布されていてマウントして`*.app`を`/Applications`にコピーする操作（実際には`/usr/local/Caskroom`にインストールする）のを自動化する、というものなのだろうか?
 `--cask`を明示するのは両方に登録されていてもCaskを優先するみたいな指定なのか? XQuartzの場合は`--cask`を付けなくてもCaskとしてインストールされた。
 
 ```bash
@@ -62,7 +62,8 @@ Homebrew Caskは、`dmg`が配布されていてマウントして`.app`を`/App
 brew install --cask xquartz
 ```
 
-XQuartzインストール後、シェルに環境変数DISPLAYが設定される（`/private/tmp/com.apple.launchd.***/org.macosforge.xquartz:0`のような値）。
+XQuartz.appを起動する。
+シェルに環境変数DISPLAYが設定される（`/private/tmp/com.apple.launchd.***/org.macosforge.xquartz:0`のような値）。
 
 XQuartzと合わせて導入されるxhostやxeyesにパスが通っていないので、`/usr/X11/bin`にパスを通しておく。
 
