@@ -4,7 +4,7 @@ title: Docker Desktop for Mac＋XQuartz（X Window Server）でX Clientを動か
 # og_image:
 # twitter_card: summary_large_image
 og_description: Docker Desktop for Mac＋XQuartz（X Window Server）でX Clientを動かす
-date: '2020-12-19 23:30:00'
+date: '2020-12-20 00:30:00'
 draft: false
 category: Docker
 tags:
