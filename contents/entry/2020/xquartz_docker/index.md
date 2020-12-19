@@ -1,9 +1,9 @@
 ---
 canonical_url: ./
-title: Docker Desktop for Mac＋XQuartz（X Window Server）でX Clientを動かす
+title: Docker Desktop for Mac上のX ClientをホストのXQuartz（X Window Server）上で表示する
 # og_image:
 # twitter_card: summary_large_image
-og_description: Docker Desktop for Mac＋XQuartz（X Window Server）でX Clientを動かす
+og_description: Docker Desktop for Mac上のX ClientをホストのXQuartz（X Window Server）上で表示する
 date: '2020-12-20 00:30:00'
 draft: false
 category: Docker
