@@ -228,7 +228,7 @@ docker-compose run --rm web bundle exec bin/tootctl accounts modify hoge --role 
 またはコマンドで管理者アカウントを作成する。ランダムパスワードが生成され、標準出力に出力される。
 
 ```bash
-sudo docker-compose run --rm web bundle exec bin/tootctl accounts create hoge --email hoge@example.com --confirmed --role admin
+docker-compose run --rm web bundle exec bin/tootctl accounts create hoge --email hoge@example.com --confirmed --role admin
 ```
 
 プロフィール画像アップロード時にエラーが出てしまった。
