@@ -5,6 +5,7 @@ title: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 # twitter_card: summary_large_image
 og_description: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 date: '2020-12-06 11:00:00'
+updated: '2020-12-22 02:40:00'
 draft: false
 category: Mastodon
 tags:
@@ -53,7 +54,7 @@ Mastodonのリポジトリから`docker-compose.yml`、`.env.production.sample`�
 ローカルビルドはしないので、web、streaming、sidekiqから`build: .`の行を削除する。
 また、`image: tootsuite/mastodon:v3.2.1`のようにバージョンを固定しておく（実運用する場合は定期的に書き換えてバージョンアップ）。
 
-DB、Redis、Mastodon各サービスの最新のDockerイメージを取得する。
+DB、Redis、Mastodon各サービスのDockerイメージを取得する。
 
 ```bash
 docker-compose pull
@@ -144,17 +145,17 @@ ES_ENABLED=false
 
 ```bash
 # for SECRET_KEY_BASE
-docker run --rm tootsuite/mastodon bundle exec rake secret
+docker run --rm tootsuite/mastodon:v3.2.1 bundle exec rake secret
 
 # for OTP_SECRET
-docker run --rm tootsuite/mastodon bundle exec rake secret
+docker run --rm tootsuite/mastodon:v3.2.1 bundle exec rake secret
 ```
 
 
 Web Pushの公開鍵・秘密鍵を生成する（環境変数を設定しないとエラー）。標準出力に.envの形式で吐き出されるのでコピーする。
 
 ```bash
-docker run --rm --env-file ./.env.production tootsuite/mastodon bundle exec rake mastodon:webpush:generate_vapid_key
+docker run --rm --env-file ./.env.production tootsuite/mastodon:v3.2.1 bundle exec rake mastodon:webpush:generate_vapid_key
 ```
 
 
