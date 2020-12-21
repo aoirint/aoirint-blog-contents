@@ -194,6 +194,7 @@ docker-compose run --rm web rails db:migrate
 docker-compose run --rm web rails assets:precompile
 ```
 
+`rails assets/precompile`の方は、プロキシ環境下で`info There appears to be trouble with your network connection. Retrying...`のように表示されて止まってしまうことがある。自分のテスト環境では、`docker-compose run --rm -e HTTP_PROXY -e HTTPS_PROXY web bash -c "yarn config set proxy \$HTTP_PROXY -g && yarn config set https-proxy \$HTTPS_PROXY -g && yarn config set network-timeout 1000000 -g && rails assets:precompile --trace"`のようにプロキシやタイムアウト時間を設定しても解決しなかった（traceを見る限り、`assets:precompile`内の`yarn install`で止まってしまう。[Railsの該当部分のソースコード](https://github.com/rails/rails/blob/v5.2.4.3/railties/lib/rails/tasks/yarn.rake#L11)）。`yarn`の実体は`IMAGE_HOME/bin/yarn`のようだが、`IMAGE_HOME/bin/yarn config`のようにしても変わらず、`-g`を外しても変わらなかった）。結局解決方法はわからなかったが、プロキシ外で実行してもマウントしているディレクトリ（`./public`）には今のところ何も生成されない（`Everything's up-to-date. Nothing to do`）ようなのでこの手順は飛ばしても問題ないかもしれない..（DBを変更しているかどうかはわからないが）。
 
 docker-compose run --rmでweb以外のコンテナが止まらないので一度すべてのコンテナを停止・削除する。
 これにより永続化が正しく動作していることを確認できる。
@@ -230,6 +231,14 @@ docker-compose run --rm web bundle exec bin/tootctl accounts modify hoge --role 
 ```bash
 docker-compose run --rm web bundle exec bin/tootctl accounts create hoge --email hoge@example.com --confirmed --role admin
 ```
+
+`http://localhost:3000`でうまく接続できないときやリモートマシンで立てたときは、[ngrok](https://ngrok.com/)を使うのが便利。
+
+```bash
+# ポート3000番をランダムURLで外部からアクセスできるようにする
+ngrok http 3000
+```
+
 
 プロフィール画像アップロード時にエラーが出てしまった。
 `./public/system`をマウント時にdockerが作成しているために`root`所有になっているのが原因。
