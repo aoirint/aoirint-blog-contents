@@ -368,7 +368,7 @@ sudo apt install tmux autossh
 - [Mac OSXでHTTP Proxy経由でSSH - Qiita](https://qiita.com/yuyhiraka/items/30766c69fb605fc5f182 "Mac OSXでHTTP Proxy経由でSSH - Qiita")
 - [【GitHub】Windows10+プロキシ環境でSSH接続を試みた話 - Qiita](https://qiita.com/_N4H4/items/d48ba7c728f2e1ebd159 "【GitHub】Windows10+プロキシ環境でSSH接続を試みた話 - Qiita")
 - [gist:rurban/connect.c](https://gist.github.com/rurban/360940 "connect.c")
-    - [ミラー: connect.c](connect.c)
+    - [ミラー: connect.c](https://gist.github.com/aoirint/ed94d828c4903d3fe410649fb41e2a4b "connect.c")
 
 ~/.ssh/configの`Host`の下に書く。Windowsの場合は`connect`をビルドする必要がある。
 
