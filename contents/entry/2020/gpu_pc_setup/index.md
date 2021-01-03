@@ -5,6 +5,7 @@ title: GPU PC (Desktop) のセットアップメモ
 # twitter_card: summary_large_image
 og_description: GPU PC (Desktop) をセットアップする
 date: '2020-09-18 20:00:00'
+updated: '2021-01-04 08:10:00'
 draft: false
 category: PC セットアップ
 tags:
@@ -248,7 +249,10 @@ PyTorchの対応バージョンを見ながらCUDA Toolkitをインストール�
 
 [CUDA Toolkit 10.2 Download | NVIDIA Developer](https://developer.nvidia.com/cuda-10.2-download-archive "CUDA Toolkit 10.2 Download | NVIDIA Developer")
 
-CUDA Installerのrunfileを使って、runfileに同梱されているNVIDIA Driverを同時に入れるのが安定（2.5GBくらいで結構重いが）。
+~~CUDA Installerのrunfileを使って、runfileに同梱されているNVIDIA Driverを同時に入れるのが安定（2.5GBくらいで結構重いが）。~~
+
+追記（2021/01/04）：カーネルアップデートのたびに再インストールする必要が出てくるので、ドライバについてはDKMSが使える通常のNVIDIA Driverインストールをした方がいい。
+適切にPATH、LD_LIBRARY_PATHを設定すれば問題ない。
 
 [Download runfile installer for Ubuntu 18.04](https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
 
