@@ -114,7 +114,7 @@ SphinxではデフォルトでreStructuredTextというマークアップ言語�
 
 .. code-block:: reStructuredText
 
-  ..toctree::
+  .. toctree::
     :maxdepth: 2
     :caption: Contents:
 
