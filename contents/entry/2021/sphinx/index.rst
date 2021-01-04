@@ -86,6 +86,10 @@ SphinxではデフォルトでreStructuredTextというマークアップ言語�
 
 :code:`docs/mkdocs.sh` を以上のように作成し、実行する（TODO：Makefileへの入れ込み）。
 ここでは、以下のように :code:`docs` ディレクトリと並んで、パッケージとして提供するPythonモジュール :code:`mymodule` のディレクトリがあることを想定している。
+なお、 :code:`docs/source/conf.py` は設定ファイルであり、
+例えば :code:`html_theme = 'sphinx_rtd_theme'` のような設定を追加し、
+:code:`pip3 install sphinx-rtd-theme` してから :code:`make html` することで、Read the Docsスタイルのドキュメントを生成できる。
+
 
 .. code-block::
 
