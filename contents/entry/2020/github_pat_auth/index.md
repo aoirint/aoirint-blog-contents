@@ -1,9 +1,9 @@
 ---
 canonical_url: ./
-title: GitHubの認証方法をPATにするにあたって
+title: GitHubの認証方法をPATにした
 # og_image:
 # twitter_card: summary_large_image
-og_description: GitHubの認証方法をPATにするにあたって
+og_description: GitHubの認証方法をPATにした
 date: '2020-12-18 11:00:00'
 draft: false
 category: GitHub
@@ -11,7 +11,7 @@ tags:
   - GitHub
   - 認証
 ---
-# GitHubの認証方法をPATにするにあたって
+# GitHubの認証方法をPATにした
 
 GitHubがパスワードによるGitアクセスを無効化する（正確にはパーソナルアクセストークン認証を必須化する、だが現状SSH認証は残る）旨のアナウンスをした（[Token authentication requirements for Git operations - The GitHub Blog](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)）。
 
