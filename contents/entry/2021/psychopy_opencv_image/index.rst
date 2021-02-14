@@ -34,7 +34,7 @@ y軸反転と画素値をfloat（0-1）に変換すればOK。
 .. code-block:: python
 
     import numpy as np # numpy>=1.20.1
-    import cv2 # type: ignore
+    import cv2 # type: ignore # opencv-python>=4.5.1.48
     from psychopy import core # type: ignore # psychopy>=2020.2.10
     from psychopy.visual import Window, ImageStim # type: ignore
     import sys
