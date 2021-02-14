@@ -18,6 +18,9 @@ PsychopyでOpenCV画像をImageStimで表示する
 
 .. image:: screenshot.png
 
+
+y軸反転と
+
 .. code-block:: python
 
     import numpy as np # numpy>=1.20.1
@@ -28,7 +31,7 @@ PsychopyでOpenCV画像をImageStimで表示する
 
     # npimg: np.ndarray = cv2.imread('image.png', 1)
     npimg: np.ndarray = np.zeros((400, 400, 3), dtype=np.uint8)
-    npimg = cv2.line(npimg, (0, 50), (400, 50), (255, 255, 255), 3)
+    npimg = cv2.line(npimg, (0, 50), (400, 50), (127, 127, 127), 3)
     npimg = cv2.line(npimg, (50, 0), (50, 400), (255, 255, 255), 3)
     # cv2.imwrite('image.png', npimg)
 
