@@ -5,7 +5,7 @@ title: テンプレート
 # twitter_card: summary_large_image
 og_description: テンプレート
 date: '2020-12-09 00:00:00'
-draft: false
+draft: true
 category: 管理用
 tags:
   - 管理用

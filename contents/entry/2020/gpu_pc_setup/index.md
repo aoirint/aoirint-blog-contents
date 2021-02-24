@@ -7,7 +7,7 @@ og_description: GPU PC (Desktop) をセットアップする
 date: '2020-09-18 20:00:00'
 updated: '2021-01-04 08:10:00'
 draft: false
-category: PC セットアップ
+category: Ubuntu
 tags:
   - 'PC Setup'
 ---
