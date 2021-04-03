@@ -55,3 +55,7 @@ chronyを再起動。
 ```shell
 sudo systemctl restart chrony
 ```
+
+
+- [DateTime - Debian Wiki](https://wiki.debian.org/DateTime)
+- [タイムゾーンを日本標準時(JST)に変更する CentOS 8, 7, 6 – CentOSサーバ構築術 文具堂](https://centos.bungu-do.jp/archives/67)
