@@ -26,9 +26,9 @@ E: Release file for http://archive.raspberrypi.org/debian/dists/buster/InRelease
 こういうエラーが出ることがある（ログはRaspberry Pi OS）。
 
 ```shell
-timedatectl set-timezone Asia/Tokyo
-date --set 2021-04-04
-date --set 06:00
+sudo timedatectl set-timezone Asia/Tokyo
+sudo date --set 2021-04-04
+sudo date --set 06:00
 ```
 
 まずは手動でタイムゾーンと時刻を合わせる（だいたいでOK）。
