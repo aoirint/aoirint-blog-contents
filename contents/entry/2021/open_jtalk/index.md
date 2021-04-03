@@ -62,7 +62,7 @@ Input #0, wav, from 'output.wav':
     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
 ```
 
-mmdagent.jpで配布されているボイスファイル（htsvoice）を使う。
+mmdagent.jpで配布されているボイスファイル（htsvoice）を使ってみる。
 
 - [MMDAgent - Browse /MMDAgent_Example at SourceForge.net](https://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/)
 
