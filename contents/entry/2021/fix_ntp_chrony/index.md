@@ -8,7 +8,7 @@ date: '2021-04-04 06:00:00'
 draft: false
 category: Ubuntu
 tags:
-  - サーバ
+  - Ubuntu
   - NTP
 ---
 
