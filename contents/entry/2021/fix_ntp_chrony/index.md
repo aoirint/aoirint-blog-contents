@@ -1,6 +1,6 @@
 ---
 canonical_url: ./
-title: Ubuntu/Raspberry Pi/Debianサーバの時刻ずれを解消する
+title: Ubuntu/Raspberry Pi/Debianの時刻ずれを解消する
 # og_image:
 # twitter_card: summary_large_image
 og_description: テンプレート
@@ -12,7 +12,7 @@ tags:
   - NTP
 ---
 
-# Ubuntu/Raspberry Pi/Debianサーバの時刻ずれを解消する
+# Ubuntu/Raspberry Pi/Debianの時刻ずれを解消する
 
 ```shell
 $ sudo apt update
