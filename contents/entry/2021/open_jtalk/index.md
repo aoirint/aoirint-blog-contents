@@ -34,6 +34,9 @@ WORKDIR /data
 ENTRYPOINT [ "open_jtalk" ]
 ```
 
+mecab-naist-jdicは形態素解析辞書。
+hts-voiceはボイスファイルだが、別途htsvoiceを用意する場合は不要。
+
 ビルドする。
 
 ```shell
