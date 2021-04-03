@@ -1,6 +1,6 @@
 ---
 canonical_url: ./
-title: Open JTalkを試す
+title: Open JTalk in Docker
 # og_image:
 # twitter_card: summary_large_image
 # og_description: テンプレート
@@ -13,7 +13,7 @@ tags:
   - Docker
 ---
 
-# Open JTalkを試す
+# Open JTalk in Docker
 
 以前にもOpen JTalkを触っていたが、時間が経った＆記事が雑だったのでDockerでまとめ直しておく。
 
