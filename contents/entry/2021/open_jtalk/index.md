@@ -59,7 +59,7 @@ mmdagent.jpで配布されているボイスファイル（htsvoice）を使う�
 - [MMDAgent - Browse /MMDAgent_Example at SourceForge.net](https://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/)
 
 ここから最新のMMDAgent Exampleをダウンロードする。
-`Voice/mei_normal.htsvoice`に目的のボイスファイルがある（CC BY 3.0）。
+`Voice/mei/mei_normal.htsvoice`に目的のボイスファイルがある（CC BY 3.0）。
 これを作業ディレクトリ（`$PWD`）にコピーしておく。
 
 ```shell
