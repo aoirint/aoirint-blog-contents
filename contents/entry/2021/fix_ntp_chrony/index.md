@@ -6,7 +6,7 @@ title: Ubuntu/Raspberry Pi/Debianサーバの時刻ずれを解消する
 og_description: テンプレート
 date: '2021-04-04 06:00:00'
 draft: false
-category: 記事
+category: Ubuntu
 tags:
   - サーバ
   - NTP
