@@ -42,7 +42,7 @@ docker build . -t aoirint/open_jtalk
 
 実行する。
 ```shell
-echo "こんにちは" >> text.txt
+echo "こんにちは" > text.txt
 
 # テキストファイルの文字列から音声を生成
 docker run --rm -v "$PWD:/data" aoirint/open_jtalk -x /var/lib/mecab/dic/open-jtalk/naist-jdic/ -m /usr/share/hts-voice/nitech-jp-atr503-m001/nitech_jp_atr503_m001.htsvoice text.txt -ow output.wav
@@ -52,6 +52,14 @@ cat text.txt | docker run --rm -i -v "$PWD:/data" aoirint/open_jtalk -x /var/lib
 
 # 標準入力の文字列から音声を生成して、標準出力に書き出す（wav形式）
 cat text.txt | docker run --rm -i -v "$PWD:/data" aoirint/open_jtalk -x /var/lib/mecab/dic/open-jtalk/naist-jdic/ -m /usr/share/hts-voice/nitech-jp-atr503-m001/nitech_jp_atr503_m001.htsvoice -ow /dev/stdout > output.wav
+```
+
+ffmpegで出力されたwavファイルを見るとこのような形式。
+
+```
+Input #0, wav, from 'output.wav':
+  Duration: 00:00:01.61, bitrate: 768 kb/s
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
 ```
 
 mmdagent.jpで配布されているボイスファイル（htsvoice）を使う。
