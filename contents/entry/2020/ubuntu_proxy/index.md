@@ -37,6 +37,8 @@ visudo -f /etc/sudoers
 ```sudoers
 Defaults env_keep+="HTTP_PROXY"
 Defaults env_keep+="HTTPS_PROXY"
+Defaults env_keep+="NO_PROXY"
+Defaults env_keep+="EDITOR"
 ```
 
 ## /etc/environment
