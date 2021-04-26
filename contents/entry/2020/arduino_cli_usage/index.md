@@ -19,8 +19,10 @@ $ arduino-cli version
 arduino-cli Version: 0.13.0 Commit: 693a045
 ```
 
+
 ## インストール
 - [Installation - Arduino CLI](https://arduino.github.io/arduino-cli/latest/installation/)
+- [arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli)
 
 [Arduino CLIの公式ドキュメント](https://arduino.github.io/arduino-cli/latest/)に従ってインストールする。後述する`screen`コマンドも合わせてインストールする。
 `arduino-cli`はDockerイメージも配布されているのでお好みで。
@@ -39,6 +41,11 @@ sudo apt install screen
 arduino-cli core update-index
 ```
 
+dialoutにユーザを追加
+
+```shell
+sudo adduser $USER dialout
+```
 
 ## スケッチの作成
 特に特殊なファイルを必要としたりはしないので、
