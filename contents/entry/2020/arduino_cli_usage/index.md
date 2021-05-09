@@ -5,6 +5,7 @@ title: arduino-cliの使い方
 # twitter_card: summary_large_image
 og_description: arduino-cliの使い方
 date: '2020-11-09 08:00:00'
+updated: '2021-05-09 17:30:00'
 draft: false
 category: Arduino
 tags:
@@ -41,7 +42,7 @@ sudo apt install screen
 arduino-cli core update-index
 ```
 
-dialoutにユーザを追加
+シリアルポートを使うため、`dialout`グループにユーザを追加する（`/dev/ttyACM#`や`/dev/ttyUSB#`のグループは`dialout`）。
 
 ```shell
 sudo adduser $USER dialout
@@ -71,6 +72,8 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 また、`arduino-cli board list`コマンドでPCに接続しているボードのFQBNを調べられる場合がある（Arduino系ボードの場合？）。
 
 - Arduino UNO: `arduino:avr:uno`
+- Arduino Nano: `arduino:avr:nano`
+- Arduino Nano Every: `arduino:megaavr:nona4809
 - ESP32-DevKitC: `esp32:esp32:esp32`
 
 
@@ -81,6 +84,9 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 ```bash
 # Arduino (AVR)
 arduino-cli core install arduino:avr
+
+# Arduino Nano Every ほか
+arduino-cli core install arduino:megaavr
 
 # ESP32
 arduino-cli core install esp32:esp32
@@ -114,6 +120,54 @@ arduino-cli compile -b arduino:avr:uno
 `.gitignore`などに追加しておく。
 
 
+Arduino Nano EveryはATmega4809を搭載しているが、デフォルトでArduino UnoやNanoのATmega328Pをエミュレートする互換モードになる。
+違いはよくわからないが、低レベルAPIを直接使っている場合に影響があるかもしれない。
+
+```shell
+# 互換モード（デフォルト）
+arduino-cli compile -b arduino:megaavr:nona4809
+
+# 通常モード
+arduino-cli compile -b arduino:megaavr:nona4809:mode=off
+```
+
+```
+$ arduino-cli board details arduino:megaavr:nona4809
+Board name:                Arduino Nano Every                                                            
+FQBN:                      arduino:megaavr:nona4809                                                      
+Board version:             1.8.7                                                                         
+
+Official Arduino board:    ✔                                                                             
+
+Identification properties: VID:0x2341 PID:0x0058                                                         
+
+Package name:              arduino                                                                       
+Package maintainer:        Arduino                                                                       
+Package URL:               https://downloads.arduino.cc/packages/package_index.json                      
+Package website:           http://www.arduino.cc/                                                        
+Package online help:       http://www.arduino.cc/en/Reference/HomePage                                   
+
+Platform name:             Arduino megaAVR Boards                                                        
+Platform category:         Arduino                                                                       
+Platform architecture:     megaavr                                                                       
+Platform URL:              http://downloads.arduino.cc/cores/core-ArduinoCore-megaavr-1.8.7.tar.bz2      
+Platform file name:        core-ArduinoCore-megaavr-1.8.7.tar.bz2                                        
+Platform size (bytes):     875098                                                                        
+Platform checksum:         SHA-256:24853e59bfcfcfa09d7ab51011b65f2246e082228b1f14fdaa4cbb2c6aae23b4      
+
+Required tool:             arduino:avr-gcc                                                                                                    7.3.0-atmel3.6.1-arduino5
+
+Required tool:             arduino:avrdude                                                                                                    6.3.0-arduino17          
+
+Required tool:             arduino:arduinoOTA                                                                                                 1.3.0                    
+
+Option:                    Registers emulation                                                                                                mode                     
+                           ATMEGA328                                                                      ✔                                   mode=on                  
+                           None (ATMEGA4809)                                                                                                  mode=off                 
+Programmers:               Id                                                                             Name                               
+                           medbg                                                                          Onboard Atmel mEDBG (UNO WiFi Rev2)
+```
+
 ## スケッチの書き込み
 
 ボードにコンパイルしたスケッチを書き込む。
@@ -139,6 +193,8 @@ Ubuntuの場合`apt install screen`で導入できる。
 ```bash
 screen /dev/ttyACM0 115200
 ```
+
+閉じるには`Ctrl+a k`を入力する。
 
 
 ## プロキシ設定
