@@ -73,7 +73,7 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 
 - Arduino UNO: `arduino:avr:uno`
 - Arduino Nano: `arduino:avr:nano`
-- Arduino Nano Every: `arduino:megaavr:nona4809
+- Arduino Nano Every: `arduino:megaavr:nona4809`
 - ESP32-DevKitC: `esp32:esp32:esp32`
 
 
