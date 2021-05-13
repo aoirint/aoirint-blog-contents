@@ -5,7 +5,7 @@ title: GPU PC (Desktop) のセットアップメモ
 # twitter_card: summary_large_image
 og_description: GPU PC (Desktop) をセットアップする
 date: '2020-09-18 20:00:00'
-updated: '2021-01-04 08:10:00'
+updated: '2021-05-14 01:00:00'
 draft: false
 category: Ubuntu
 tags:
