@@ -109,7 +109,7 @@ Ctrl + Shift + Tでターミナルウインドウを開く
 
 Python補完用（要Jedi or Kite）
 
-Python Executable Paths: `{HOME}/.pyenv/shims/python`
+Python Executable Paths: `/home/USER/.pyenv/shims/python`
 
 ```shell
 pip3 install jedi
@@ -135,7 +135,7 @@ CP932やEUC-JPのテキストファイルをUTF-8に変換する
 
 Python IDE機能
 
-Python Executable: `{HOME}/.pyenv/shims/python`
+Python Executable: `/home/USER/.pyenv/shims/python`
 
 ### ide-typescript
 - [ide-typescript](https://atom.io/packages/ide-typescript)
@@ -149,7 +149,7 @@ npm set prefix ~/.node
 npm install -g typescript
 ```
 
-TypeScript server path: `{HOME}/.node/lib/node_modules/typescript/lib/tsserver.js`
+TypeScript server path: `/home/USER/.node/lib/node_modules/typescript/lib/tsserver.js`
 
 ### language-docker
 - [language-docker](https://atom.io/packages/language-docker)
