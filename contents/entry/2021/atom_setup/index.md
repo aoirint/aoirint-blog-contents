@@ -15,10 +15,10 @@ GitHubが開発するElectron製高機能テキストエディタAtomをセッ�
 
 ## Installation
 ### macOS, Windows
-- https://atom.io/
+- [https://atom.io/](https://atom.io/)
 
 ### Ubuntu
-- https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux
+- [https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux](https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux)
 
 ```shell
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
@@ -37,7 +37,7 @@ sudo apt install atom
 ## Packages
 パッケージにより機能拡張ができる。
 
-- https://atom.io/packages/
+- [https://atom.io/packages/](https://atom.io/packages/)
 
 GUIによる操作
 
@@ -83,28 +83,28 @@ project-viewer
 ```
 
 ### Sublime-Style-Column-Selection
-- https://atom.io/packages/sublime-style-column-selection
+- [sublime-style-column-selection](https://atom.io/packages/sublime-style-column-selection)
 
 Shift + 左ボタンドラッグで矩形選択ができる
 
 ### atom-beautify
-- https://atom.io/packages/atom-beautify
+- [atom-beautify](https://atom.io/packages/atom-beautify)
 
 デフォルトで入っているフォーマッタ
 
 ### atom-ide-ui
-- https://atom.io/packages/atom-ide-ui
+- [atom-ide-ui](https://atom.io/packages/atom-ide-ui)
 
 IDE機能のコア
 
 ### atom-terminus
-- https://atom.io/packages/atom-terminus
-- fork of atom-terminal: https://atom.io/packages/atom-terminal
+- [atom-terminus](https://atom.io/packages/atom-terminus)
+- fork of [atom-terminal](https://atom.io/packages/atom-terminal)
 
 Ctrl + Shift + Tでターミナルウインドウを開く
 
 ### autocomplete-python
-- https://github.com/autocomplete-python/autocomplete-python
+- [autocomplete-python](https://atom.io/packages/autocomplete-python)
 
 Python補完用（要Jedi or Kite）
 
@@ -115,29 +115,29 @@ pip3 install jedi
 ```
 
 ### convert-to-utf8
-https://atom.io/packages/convert-to-utf8
+- [convert-to-utf8](https://atom.io/packages/convert-to-utf8)
 
 CP932やEUC-JPのテキストファイルをUTF-8に変換する
 
 ### document-outline
-- https://atom.io/packages/document-outline
+- [document-outline](https://atom.io/packages/document-outline)
 
 文書のアウトライン表示
 
 ### file-icons
-- https://atom.io/packages/file-icons
+- [file-icons](https://atom.io/packages/file-icons)
 
 ファイルアイコン表示
 
 ### ide-python
-- https://atom.io/packages/ide-python
+- [ide-python](https://atom.io/packages/ide-python)
 
 Python IDE機能
 
 Python Executable: `{HOME}/.pyenv/shims/python`
 
 ### ide-typescript
-- https://atom.io/packages/ide-typescript
+- [ide-typescript](https://atom.io/packages/ide-typescript)
 
 TypeScript IDE機能
 
@@ -149,53 +149,53 @@ npm install -g typescript
 TypeScript server path: `{HOME}/.node/lib/node_modules/typescript/lib/tsserver.js`
 
 ### language-docker
-- https://atom.io/packages/language-docker
+- [language-docker](https://atom.io/packages/language-docker)
 
 Docker シンタックスハイライト
 
 ### language-graphql
-- https://atom.io/packages/language-graphql
+- [language-graphql](https://atom.io/packages/language-graphql)
 
 GraphQL シンタックスハイライト
 
 ### language-julia
-- https://atom.io/packages/language-julia
+- [language-julia](https://atom.io/packages/language-julia)
 
 Julia シンタックスハイライト
 
 ### language-latex
-- https://atom.io/packages/language-latex
+- [language-latex](https://atom.io/packages/language-latex)
 
 LaTeX シンタックスハイライト
 
 ### language-nginx
-- https://atom.io/packages/language-nginx
+- [language-nginx](https://atom.io/packages/language-nginx)
 
 nginx シンタックスハイライト
 
 ### latex
-- https://atom.io/packages/latex
+- [latex](https://atom.io/packages/latex)
 
 LaTeX ビルド
 
 Dockerで動くようにする記事: https://blog.aoirint.com/entry/2020/atom_latex_docker/
 
 ### markdown-preview-plus
-- https://atom.io/packages/markdown-preview-plus
+- [markdown-preview-plus]'https://atom.io/packages/markdown-preview-plus'
 
 Markdown プレビュー
 
 ### pdf-view
-- https://atom.io/packages/pdf-view
+- [pdf-view](https://atom.io/packages/pdf-view)
 
 PDF プレビュー
 
 ### project-view
-- https://atom.io/packages/project-view
+- [project-view](https://atom.io/packages/project-view)
 
 プロジェクトツリー（tree-view）にプロジェクトパスを表示
 
 ### project-viewer
-- https://atom.io/packages/project-viewer
+- [project-viewer](https://atom.io/packages/project-viewer)
 
 GUIで編集できるプロジェクト管理ツール

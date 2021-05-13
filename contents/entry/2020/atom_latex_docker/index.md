@@ -54,7 +54,7 @@ sudo docker pull paperist/alpine-texlive-ja
 注意として、この方法で一般ユーザがDockerを使えるようにすると特権昇格できてしまうため、
 共有サーバにおいてはDocker 20.10以降のDocker rootlessを設定する。
 
-- https://docs.docker.com/engine/security/rootless/
+- [https://docs.docker.com/engine/security/rootless/](https://docs.docker.com/engine/security/rootless/)
 
 ユーザをdockerグループに追加したあと再ログインする。新しくdockerグループが作られた直後は`newgrp docker`しなければならないことがあり、シェルごとにこれを実行する必要があるようなのでAtomに反映されず、この場合OSの再起動が必要。
 
