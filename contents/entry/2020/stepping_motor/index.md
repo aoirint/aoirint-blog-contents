@@ -440,10 +440,14 @@ void loop() {
   msg["rpm"] = rpm;
 
   serializeJson(msg, Serial); Serial.println();
-}
 
-void serialEvent() {
-  StaticJsonDocument<255> msg;
+// serialEvent is now deprecated and not working on some Arduino devices (e.g. Arduino Nano Every).
+// https://github.com/arduino/ArduinoCore-avr/issues/206#issuecomment-532133626
+//
+// }
+//
+// void serialEvent() {
+// StaticJsonDocument<255> msg;
   bool jsonError = false;
 
   if (nextSerialJson(&msg, &jsonError)) {
