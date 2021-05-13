@@ -143,6 +143,8 @@ Python Executable: `/home/USER/.pyenv/shims/python`
 TypeScript IDE機能
 
 デフォルトで同梱されているTypeScriptが使われるが、バージョンが古いため設定を変える。
+そのまま使うと、Reactで`Cannot use JSX unless the '--jsx' flag is provided`などのエラーが出たり、
+TypeScriptの新しい記法が構文エラーとして表示されることがある。
 
 ```shell
 npm set prefix ~/.node
