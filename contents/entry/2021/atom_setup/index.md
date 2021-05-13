@@ -80,6 +80,7 @@ pdf-view
 project-manager
 project-view
 project-viewer
+tree-view-git-status
 ```
 
 ### Sublime-Style-Column-Selection
@@ -199,3 +200,8 @@ PDF プレビュー
 - [project-viewer](https://atom.io/packages/project-viewer)
 
 GUIで編集できるプロジェクト管理ツール
+
+### tree-view-git-status
+- [tree-view-git-status](https://atom.io/packages/tree-view-git-status)
+
+tree-viewにGit status（ブランチなど）を表示
