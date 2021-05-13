@@ -443,6 +443,7 @@ void loop() {
 
 // serialEvent is now deprecated and not working on some Arduino devices (e.g. Arduino Nano Every).
 // https://github.com/arduino/ArduinoCore-avr/issues/206#issuecomment-532133626
+// https://forum.arduino.cc/t/nano-every-serialevent-does-not-get-called/690025
 //
 // }
 //
