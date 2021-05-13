@@ -179,10 +179,10 @@ nginx シンタックスハイライト
 
 LaTeX ビルド
 
-Dockerで動くようにする記事: https://blog.aoirint.com/entry/2020/atom_latex_docker/
+Dockerで動くようにする記事: [https://blog.aoirint.com/entry/2020/atom_latex_docker/](https://blog.aoirint.com/entry/2020/atom_latex_docker/)
 
 ### markdown-preview-plus
-- [markdown-preview-plus]'https://atom.io/packages/markdown-preview-plus'
+- [markdown-preview-plus](https://atom.io/packages/markdown-preview-plus)
 
 Markdown プレビュー
 
