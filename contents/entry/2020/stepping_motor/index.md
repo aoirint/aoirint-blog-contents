@@ -449,7 +449,7 @@ void loop() {
 // }
 //
 // void serialEvent() {
-// StaticJsonDocument<255> msg;
+//   StaticJsonDocument<255> msg;
   bool jsonError = false;
 
   if (nextSerialJson(&msg, &jsonError)) {
