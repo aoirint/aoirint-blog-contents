@@ -142,6 +142,8 @@ Python Executable: `{HOME}/.pyenv/shims/python`
 
 TypeScript IDE機能
 
+デフォルトで同梱されているTypeScriptが使われるが、バージョンが古いため設定を変える。
+
 ```shell
 npm set prefix ~/.node
 npm install -g typescript
