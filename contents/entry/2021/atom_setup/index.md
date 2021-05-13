@@ -11,7 +11,7 @@ tags:
 
 # Atom Text Editor Setup
 
-GitHubが開発するElectron製高機能テキストエディタ。
+GitHubが開発するElectron製高機能テキストエディタAtomをセットアップする。
 
 ## Installation
 ### macOS, Windows
@@ -169,7 +169,7 @@ Julia シンタックスハイライト
 LaTeX シンタックスハイライト
 
 ### language-nginx
-- https://atom.io/packages/search?q=language-nginx
+- https://atom.io/packages/language-nginx
 
 nginx シンタックスハイライト
 
@@ -177,6 +177,8 @@ nginx シンタックスハイライト
 - https://atom.io/packages/latex
 
 LaTeX ビルド
+
+Dockerで動くようにする記事: https://blog.aoirint.com/entry/2020/atom_latex_docker/
 
 ### markdown-preview-plus
 - https://atom.io/packages/markdown-preview-plus
