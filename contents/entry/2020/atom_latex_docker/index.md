@@ -5,6 +5,7 @@ title: Atom + LaTeX in Docker
 # twitter_card: summary_large_image
 og_description: AtomからLaTeX in Dockerを呼び出してTeX環境を整備する
 date: '2020-09-17 08:35:00'
+updated: '2021-05-14 01:00:00'
 draft: false
 category: LaTeX
 tags:
@@ -47,8 +48,13 @@ Atomからこれを利用できるようにする。
 sudo docker pull paperist/alpine-texlive-ja
 ```
 
-## non-root Docker
+## Docker
 `sudo`なしでDockerを実行できるようにする。AtomからDockerコンテナを作るのに必要。
+
+注意として、この方法で一般ユーザがDockerを使えるようにすると特権昇格できてしまうため、
+共有サーバにおいてはDocker 20.10以降のDocker rootlessを設定する。
+
+- https://docs.docker.com/engine/security/rootless/
 
 ユーザをdockerグループに追加したあと再ログインする。新しくdockerグループが作られた直後は`newgrp docker`しなければならないことがあり、シェルごとにこれを実行する必要があるようなのでAtomに反映されず、この場合OSの再起動が必要。
 
