@@ -20,6 +20,7 @@ Settings > Network > Network Proxy > Manualに設定する。
 
 - HTTP Proxy: `proxy` `port`
 - HTTPS Proxy: `proxy` `port`
+- Ignore Hosts: `localhost, 127.0.0.0/8, ::1`（プライベートネットワーク・組織内ネットワークのIPアドレス範囲またはドメインも追加する）
 
 curlやwget、pipなど主要コマンドは
 注意点として、別ユーザとしてコマンドを実行すると環境変数が引き継がれない。
@@ -49,6 +50,7 @@ Defaults env_keep+="EDITOR"
 ```
 HTTP_PROXY=http://proxy:port
 HTTPS_PROXY=http://proxy:port
+NO_PROXY=localhost, 127.0.0.0/8, ::1
 ```
 
 ## apt
