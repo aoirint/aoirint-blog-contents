@@ -32,7 +32,7 @@ build:
   services:
     - docker:dind
   rules:
-    - if: $CI_COMMIT_BRANCH == "master"
+    - if: $CI_COMMIT_BRANCH == "main"
   script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker build ./app -t $CI_REGISTRY_IMAGE:latest
