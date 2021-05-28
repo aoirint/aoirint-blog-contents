@@ -1,6 +1,6 @@
 ---
 canonical_url: ./
-title: GitLab CIでDockerイメージをビルドしてContainer Registryにpushする
+title: GitLab CI, DockerイメージをビルドしてContainer Registryにpushする
 date: '2021-05-29 02:00:00'
 draft: false
 category: GitLab
@@ -11,7 +11,7 @@ tags:
   - Docker
 ---
 
-# GitLab CIでDockerイメージをビルドしてContainer Registryにpushする
+# GitLab CI, DockerイメージをビルドしてContainer Registryにpushする
 
 ## リポジトリ構造
 
