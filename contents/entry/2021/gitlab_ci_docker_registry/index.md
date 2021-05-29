@@ -17,7 +17,7 @@ tags:
 
 - .gitlab-ci.yml
 - app/
-  - Dockerfile
+    - Dockerfile
 
 
 ## .gitlab-ci.yml
