@@ -103,7 +103,7 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 
 
 ## 非公開Wiki
-- https://docs.requarks.io/groups (Guides > Private Wiki)
+- [https://docs.requarks.io/groups](https://docs.requarks.io/groups) (`Guides > Private Wiki`)
 
 管理画面の`Users > Groups > Guests`のPermissionsをすべて無効にする。
 
