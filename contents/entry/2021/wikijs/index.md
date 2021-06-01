@@ -12,6 +12,9 @@ tags:
 
 # Wiki.jsのセットアップ
 
+- [https://js.wiki/get-started](https://js.wiki/get-started)
+- [無料とは思えない多機能っぷりなWikiインフラ「Wiki.js」レビュー、自前でホスト＆外部サービスと連携可能 - GIGAZINE](https://gigazine.net/news/20201003-wiki-js/)
+
 ## メモリ消費量
 
 ```shell
