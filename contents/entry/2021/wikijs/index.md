@@ -85,7 +85,9 @@ wikiサービスのポートの割り当てはホストのnginxからリバー�
 管理者アカウント作成後、インデックスページの作成を求められる。
 
 ![wikijs_first_page_1.png](images/wikijs_first_page_1.png)
+
 ![wikijs_first_page_2.png](images/wikijs_first_page_2.png)
+
 ![wikijs_first_page_3.png](images/wikijs_first_page_3.png)
 
 ## ロケール
