@@ -77,13 +77,13 @@ wikiサービスのポートの割り当てはホストのnginxからリバー�
 ## 初期設定
 ポートにアクセスすると初期（管理者）アカウントの設定を求められる。
 
-![wikijs_configure_first_account.png](/wikijs/wikijs_configure_first_account.png)
+![wikijs_configure_first_account.png](images/wikijs_configure_first_account.png)
 
 管理者アカウント作成後、インデックスページの作成を求められる。
 
-![wikijs_first_page_1.png](/wikijs/wikijs_first_page_1.png)
-![wikijs_first_page_2.png](/wikijs/wikijs_first_page_2.png)
-![wikijs_first_page_3.png](/wikijs/wikijs_first_page_3.png)
+![wikijs_first_page_1.png](images/wikijs_first_page_1.png)
+![wikijs_first_page_2.png](images/wikijs_first_page_2.png)
+![wikijs_first_page_3.png](images/wikijs_first_page_3.png)
 
 ## ロケール
 Wikiページの言語にあたる、ロケールの設定が悩ましいところ。
@@ -92,9 +92,9 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 
 マニュアル用のスクリーンショットは`en`で撮りたいが、ページの言語は`ja`なのでプレフィクスは`/ja`にしたい、というのは都度切り替えないとできないかもしれない。
 
-![wikijs_locale_en.png](/wikijs/wikijs_locale_en.png)
+![wikijs_locale_en.png](images/wikijs_locale_en.png)
 
-![wikijs_locale_ja.png](/wikijs/wikijs_locale_ja.png)
+![wikijs_locale_ja.png](images/wikijs_locale_ja.png)
 
 
 ## 非公開Wiki
@@ -102,14 +102,14 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 
 管理画面の`Users > Groups > Guests`のPermissionsをすべて無効にする。
 
-![wikijs_users_groups.png](/wikijs/wikijs_users_groups.png)
+![wikijs_users_groups.png](images/wikijs_users_groups.png)
 
-![wikijs_group_permissions.png](/wikijs/wikijs_group_permissions.png)
+![wikijs_group_permissions.png](images/wikijs_group_permissions.png)
 
 
 権限のないページを開くとUnauthorizedページが表示される。
 
-![wikijs_unauthorized.png](/wikijs/wikijs_unauthorized.png)
+![wikijs_unauthorized.png](images/wikijs_unauthorized.png)
 
 
 ## Gitリポジトリによる管理
@@ -131,7 +131,7 @@ Gitストレージを設定する前に投稿した記事や画像は変更が�
 条件は不明だが、内部エラーの影響か一部の画像ファイルがバージョン管理されないことがあった。
 再アップロードで解消するが若干の注意を要するかもしれない。
 
-![wikijs_git_storage.png](/wikijs/wikijs_git_storage.png)
+![wikijs_git_storage.png](images/wikijs_git_storage.png)
 
 
 Markdownページは、以下のようなYAMLヘッダ（Front Matter）がついたファイルとして保存される。
@@ -139,7 +139,7 @@ Markdownページは、以下のようなYAMLヘッダ（Front Matter）がつ�
 ```plain
 ---
 title: Wiki.jsのセットアップ
-description: 
+description:
 published: true
 date: 2021-06-01T19:27:44.133Z
 tags: wikijs, wiki
