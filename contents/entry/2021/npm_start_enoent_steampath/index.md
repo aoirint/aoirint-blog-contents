@@ -11,9 +11,8 @@ tags:
 
 # npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処
 
-gitでブランチを切り替えて依存関係に差分があるとき、
-node_modulesに正しい依存関係がインストールされていないことが
-原因らしい。
+gitでブランチを切り替えて依存関係に差分が生じたとき、
+node_modulesを修正していないときに起きる。
 
 ```
 Error: ENOENT: no such file or directory, stat '/home/USER/.steampath'
