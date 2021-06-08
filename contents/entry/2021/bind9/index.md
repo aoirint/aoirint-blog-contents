@@ -26,12 +26,12 @@ IP4.DNS[2]:                             8.8.4.4
 IP4.DNS[3]:                             1.1.1.1
 ```
 
-- [https://askubuntu.com/questions/152593/command-line-to-list-dns-servers-used-by-my-system](https://askubuntu.com/questions/152593/command-line-to-list-dns-servers-used-by-my-system)
+- [Command-line to list DNS servers used by my system - Ask Ubuntu](https://askubuntu.com/questions/152593/command-line-to-list-dns-servers-used-by-my-system)
 
 
 ## 用語
 
-- [http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
+- [BIND DNSサーバー構築 | CentOSサーバー構築入門](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
 
 ### コンテンツサーバ（権威サーバ）
 
@@ -39,15 +39,18 @@ IP4.DNS[3]:                             1.1.1.1
 
 ルートゾーン（FQDN: `.`）を管理するルートサーバは、TLD（例えば `jp.`）の権威サーバへの委任情報を持つ。
 
-- [https://jprs.jp/glossary/index.php?ID=0155](https://jprs.jp/glossary/index.php?ID=0155)
-- [https://jprs.jp/glossary/index.php?ID=0145](https://jprs.jp/glossary/index.php?ID=0145)
+ゾーン情報において、NSレコードにより指定される。
+
+- [JPRS用語辞典｜ルートゾーン](https://jprs.jp/glossary/index.php?ID=0155)
+- [JPRS用語辞典｜権威サーバー（権威DNSサーバー）](https://jprs.jp/glossary/index.php?ID=0145)
+- [JPRS用語辞典｜ネームサーバー（DNSサーバー）](https://jprs.jp/glossary/index.php?ID=0157)
 
 ### キャッシュサーバ（フルサービスリゾルバ）
 
 クライアントから名前解決要求（再帰問い合わせ）を受け取り、
 コンテンツサーバへ反復的に名前解決要求（反復問い合わせ）を送ることで任意のドメイン名の名前解決を行う。
 
-- [https://jprs.jp/glossary/index.php?ID=0158](https://jprs.jp/glossary/index.php?ID=0158)
+- [JPRS用語辞典｜フルサービスリゾルバー（キャッシュDNSサーバー）](https://jprs.jp/glossary/index.php?ID=0158)
 
 例えば`hoge.example.jp.`というドメインの名前解決要求を受け取ったとき、
 ルートサーバ`.`への非再帰問い合わせにより`jp.`権威サーバへの委任情報を取得する。
@@ -65,9 +68,9 @@ IP4.DNS[3]:                             1.1.1.1
 自身が管理していない情報（ゾーン、委任情報）に関する問い合わせについて、
 他のDNSサーバ（フルサービスリゾルバ）に問い合わせを回送するように設定する。
 
-- [https://www.atmarkit.co.jp/ait/articles/1510/28/news013.html](https://www.atmarkit.co.jp/ait/articles/1510/28/news013.html)
-- [http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
-- [http://ddns.blog.jp/archives/13568266.html](http://ddns.blog.jp/archives/13568266.html)
+- [「再帰問い合わせ」と「非再帰問い合わせ」の違いを教えてください：DNS Tips - ＠IT](https://www.atmarkit.co.jp/ait/articles/1510/28/news013.html)
+- [BIND DNSサーバー構築 | CentOSサーバー構築入門](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
+- [フォワード（回送） : お父さんのためのDNS講座](http://ddns.blog.jp/archives/13568266.html)
 
 ### デフォルト設定ファイル
 
@@ -109,7 +112,7 @@ forwarders {
 };
 ```
 
-- [https://www.isoroot.jp/blog/2929/](https://www.isoroot.jp/blog/2929/)
+- [初歩から解説！BINDでシンプルDNSサーバー構築【構築編】｜ 開発者ブログ ｜ 株式会社アイソルート](https://www.isoroot.jp/blog/2929/)
 
 
 ### 確認
@@ -129,7 +132,7 @@ aoirint.com.		3600	IN	A	185.199.110.153
 ...
 ```
 
-- [https://qiita.com/hana_shin/items/e99f64a01f2632b7a719](https://qiita.com/hana_shin/items/e99f64a01f2632b7a719)
+- [digコマンドの使い方 - Qiita](https://qiita.com/hana_shin/items/e99f64a01f2632b7a719)
 
 
 ## /etc/bind/named.conf.local
@@ -200,6 +203,6 @@ dev.example.com.		3600	IN	A	192.168.xx.xx
 ...
 ```
 
-- [https://www.isoroot.jp/blog/2929/](https://www.isoroot.jp/blog/2929/)
-- [https://www.atmarkit.co.jp/ait/articles/0306/03/news002_2.html](https://www.atmarkit.co.jp/ait/articles/0306/03/news002_2.html)
-- [https://qiita.com/m1220/items/e2093f8f5dc1a6ce9802](https://qiita.com/m1220/items/e2093f8f5dc1a6ce9802)
+- [初歩から解説！BINDでシンプルDNSサーバー構築【構築編】｜ 開発者ブログ ｜ 株式会社アイソルート](https://www.isoroot.jp/blog/2929/)
+- [サブドメインの運用と委任：実用 BIND 9で作るDNSサーバ（6）（2/3 ページ） - ＠IT](https://www.atmarkit.co.jp/ait/articles/0306/03/news002_2.html)
+- [bind9で内部向けDNS構築　（Ubuntu14.04 Server） - Qiita](https://qiita.com/m1220/items/e2093f8f5dc1a6ce9802)
