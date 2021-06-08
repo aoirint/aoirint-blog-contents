@@ -69,6 +69,8 @@ IP4.DNS[3]:                             1.1.1.1
 - [http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
 - [http://ddns.blog.jp/archives/13568266.html](http://ddns.blog.jp/archives/13568266.html)
 
+### デフォルト設定ファイル
+
 ```bind
 options {
         directory "/var/cache/bind";
@@ -97,6 +99,8 @@ options {
 };
 ```
 
+### 変更点
+
 ```
 forwarders {
         8.8.8.8;
@@ -107,6 +111,8 @@ forwarders {
 
 - [https://www.isoroot.jp/blog/2929/](https://www.isoroot.jp/blog/2929/)
 
+
+### 確認
 
 ```shell
 server$ systemctl restart bind9.service
