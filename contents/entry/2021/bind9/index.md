@@ -202,3 +202,4 @@ dev.example.com.		3600	IN	A	192.168.xx.xx
 
 - [https://www.isoroot.jp/blog/2929/](https://www.isoroot.jp/blog/2929/)
 - [https://www.atmarkit.co.jp/ait/articles/0306/03/news002_2.html](https://www.atmarkit.co.jp/ait/articles/0306/03/news002_2.html)
+- [https://qiita.com/m1220/items/e2093f8f5dc1a6ce9802](https://qiita.com/m1220/items/e2093f8f5dc1a6ce9802)
