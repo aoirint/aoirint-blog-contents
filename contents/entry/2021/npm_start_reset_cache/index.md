@@ -19,6 +19,7 @@ npm startでサーバを起動してコードの変更を監視したままの�
 
 ```shell
 npm start -- --reset-cache
+npm ci
 ```
 
 - [https://qiita.com/kt3k/items/758c4f3595ffd7e74f9f](https://qiita.com/kt3k/items/758c4f3595ffd7e74f9f)
