@@ -13,7 +13,7 @@ tags:
 
 ## 環境変数
 
-GUIで設定すればOK。
+シェル起動時にネットワーク設定からプロキシ設定を環境変数に読み出すようにしている場合、GUIで設定すればOK。
 
 ```bash
 export HTTP_PROXY=http://proxy.example.com:8080/
