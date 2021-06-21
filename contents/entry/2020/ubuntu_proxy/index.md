@@ -5,6 +5,7 @@ title: 'Ubuntu プロキシ設定'
 # twitter_card: summary_large_image
 og_description: 'Ubuntuにプロキシを設定する'
 date: '2020-10-02 15:40:00'
+updated: '2021-06-21 18:50:00'
 draft: false
 category: プロキシ
 tags:
@@ -82,3 +83,10 @@ Environment=https_proxy=http://proxy:port
 
 * [社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ](http://blog.livedoor.jp/tamanooboshi/archives/31598849.html "社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ")
 * [Set snapd proxy via core configuration - snapd - snapcraft.io](https://forum.snapcraft.io/t/set-snapd-proxy-via-core-configuration/467/21 "Set snapd proxy via core configuration - snapd - snapcraft.io")
+
+
+## 透過プロキシ
+
+プロキシ非対応のアプリケーションでもプロキシを通過させるようにする透過プロキシを利用すると便利。
+
+- [透過プロキシ（Ubuntu, go-transproxy）](https://blog.aoirint.com/entry/2021/transproxy_ubuntu/)
