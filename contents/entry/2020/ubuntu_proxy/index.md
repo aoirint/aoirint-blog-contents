@@ -6,7 +6,7 @@ title: 'Ubuntu プロキシ設定'
 og_description: 'Ubuntuにプロキシを設定する'
 date: '2020-10-02 15:40:00'
 draft: false
-category: Ubuntu
+category: プロキシ
 tags:
   - Ubuntu
   - Proxy
