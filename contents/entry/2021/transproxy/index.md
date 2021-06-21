@@ -34,7 +34,7 @@ NO_PROXYには必ずlocalhost/ローカルループバックアドレスを設�
 
 ## /usr/local/bin/transproxy
 
-- https://github.com/wadahiro/go-transproxy
+- [https://github.com/wadahiro/go-transproxy](https://github.com/wadahiro/go-transproxy)
 
 
 ## /usr/local/bin/transproxy-start
