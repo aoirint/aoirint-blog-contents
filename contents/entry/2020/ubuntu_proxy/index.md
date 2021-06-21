@@ -87,6 +87,6 @@ Environment=https_proxy=http://proxy:port
 
 ## 透過プロキシ
 
-プロキシ非対応のアプリケーションでもプロキシを通過させるようにする透過プロキシを利用すると便利。
+プロキシ非対応のHTTPアプリケーションでもプロキシを通過させるようにする透過プロキシを利用すると便利。
 
 - [透過プロキシ（Ubuntu, go-transproxy）](https://blog.aoirint.com/entry/2021/transproxy_ubuntu/)
