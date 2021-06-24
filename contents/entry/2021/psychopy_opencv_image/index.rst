@@ -56,3 +56,13 @@ y軸反転と画素値をfloat（0-1）に変換すればOK。
     window.flip()
 
     core.wait(3)
+
+    # while True:
+    #     stim.draw()
+    #     window.flip()
+    #
+    #     for keys in event.getKeys(timeStamped=True):
+    #         if keys[0] in [ 'escape', 'q' ]:
+    #             sys.exit(0)
+    #
+    #     core.wait(0.01)
