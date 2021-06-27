@@ -2,7 +2,8 @@
 canonical_url: ./
 title: Atom Text Editor Setup
 date: '2021-05-14 01:00:00'
-draft: false
+updated: '2021-06-27 17:00:00'
+draft: falses
 category: Editor
 tags:
   - Atom
@@ -81,6 +82,8 @@ project-manager
 project-view
 project-viewer
 tree-view-git-status
+language-haskell
+ide-haskell
 ```
 
 ### Sublime-Style-Column-Selection
