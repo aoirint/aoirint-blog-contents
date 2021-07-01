@@ -44,7 +44,7 @@ vimrcで`set expandtab`している場合にひっかかる。
 ```
 
 ### .vimrc
-```vimrc
+```vim
 set expandtab
 
 let _filename = expand('%:r')
