@@ -24,7 +24,9 @@ Docker Hubにアクセストークンを追加する。
 `DOCKER_PASSWORD`はアクセストークンを設定する。
 
 以下のファイルをリポジトリに追加する（ファイル名`docker.yml`は変更可）。
+
 mainブランチにgit pushされたとき、Dockerイメージのビルドが走り、イメージがDocker Hubにdocker pushされる。
+
 
 ## .github/workflows/docker.yml
 ```
