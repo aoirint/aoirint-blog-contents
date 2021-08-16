@@ -5,6 +5,7 @@ title: 'PulseAudioでマイク入力をスピーカから出力する'
 # twitter_card: summary_large_image
 og_description: 'PulseAudioでマイク入力をスピーカから出力する'
 date: '2020-10-04 03:40:00'
+updated: '2021-08-16 15:00:00'
 draft: false
 category: PulseAudio
 tags:
@@ -39,6 +40,12 @@ pactl list short sources
 
 ```sh
 pacmd load-module module-loopback source=6
+```
+
+名前を使って指定することもできる。
+
+```sh
+pacmd load-module module-loopback source=alsa_input.usb-GeneralPlus_USB_Audio_Device-00.analog-mono
 ```
 
 必要に応じて、`pavucontrol`を開いて出力先デバイスを設定する。
