@@ -1,5 +1,4 @@
 .. article::
-  :canonical_url: ./
   :date: 2021-02-14 22:00:00
   :category: Psychopy
   :tags: Python, Psychopy, OpenCV

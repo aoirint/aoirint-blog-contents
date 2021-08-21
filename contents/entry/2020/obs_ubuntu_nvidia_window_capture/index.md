@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
 # og_image:
 # twitter_card: summary_large_image

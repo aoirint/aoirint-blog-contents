@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Dockerイメージから内容物を抽出する
 # og_image:
 # twitter_card: summary_large_image

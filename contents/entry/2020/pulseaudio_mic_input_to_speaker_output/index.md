@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'PulseAudioでマイク入力をスピーカから出力する'
 # og_image:
 # twitter_card: summary_large_image

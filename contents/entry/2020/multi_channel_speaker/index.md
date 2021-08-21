@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: ArduinoのPWM信号をアナログスイッチで非同時マルチチャンネル音源として使う
 # og_image:
 # twitter_card: summary_large_image

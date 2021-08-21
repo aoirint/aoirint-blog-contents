@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: ESP32とFirebaseでIoTセンサシステムを構築する
 # og_image:
 # twitter_card: summary_large_image

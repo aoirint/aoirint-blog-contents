@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'docker-composeによるPython + Selenium環境'
 # og_image:
 # twitter_card: summary_large_image

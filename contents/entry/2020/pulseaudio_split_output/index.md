@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: PulseAudioで特定のアプリケーションからの音声出力だけを分離する
 # og_image:
 # twitter_card: summary_large_image

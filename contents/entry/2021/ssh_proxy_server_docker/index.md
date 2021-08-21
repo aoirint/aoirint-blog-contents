@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: SSH Port Forwardingを使ってNAT間で通信するPort Proxy Server in Docker
 # og_image:
 # twitter_card: summary_large_image

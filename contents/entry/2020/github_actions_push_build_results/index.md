@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'GitHub Actions, ビルド結果を別ブランチにpushする'
 # og_image:
 # twitter_card: summary_large_image

@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'Docker + Docker Compose on Vagrant Ubuntu Server'
 # og_image:
 # twitter_card: summary_large_image

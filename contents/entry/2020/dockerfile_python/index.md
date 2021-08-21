@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Pythonを追加するDockerfile
 # og_image:
 # twitter_card: summary_large_image

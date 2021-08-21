@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Makefile Tips
 date: '2021-07-01 13:00:00'
 draft: false

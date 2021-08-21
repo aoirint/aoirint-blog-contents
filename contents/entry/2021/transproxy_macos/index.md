@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 透過プロキシ（macOS, go-transproxy）
 date: '2021-06-21 18:40:00'
 draft: false

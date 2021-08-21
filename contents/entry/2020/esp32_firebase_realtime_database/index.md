@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: ESP32でFirebase Realtime Databaseを使う
 # og_image:
 # twitter_card: summary_large_image

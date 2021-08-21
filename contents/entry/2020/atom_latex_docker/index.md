@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Atom + LaTeX in Docker
 # og_image:
 # twitter_card: summary_large_image

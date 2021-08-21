@@ -1,5 +1,5 @@
 ---
-canonical_url: ./
+canonical_url ./
 title: GPU PC (Desktop) のセットアップメモ
 # og_image:
 # twitter_card: summary_large_image

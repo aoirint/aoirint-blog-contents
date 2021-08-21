@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'Ubuntu, pyenv環境でtkinterを使う'
 # og_image:
 # twitter_card: summary_large_image

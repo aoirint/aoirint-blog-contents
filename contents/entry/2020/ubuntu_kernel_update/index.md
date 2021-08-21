@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
 # og_image:
 # twitter_card: summary_large_image

@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'GitHub Actions, DockerイメージをビルドしてDocker Hubにpushする（アクセストークン）'
 date: '2021-07-10 10:10:00'
 draft: false

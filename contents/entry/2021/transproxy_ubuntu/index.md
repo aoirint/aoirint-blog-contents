@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 透過プロキシ（Ubuntu, go-transproxy）
 date: '2021-06-21 18:10:00'
 draft: false

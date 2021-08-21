@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: ソース公開するArduinoプログラムに秘密情報を埋め込む
 # og_image:
 # twitter_card: summary_large_image

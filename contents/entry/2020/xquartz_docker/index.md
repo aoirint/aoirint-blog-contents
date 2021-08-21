@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Docker Desktop for Mac上のX ClientをホストのXQuartz（X Window Server）で表示する
 # og_image:
 # twitter_card: summary_large_image
@@ -102,11 +101,11 @@ docker build . -t xeyes
 `"dns": [ "primary dns address", "secondary dns adderss" ]`のように設定を書き足して解決していた。
 
 ```
-failed to solve with frontend dockerfile.v0: 
-failed to create LLB definition: 
-failed to authorize: 
-rpc error: code = Unknown desc = failed to fetch oauth token: 
-Get https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io: 
+failed to solve with frontend dockerfile.v0:
+failed to create LLB definition:
+failed to authorize:
+rpc error: code = Unknown desc = failed to fetch oauth token:
+Get https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io:
 dial tcp 54.236.131.166:443: i/o timeout
 ```
 
@@ -156,4 +155,3 @@ docker run --rm -e DISPLAY=host.docker.internal:0 xeyes
 
 ## SSH X11 Forwardingを使う方法
 - [dockerコンテナの中で立ち上げたGUIアプリをmacに表示してみる - Qiita](https://qiita.com/machisuke/items/84626eba60ab76d8fc4e)
-

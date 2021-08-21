@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'docker-compose run --rm終了時に他のコンテナも削除する'
 # og_image:
 # twitter_card: summary_large_image

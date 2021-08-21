@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 # og_image:
 # twitter_card: summary_large_image

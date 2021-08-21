@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Open JTalk in Docker
 # og_image:
 # twitter_card: summary_large_image
@@ -108,7 +107,7 @@ All rights reserved.
 open_jtalk - The Japanese TTS system "Open JTalk"
 
   usage:
-       open_jtalk [ options ] [ infile ] 
+       open_jtalk [ options ] [ infile ]
   options:                                                                   [  def][ min-- max]
     -x  dir        : dictionary directory                                    [  N/A]
     -m  htsvoice   : HTS voice files                                         [  N/A]

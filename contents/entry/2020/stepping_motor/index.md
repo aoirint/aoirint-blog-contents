@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: ロータリエンコーダ付きステッピングモータをArduinoで制御して角度を取得する
 # og_image:
 # twitter_card: summary_large_image

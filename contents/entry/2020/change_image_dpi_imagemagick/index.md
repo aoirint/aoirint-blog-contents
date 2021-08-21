@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Imagemagickで画像のDPIを変更する
 # og_image:
 # twitter_card: summary_large_image

@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 'npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処'
 date: '2021-06-05 01:30:00'
 draft: false

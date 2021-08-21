@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Ubuntu/Raspberry Pi/Debianの時刻ずれを解消する
 # og_image:
 # twitter_card: summary_large_image

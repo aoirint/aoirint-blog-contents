@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: npm startで構文エラーが消えないときの対処
 date: '2021-06-05 01:30:00'
 draft: false

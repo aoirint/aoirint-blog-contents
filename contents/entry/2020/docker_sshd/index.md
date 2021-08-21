@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: Dockerでプロキシ・バーチャルホストに対応したSSH Serverを立てる
 # og_image:
 # twitter_card: summary_large_image

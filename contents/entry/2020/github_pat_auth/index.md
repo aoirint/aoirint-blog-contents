@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: GitHubのPAT認証手順（Ubuntu）
 # og_image:
 # twitter_card: summary_large_image

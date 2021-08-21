@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: arduino-cliの使い方
 # og_image:
 # twitter_card: summary_large_image

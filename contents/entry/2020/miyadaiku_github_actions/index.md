@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: 静的サイトジェネレータMiyadaiku + GitHub Actions + GitHub Pagesでブログを作る
 # og_image:
 # twitter_card: summary_large_image

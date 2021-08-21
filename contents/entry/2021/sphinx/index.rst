@@ -1,5 +1,4 @@
 .. article::
-  :canonical_url: ./
   :date: 2021-01-05 07:40:00
   :category: Blogging
   :tags: Python, Sphinx, Documentation, Blogging

@@ -1,5 +1,4 @@
 ---
-canonical_url: ./
 title: GitLab CI, DockerイメージをビルドしてContainer Registryにpushする
 date: '2021-05-29 02:00:00'
 draft: false
