@@ -13,6 +13,7 @@ tags:
 ## watchmedo (watchdog)
 
 - <https://github.com/gorakhargosh/watchdog>
+- <https://pypi.org/project/watchdog/>
 
 ```shell
 watchmedo shell-command -R --command 'make build' ./src
