@@ -19,7 +19,6 @@ watchmedo shell-command -R --command 'make build' ./src
 
 # プロセスが動いていても停止して再実行する
 watchmedo auto-restart -R -d ./src -- make serve
-
 ```
 
 ### インストール
