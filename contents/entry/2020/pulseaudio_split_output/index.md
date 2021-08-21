@@ -5,6 +5,7 @@ title: PulseAudioで特定のアプリケーションからの音声出力だけ
 # twitter_card: summary_large_image
 og_description: PulseAudioで特定のアプリケーションからの音声出力だけを分離する
 date: '2020-11-09 06:00:00'
+updated: '2021-08-22 04:20:00'
 draft: false
 category: PulseAudio
 tags:
@@ -31,4 +32,30 @@ pacmd load-module module-loopback source=DummyOutput0.monitor
 ```bash
 pacmd unload-module module-loopback
 pacmd unload-module module-null-sink
+```
+
+
+## ログイン時に自動作成する
+### /etc/pulse/default.pa
+
+```pulseaudio
+# Custom
+load-module module-null-sink sink_name=DummyOutputApp sink_properties=device.description="DummyOutputApp"
+load-module module-loopback source=DummyOutputApp.monitor
+
+load-module module-null-sink sink_name=DummyOutputVoiceChat sink_properties=device.description="DummyOutputVoiceChat"
+load-module module-loopback source=DummyOutputVoiceChat.monitor
+
+load-module module-null-sink sink_name=DummyOutputGeneral0 sink_properties=device.description="DummyOutputGeneral0"
+load-module module-loopback source=DummyOutputGeneral0.monitor
+
+load-module module-null-sink sink_name=DummyOutputGeneral1 sink_properties=device.description="DummyOutputGeneral1"
+load-module module-loopback source=DummyOutputGeneral1.monitor
+```
+
+### PulseAudioの再起動
+
+```shell
+pulseaudio --kill
+pulseaudio --start
 ```
