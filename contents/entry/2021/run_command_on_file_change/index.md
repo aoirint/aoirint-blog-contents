@@ -2,8 +2,10 @@
 title: ファイル変更時にコマンド実行（watchexec）
 date: '2021-08-22 06:30:00'
 draft: false
-category: Ubuntu
+category: Command Utility
 tags:
+  - Command Utility
+  - Rust
   - Ubuntu
 ---
 
