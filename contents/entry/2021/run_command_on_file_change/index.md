@@ -45,6 +45,7 @@ AttributeError: 'RootHandler' object has no attribute 'event_dispatch_map'
 
 ## watchexec
 - <https://github.com/watchexec/watchexec>
+- <https://crates.io/crates/watchexec-cli>
 - <https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes>
 
 ```shell
