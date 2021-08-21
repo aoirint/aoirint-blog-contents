@@ -10,8 +10,8 @@ tags:
 
 # Terraria TShockサーバをdocker-composeで立てる
 
-- https://github.com/Pryaxis/TShock
-- https://hub.docker.com/r/ryshe/terraria/
+- <https://github.com/Pryaxis/TShock>
+- <https://hub.docker.com/r/ryshe/terraria/>
 
 上記URLから最新（もしくは対応する）バージョンを確認して、イメージタグのバージョンを変更する。
 
@@ -116,7 +116,7 @@ group addperm guest tshock.world.movenpc
 group addperm guest tshock.npc.hurttown
 ```
 
-- https://www.reddit.com/r/Terraria/comments/354yle/tshock_help_turning_off_all_restrictions/
-- https://tshock.readme.io/docs/permissions
-- https://ch.nicovideo.jp/owenhousou/blomaga/ar580919
-  - https://web.archive.org/web/20210821201236/https://ch.nicovideo.jp/owenhousou/blomaga/ar580919 （ニコニコユーザブロマガがサービス終了するのでアーカイブ）
+- <https://www.reddit.com/r/Terraria/comments/354yle/tshock_help_turning_off_all_restrictions/>
+- <https://tshock.readme.io/docs/permissions>
+- <https://ch.nicovideo.jp/owenhousou/blomaga/ar580919>
+  - <https://web.archive.org/web/20210821201236/https://ch.nicovideo.jp/owenhousou/blomaga/ar580919> （ニコニコユーザブロマガがサービス終了するのでアーカイブ）
