@@ -6,6 +6,7 @@ category: Game
 tags:
   - Game
   - Terraria
+  - Docker
 ---
 
 # Terraria TShockサーバをdocker-composeで立てる

@@ -6,6 +6,7 @@ category: Network
 tags:
   - Network
   - SmokePing
+  - Docker
 ---
 
 # SmokePing in Docker
