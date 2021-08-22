@@ -4,7 +4,7 @@ title: GitHubのPAT認証手順（Ubuntu）
 # twitter_card: summary_large_image
 og_description: GitHubのPAT認証手順（Ubuntu）
 date: '2020-12-18 11:00:00'
-date: '2021-08-22 23:00:00'
+updated: '2021-08-22 23:00:00'
 draft: false
 category: GitHub
 tags:
