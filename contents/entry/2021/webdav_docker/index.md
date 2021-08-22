@@ -55,4 +55,4 @@ sudo apt install bindfs fuse-utils
 /src/path /dest/dav/data/path fuse.bindfs rw,user,uid=YOURUSER 0 0
 ```
 
-- https://www.netfort.gr.jp/~tosihisa/notebook/doku.php/bindfs
+- <https://www.netfort.gr.jp/~tosihisa/notebook/doku.php/bindfs>
