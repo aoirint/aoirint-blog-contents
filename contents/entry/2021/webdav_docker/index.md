@@ -39,3 +39,16 @@ services:
 ```
 
 以上の設定で、`dav://127.0.0.1:8000/webdav`にWebDAVサーバが立つ。
+
+データは`./dav/data`に格納される。
+
+
+## Optional: /etc/fstab
+
+シンボリックリンクは動作しないので、`bindfs`を使う。
+
+```
+/src/path /dest/dav/data/path fuse.bindfs rw,user,uid=YOURUSER 0 0
+```
+
+- https://www.netfort.gr.jp/~tosihisa/notebook/doku.php/bindfs
