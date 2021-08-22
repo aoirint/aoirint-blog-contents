@@ -13,7 +13,7 @@ tags:
 - <https://hub.docker.com/r/aoirint/webdav>
 
 以下のリポジトリをWindows 10のExplorerクライアントに対応させたDockerイメージ。
-ApacheのDAV機能でWebDAVサーバを立てる。
+Apache Web ServerのDAV機能でWebDAVサーバを立てる。
 
 - <https://github.com/BytemarkHosting/docker-webdav>
 
