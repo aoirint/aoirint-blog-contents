@@ -14,6 +14,8 @@ tags:
 
 # PulseAudioで特定のアプリケーションからの音声出力だけを分離する
 
+- <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-loopback>
+
 以下のコマンドで仮想出力デバイス`DummyOutput0`と、そのループバック`Loopback from Monitor of DummyOutput0`が追加される。
 
 ```bash
