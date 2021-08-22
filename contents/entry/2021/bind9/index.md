@@ -2,8 +2,9 @@
 title: bind9
 date: '2021-06-09 01:30:00'
 draft: false
-category: DNS
+category: Network
 tags:
+  - Network
   - DNS
   - bind9
 ---
