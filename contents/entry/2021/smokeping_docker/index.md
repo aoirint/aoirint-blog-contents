@@ -12,6 +12,13 @@ tags:
 
 - <https://hub.docker.com/r/dperson/smokeping>
 
+## Copy Configs
+```
+docker run --name smokeping --rm -d dperson/smokeping:latest
+docker cp smokeping:/etc/smokeping ./config
+docker rm -f smokeping
+```
+
 ## docker-compose.yml
 ```yaml
 version: '3.9'
