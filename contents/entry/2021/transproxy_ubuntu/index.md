@@ -2,9 +2,10 @@
 title: 透過プロキシ（Ubuntu, go-transproxy）
 date: '2021-06-21 18:10:00'
 draft: false
-category: プロキシ
+category: Network
 tags:
-  - プロキシ
+  - Network
+  - Proxy
   - Ubuntu
 ---
 

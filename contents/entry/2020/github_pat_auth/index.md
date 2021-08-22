@@ -8,7 +8,7 @@ draft: false
 category: GitHub
 tags:
   - GitHub
-  - 認証
+  - Authentication
 ---
 # GitHubのPAT認証手順（Ubuntu）
 

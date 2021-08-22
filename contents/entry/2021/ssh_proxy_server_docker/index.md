@@ -5,12 +5,12 @@ title: SSH Port Forwardingを使ってNAT間で通信するPort Proxy Server in 
 # og_description: テンプレート
 date: '2021-03-21 03:32:29'
 draft: false
-category: ネットワーク
+category: Network
 tags:
-  - ネットワーク
+  - Network
   - SSH
   - Docker
-  - TCP Proxy
+  - Proxy
 ---
 
 # SSH Port Forwardingを使ってNAT間で通信するPort Proxy Server in Docker

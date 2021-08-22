@@ -6,10 +6,11 @@ og_description: 'Ubuntuにプロキシを設定する'
 date: '2020-10-02 15:40:00'
 updated: '2021-06-21 18:50:00'
 draft: false
-category: プロキシ
+category: Network
 tags:
-  - Ubuntu
+  - Network
   - Proxy
+  - Ubuntu
   - 'PC Setup'
 ---
 # Ubuntu プロキシ設定
