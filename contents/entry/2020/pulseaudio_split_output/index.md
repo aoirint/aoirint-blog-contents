@@ -68,7 +68,7 @@ pulseaudio --start
 
 - <https://askubuntu.com/questions/1061414/how-to-disable-pulseaudio-automatic-device-switch>
 
-`source_dont_move=true`で入力デバイスの変更は防いでいるが、出力デバイスは切り替わる可能性がある。
+新しい出力デバイスが検出されたとき、デフォルト出力デバイスが切り替わるのを防ぐ。
 
 ### /etc/pulse/default.pa
 `load-module module-switch-on-port-available`、`load-module module-switch-on-connect`をコメントアウトする。
