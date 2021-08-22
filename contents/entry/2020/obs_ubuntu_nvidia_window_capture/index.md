@@ -4,6 +4,7 @@ title: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
 # twitter_card: summary_large_image
 og_description: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
 date: '2020-11-09 06:10:00'
+updated: '2021-08-22 11:30:00'
 draft: false
 category: OBS Studio
 tags:
@@ -25,3 +26,5 @@ Ubuntu + NVIDIA GPU環境では、OBS StudioでWindow Captureしようとする�
 正しく表示されるようになった。
 
 Ubuntu 18.04, X.Org X Server 1.19.6, GDM 3.28.3, NVIDIA Driver 440.33.01、OBS Studio 26.0.2 (64bit)で動作確認。
+
+OSの再起動や、フルスクリーンとウインドウ表示の切り替えなどが有効な場合もある。
