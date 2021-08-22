@@ -2,8 +2,9 @@
 title: Makefile Tips
 date: '2021-07-01 13:00:00'
 draft: false
-category: Make
+category: Command Utility
 tags:
+  - Command Utility
   - Make
   - Makefile
 ---
