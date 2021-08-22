@@ -4,6 +4,7 @@ title: GitHubのPAT認証手順（Ubuntu）
 # twitter_card: summary_large_image
 og_description: GitHubのPAT認証手順（Ubuntu）
 date: '2020-12-18 11:00:00'
+date: '2021-08-22 23:00:00'
 draft: false
 category: GitHub
 tags:
@@ -39,6 +40,9 @@ Gitの場合は接続先名を変えるために`git remote set-url`する必要
 
 `libgnome-keyring`の`git-credential-gnome-keyring`というのがあるが、`libgnome-keyring`が非推奨になっている（[linux - Error when using Git credential helper with gnome-keyring as Sudo - Stack Overflow](https://stackoverflow.com/a/40312117)、[[libgnome-keyring] Deprecate libgnome-keyring. Use libsecret instead](https://mail.gnome.org/archives/commits-list/2014-January/msg01585.html)）ようなので`libsecret`を使う（裏側では同じ`gnome-keyring`が動いているようだが）。
 どちらもほぼ手順は同じだが、開発用パッケージからソースコードを取得したあと、手動で`make`するという謎手順がある（\#パッケージマネージャとは）。これで一応保存時の暗号化（復元可能）は施された状態で永続化できる。
+
+パスワードを暗号化して保存するにはデスクトップ環境が必要で、サーバ上で利用する場合はSSH認証を使うのがよさそう。
+GitHubでは、リポジトリごとにDeploy Keysとして公開鍵を登録できる。
 
 
 ## libsecretの場合
