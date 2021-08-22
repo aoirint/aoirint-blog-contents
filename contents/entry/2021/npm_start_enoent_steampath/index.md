@@ -1,14 +1,16 @@
 ---
-title: 'npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処'
+title: 'npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処（React）'
 date: '2021-06-05 01:30:00'
+updated: '2021-08-22 22:30:00'
 draft: false
-category: Node.js
+category: React
 tags:
   - Node.js
   - npm
+  - React
 ---
 
-# npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処
+# npm startでError: ENOENT: no such file or directory ... .steampathで起動しないときの対処（React）
 
 gitでブランチを切り替えて依存関係に差分が生じたとき、
 node_modulesを修正していないときに起きる。
@@ -36,3 +38,5 @@ package-lock.jsonがないときは、手動でnode_modulesを削除するのが
 rm -rf node_modules/
 npm install
 ```
+
+ほかに、プログラムに構文エラーがあるときに起きることがある。この場合、`tsc`でエラー箇所を調べて直す。
