@@ -37,3 +37,5 @@ services:
     volumes:
       - ./dav:/var/lib/dav
 ```
+
+以上の設定で、`dav://127.0.0.1:8000/webdav`にWebDAVサーバが立つ。
