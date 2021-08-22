@@ -10,7 +10,7 @@ tags:
 
 # SmokePing in Docker
 
-- https://hub.docker.com/r/dperson/smokeping
+- <https://hub.docker.com/r/dperson/smokeping>
 
 ## docker-compose.yml
 ```yaml
