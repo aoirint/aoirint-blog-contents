@@ -13,7 +13,7 @@ tags:
 - <https://hub.docker.com/r/dperson/smokeping>
 
 ## Copy Configs
-```
+```shell
 docker run --name smokeping --rm -d dperson/smokeping:latest
 docker cp smokeping:/etc/smokeping ./config
 docker rm -f smokeping
