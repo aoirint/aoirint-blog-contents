@@ -1,8 +1,5 @@
 ---
-title: GitHubのPAT認証手順（Ubuntu）
-# og_image:
-# twitter_card: summary_large_image
-og_description: GitHubのPAT認証手順（Ubuntu）
+title: GitHubのPAT（Personal Access Token）認証手順（Ubuntu）
 date: '2020-12-18 11:00:00'
 updated: '2021-08-22 23:00:00'
 draft: false
@@ -11,7 +8,7 @@ tags:
   - GitHub
   - Authentication
 ---
-# GitHubのPAT認証手順（Ubuntu）
+# GitHubのPAT（Personal Access Token）認証手順（Ubuntu）
 
 GitHubがパスワードによるGitアクセスを無効化する（正確にはパーソナルアクセストークン認証を必須化する、だが現状SSH認証は残る）旨のアナウンスをした（[Token authentication requirements for Git operations - The GitHub Blog](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)）。
 
