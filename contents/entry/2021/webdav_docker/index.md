@@ -47,7 +47,11 @@ services:
 
 シンボリックリンクは動作しないので、`bindfs`を使う。
 
+```shell
+sudo apt install bindfs fuse-utils
 ```
+
+```fstab
 /src/path /dest/dav/data/path fuse.bindfs rw,user,uid=YOURUSER 0 0
 ```
 
