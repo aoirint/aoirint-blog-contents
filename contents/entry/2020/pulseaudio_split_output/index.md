@@ -95,5 +95,5 @@ pulseaudio --start
 - <https://extensions.gnome.org/extension/906/sound-output-device-chooser/>
 - <https://github.com/kgshank/gse-sound-output-device-chooser>
 
-PulseAudioを再帰度するとデバイス一覧に古い項目が残り、選択するとGnome Desktopがフリーズするバグがある。
+PulseAudioを再起動するとデバイス一覧に古い項目が残り、選択するとGnome Desktopがフリーズするバグがある。
 PulseAudio再起動後はAlt+F2でrコマンドを実行することで拡張機能がリロードされ、この問題を回避できる。
