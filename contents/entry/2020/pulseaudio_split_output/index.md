@@ -27,6 +27,7 @@ pacmd load-module module-loopback source=DummyOutput0.monitor source_dont_move=t
 希望のスピーカーにすることで音声出力を分離しつつ同時に視聴できる。
 
 `source_dont_move=true`は、デフォルトの入力デバイス変更時にLoopbackの入力デバイスも変更されてしまうのを防ぐオプション。
+`pavucontrol`からも変更できなくなる。
 
 仮想出力デバイスとループバックを削除するには、以下のコマンドを実行する。
 
