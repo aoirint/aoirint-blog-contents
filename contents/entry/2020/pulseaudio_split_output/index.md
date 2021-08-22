@@ -61,9 +61,11 @@ pulseaudio --kill
 pulseaudio --start
 ```
 
-## デバイス接続時の自動切り替えを無効化する
+## デバイス接続時の入出力デバイス自動切り替えを無効化する
 
 - <https://askubuntu.com/questions/1061414/how-to-disable-pulseaudio-automatic-device-switch>
+
+`source_dont_move=true`で入力デバイスの変更は防いでいるが、出力デバイスは切り替わる可能性がある。
 
 ### /etc/pulse/default.pa
 `load-module module-switch-on-port-available`、`load-module module-switch-on-connect`をコメントアウトする。
