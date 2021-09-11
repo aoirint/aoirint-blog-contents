@@ -23,7 +23,7 @@ CUDA Version: 11.4
 ```
 
 ## LibTorchのダウンロード
-- https://pytorch.org/
+- <https://pytorch.org/>
 
 Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 
@@ -34,7 +34,7 @@ Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 
 
 ## VOICEVOX Coreのダウンロード
-- https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1
+- <https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1>
 
 圧縮時・展開時ともに430MB。
 
@@ -54,7 +54,7 @@ source ~/.bashrc
 
 ## サンプルリポジトリをクローン
 
-- https://github.com/Hiroshiba/voicevox_core
+- <https://github.com/Hiroshiba/voicevox_core>
 
 ```shell
 git clone https://github.com/Hiroshiba/voicevox_core.git
@@ -83,7 +83,7 @@ python3 setup.py install --record files.txt
 `files.txt`にインストールされたファイル一覧が出力される。
 アンインストール時は、これらのファイルを手動で削除する。
 
-- https://qiita.com/orion0616/items/dfe476067e499cca8535
+- <https://qiita.com/orion0616/items/dfe476067e499cca8535>
 
 ### files.txt
 ```
@@ -124,11 +124,11 @@ CUDA_VISIBLE_DEVICES=1 python3 run.py --use_gpu --text "こんにちは" --speak
 ## その他参考
 `LD_LIBRARY_PATH`について調べていたが、コンパイル（`python3 setup.py install`）時に必要（`g++`が見に行くパス）なのは`LIBRARY_PATH`、実行時（`core`モジュールロード時）に必要なのは`LD_LIBRARY_PATH`ということらしかった。
 
-- https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891
+- <https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891>
 
 ---
 
-- https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html
-- https://please-sleep.cou929.nu/20080718.html
-- https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47
-- https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007
+- <https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html>
+- <https://please-sleep.cou929.nu/20080718.html>
+- <https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47>
+- <https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007>
