@@ -90,6 +90,11 @@ pip3 install .
 ```shell
 # coreモジュール（VOICEVOX Core Pythonライブラリ）のインストール
 python3 setup.py install --record files.txt
+
+
+# 失敗時
+python3 setup.py clean
+rm -rf build/ core.cpp
 ```
 
 `files.txt`にインストールされたファイル一覧が出力される。
