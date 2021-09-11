@@ -13,6 +13,10 @@ tags:
 Discourseをセットアップしようとしていたところ、いくつかのEmailプロバイダが紹介されていた。
 
 - <https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md>
+  - [Mailgun](https://www.mailgun.com/)
+  - [SendGrid](https://sendgrid.com/)
+  - [Mailjet](https://www.mailjet.com/pricing)
+  - [Elastic Email](https://elasticemail.com/)
 
 Discourseはセットアップにメールサーバが要求される。以前のMastodonのセットアップでは、Gmailとアプリパスワードを使った簡易セットアップを使ったが、経験積みとセキュリティ上の懸念から、今回はメールサーバを用意することにした。
 
