@@ -20,6 +20,8 @@ Python 3.9.6 (pyenv)
 NVIDIA-SMI 470.57.02
 Driver Version: 470.57.02
 CUDA Version: 11.4
+
+cuDNN 8.2.4
 ```
 
 ## LibTorchのダウンロード
@@ -72,12 +74,20 @@ cd example/python
 ```
 
 ## パッケージのインストール
-setuptoolsではなくdistutilsを使っているため、pipによるインストール・削除ができない。
 
 ```shell
 # 依存パッケージのインストール
 pip3 install -r requirements.txt
+```
 
+### pipを使ったインストール
+```shell
+# coreモジュール（VOICEVOX Core Pythonライブラリ）のインストール
+pip3 install .
+```
+
+### distutilsを使ったインストール
+```shell
 # coreモジュール（VOICEVOX Core Pythonライブラリ）のインストール
 python3 setup.py install --record files.txt
 ```
