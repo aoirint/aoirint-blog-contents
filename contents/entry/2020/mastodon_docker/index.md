@@ -4,7 +4,7 @@ title: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 # twitter_card: summary_large_image
 og_description: Mastodonをdocker-composeで立てる（Ubuntu 18.04）
 date: '2020-12-06 11:00:00'
-updated: '2020-12-22 02:40:00'
+updated: '2021-09-11 17:40:00'
 draft: false
 category: Mastodon
 tags:
@@ -159,9 +159,15 @@ docker run --rm --env-file ./.env.production tootsuite/mastodon:v3.2.1 bundle ex
 
 
 メールアドレス検証・通知などに使うメールサーバ（SMTPサーバ）を設定する。
+
 今回は面倒なので自分のGoogleアカウントを使用する。
 Googleアカウントの二段階認証が有効になっていることを確認し、
 Googleアカウント設定からメールに使用するアプリパスワードを生成する。
+
+実際は、SendGridなどのEメールプロバイダを使ってメールサーバを用意するのがよい。
+手順はドメインプロバイダ/DNSサーバにレコードを追加する程度なので、それほど難しくない。
+
+- [SendGrid - えやみぐさ](../../2021/sendgrid/)
 
 ```env
 # Sending mail
