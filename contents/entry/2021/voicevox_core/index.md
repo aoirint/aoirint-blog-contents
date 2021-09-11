@@ -1,5 +1,5 @@
 ---
-title: VOICEVOX CoreをUbuntuで使う（exampleを動かすまで）
+title: VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 date: '2021-09-11 23:40:00'
 draft: false
 category: 音声合成
@@ -8,7 +8,7 @@ tags:
   - Ubuntu
   - VOICEVOX
 ---
-# VOICEVOX CoreをUbuntuで使う（exampleを動かすまで）
+# VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 
 **※ VOICEVOX Coreにより生成した音声の利用にあたっては、VOICEVOX Coreの添付文書・利用規約を必ず確認し、従ってください。**
 
