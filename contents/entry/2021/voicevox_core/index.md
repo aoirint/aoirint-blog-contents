@@ -120,3 +120,15 @@ CUDAを使うアプリケーション一般に適用できる方法。数値は`
 CUDA_VISIBLE_DEVICES=0 python3 run.py --use_gpu --text "こんにちは" --speaker_id 0
 CUDA_VISIBLE_DEVICES=1 python3 run.py --use_gpu --text "こんにちは" --speaker_id 0
 ```
+
+## その他参考
+`LD_LIBRARY_PATH`について調べていたが、コンパイル（`python3 setup.py install`）時に必要（`g++`が見に行くパス）なのは`LIBRARY_PATH`、実行時（`core`モジュールロード時）に必要なのは`LD_LIBRARY_PATH`ということらしかった。
+
+- https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891
+
+---
+
+- https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html
+- https://please-sleep.cou929.nu/20080718.html
+- https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47
+- https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007
