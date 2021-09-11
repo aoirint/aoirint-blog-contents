@@ -103,14 +103,14 @@ python3 setup.py install --record files.txt
 ```shell
 python3 run.py --use_gpu --text "こんにちは" --speaker_id 0
 
-paplay './こんにちは-0.wav'
+paplay "./こんにちは-0.wav"
 ```
 
 ### ずんだもん
 ```shell
 python3 run.py --use_gpu --text "こんにちはなのだ" --speaker_id 1
 
-paplay './こんにちはなのだ-0.wav'
+paplay "./こんにちはなのだ-0.wav"
 ```
 
 ## 使用するGPUの変更（複数台のGPUが接続された環境）
