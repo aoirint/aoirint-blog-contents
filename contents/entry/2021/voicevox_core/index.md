@@ -108,14 +108,14 @@ rm -rf build/ core.cpp
 ***/lib/python3.9/site-packages/core-0.0.0-py3.9.egg-info
 ```
 
-## サンプルプログラムの改変
+## サンプルプログラム（run.py）の改変
 `core.initialize`の第1引数を`libcore.so`のあるディレクトリのパスに変更する。（末尾のスラッシュは必須）。
 
 ```python
     core.initialize("/home/user/local/voicevox_core/", use_gpu)
 ```
 
-## 改変したサンプルプログラムの実行
+## 改変したサンプルプログラム（run.py）の実行
 ### 四国めたん
 ```shell
 python3 run.py --use_gpu --text "こんにちは" --speaker_id 0
