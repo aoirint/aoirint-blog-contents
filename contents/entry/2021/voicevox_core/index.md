@@ -59,6 +59,8 @@ source ~/.bashrc
 ```shell
 git clone https://github.com/Hiroshiba/voicevox_core.git
 cd voicevox_core
+
+# 再現性のためにバージョンを固定、実際は最新版の使用を推奨
 git checkout 89d0962ab54269023fe0ec3170c7075744f38702
 ```
 
