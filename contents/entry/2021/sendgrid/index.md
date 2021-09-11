@@ -40,7 +40,11 @@ Discourseはセットアップにメールサーバが要求される。以前�
 
 !["authenticate a domain instead"をクリックする](images/authenticate_a_domain_instead.png)
 
-ドメインプロバイダの選択を求められる。
+- <https://app.sendgrid.com/settings/sender_auth/domain/create>
+
+![DNSホストの選択](images/authenticate_your_domain.png)
+
+ドメインプロバイダ（DNSホスト）の選択を求められる。
 お名前.comはリストになかったので、`Other Host (Not Listed)`を選択し続行する。
 あまり意味はないだろうが、Which DNS Hostにプロバイダ名を書いておく。
 
