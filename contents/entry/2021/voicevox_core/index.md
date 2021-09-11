@@ -97,7 +97,7 @@ python3 setup.py install --record files.txt
 
 - <https://qiita.com/orion0616/items/dfe476067e499cca8535>
 
-### files.txt
+#### files.txt
 ```
 ***/lib/python3.9/site-packages/core.cpython-39-x86_64-linux-gnu.so
 ***/lib/python3.9/site-packages/core-0.0.0-py3.9.egg-info
