@@ -98,7 +98,7 @@ rm -rf build/ core.cpp
 ```
 
 `files.txt`にインストールされたファイル一覧が出力される。
-アンインストール時は、これらのファイルを手動で削除する。
+アンインストール時は、`files.txt`に列挙されたファイルを手動で削除する。
 
 - <https://qiita.com/orion0616/items/dfe476067e499cca8535>
 
