@@ -1,6 +1,7 @@
 ---
 title: VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 date: '2021-09-11 23:40:00'
+updated: '2021-09-22 11:51:00'
 draft: false
 category: 音声合成
 tags:
@@ -11,6 +12,8 @@ tags:
 # VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 
 **※ VOICEVOX Coreにより生成した音声の利用にあたっては、VOICEVOX Coreの添付文書・利用規約を必ず確認し、従ってください。**
+
+- <https://github.com/Hiroshiba/voicevox_core>
 
 ```
 Ubuntu 20.04.3 LTS (Focal Fossa)
@@ -23,6 +26,17 @@ CUDA Version: 11.4
 
 cuDNN 8.2.4
 ```
+
+## VOICEVOX Coreのインタフェースについて
+
+VOICEVOX Coreは、深層学習モデルの推論部分だけを実装したプリミティブなインタフェースしか用意されていません。
+
+高級な前処理や後処理は実装されていないため、プリミティブなインタフェースを必要としていない場合は、VOICEVOX EngineのHTTP APIを使うことをおすすめします。
+
+VOICEVOX Engineは、公式Dockerイメージが公開されています。
+
+- <https://github.com/Hiroshiba/voicevox_engine>
+- <https://hub.docker.com/r/hiroshiba/voicevox_engine>
 
 ## LibTorchのダウンロード
 - <https://pytorch.org/>
