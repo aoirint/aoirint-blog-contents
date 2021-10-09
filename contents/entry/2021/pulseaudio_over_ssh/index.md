@@ -44,7 +44,7 @@ Host your-host
 ```pulseaudio
 load-module module-null-sink sink_name=DummyOutputRemote0 sink_properties=device.description="DummyOutputRemote0"
 load-module module-loopback source=DummyOutputRemote0.monitor source_dont_move=true
-````
+```
 
 接続先のデスクトップ上で音声出力デバイス（Sink）をDummyOutputRemote0に設定する。
 DummyOutputRemote0が表示されない場合、どこか設定が間違っていると思われる。
