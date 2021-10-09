@@ -41,7 +41,7 @@ Host your-host
     RemoteForward 14713 localhost:4713
 ```
 
-## 音声を送る側
+## 音声を送る側（SSH・VNC接続先）
 
 ### /pulse/default.pa
 
