@@ -13,6 +13,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 
 接続先のデスクトップで再生された音声をSSH経由で送信し、ローカルで再生できるようにする。
 
+- <https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink>
 
 ## 音声を受け取る側
 
