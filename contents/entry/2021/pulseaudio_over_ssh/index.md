@@ -25,6 +25,11 @@ load-module module-null-sink sink_name=DummyOutputRemote0 sink_properties=device
 load-module module-loopback source=DummyOutputRemote0.monitor source_dont_move=true
 ```
 
+DummyOutputRemote0に対して音声が送られてくる。
+
+DummyOutputRemote0.monitorで入力として音声を拾うこともできる。
+
+
 ### ~/.ssh/config
 
 ```pulseaudio
