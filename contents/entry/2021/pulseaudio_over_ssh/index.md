@@ -44,7 +44,7 @@ Host your-host
 
 ```pulseaudio
 load-module module-tunnel-sink sink_name=Remote server=tcp:127.0.0.1:14713 sink=DummyOutputRemote0
-````
+```
 
 接続先のデスクトップ上で音声出力デバイス（Sink）をDummyOutputRemote0に設定する。
 DummyOutputRemote0が表示されない場合、どこか設定が間違っていると思われる。
