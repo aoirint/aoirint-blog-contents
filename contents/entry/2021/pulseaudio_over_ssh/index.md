@@ -48,3 +48,6 @@ load-module module-loopback source=DummyOutputRemote0.monitor source_dont_move=t
 
 接続先のデスクトップ上で音声出力デバイス（Sink）をDummyOutputRemote0に設定する。
 DummyOutputRemote0が表示されない場合、どこか設定が間違っていると思われる。
+
+- 電源メニューから音声デバイスを変更できるようにするGNOME拡張
+    - https://extensions.gnome.org/extension/906/sound-output-device-chooser/
