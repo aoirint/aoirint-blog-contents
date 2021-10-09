@@ -79,7 +79,6 @@ pdf-view
 platformio-ide-terminal
 project-manager
 project-view
-project-viewer
 tree-view-git-status
 language-haskell
 ide-haskell
@@ -106,7 +105,7 @@ IDE機能のコア
 
 Ctrl + Shift + Tでターミナルウインドウを開く
 
-追記：統合型のターミナルを使いたくなったので、platformio-ide-terminalを使うようになりました。
+追記：統合型のターミナルを使いたくなったので、platformio-ide-terminalを使うようになった。
 
 ### autocomplete-python
 - [autocomplete-python](https://atom.io/packages/autocomplete-python)
@@ -213,10 +212,12 @@ Animation Speedを0にする。
 
 プロジェクトツリー（tree-view）にプロジェクトパスを表示
 
-### project-viewer
+### （廃止）project-viewer
 - [project-viewer](https://atom.io/packages/project-viewer)
 
 GUIで編集できるプロジェクト管理ツール
+
+追記：画面がせまくなる、画面共有と相性が悪いので使わなくなった。
 
 ### tree-view-git-status
 - [tree-view-git-status](https://atom.io/packages/tree-view-git-status)
