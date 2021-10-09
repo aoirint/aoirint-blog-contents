@@ -1,7 +1,7 @@
 ---
 title: Atom Text Editor Setup
 date: '2021-05-14 01:00:00'
-updated: '2021-06-27 17:00:00'
+updated: '2021-10-09 22:00:00'
 draft: false
 category: Editor
 tags:
