@@ -62,7 +62,6 @@ apm install --packages-file atom_packages.txt
 Sublime-Style-Column-Selection
 atom-beautify
 atom-ide-ui
-atom-terminus
 autocomplete-python
 convert-to-utf8
 document-outline
@@ -77,6 +76,7 @@ language-nginx
 latex
 markdown-preview-plus
 pdf-view
+platformio-ide-terminal
 project-manager
 project-view
 project-viewer
@@ -100,11 +100,13 @@ Shift + 左ボタンドラッグで矩形選択ができる
 
 IDE機能のコア
 
-### atom-terminus
+### （廃止）atom-terminus
 - [atom-terminus](https://atom.io/packages/atom-terminus)
 - fork of [atom-terminal](https://atom.io/packages/atom-terminal)
 
 Ctrl + Shift + Tでターミナルウインドウを開く
+
+追記：統合型のターミナルを使いたくなったので、platformio-ide-terminalを使うようになりました。
 
 ### autocomplete-python
 - [autocomplete-python](https://atom.io/packages/autocomplete-python)
@@ -196,6 +198,15 @@ Markdown プレビュー
 - [pdf-view](https://atom.io/packages/pdf-view)
 
 PDF プレビュー
+
+### platformio-ide-terminal
+- [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)
+
+統合型のターミナル機能。
+
+Windowsでは、シェルをGit Bashに変更する。
+
+Animation Speedを0にする。
 
 ### project-view
 - [project-view](https://atom.io/packages/project-view)
