@@ -34,7 +34,7 @@ DummyOutputRemote0.monitorで入力として音声を拾うこともできる。
 ### ~/.ssh/config
 
 ```pulseaudio
-Host your-host
+Host your-server
     # VNC
     LocalForward 15900 localhost:5900
     # PulseAudio
