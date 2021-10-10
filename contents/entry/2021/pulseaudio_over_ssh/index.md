@@ -15,7 +15,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 
 - <https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink>
 - <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-tunnel-sink-new>
-    - ドキュメントが古く、実際にはすでに`module-tunnel-sink`で動くようになっている（`pulseaudio 13.99.1`）
+    - ドキュメントが古く、`module-tunnel-sink-new`の実装はすでに`module-tunnel-sink`で動くようになっている（`pulseaudio 13.99.1`）
 
 ## 音声を受け取る側（SSH・VNCクライアント、PulseAudioサーバ）
 
