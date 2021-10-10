@@ -20,7 +20,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 ### /etc/pulse/default.pa
 
 ```pulseaudio
-load-module module-native-protocol-tcp auth-ip-acl=127.0.0.0/16
+load-module module-native-protocol-tcp auth-ip-acl=127.0.0.0/8
 
 load-module module-null-sink sink_name=DummyOutputRemote0 sink_properties=device.description="DummyOutputRemote0"
 load-module module-loopback source=DummyOutputRemote0.monitor source_dont_move=true
