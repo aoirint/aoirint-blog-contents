@@ -14,6 +14,8 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 接続先のデスクトップ（SSH・VNCサーバ）で再生された音声をSSH経由で送信し、SSH・VNCクライアント側で再生できるようにする。
 
 - <https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink>
+- <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-tunnel-sink-new>
+    - ドキュメントが古く、実際にはすでに`module-tunnel-sink`で動くようになっている（`pulseaudio 13.99.1`）
 
 ## 音声を受け取る側（SSH・VNCクライアント、PulseAudioサーバ）
 
