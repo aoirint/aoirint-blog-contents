@@ -17,7 +17,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 
 ## 音声を受け取る側（SSH・VNCクライアント）
 
-### /pulse/default.pa
+### /etc/pulse/default.pa
 
 ```pulseaudio
 load-module module-native-protocol-tcp auth-ip-acl=127.0.0.0/16
@@ -43,7 +43,7 @@ Host your-server
 
 ## 音声を送る側（SSH・VNCサーバ）
 
-### /pulse/default.pa
+### /etc/pulse/default.pa
 
 ```pulseaudio
 load-module module-tunnel-sink sink_name=Remote server=tcp:127.0.0.1:14713 sink=DummyOutputRemote0
