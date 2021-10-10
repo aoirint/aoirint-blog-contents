@@ -15,7 +15,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 
 - <https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink>
 
-## 音声を受け取る側（SSH・VNCクライアント）
+## 音声を受け取る側（SSH・VNCクライアント、PulseAudioサーバ）
 
 ### /etc/pulse/default.pa
 
@@ -41,7 +41,7 @@ Host your-server
     RemoteForward 14713 localhost:4713
 ```
 
-## 音声を送る側（SSH・VNCサーバ）
+## 音声を送る側（SSH・VNCサーバ、PulseAudioクライアント・サーバ＝中継用）
 
 ### /etc/pulse/default.pa
 
