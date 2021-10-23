@@ -4,7 +4,7 @@ title: 'Ubuntu プロキシ設定'
 # twitter_card: summary_large_image
 og_description: 'Ubuntuにプロキシを設定する'
 date: '2020-10-02 15:40:00'
-updated: '2021-06-21 18:50:00'
+updated: '2021-10-23 14:00:00'
 draft: false
 category: Network
 tags:
@@ -15,7 +15,7 @@ tags:
 ---
 # Ubuntu プロキシ設定
 
-## User (Desktop)
+## User (Desktop): Settings > Network > Network Proxy
 Settings > Network > Network Proxy > Manualに設定する。
 自動的に環境変数HTTP_PROXY, HTTPS_PROXYにスキームが追加された状態で設定される。
 
@@ -27,7 +27,7 @@ curlやwget、pipなど主要コマンドは
 注意点として、別ユーザとしてコマンドを実行すると環境変数が引き継がれない。
 例えばsudo curlしたときにプロキシに接続しにいかない。
 
-## sudoers environment keep
+## /etc/sudoers
 sudoでコマンドを実行したとき、実行時シェルに設定されている環境変数を引き継ぐようにする。
 sudoersは書き込み禁止になっているためvisudoで編集する。
 
@@ -47,21 +47,20 @@ Defaults env_keep+="EDITOR"
 システム全体の環境変数として設定される。影響範囲が大きいので注意。
 デスクトップユーザではSettings側の設定（Disabledなら設定されない）が優先されるようだった。
 
-/etc/environment
 ```
 HTTP_PROXY=http://proxy:port
 HTTPS_PROXY=http://proxy:port
 NO_PROXY=localhost, 127.0.0.0/8, ::1
 ```
 
-## apt
-/etc/apt/apt.conf
+## apt: /etc/apt/apt.conf
+
 ```
 Acquire::http::proxy "http://proxy:port";                             
 Acquire::https::proxy "http://proxy:port";
 ```
 
-## Snap
+## Snap: systemctl edit snapd.service
 /etc/systemd/system/snapd.service.d/override.confにsystemdの設定ファイルを作成する。
 
 ```sh
@@ -75,6 +74,7 @@ snap install ...
 ```
 
 /etc/systemd/system/snapd.service.d/override.conf
+
 ```systemd
 [Service]
 Environment=http_proxy=http://proxy:port
