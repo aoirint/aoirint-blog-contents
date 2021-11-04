@@ -183,8 +183,137 @@ docker-compose up -d --force-recreate
 
 一般ユーザの登録には、`/admin/register`にアクセスする。
 
-## フォントの追加
+## フォント（Noto Sans CJK JP）の追加
 
 - <https://github.com/overleaf/overleaf/issues/817>
 
 コンテナ内のシステム（`/usr/share/fonts`もしくは`/usr/local/share/fonts`）にフォントを追加すれば認識する。
+
+### Dockerfile
+```dockerfile
+# syntax=docker/dockerfile:1.3-labs
+FROM sharelatex/sharelatex:3
+
+RUN <<EOF
+    apt-get update
+    apt-get install -y \
+        fonts-noto-cjk
+    fc-cache
+EOF
+```
+
+### docker-compose.yml
+```yaml
+# ...
+services:
+  sharelatex:
+    # image: sharelatex/sharelatex:3
+    build: .
+    restart: always
+# ...
+```
+
+### .dockerignore
+```
+/data
+```
+
+### .gitignore
+```
+/data
+.env*
+```
+
+## 日本語組版（uplatex、jsarticle）
+
+※ Noto Sans CJK JPではない
+
+`Menu > Settings > Compiler`を`LaTeX`に設定する。
+
+### latexmkrc
+
+- <https://doratex.hatenablog.jp/entry/20180503/1525338512>
+
+```latexmkrc
+# https://doratex.hatenablog.jp/entry/20180503/1525338512
+$latex = 'uplatex';
+$bibtex = 'upbibtex';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$makeindex = 'mendex -U %O -o %D %S';
+$pdf_mode = 3;
+$ENV{TZ} = 'Asia/Tokyo';
+$ENV{OPENTYPEFONTS} = '/usr/share/fonts//:';
+$ENV{TTFONTS} = '/usr/share/fonts//:';
+```
+
+### main.tex
+```tex
+\documentclass[uplatex,10pt,a4paper,twocolumn]{jsarticle}
+
+% https://medemanabu.net/latex/vector/
+\usepackage{bm}
+
+% http://www.latex-cmd.com/equation/max_min.html
+\newcommand{\argmax}{\mathop{\rm argmax}\limits}
+\newcommand{\argmin}{\mathop{\rm argmin}\limits}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage[
+    %backend=biber,
+    natbib=true,
+    style=numeric,
+    sorting=none,
+    giveninits=true,
+    maxbibnames=99,
+    doi=false,isbn=false,url=false,eprint=false, % 表示圧縮
+]{biblatex}
+\addbibresource{main.bib}
+
+\title{First}
+\author{aoirint}
+\date{2021-11-05}
+
+\begin{document}
+
+\maketitle
+
+\section{背景}
+こんにちは
+
+\begin{equation}
+    f(x) = a^2 x + b x + c
+\end{equation}
+
+\begin{equation}
+    \argmin_{\bm w}\ ({\bm w}^{\rm T} {\bm x} - y)
+\end{equation}
+
+\section{手法}
+こんにちは
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=\linewidth]{figures/sample.pdf}
+%   \label{fig:sample}
+%   \caption{サンプル}
+% \end{figure}
+
+\section{実験}
+こんにちは
+
+\section{実験結果}
+こんにちは
+
+\section{考察}
+こんにちは
+
+\section{まとめ}
+こんにちは
+
+\printbibliography
+
+\end{document}
+```
