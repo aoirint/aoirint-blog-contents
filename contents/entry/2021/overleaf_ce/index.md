@@ -171,3 +171,5 @@ docker-compose exec sharelatex tlmgr install scheme-full
 初期状態では、`/launchpad`にアクセスすることで管理ユーザを作成できる（コマンドで作成も可）。
 
 一般ユーザの登録には、`/admin/register`にアクセスする。
+
+## TBW: LDAP
