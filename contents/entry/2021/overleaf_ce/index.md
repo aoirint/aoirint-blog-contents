@@ -145,7 +145,7 @@ REDIS_ROOT=./data/redis
 
 - <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide>
 
-## TeXLiveのフルインストール
+### TeXLiveのフルインストール
 
 TeXLiveのフルバージョンは巨大なため、Dockerイメージには最小構成のみが含まれている。
 フルバージョンを使うには、インストールコマンドを実行する必要がある。
@@ -175,7 +175,7 @@ docker-compose up -d --force-recreate
 
 - <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#latex-environment>
 
-## ユーザの登録
+### ユーザの登録
 
 - <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#creating-and-managing-users>
 
