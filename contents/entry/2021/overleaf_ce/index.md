@@ -22,6 +22,11 @@ Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド
 
 - <https://hub.docker.com/r/sharelatex/sharelatex/>
 
+クラウド版とCommunity Editionの機能の違いは、以下を参照。
+
+- <https://www.overleaf.com/for/enterprises/features>
+
+
 ## docker-compose.yml
 
 - <https://github.com/overleaf/overleaf/blob/a752bbefdd7ef3316aaf0c34302f08e6024aaadb/docker-compose.yml>
@@ -171,5 +176,3 @@ docker-compose exec sharelatex tlmgr install scheme-full
 初期状態では、`/launchpad`にアクセスすることで管理ユーザを作成できる（コマンドで作成も可）。
 
 一般ユーザの登録には、`/admin/register`にアクセスする。
-
-## TBW: LDAP
