@@ -160,4 +160,14 @@ docker-compose exec sharelatex tlmgr install scheme-full
 
 - http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html
 
-## TBW: ユーザの登録
+なお、公式Wikiでは、ローカル用のDockerイメージを作る方法が案内されている。
+
+- <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#latex-environment>
+
+## ユーザの登録
+
+- <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#creating-and-managing-users>
+
+初期状態では、`/launchpad`にアクセスすることで管理ユーザを作成できる（コマンドで作成も可）。
+
+一般ユーザの登録には、`/admin/register`にアクセスする。
