@@ -26,7 +26,7 @@ Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド
 
 - <https://www.overleaf.com/for/enterprises/features>
 
-Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。技術的な課題が背景にあるらしい。
+Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。クラウド版のGit管理はクローズドソースなファイル履歴APIを利用して実装されており、これが技術的課題になっているらしい。
 
 - <https://github.com/overleaf/overleaf/issues/782>
 - <https://github.com/overleaf/overleaf/issues/10>
