@@ -72,7 +72,7 @@ ERROR=$(mycommand | tee /dev/stderr)
 if [[ $? -ne 0 ]]; then
   SHORT_ERROR=${ERROR:0:1000}
   DATA=$(jq --arg key0 "text" --arg value0 "ERROR: $SHORT_ERROR" '. | .[$key0]=$value0' <<< '{}')
-  curl -X POST -H 'Content-type: application/json' --data "$DATA" "$WEBHOOK_URL" || true
+  curl -X POST -H 'Content-type: application/json' --data "$DATA" "$WEBHOOK_URL"
 fi
 ```
 
