@@ -26,10 +26,19 @@ Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド
 
 - <https://www.overleaf.com/for/enterprises/features>
 
+## Git管理
+
 Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。クラウド版のGit管理はクローズドソースなファイル履歴APIを利用して実装されており、これが技術的な課題になっているらしい。
 
 - <https://github.com/overleaf/overleaf/issues/782>
 - <https://github.com/overleaf/overleaf/issues/10>
+
+Overleaf上の履歴を使わないでよいのなら、ファイルは`/var/lib/sharelatex/data/compiles/{project_id}-{user_id}`に保存されるので、ここを監視して自動コミットするようなプログラムを使ってもいいかもしれない。
+
+```shell
+# 後者のIDがユーザIDであることの確認
+docker-compose exec mongo mongo sharelatex --eval "db.users.find()"
+```
 
 ## docker-compose.yml
 
