@@ -11,8 +11,8 @@ tags:
 
 オンラインLaTeXエディタのShareLaTeXとOverleafは、Overleaf v2として2017年に統合され、OverleafはShareLaTeXのエディタを使うようになった。
 
-- https://www.sharelatex.com/
-- https://ja.overleaf.com/blog/sharelatex-joins-overleaf-2017-07-20
+- <https://www.sharelatex.com/>
+- <https://ja.overleaf.com/blog/sharelatex-joins-overleaf-2017-07-20>
 
 Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド版と、セルフホスト可能なオープンソース版（Community Edition）が公開されている。
 
@@ -169,7 +169,7 @@ docker-compose exec sharelatex tlmgr install scheme-full
 docker-compose up -d --force-recreate
 ```
 
-- http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html
+- <http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html>
 
 なお、公式Wikiでは、ローカル用のDockerイメージを作る方法が案内されている。
 
