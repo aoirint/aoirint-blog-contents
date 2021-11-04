@@ -33,7 +33,7 @@ Git管理やGitHub連携については、Community Editionには実装されて
 - <https://github.com/overleaf/overleaf/issues/782>
 - <https://github.com/overleaf/overleaf/issues/10>
 
-Overleaf上の履歴を使わないでよいのなら、ファイルは`/var/lib/sharelatex/data/compiles/{project_id}-{user_id}`に保存されるので、ここを監視して自動コミットするようなプログラムを使ってもいいかもしれない。
+Overleafに管理させないでよいのなら、ファイルは`/var/lib/sharelatex/data/compiles/{project_id}-{user_id}`に保存されるので、ここを監視して自動コミットするようなプログラムを使ってもいいかもしれない。
 
 ```shell
 # 後者のIDがユーザIDであることの確認
