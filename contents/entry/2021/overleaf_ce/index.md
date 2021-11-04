@@ -224,6 +224,13 @@ services:
 .env*
 ```
 
+### 実行
+
+```shell
+DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose build
+docker-compose up -d
+```
+
 ## 日本語組版（uplatex、jsarticle）
 
 ※ Noto Sans CJK JPではない
