@@ -67,7 +67,7 @@ WORKDIR=/work
 WEBHOOK_URL=https://hooks.slack.com/services/***
 
 cd "$WORKDIR"
-ERROR=$(mycommand | tee /dev/stderr)
+ERROR=$(mycommand 2>&1 | tee /dev/stderr)
 
 if [[ $? -ne 0 ]]; then
   SHORT_ERROR=${ERROR:0:1000}
