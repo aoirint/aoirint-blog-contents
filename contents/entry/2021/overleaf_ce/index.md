@@ -1,5 +1,5 @@
 ---
-title: 'Self-Hosting Overleaf Community Edition'
+title: 'Overleaf Community Edition'
 date: '2021-11-05 05:00:00'
 draft: false
 category: LaTeX
@@ -7,7 +7,7 @@ tags:
   - Overleaf
   - ShareLaTeX
 ---
-# Self-Hosting Overleaf Community Edition
+# Overleaf Community Edition
 
 オンラインLaTeXエディタのShareLaTeXとOverleafは、Overleaf v2として2017年に統合され、OverleafはShareLaTeXのエディタを使うようになった。
 
