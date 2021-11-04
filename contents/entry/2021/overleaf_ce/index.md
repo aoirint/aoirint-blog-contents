@@ -26,7 +26,8 @@ Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド
 
 - <https://www.overleaf.com/for/enterprises/features>
 
-## Git管理
+## 使用できない機能
+### Git管理
 
 Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。クラウド版のGit管理はクローズドソースなファイル履歴APIを利用して実装されており、これが技術的な課題になっているらしい。
 
@@ -40,9 +41,18 @@ Overleafに管理させないでよいのなら、ファイルは`/var/lib/share
 docker-compose exec mongo mongo sharelatex --eval "db.users.find()"
 ```
 
+### テンプレート
+
+クラウド版・Pro版限定機能。
+
+- <https://github.com/overleaf/web/issues/203>
+- <https://github.com/overleaf/overleaf/issues/109>
+- <https://github.com/overleaf/overleaf/wiki/Server-Pro:-Setting-up-templates>
+
 ## docker-compose.yml
 
 - <https://github.com/overleaf/overleaf/blob/a752bbefdd7ef3316aaf0c34302f08e6024aaadb/docker-compose.yml>
+- <https://github.com/overleaf/overleaf/wiki/Configuring-Overleaf>
 
 ```yaml
 version: '3.9'
@@ -61,6 +71,7 @@ services:
       - "${DATA_ROOT}:/var/lib/sharelatex"
       - "${TEXLIVE_ROOT}:/usr/local/texlive"
     environment:
+      # https://github.com/overleaf/overleaf/wiki/Configuring-Overleaf
       SHARELATEX_APP_NAME: Overleaf Community Edition
       SHARELATEX_MONGO_URL: mongodb://mongo/sharelatex
       SHARELATEX_REDIS_HOST: redis
@@ -102,22 +113,6 @@ services:
       # SHARELATEX_EMAIL_SMTP_LOGGER: true
       # SHARELATEX_CUSTOM_EMAIL_FOOTER: "This system is run by department x"
 
-      ## Works with test LDAP server shown at bottom of docker compose
-      # SHARELATEX_LDAP_URL: 'ldap://ldap:389'
-      # SHARELATEX_LDAP_SEARCH_BASE: 'ou=people,dc=planetexpress,dc=com'
-      # SHARELATEX_LDAP_SEARCH_FILTER: '(uid={{username}})'
-      # SHARELATEX_LDAP_BIND_DN: 'cn=admin,dc=planetexpress,dc=com'
-      # SHARELATEX_LDAP_BIND_CREDENTIALS: 'GoodNewsEveryone'
-      # SHARELATEX_LDAP_EMAIL_ATT: 'mail'
-      # SHARELATEX_LDAP_NAME_ATT: 'cn'
-      # SHARELATEX_LDAP_LAST_NAME_ATT: 'sn'
-      # SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN: 'true'
-
-      # SHARELATEX_TEMPLATES_USER_ID: "578773160210479700917ee5"
-      # SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS: '[ {"name":"All Templates","url":"/templates/all"}]'
-
-      # SHARELATEX_PROXY_LEARN: "true"
-
   mongo:
     image: mongo:4.0
     restart: always
@@ -134,10 +129,6 @@ services:
     restart: always
     volumes:
       - "${REDIS_ROOT}:/data"
-
-  # ldap:
-  #  image: rroemhild/test-openldap
-  #  restart: always
 ```
 
 ## .env
@@ -174,6 +165,8 @@ docker-compose up -d
 docker-compose exec sharelatex tlmgr option repository https://mirror.ctan.org/systems/texlive/tlnet
 docker-compose exec sharelatex tlmgr update --self
 docker-compose exec sharelatex tlmgr install scheme-full
+
+docker-compose up -d --force-recreate
 ```
 
 - http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html
@@ -189,3 +182,9 @@ docker-compose exec sharelatex tlmgr install scheme-full
 初期状態では、`/launchpad`にアクセスすることで管理ユーザを作成できる（コマンドで作成も可）。
 
 一般ユーザの登録には、`/admin/register`にアクセスする。
+
+## フォントの追加
+
+- <https://github.com/overleaf/overleaf/issues/817>
+
+コンテナ内のシステム（`/usr/share/fonts`もしくは`/usr/local/share/fonts`）にフォントを追加すれば認識する。
