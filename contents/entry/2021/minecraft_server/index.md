@@ -81,7 +81,7 @@ ONLINE_MODE=true
 ** ※ 1.17.1でうまく動きませんでした（常にデフォルトのフラットワールドが生成される）。
 代わりに、クライアントでワールドを生成してからサーバにコピーする方法が使えます。 **
 
-- https://bugs.mojang.com/browse/MC-195468
+- <https://bugs.mojang.com/browse/MC-195468>
 
 ```env
 LEVEL_TYPE=flat
