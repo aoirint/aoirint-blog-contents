@@ -25,7 +25,7 @@ GitLab CI上で`pages`というジョブに`public`というパスのArtifactが
 
 - <https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_from_scratch.html#specify-a-stage-to-deploy>
 
-```
+```yaml
 image: ruby:2.7
 
 workflow:
