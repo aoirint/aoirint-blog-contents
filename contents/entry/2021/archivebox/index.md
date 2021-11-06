@@ -1,13 +1,13 @@
 ---
-title: Archivebox
+title: ArchiveBox
 date: '2021-11-06 23:00:00'
 draft: false
 category: WebClip
 tags:
   - WebClip
-  - Archivebox
+  - ArchiveBox
 ---
-# Archivebox
+# ArchiveBox
 
 - <https://github.com/ArchiveBox/ArchiveBox>
 - <https://hub.docker.com/r/archivebox/archivebox>
