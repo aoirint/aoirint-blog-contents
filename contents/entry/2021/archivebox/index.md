@@ -69,7 +69,7 @@ services:
     #        USE_COLOR: True
     #        SHOW_PROGRESS: False
     #    volumes:
-    #        - ./data:/dat
+    #        - ./data:/data
 ```
 
 ## .env
