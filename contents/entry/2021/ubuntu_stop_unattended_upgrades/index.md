@@ -1,5 +1,5 @@
 ---
-title: 'Ubuntu Unattended Upgradesを停止'
+title: 'Ubuntu 20.04, Unattended Upgradesを停止'
 date: '2021-11-08 07:30:00'
 draft: false
 category: Ubuntu
@@ -8,7 +8,7 @@ tags:
   - dpkg
   - apt
 ---
-# Ubuntu Unattended Upgradesを停止
+# Ubuntu 20.04, Unattended Upgradesを停止
 
 - <https://unix.stackexchange.com/questions/470709/how-do-i-stop-disable-unattended-upgrades-from-being-launched-automatically>
 
