@@ -13,7 +13,7 @@ tags:
 - <https://unix.stackexchange.com/questions/470709/how-do-i-stop-disable-unattended-upgrades-from-being-launched-automatically>
 
 勝手にnvidia driverの更新が走って、
-読み込まれてるdriverバージョンと、
+カーネルに読み込まれているdriverバージョンと、
 ディスク上にあるdriverバージョンが一致しなくなって、
 デスクトップアプリが起動しなくなったりする。
 
