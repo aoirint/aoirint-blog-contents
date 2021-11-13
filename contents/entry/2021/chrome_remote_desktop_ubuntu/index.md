@@ -27,7 +27,7 @@ cd /opt/google/chrome-remote-desktop
 cp chrome-remote-desktop chrome-remote-desktop.bak
 ```
 
-### /opt/google/chrome-remote-desktop
+### /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
 ```python
 #FIRST_X_DISPLAY_NUMBER = 20
