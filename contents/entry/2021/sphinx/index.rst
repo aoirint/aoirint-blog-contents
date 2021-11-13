@@ -132,7 +132,7 @@ CI,CDを整備する
 :code:`docs/build` ディレクトリを :code:`.gitignore` に追加し、
 GitHub ActionsやGitLab CIを使ってドキュメントの生成、GitHub PagesやGitLab Pagesへの自動デプロイを整備する。
 
-Docker化の例
+Docker化・GitHub Actions整備の例
 --------------------------------------------------
 
 * https://github.com/aoirint/sphinx-docs-test
