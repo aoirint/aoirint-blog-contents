@@ -1,3 +1,11 @@
+---
+title: 'Chrome Remote Desktop （Ubuntu）'
+date: '2021-11-13 17:40:00'
+draft: false
+category: Network
+tags:
+  - リモートデスクトップ
+---
 # Chrome Remote Desktop （Ubuntu）
 
 - <https://remotedesktop.google.com/access>
