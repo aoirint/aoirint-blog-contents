@@ -1,5 +1,6 @@
 .. article::
   :date: 2021-01-05 07:40:00
+  :updated: 2021-11-13 18:00:00
   :category: Blogging
   :tags: Python, Sphinx, Documentation, Blogging
   :draft: false
@@ -127,6 +128,11 @@ SphinxではデフォルトでreStructuredTextというマークアップ言語�
 CI,CDを整備する
 --------------------------------------------------
 
-自動生成されるHTMLをソースコードと同じブランチでGit管理するのはおいしくないので、
+自動生成されるHTMLをソースコードと同じブランチでGit管理したくはないので、
 :code:`docs/build` ディレクトリを :code:`.gitignore` に追加し、
 GitHub ActionsやGitLab CIを使ってドキュメントの生成、GitHub PagesやGitLab Pagesへの自動デプロイを整備する。
+
+GitHub Actionsの設定例
+==================================================
+
+* https://github.com/aoirint/sphinx-docs-test
