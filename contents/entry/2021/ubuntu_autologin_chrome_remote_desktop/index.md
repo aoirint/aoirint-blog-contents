@@ -1,4 +1,12 @@
-
+---
+title: 'Ubuntu 20.04, 自動ログイン＋Chrome Remote Desktopの起動時に繰り返し認証を求められる'
+date: '2021-11-13 17:50:00'
+draft: false
+category: Ubuntu
+tags:
+  - Ubuntu
+  - リモートデスクトップ
+---
 # Ubuntu 20.04, 自動ログイン＋Chrome Remote Desktopの起動時に繰り返し認証を求められる
 
 Chrome Remote Desktopを導入したUbuntu 20.04に自動ログインを設定すると、
