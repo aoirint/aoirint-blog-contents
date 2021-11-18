@@ -21,6 +21,7 @@ NVIDIAドライバのrunfileをダウンロードする（インストール済�
 chmod +x NVIDIA-Linux-x86_64-495.29.05.run
 ./NVIDIA-Linux-x86_64-495.29.05.run -x
 
+sudo chown -R root:root NVIDIA-Linux-x86_64-495.29.05/
 sudo mv NVIDIA-Linux-x86_64-495.29.05 /opt/
 ```
 
