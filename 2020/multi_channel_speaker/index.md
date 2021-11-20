@@ -121,12 +121,12 @@ Arduinoの3番ピン・GNDのとスピーカの端子（ダイナミックスピ
 
 図を[TC74HC4066A](https://www.marutsu.co.jp/pc/i/37603/)の[データシート](https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/TC74HC4066A.pdf)から引用していきます。
 
-<img src="TC74HC4066A_1.png" width="320px" height="320px" alt="TC74HC4066A_1">
+![TC74HC4066A_1](TC74HC4066A_1.png "TC74HC4066A_1")
 
 とりあえずArduinoの4、5、6、7番ピンをアナログスイッチのスイッチングに使います
 （ラインデコーダなんかを使って2bitにしてもよさそうですが）。
 これはデータシートから、それぞれIC側の13、5、6、12番ピン（1C、2C、3C、4C）に接続します。
 
-<img src="TC74HC4066A_2.png" width="288px" height="160px" alt="TC74HC4066A_2">
+![TC74HC4066A_2](TC74HC4066A_2.png "TC74HC4066A_2")
 
 各ピンがHighのときにn I/Oがn O/Iに出力されます。例えば、1C=Highのとき、1 O/I = 1 I/O（アナログ信号）になり、1C=Lowのとき、1 O/I=0 Vになります。

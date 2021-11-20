@@ -16,7 +16,7 @@ tags:
 このとき削除されるコンテナはforegroundで実行されたもののみで、
 `depends_on`などの設定からリンクを通じて起動した他サービスのdetachedコンテナは削除されず残り続ける。
 
-- [docker-compose run <container> --rm does not rm links · Issue #2791 · docker/compose](https://github.com/docker/compose/issues/2791 "docker-compose run <container> --rm does not rm links · Issue #2791 · docker/compose")
+- [docker-compose run &lt;container&gt; --rm does not rm links · Issue #2791 · docker/compose](https://github.com/docker/compose/issues/2791 "docker-compose run <container> --rm does not rm links · Issue #2791 · docker/compose")
 
 このissueでlinked containersを同時に削除する機能について議論されているが、
 `run`コマンドにオプションを増やしたくない、ということで却下されている。
