@@ -1,6 +1,7 @@
 ---
 title: 'Ubuntu 20.04, ネットワーク設定変更時の認証を回避する'
 date: '2021-11-29 20:30:00'
+updated: '2021-11-29 20:30:00'
 draft: false
 category: Ubuntu
 tags:
