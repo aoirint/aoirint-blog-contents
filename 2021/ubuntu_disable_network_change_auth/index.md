@@ -1,6 +1,6 @@
 ---
+title: 'Ubuntu 20.04, ネットワーク設定変更時の認証を回避する'
 date: '2021-11-29 20:30:00'
-title: 'Ubuntu 20.04, System policy prevents control of network connections'
 draft: false
 category: Ubuntu
 tags:
@@ -8,7 +8,7 @@ tags:
   - Network
 ---
 
-# Ubuntu 20.04, System policy prevents control of network connections
+# Ubuntu 20.04, ネットワーク設定変更時の認証を回避する
 
 Ubuntu 20.04にアップデートしてから、ネットワーク設定の変更時（接続のON/OFFなど）に`System policy prevents control of network connections`と表示され、認証を要求されるようになりました。
 
