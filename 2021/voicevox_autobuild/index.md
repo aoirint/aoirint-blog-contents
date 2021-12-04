@@ -34,11 +34,11 @@ VOICEVOXには、製品版VOICEVOXとOSS版VOICEVOXという2つのパッケー�
 
 通常のテキスト読み上げを目的とするユーザ（ソフトウェアトーク動画投稿者など）は、製品版VOICEVOXを使用しています。
 
-![製品版VOICEVOXの画像]()
+![製品版VOICEVOXのスクリーンショット]()
 
 OSS版VOICEVOXは、プロプライエタリリソースを含まない、OSS開発可能なリソースで構成されたパッケージです。
 
-![OSS版VOICEVOXの画像]()
+![OSS版VOICEVOXのスクリーンショット]()
 
 例えば、シロワニさん氏が2021年11月にリリースした無料の音声合成ソフトウェアCOEIROINKは、いまのところ、UIにOSS版VOICEVOXをforkして活用され、音声ライブラリは独自のものを搭載されています。
 
@@ -51,21 +51,24 @@ OSS版VOICEVOXは、プロプライエタリリソースを含まない、OSS開
 
 
 
-## VOICEVOXの構成
+## VOICEVOXの構成と開発
 
 **以下では、基本的にOSS版VOICEVOXについて言及しています。**
 
-VOICEVOXは、
+VOICEVOXは、いまのところ、
 Electron + Vuex フロントエンド [VOICEVOX](https://github.com/VOICEVOX/voicevox)、
 FastAPI HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)、
 音声ライブラリのインタフェースとなるライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)の3つから構成されています。
 
 このうち、
 [VOICEVOX フロントエンド](https://github.com/VOICEVOX/voicevox)、
-[VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)がOSS化され、コミュニティによる開発（コントリビューションの受け付け）が行われています。
+[VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)がOSS化され、コントリビューションの受け付けが行われています。
 
 また[VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)も、主要な実装のOSS化を計画しています。
 
+VOICEVOXは、[ヒホ氏による生放送](https://live.nicovideo.jp/watch/co3686550)（毎日23時ごろから3時間程度）、コミュニティDiscord、GitHub上のやり取り
+
+- <>
 
 ## 事前調査: Wine in Dockerによる製品版VOICEVOXの起動
 
