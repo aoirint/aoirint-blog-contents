@@ -131,7 +131,7 @@ VOICEVOXの開発は、[GitHub](https://github.com/VOICEVOX)、[ヒホ氏によ�
 
 ### VOICEVOX ENGINEのビルド自動化
 
-### VOICEVOX ソフトウェアのビルド自動化
+### VOICEVOX エディタのビルド自動化
 
 
 ## その他
