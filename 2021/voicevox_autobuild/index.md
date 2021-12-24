@@ -10,7 +10,8 @@ tags:
 ---
 # テキスト読み上げソフトVOICEVOXのビルドを自動化した
 
-こちらの記事は、[GitHub Actions Advent Calendar 2021](https://qiita.com/advent-calendar/2021/github-actions)の17日目の記事となります。
+こちらの記事は、[GitHub Actions Advent Calendar 2021](https://qiita.com/advent-calendar/2021/github-actions)の17日目の記事の予定でしたが、
+間に合わなかったので野良投稿です。
 
 実用的な用例などのある記事ではないかもですが、GitHub・GitHub Actionsに大変お世話になっているので、個人的に感謝をこめて。
 
@@ -21,6 +22,14 @@ tags:
 **VOICEVOXの今後の活躍と、開発の一助になればと思い、記事として作ってみました。**
 
 コンテキスト共有のために、ググりながら背景など記述してみますが、**正確でない表現が含まれている可能性があります**ので、ご注意くださいませ。
+
+## 目的
+
+この記事の目的は、以下のようなものです。
+
+- コミュニティに抱えている情報を落とすこと
+- 自分のモチベーションを再現性・持続性のあるものにすること
+- コミュニティを発展させ、プロダクトをより良いものにすること
 
 ## 背景
 
@@ -35,7 +44,7 @@ VOICEVOXは、ヒホ（ヒロシバ）氏が2021年8月にリリースした無�
 キャラクター音声合成を提供する既存のソフトウェア・サービスには、VOICEROID、CeVIO、A.I. VOICE、CoeFontなどがあります。
 <!-- また、汎用の音声合成エンジン（AquesTalkなど）を活用してキャラクターに声を当てる「ゆっくり実況」のような文化があります。 -->
 
-これらのソフトウェア・サービスはよく、ゲーム実況やキャラクター劇場動画などに使われています。
+キャラクター音声合成の利用例には、ゲーム実況やキャラクター劇場、解説動画などの動画作品（「[ソフトウェアトーク実況プレイ](https://www.nicovideo.jp/tag/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%88%E3%83%BC%E3%82%AF%E5%AE%9F%E6%B3%81%E3%83%97%E3%83%AC%E3%82%A4?sort=h&order=d)」「[VOICEROID劇場](https://www.nicovideo.jp/tag/VOICEROID%E5%8A%87%E5%A0%B4?sort=h&order=d)」など）があります。
 
 VOICEVOX 0.9現在、4人のキャラクター「四国めたん」「ずんだもん」「春日部つむぎ」「波音リツ」が利用可能です。
 
@@ -51,6 +60,21 @@ VOICEVOXの開発では、開発の便宜上、製品版VOICEVOX、OSS版VOICEVO
 
 - [VOICEVOXのOSSコミュニティ](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/public/ossCommunityInfos.md)
 - [VOICEVOXの全体構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md)
+
+### VOICEVOXの構成と開発
+
+VOICEVOXソフトウェアは、いまのところ、
+Electron + Vuex フロントエンド（エディター） [VOICEVOX](https://github.com/VOICEVOX/voicevox)、
+FastAPI HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)、
+音声合成の計算をするコアライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)の3つから構成されています。
+
+- [VOICEVOXの構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md#%E6%A7%8B%E6%88%90)
+
+[VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)は、0.9現在OSS開発の準備が完了しておらず、
+[推論実装を別リポジトリで公開](https://github.com/Hiroshiba/vv_core_inference/tree/539ca8f90de038471d22857ffdff496db2788009)した上で、ビルド済みバイナリのみを提供する形になっていますが、
+権利保護上必要な部分を除いた主要な実装のOSS化が計画されていて、計算ライブラリのLibTorch（TorchScript）からONNX Runtimeへの移行と合わせて進められています。
+
+VOICEVOXの開発は、[GitHub](https://github.com/VOICEVOX)、[ヒホ氏による開発生放送](https://live.nicovideo.jp/watch/co3686550)（毎日23時ごろから数時間程度）、[コミュニティDiscord](https://twitter.com/hk_coil424/status/1432351677026160641)を主なコミュニケーション場所として進められています。
 
 ### モチベーション
 
@@ -92,42 +116,10 @@ VOICEVOXの開発では、開発の便宜上、製品版VOICEVOX、OSS版VOICEVO
 
 0.5まで、製品版音声ライブラリは、製品版ソフトウェアに同梱されたWindows向け（DLL）のみ存在していたため、Wineや仮想環境を介さずネイティブ動作させることはできませんでした。
 
-[0.5.2](https://github.com/VOICEVOX/voicevox_core/releases/tag/0.5.2)で、Linux向けライブラリ（SO）を含む音声ライブラリ単体の提供が始まったので、その後のバージョンでソフトウェアのLinuxネイティブ対応や自動ビルドができるようになりました。
+[0.5.2](https://github.com/VOICEVOX/voicevox_core/releases/tag/0.5.2)で、Linux向けライブラリ（SO）を含む音声ライブラリ単体の提供が始まったので、
+その後のバージョンでソフトウェアのLinuxネイティブ対応や自動ビルドができるようになりました。
 
-### VOICEVOXの構成と開発
-
-VOICEVOXソフトウェアは、いまのところ、
-Electron + Vuex フロントエンド（エディター） [VOICEVOX](https://github.com/VOICEVOX/voicevox)、
-FastAPI HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)、
-音声合成の計算をするコアライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)の3つから構成されています。
-
-- [VOICEVOXの構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md#%E6%A7%8B%E6%88%90)
-
-[VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)は、0.9現在OSS開発の準備が完了しておらず、
-[推論実装を別リポジトリで公開](https://github.com/Hiroshiba/vv_core_inference/tree/539ca8f90de038471d22857ffdff496db2788009)した上で、ビルド済みバイナリのみを提供する形になっていますが、
-権利保護上必要な部分を除いた主要な実装のOSS化が計画されていて、計算ライブラリのLibTorch（TorchScript）からONNX Runtimeへの移行と合わせて進められています。
-
-VOICEVOXの開発は、[GitHub](https://github.com/VOICEVOX)、[ヒホ氏による開発生放送](https://live.nicovideo.jp/watch/co3686550)（毎日23時ごろから数時間程度）、[コミュニティDiscord](https://twitter.com/hk_coil424/status/1432351677026160641)を主なコミュニケーション場所として進められています。
-
-
-## 本題：テキスト読み上げソフトVOICEVOXのビルドを自動化した
-
-大きなお題目を打ってはいますが、実際には、いろいろな人の力が合わさって進められています。
-
-たしかにWindows・Linux向けバイナリの自動ビルドについて、主要部分の初期実装をしましたが、
-コアライブラリの自動ビルドや他OS対応はヒホ氏が実装していますし、
-バイナリ互換性などの面でもいろいろな人の助けを借りていて、
-またメンテナンス・改良が日々行われています。
-
-本格的なOSS貢献はVOICEVOXが初めてでしたが、手探りの中、温かいやり取りで非常にいい体験をすることができて、ありがたく思っています。
-
-というわけで、どういう風にビルド自動化を進めていったかを書いていきます。
-
-### VOICEVOX ENGINEのDockerイメージ化
-
-まず、VOICEVOX ENGINEのDockerイメージの作成を始めました。
-
-- <https://github.com/VOICEVOX/voicevox_engine/pull/86>
+### 過去のOSS貢献の経験
 
 OSSにプルリクエストを送った経験がほとんどなかったので、まずは小さいパッチを送って様子を見たいと思いました。
 
@@ -166,6 +158,27 @@ gitリポジトリからパッケージをインストールしたりが面倒�
 変更内容が小さかったので、機能提案ついでにパッチを作りましたが、Issueを立てて実装方針を確認・議論することがだいたい望ましいと思います。
 
 一度軽くコミュニケーションをとって、お互いの雰囲気や実装方針を読み取るために、まず小さなパッチを送ってみました。
+
+
+
+## 本題：テキスト読み上げソフトVOICEVOXのビルドを自動化した
+
+大きなお題目を打ってはいますが、実際には、いろいろな人の力が合わさって進められています。
+
+たしかにWindows・Linux向けバイナリの自動ビルドについて、主要部分の初期実装をしましたが、
+コアライブラリの自動ビルドや他OS対応はヒホ氏が実装していますし、
+バイナリ互換性などの面でもいろいろな人の助けを借りていて、
+またメンテナンス・改良が日々行われています。
+
+本格的なOSS貢献はVOICEVOXが初めてでしたが、手探りの中、温かいやり取りで非常にいい体験をすることができて、ありがたく思っています。
+
+というわけで、どういう風にビルド自動化を進めていったかを書いていきます。
+
+### VOICEVOX ENGINEのDockerイメージ化
+
+まず、VOICEVOX ENGINEのDockerイメージの作成を始めました。
+
+- <https://github.com/VOICEVOX/voicevox_engine/pull/86>
 
 
 大きなパッチを苦労して作っても、
