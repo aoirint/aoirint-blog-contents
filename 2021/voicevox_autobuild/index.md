@@ -54,25 +54,32 @@ VOICEVOX 0.9現在、4人のキャラクター「四国めたん」「ずんだ�
 
 ### 製品版VOICEVOXとOSS版VOICEVOX
 
-VOICEVOXの開発では、開発の便宜上、製品版VOICEVOX、OSS版VOICEVOXという呼称が使われることがあります。
+VOICEVOXは、キャラクター部分を除いてオープンソースで開発されています。
 
-これらの詳細については、リポジトリに載せられているドキュメントを参照するのがいいと思います。
+開発の便宜上、キャラクター部分が含まれるパッケージを製品版VOICEVOX、
+キャラクター部分が含まれないパッケージをOSS版VOICEVOXと呼ぶことがあります。
+
+詳細については、リポジトリに載せられているドキュメントを参照するようお願いします。
 
 - [VOICEVOXのOSSコミュニティ](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/public/ossCommunityInfos.md)
 - [VOICEVOXの全体構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md)
 
 ### VOICEVOXの構成と開発
 
-VOICEVOXソフトウェアは、いまのところ、
-Electron + Vuex フロントエンド（エディター） [VOICEVOX](https://github.com/VOICEVOX/voicevox)、
-FastAPI HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)、
-音声合成の計算をするコアライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)の3つから構成されています。
+VOICEVOXソフトウェアは0.9現在、
+
+- エディター [VOICEVOX](https://github.com/VOICEVOX/voicevox) （Node.js Electron + Vuex）
+- HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine) （Python FastAPI、OpenJTalk、Nuitka）
+- 音声合成の計算をするコアライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core) （PyTorch、C++、Cython）
+
+の3つから構成されています。
 
 - [VOICEVOXの構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md#%E6%A7%8B%E6%88%90)
 
 [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)は、0.9現在OSS開発の準備が完了しておらず、
-[推論実装を別リポジトリで公開](https://github.com/Hiroshiba/vv_core_inference/tree/539ca8f90de038471d22857ffdff496db2788009)した上で、ビルド済みバイナリのみを提供する形になっていますが、
-権利保護上必要な部分を除いた主要な実装のOSS化が計画されていて、計算ライブラリのLibTorch（TorchScript）からONNX Runtimeへの移行と合わせて進められています。
+[推論実装を別リポジトリで公開](https://github.com/Hiroshiba/vv_core_inference/tree/539ca8f90de038471d22857ffdff496db2788009)した上で、
+ビルド済みバイナリのみを提供する形になっていますが、
+キャラクター部分を除いた主要な実装のOSS化が計画されていて、計算ライブラリのLibTorch（TorchScript）からONNX Runtimeへの移行と合わせて進められています。
 
 VOICEVOXの開発は、[GitHub](https://github.com/VOICEVOX)、[ヒホ氏による開発生放送](https://live.nicovideo.jp/watch/co3686550)（毎日23時ごろから数時間程度）、[コミュニティDiscord](https://twitter.com/hk_coil424/status/1432351677026160641)を主なコミュニケーション場所として進められています。
 
