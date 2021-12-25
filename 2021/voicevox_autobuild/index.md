@@ -23,184 +23,28 @@ tags:
 
 コンテキスト共有のために、ググりながら背景など記述してみますが、**正確でない表現が含まれている可能性があります**ので、ご注意くださいませ。
 
+<!--
+    コンテキストの共有
+    モチベーションの確認
+    技術情報の共有
+-->
+
 ## 目的
 
 この記事の目的は、以下のようなものです。
 
-- コミュニティに抱えている情報を落とすこと
+- 自分の抱えている情報をコミュニティに落とすこと
 - 自分のモチベーションを再現性・持続性のあるものにすること
 - コミュニティを発展させ、プロダクトをより良いものにすること
 
-## 背景
-
-### VOICEVOXとは
-
-VOICEVOXは、ヒホ（ヒロシバ）氏が2021年8月にリリースした無料の音声合成ソフトウェアです。
-
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉<br />無料で使える中品質なテキスト音声合成ソフトウェア、<a href="https://twitter.com/hashtag/VOICEVOX?src=hash&amp;ref_src=twsrc%5Etfw">#VOICEVOX</a> をリリースしました<br />🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉<br /><br />ぜひダウンロードして遊んでみてください！<a href="https://t.co/6MMth631mf">https://t.co/6MMth631mf</a></p>&mdash; ヒホ（ヒロシバ）🗑️ (@hiho_karuta) <a href="https://twitter.com/hiho_karuta/status/1421485814400184323?ref_src=twsrc%5Etfw">July 31, 2021</a></blockquote>
-
-キャラクターイメージと音声ライブラリをセットにして提供する、キャラクター音声合成（話声合成）を主なターゲットとしているようです。
-
-キャラクター音声合成を提供する既存のソフトウェア・サービスには、VOICEROID、CeVIO、A.I. VOICE、CoeFontなどがあります。
-<!-- また、汎用の音声合成エンジン（AquesTalkなど）を活用してキャラクターに声を当てる「ゆっくり実況」のような文化があります。 -->
-
-キャラクター音声合成の利用例には、ゲーム実況やキャラクター劇場、解説動画などの動画作品（「[ソフトウェアトーク実況プレイ](https://www.nicovideo.jp/tag/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%88%E3%83%BC%E3%82%AF%E5%AE%9F%E6%B3%81%E3%83%97%E3%83%AC%E3%82%A4?sort=h&order=d)」「[VOICEROID劇場](https://www.nicovideo.jp/tag/VOICEROID%E5%8A%87%E5%A0%B4?sort=h&order=d)」など）があります。
-
-VOICEVOX 0.9現在、4人のキャラクター「四国めたん」「ずんだもん」「春日部つむぎ」「波音リツ」が利用可能です。
-
-また「四国めたん」「ずんだもん」は、4つのスタイル（声色、声質）「ノーマル」「あまあま」「ツンツン」「セクシー」が利用可能です（「ノーマル」は非公式名称）。
-
-![製品版VOICEVOX 0.9.3のスクリーンショット](images/voicevox_propr.png)
-
-### 製品版VOICEVOXとOSS版VOICEVOX
-
-VOICEVOXは、キャラクター部分を除いてオープンソースで開発されています。
-
-開発の便宜上、キャラクター部分が含まれるパッケージを製品版VOICEVOX、
-キャラクター部分が含まれないパッケージをOSS版VOICEVOXと呼ぶことがあります。
-
-詳細については、リポジトリに載せられているドキュメントを参照するようお願いします。
-
-- [VOICEVOXのOSSコミュニティ](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/public/ossCommunityInfos.md)
-- [VOICEVOXの全体構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md)
-
-### VOICEVOXの構成と開発
-
-VOICEVOXソフトウェアは0.9現在、
-
-- エディター [VOICEVOX](https://github.com/VOICEVOX/voicevox) （Node.js Electron + Vuex）
-- HTTP 音声合成サーバ [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine) （Python FastAPI、OpenJTalk、Nuitka）
-- 音声合成の計算をするコアライブラリ [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core) （PyTorch、C++、Cython）
-
-の3つから構成されています。
-
-- [VOICEVOXの構成](https://github.com/VOICEVOX/voicevox/blob/52a01ccba5e2c627298b8661e2df004f410b5594/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md#%E6%A7%8B%E6%88%90)
-
-[VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core)は、0.9現在OSS開発の準備が完了しておらず、
-[推論実装を別リポジトリで公開](https://github.com/Hiroshiba/vv_core_inference/tree/539ca8f90de038471d22857ffdff496db2788009)した上で、
-ビルド済みバイナリのみを提供する形になっていますが、
-キャラクター部分を除いた主要な実装のOSS化が計画されていて、計算ライブラリのLibTorch（TorchScript）からONNX Runtimeへの移行と合わせて進められています。
-
-VOICEVOXの開発は、[GitHub](https://github.com/VOICEVOX)、[ヒホ氏による開発生放送](https://live.nicovideo.jp/watch/co3686550)（毎日23時ごろから数時間程度）、[コミュニティDiscord](https://twitter.com/hk_coil424/status/1432351677026160641)を主なコミュニケーション場所として進められています。
-
-### モチベーション
-
-自分のモチベーションを把握しておきたいので、個人的なことになりますが、経緯を書いてみます。
-
-- 実質的な音声知識はほぼない
-    - OpenJTalkのTTS機能を使っていた
-    - 2019年5月頃に音声認識どうやったらできるのかスケッチを描いていた
-        - 既存手法もまったく知らないので、むずかしそうだなぁということがわかった
-    - 2019年6月頃にMLP 音声認識を積んでいた
-        - 既存手法を知りたかった
-    - 2021年5月頃に音声分析合成を積んでいた
-        - CoeFont（4月）と七声ニーナ（5月）が背景
-    - 2021年6月頃にA.I.VOICE 琴葉葵・茜を購入
-- 深層学習
-    - 流行ったときに画像系でChainer・PyTorchでちょっとした論文実装を書いたり書かなかったり
-- 開発
-    - Java、ちょっとだけPHP経験を背景
-    - Web、ちょっとだけモバイル
-    - Python、ちょっとだけTypeScriptが書ける
-    - Dockerイメージをよく作っている
-
-音声合成界隈には、VOICEROID・ソフトウェアトーク動画などを通じて興味を持っていました。
-
-8月1日の朝9時ごろ、東北ずん子公式さんのツイートがTLに流れてきました。
-
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">こちらが、めたんちゃん、ずんだもんの音声合成ソフトVOICEVOXになりますo(≧▽≦)o<a href="https://t.co/khcYXoN0pR">https://t.co/khcYXoN0pR</a> <a href="https://t.co/tb09I4K5dI">pic.twitter.com/tb09I4K5dI</a></p>&mdash; 東北ずん子(公式)💚12月23日26時25分から東北放送でTV放送 (@t_zunko) <a href="https://twitter.com/t_zunko/status/1421485817319546884?ref_src=twsrc%5Etfw">July 31, 2021</a></blockquote>
-
-無料で使えるいい感じの品質の音声合成ソフトがあるらしいぞ、ということで、これをきっかけにして、ふだん自分が使っている環境のLinux（Ubuntu）上での動作を試み始めました。
-
-この時点ではWindowsバイナリのみの提供でしたが、もともと個人的に、他のWindowsバイナリしかない研究用ライブラリをLinux上で動かすために、
-[Wine in Docker環境を作成していた](https://twitter.com/aoirint/status/1381667075341447169)ので、
-それを改変してVOICEVOXソフトウェアを動かしてみました。
-
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/WuOGw8LUTj">pic.twitter.com/WuOGw8LUTj</a></p>&mdash; aoi🌱 (@aoirint) <a href="https://twitter.com/aoirint/status/1424142369046155268?ref_src=twsrc%5Etfw">August 7, 2021</a></blockquote>
-
-初期のバージョン（上の動画は0.1.1）では、ちょっと音声がかすれ気味だったり、CPU版での合成に長めの時間がかかったりしていました。
-これについては、バージョンが上がることで音声品質や合成速度にも調整が加えられています。
-
-0.5まで、製品版音声ライブラリは、製品版ソフトウェアに同梱されたWindows向け（DLL）のみ存在していたため、Wineや仮想環境を介さずネイティブ動作させることはできませんでした。
-
-[0.5.2](https://github.com/VOICEVOX/voicevox_core/releases/tag/0.5.2)で、Linux向けライブラリ（SO）を含む音声ライブラリ単体の提供が始まったので、
-その後のバージョンでソフトウェアのLinuxネイティブ対応や自動ビルドができるようになりました。
-
-### 過去のOSS貢献の経験
-
-OSSにプルリクエストを送った経験がほとんどなかったので、まずは小さいパッチを送って様子を見たいと思いました。
-
-- <https://github.com/miyadaiku/miyadaiku/pull/43>
-- <https://github.com/miyadaiku/miyadaiku/pull/44>
-
-身内以外へのプルリクエストは、上のMiyadaikuというPython製静的サイトジェネレータが初めてでした。
-
-前々から追加したい機能があって、fork・改造して使っていたのですが、
-本家にアップデートがあるたびにマージコミットを作ったりrebaseしたり、
-gitリポジトリからパッケージをインストールしたりが面倒だったので、
-取り込んでもらえないか試してみることにしました。
-
-似た機能の要望Issueが自分の望む方法とは別の方法で実装されていて、
-それでは目的を達成できませんでした。
-
-いきなり機能追加提案やパッチを送っても、受け入れられるかよくわかりませんでした。
-
-そもそも機能提案やプルリクエストを受け付けているのか、
-開発上どういうルールがあるのか（開発の進め方とか、方針とか、コードフォーマットとか）、
-メンテナの人となり、
-
-メンテナにとっても、誰かよくわからない人が送ってきたパッチよりも、
-過去にいい貢献をしてくれた人が送ってきたパッチのほうがポジティブに見ることができるかなと勝手に思っています。
-機能提案があったとき、それがプロジェクトの方針に合っているか判断する必要があります。
-
-相手が勘違いしていて的外れなことを言っている場合もあれば、
-意図をうまく伝えられず、勘違いされてしまう場合もあると思っています。
-
-実装や方針、プロジェクトで大切にしていることを読み取っておかなければ、ただ迷惑をかけたり、手間をかけさせたりしただけになってしまいます。
-
-小さなパッチがRejectされても、
-
-
-自分が使う上でバグを見つけていたので、まず小さいバグ修正パッチを送り、それから機能追加提案にあたるパッチを送りました。
-変更内容が小さかったので、機能提案ついでにパッチを作りましたが、Issueを立てて実装方針を確認・議論することがだいたい望ましいと思います。
-
-一度軽くコミュニケーションをとって、お互いの雰囲気や実装方針を読み取るために、まず小さなパッチを送ってみました。
-
-
-
-## 本題：テキスト読み上げソフトVOICEVOXのビルドを自動化した
-
-大きなお題目を打ってはいますが、実際には、いろいろな人の力が合わさって進められています。
-
-たしかにWindows・Linux向けバイナリの自動ビルドについて、主要部分の初期実装をしましたが、
-コアライブラリの自動ビルドや他OS対応はヒホ氏が実装していますし、
-バイナリ互換性などの面でもいろいろな人の助けを借りていて、
-またメンテナンス・改良が日々行われています。
-
-本格的なOSS貢献はVOICEVOXが初めてでしたが、手探りの中、温かいやり取りで非常にいい体験をすることができて、ありがたく思っています。
-
-というわけで、どういう風にビルド自動化を進めていったかを書いていきます。
-
-### VOICEVOX ENGINEのDockerイメージ化
-
-まず、VOICEVOX ENGINEのDockerイメージの作成を始めました。
-
-- <https://github.com/VOICEVOX/voicevox_engine/pull/86>
-
-
-大きなパッチを苦労して作っても、
-
-
-開発中に、
-
-
-### VOICEVOX ENGINEのLinux対応
-
-### VOICEVOX ENGINEのビルド自動化
-
-### VOICEVOX エディタのビルド自動化
-
-
-## その他
-
-[0.8.0](https://github.com/VOICEVOX/voicevox_core/releases/tag/0.8.0)で、macOS向けライブラリ（dylib）の提供が始まったので、macOS対応が進められていて、0.10以降でのmacOS対応を見据えて、すでに動作する非公式ビルドが作成されています。
+## 構成
+
+いろいろと書いておきたいことがあって、1つの記事にまとめると手に負えなくなったり、情報が入り乱れて読みにくくなったりしそうだったので、
+いくつかの記事に分割しました。読みたい部分だけ読んでいただければ幸いです。
+
+- [コンテキスト共有編](../voicevox_autobuild_context/)
+- [モチベーション編](../voicevox_autobuild_motivation/)
+- 技術情報の共有
+    - [ENGINE Dockerイメージ作成編](../voicevox_autobuild_engine_docker/)
+    - [ENGINE バイナリ自動ビルド編](../voicevox_autobuild_engine_binary/)
+    - [エディタ バイナリ自動ビルド編](../voicevox_autobuild_editor_binary/)
