@@ -1,6 +1,7 @@
 ---
 title: Makefile Tips
 date: '2021-07-01 13:00:00'
+updated: '2022-01-14 22:40:00'
 draft: false
 category: Command Utility
 tags:
@@ -68,4 +69,35 @@ Makeは本来Cのコンパイルなどに使うとき、ターゲット名に一
 .PHONY: cmd
 cmd:
 	ls
+```
+
+## 複数のコマンドを1つのシェルで実行する
+
+```makefile
+cmd:
+	echo Hello;\
+	VAR=World;\
+	echo $$VAR
+```
+
+```makefile
+.ONESHELL: cmd
+cmd:
+	echo "Hello"
+	VAR=World
+	echo $$VAR
+```
+
+## 途中のコマンドの終了ステータスを返す
+
+- <https://stackoverflow.com/a/44324918>
+
+```makefile
+.ONESHELL: cmd
+.PHONY: cmd
+cmd:
+	sh -c 'exit 123'
+	EXIT_CODE=$$?
+	echo "Exit code: $$EXIT_CODE"
+	exit $$EXIT_CODE
 ```
