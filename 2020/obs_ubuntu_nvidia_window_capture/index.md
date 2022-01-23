@@ -1,10 +1,7 @@
 ---
-title: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
-# og_image:
-# twitter_card: summary_large_image
-og_description: OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
+title: OBS Studio on Ubuntu 20.04 + NVIDIA GPUでWindow Captureを動作させる
 date: '2020-11-09 06:10:00'
-updated: '2021-08-22 11:30:00'
+updated: '2022-01-23 11:50:00'
 draft: false
 category: OBS Studio
 tags:
@@ -12,19 +9,18 @@ tags:
   - 'Ubuntu'
 ---
 
-# OBS Studio on Ubuntu + NVIDIA GPUでWindow Captureを動作させる
+# OBS Studio on Ubuntu 20.04 + NVIDIA GPUでWindow Captureを動作させる
+
+- [Bug Report - [SOLVED] Window Capture Black Screen | OBS Forums](https://obsproject.com/forum/threads/solved-window-capture-black-screen.47082/)
 
 Ubuntu + NVIDIA GPU環境では、OBS StudioでWindow Captureしようとすると
 一部のアプリケーションで黒画面の表示になり動作しない。
 おそらくOpenGLで描画しているものが対象。
 
-- [Bug Report - [SOLVED] Window Capture Black Screen | OBS Forums](https://obsproject.com/forum/threads/solved-window-capture-black-screen.47082/)
+いくつか対処法の候補がある。
 
-私の環境では
-`Window Capture (Xcomposite)`の設定欄をスクロールして
-`Use alpha-less texture format (Mesa workaround)`にチェックを入れることで
-正しく表示されるようになった。
-
-Ubuntu 18.04, X.Org X Server 1.19.6, GDM 3.28.3, NVIDIA Driver 440.33.01、OBS Studio 26.0.2 (64bit)で動作確認。
-
-OSの再起動や、フルスクリーンとウインドウ表示の切り替えなどが有効な場合もある。
+- Alt+F2から`r`を入力して実行
+- アプリケーションをフルスクリーン表示からウインドウ表示に切り替える
+- アプリケーションをウインドウ表示からフルスクリーン表示に切り替える
+- `Window Capture (Xcomposite)`の設定欄をスクロールして、`Use alpha-less texture format (Mesa workaround)`にチェックを入れる
+- OSを再起動（GPUドライバに更新が入ったときなど）
