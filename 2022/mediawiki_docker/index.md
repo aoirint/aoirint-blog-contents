@@ -95,11 +95,11 @@ server {
 
 1. 拡張機能の配布ファイル（tar.gz）をサーバにダウンロード
 2. 配布ファイルを展開
-3. 展開した拡張機能ディレクトリを<code>app/extensions</code>以下にコピー（<code>app/extensions/Math</code>のように）
-    - Dockerコンテナ内では<code>/var/www/html/extensions/Math</code>のように配置される
-4. <code>LocalSettings.php</code>に<code>wfLoadExtension( '拡張機能ディレクトリ名' );</code>のように追記
-    - <code>wfLoadExtension( 'Math' );</code>
-    - <code>wfLoadExtension( 'SyntaxHighlight_GeSHi' );</code>
+3. 展開した拡張機能ディレクトリを`app/extensions`以下にコピー（`app/extensions/Math`のように）
+    - Dockerコンテナ内では`/var/www/html/extensions/Math`のように配置される
+4. `LocalSettings.php`に`wfLoadExtension( '拡張機能ディレクトリ名' );`のように追記
+    - `wfLoadExtension( 'Math' );`
+    - `wfLoadExtension( 'SyntaxHighlight_GeSHi' );`
 5. 「メンテナンス：再起動」を実行
 6. 「メンテナンス：データベース構造の更新」を実行
 
@@ -126,7 +126,7 @@ $wgLogos = [ '1x' => "$wgResourceBasePath/images/logo.png" ];
 #### 手順
 
 1. LocalSettings.phpを編集
-2. ロゴ画像を<code>app/images/logo.png</code>に配置
+2. ロゴ画像を`app/images/logo.png`に配置
 3. 「メンテナンス：再起動」を実行
 
 ### 既定のタイムゾーンを変更
