@@ -1,5 +1,5 @@
 ---
-title: VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
+title: VOICEVOX Core 0.5.1をUbuntu + GPU + Pythonで使う（exampleを動かすまで）
 date: '2021-09-11 23:40:00'
 updated: '2022-02-03 10:30:00'
 draft: false
@@ -9,7 +9,7 @@ tags:
   - Ubuntu
   - VOICEVOX
 ---
-# VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
+# VOICEVOX Core 0.5.1をUbuntu + GPU + Pythonで使う（exampleを動かすまで）
 
 **※ VOICEVOX Coreにより生成した音声の利用にあたっては、VOICEVOX Coreの添付文書・利用規約を必ず確認し、従ってください。**
 
@@ -72,6 +72,16 @@ VOICEVOX Engineでは、フルコンテキストラベルやVOICEVOX Coreを使�
 VOICEVOXエディタでは、調声用のデータ構造を操作して、アクセント位置、音高（日本語ではイントネーションと同じらしい）、音素長を調声するUIなどが実装されています。
 
 </details>
+
+## LibTorch版とONNX版について
+
+VOICEVOXは、0.10から深層学習モデル推論時ののバックエンドをLibTorchからONNX Runtimeに移行しました。
+
+この記事では、VOICEVOX 0.9までのLibTorch版コアを前提にしています（最初に記事を書いたときは0.5.1でした）。
+
+PythonでVOICEVOX Coreを使う手順はリポジトリにドキュメントがあるので参照してください（時間があればそのうち記事を書くかもです）。
+
+- <https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core>
 
 ## LibTorchのダウンロード
 - <https://pytorch.org/>
