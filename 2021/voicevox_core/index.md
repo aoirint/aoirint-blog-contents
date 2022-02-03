@@ -79,7 +79,7 @@ VOICEVOXは、0.10から深層学習モデル推論時ののバックエンド�
 
 この記事では、VOICEVOX 0.9までのLibTorch版コアを前提にしています（最初に記事を書いたときは0.5.1でした）。
 
-PythonでVOICEVOX Coreを使う手順はリポジトリにドキュメントがあるので参照してください（時間があればそのうち記事を書くかもです）。
+PythonでONNX版のVOICEVOX Coreを使う手順はリポジトリにドキュメントがあるので参照してください（時間があればそのうち記事を書くかもです）。
 
 - <https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core>
 
