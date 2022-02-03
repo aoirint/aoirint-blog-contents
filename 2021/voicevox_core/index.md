@@ -75,7 +75,7 @@ VOICEVOXエディタでは、調声用のデータ構造を操作して、アク
 
 ## LibTorch版とONNX版について
 
-VOICEVOXは、0.10から深層学習モデル推論時ののバックエンドをLibTorchからONNX Runtimeに移行しました。
+VOICEVOXは、0.10から深層学習モデル推論時のバックエンドをLibTorchからONNX Runtimeに移行しました。
 
 この記事では、VOICEVOX 0.9までのLibTorch版コアを前提にしています（最初に記事を書いたときは0.5.1でした）。
 
