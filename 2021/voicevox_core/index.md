@@ -27,7 +27,7 @@ CUDA Version: 11.4
 cuDNN 8.2.4
 ```
 
-## VOICEVOX Coreのインタフェースについて
+## VOICEVOXの音声合成の仕組みについて
 
 VOICEVOXの音声合成の仕組みについては、以下の記事が参考になるかもしれません。
 
@@ -44,7 +44,7 @@ VOICEVOX Engineは、公式Dockerイメージが公開されています。
 - <https://github.com/Hiroshiba/voicevox_engine>
 - <https://hub.docker.com/r/hiroshiba/voicevox_engine>
 
-### VOICEVOXの音声合成の仕組みについて
+### VOICEVOX Coreのインタフェースについて
 
 <details>
 
