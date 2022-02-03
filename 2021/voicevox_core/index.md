@@ -1,7 +1,7 @@
 ---
 title: VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 date: '2021-09-11 23:40:00'
-updated: '2021-09-22 11:51:00'
+updated: '2022-02-03 9:40:00'
 draft: false
 category: 音声合成
 tags:
@@ -29,9 +29,15 @@ cuDNN 8.2.4
 
 ## VOICEVOX Coreのインタフェースについて
 
-VOICEVOX Coreには、深層学習モデルの推論部分だけを実装したプリミティブなインタフェースしか用意されていません。
+VOICEVOXは、テキストの解析にOpenJTalkを使用していますが、VOICEVOX Coreにこの実装は含まれていません。
 
-高級な前処理や後処理は実装されていないため、プリミティブなインタフェースを必要としていない場合は、VOICEVOX Coreを内蔵した、VOICEVOX EngineのHTTP APIを使うことをおすすめします。
+VOICEVOXの音声合成の仕組みについては、以下の記事が参考になるかもしれません。
+
+- [VOICEVOXの音声合成エンジンの紹介 | Hiho's Blog](https://blog.hiroshiba.jp/voicevox-engine-introduction/)
+
+HMM音声合成のフルコンテキストラベルなどの音声合成の専門知識がない場合、VOICEVOX Coreを直接利用するのは難しいと思います。
+
+簡易にTTSを利用したい場合には、VOICEVOX EngineのHTTP APIを使うことをおすすめします。
 
 VOICEVOX Engineは、公式Dockerイメージが公開されています。
 
