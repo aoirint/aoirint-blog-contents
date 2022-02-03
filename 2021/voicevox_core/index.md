@@ -29,20 +29,49 @@ cuDNN 8.2.4
 
 ## VOICEVOX Coreのインタフェースについて
 
-VOICEVOXは、テキストの解析にOpenJTalkを使用していますが、VOICEVOX Coreにこの実装は含まれていません。
-
 VOICEVOXの音声合成の仕組みについては、以下の記事が参考になるかもしれません。
 
 - [VOICEVOXの音声合成エンジンの紹介 | Hiho's Blog](https://blog.hiroshiba.jp/voicevox-engine-introduction/)
 
-HMM音声合成のフルコンテキストラベルなどの音声合成の専門知識がない場合、VOICEVOX Coreを直接利用するのは難しいと思います。
+VOICEVOX Coreを効果的に使うには、ある程度音声合成の専門知識が必要になると思います。
 
 簡易にTTSを利用したい場合には、VOICEVOX EngineのHTTP APIを使うことをおすすめします。
+
+- [voicevox_engine API Document](https://voicevox.github.io/voicevox_engine/api/)
 
 VOICEVOX Engineは、公式Dockerイメージが公開されています。
 
 - <https://github.com/Hiroshiba/voicevox_engine>
 - <https://hub.docker.com/r/hiroshiba/voicevox_engine>
+
+### VOICEVOXの音声合成の仕組みについて
+
+<details>
+
+わたしは音声合成については素人ですが、参考のため現在の理解を書いておきます。
+
+VOICEVOX Coreでは、
+「音素ごとの長さの推定 `replace_phoneme_length / yukarin_s_forward`」、
+「モーラごとの音高の推定 `replace_mora_pitch / yukarin_sa_forward`」、
+「音声波形の推定 `synthesis / decode_forward`」の3つの深層学習モデルを使って音声合成します。
+
+OpenJTalkには、辞書に基づいてテキストを解析し、アクセント句・モーラ・アクセント位置・疑問文フラグなどの情報で構成された
+フルコンテキストラベルというデータに変換する機能があります。
+
+フルコンテキストラベルの仕様は、以下のURLを開き、
+`HTS-2.3 > Speaker dependent training demo > Japanese > tar.bz2`から`HTS-demo_NIT-ATR503-M001.tar.bz2`をダウンロード・展開し、
+`data/lab_format.pdf`を見ると英語で記述されています。
+
+- <https://hts.sp.nitech.ac.jp/?Download#u879c944>
+- <https://twitter.com/hiho_karuta/status/1059845813143138304>
+
+VOICEVOX ENGINEでは、フルコンテキストラベルやVOICEVOX Coreを使って、
+テキストを調声用のデータ構造（AudioQuery）に変換し、
+また調声用のデータ構造を音声（Wav）に変換します。
+
+VOICEVOXエディタでは、調声用のデータ構造を操作して、アクセント位置、音高（イントネーション）、音素長を調声するUIなどが実装されています。
+
+</details>
 
 ## LibTorchのダウンロード
 - <https://pytorch.org/>
