@@ -1,7 +1,7 @@
 ---
 title: VOICEVOX CoreをUbuntu/GPUで使う（exampleを動かすまで）
 date: '2021-09-11 23:40:00'
-updated: '2022-02-03 9:40:00'
+updated: '2022-02-03 10:30:00'
 draft: false
 category: 音声合成
 tags:
@@ -65,7 +65,7 @@ OpenJTalkには、辞書に基づいてテキストを解析し、アクセン�
 - <https://hts.sp.nitech.ac.jp/?Download#u879c944>
 - <https://twitter.com/hiho_karuta/status/1059845813143138304>
 
-VOICEVOX ENGINEでは、フルコンテキストラベルやVOICEVOX Coreを使って、
+VOICEVOX Engineでは、フルコンテキストラベルやVOICEVOX Coreを使って、
 テキストを調声用のデータ構造（AudioQuery）に変換し、
 また調声用のデータ構造を音声（Wav）に変換します。
 
