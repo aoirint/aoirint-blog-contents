@@ -27,7 +27,7 @@ CUDA Version: 11.4
 cuDNN 8.2.4
 ```
 
-## VOICEVOXの音声合成の仕組みについて
+## VOICEVOXを使った音声合成について
 
 VOICEVOXの音声合成の仕組みについては、以下の記事が参考になるかもしれません。
 
