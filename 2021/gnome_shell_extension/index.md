@@ -1,5 +1,5 @@
 ---
-title: GNOME Shell Extension
+title: GNOME Shell Extension おすすめ
 date: '2021-11-14 11:30:00'
 draft: false
 category: Ubuntu
@@ -7,7 +7,7 @@ tags:
   - Ubuntu
   - GNOME
 ---
-# GNOME Shell Extension
+# GNOME Shell Extension おすすめ
 
 ## Pixel Saver
 
