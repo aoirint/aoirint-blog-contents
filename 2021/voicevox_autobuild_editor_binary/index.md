@@ -2,6 +2,7 @@
 title: テキスト読み上げソフトVOICEVOXのビルドを自動化した（エディタ バイナリ自動ビルド編）
 draft: true
 date: '2021-12-15 7:00'
+channel: 技術ノート
 category: レポート
 tags:
     - 'CI CD'

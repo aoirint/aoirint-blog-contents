@@ -5,6 +5,7 @@ title: 'docker-compose run --rm終了時に他のコンテナも削除する'
 og_description: 'docker-compose run --rm終了時に他のコンテナも削除する'
 date: '2020-09-28 10:10:00'
 draft: false
+channel: 技術ノート
 category: Docker
 tags:
   - Docker

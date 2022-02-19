@@ -5,6 +5,7 @@ title: テンプレート
 og_description: テンプレート
 date: '2020-11-01 00:00:00'
 draft: true
+channel: 技術ノート
 category: 記事
 tags:
   - テンプレート

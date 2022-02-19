@@ -6,6 +6,7 @@ og_description: ロータリエンコーダ付きステッピングモータをA
 date: '2020-10-06 07:00:00'
 updated: '2021-05-14 01:50:00'
 draft: false
+channel: 技術ノート
 category: Arduino
 tags:
   - ステッピングモータ

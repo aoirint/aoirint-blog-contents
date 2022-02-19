@@ -2,6 +2,7 @@
 title: Terraria TShockサーバをdocker-composeで立てる
 date: '2021-08-22 05:25:00'
 draft: false
+channel: 技術ノート
 category: Game
 tags:
   - Game

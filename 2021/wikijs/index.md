@@ -2,6 +2,7 @@
 title: Wiki.jsのセットアップ
 date: '2021-06-01 05:00:00'
 draft: false
+channel: 技術ノート
 category: Blogging
 tags:
   - Blogging

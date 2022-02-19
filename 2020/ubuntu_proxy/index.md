@@ -6,6 +6,7 @@ og_description: 'Ubuntuにプロキシを設定する'
 date: '2020-10-02 15:40:00'
 updated: '2021-10-23 14:00:00'
 draft: false
+channel: 技術ノート
 category: Network
 tags:
   - Network

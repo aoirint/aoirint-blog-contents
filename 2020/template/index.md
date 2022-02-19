@@ -5,6 +5,7 @@ title: テンプレート
 og_description: テンプレート
 date: '2020-12-09 00:00:00'
 draft: true
+channel: 技術ノート
 category: 管理用
 tags:
   - 管理用
@@ -20,6 +21,7 @@ title: テンプレート
 og_description: テンプレート
 date: '2020-12-09 00:00:00'
 draft: true
+channel: 技術ノート
 category: 管理用
 tags:
   - 管理用

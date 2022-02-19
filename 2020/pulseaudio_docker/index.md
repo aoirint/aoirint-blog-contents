@@ -5,6 +5,7 @@ title: 'PulseAudioをDockerで使う'
 og_description: 'ホストのPulseAudioにDockerからアクセスします'
 date: '2020-11-14 14:30:00'
 draft: true
+channel: 技術ノート
 category: 記事
 tags:
   - PulseAudio

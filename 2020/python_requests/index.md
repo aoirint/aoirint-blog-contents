@@ -5,6 +5,7 @@ title: 'Python Requests'
 og_description: 'Python Requests'
 date: '2020-09-28 11:30:00'
 draft: false
+channel: 技術ノート
 category: Python
 tags:
   - Python

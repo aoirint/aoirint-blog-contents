@@ -2,6 +2,7 @@
 title: GoogleサービスのURLでユーザアカウントを指定する（?authuser=email）
 date: '2021-07-01 13:00:00'
 draft: false
+channel: 技術ノート
 category: Google
 tags:
   - Google

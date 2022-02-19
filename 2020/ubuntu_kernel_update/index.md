@@ -5,6 +5,7 @@ title: Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
 og_description: UbuntuのKernelをアップデートしたメモ
 date: '2020-09-21 00:00:00'
 draft: false
+channel: 技術ノート
 category: Ubuntu
 tags:
   - Ubuntu

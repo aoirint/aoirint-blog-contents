@@ -2,6 +2,7 @@
 title: 'cron'
 date: '2021-11-05 02:00:00'
 draft: false
+channel: 技術ノート
 category: Command Utility
 tags:
   - cron

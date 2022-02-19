@@ -2,6 +2,7 @@
 title: Minecraft Server
 date: '2021-11-06 17:50:00'
 draft: false
+channel: 技術ノート
 category: Game
 tags:
   - Game

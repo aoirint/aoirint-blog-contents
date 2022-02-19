@@ -5,6 +5,7 @@ title: 'Ubuntu, pyenv環境でtkinterを使う'
 og_description: 'Ubuntu, pyenv環境でtkinterを使う'
 date: '2020-10-04 03:30:00'
 draft: false
+channel: 技術ノート
 category: Python
 tags:
   - Ubuntu

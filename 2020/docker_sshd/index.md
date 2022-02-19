@@ -5,6 +5,7 @@ title: Dockerでプロキシ・バーチャルホストに対応したSSH Server
 og_description: Dockerでプロキシ・バーチャルホストに対応したSSH Serverを立てる
 date: '2020-10-15 23:00:00'
 draft: true
+channel: 技術ノート
 category: リモート環境
 tags:
   - Docker

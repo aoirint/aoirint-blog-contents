@@ -2,6 +2,7 @@
 title: 'Ubuntu 20.04, Unattended Upgradesを停止'
 date: '2021-11-08 07:30:00'
 draft: false
+channel: 技術ノート
 category: Ubuntu
 tags:
   - Ubuntu

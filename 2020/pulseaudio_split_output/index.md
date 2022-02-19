@@ -6,6 +6,7 @@ og_description: PulseAudioで特定のアプリケーションからの音声出
 date: '2020-11-09 06:00:00'
 updated: '2021-08-22 21:40:00'
 draft: false
+channel: 技術ノート
 category: PulseAudio
 tags:
   - PulseAudio

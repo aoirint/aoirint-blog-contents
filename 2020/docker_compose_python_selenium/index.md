@@ -5,6 +5,7 @@ title: 'docker-composeによるPython + Selenium環境'
 og_description: 'docker-composeでPython + Seleniumを使える環境を整備する'
 date: '2020-09-28 11:00:00'
 draft: false
+channel: 技術ノート
 category: Python
 tags:
   - Docker

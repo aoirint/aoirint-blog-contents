@@ -5,6 +5,7 @@ title: ESP32でDFPlayerを使う
 og_description: ESP32でDFPlayerを使う
 date: '2020-11-09 07:00:00'
 draft: true
+channel: 技術ノート
 category: ESP32
 tags:
   - ESP32

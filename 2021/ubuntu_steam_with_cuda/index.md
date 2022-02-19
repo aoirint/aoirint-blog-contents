@@ -2,6 +2,7 @@
 title: 'Ubuntu, CUDAを入れたあとにSteamが起動しない'
 date: '2021-11-18 23:50:00'
 draft: false
+channel: 技術ノート
 category: Game
 tags:
   - Ubuntu

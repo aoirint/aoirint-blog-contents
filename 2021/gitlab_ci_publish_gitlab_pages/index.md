@@ -2,6 +2,7 @@
 title: GitLab CI, GitLab PagesにビルドしたHTMLを公開する
 date: '2021-11-06 17:00:00'
 draft: false
+channel: 技術ノート
 category: GitLab
 tags:
   - GitLab

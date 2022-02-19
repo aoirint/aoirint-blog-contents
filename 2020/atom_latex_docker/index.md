@@ -6,6 +6,7 @@ og_description: AtomからLaTeX in Dockerを呼び出してTeX環境を整備す
 date: '2020-09-17 08:35:00'
 updated: '2021-05-14 01:00:00'
 draft: false
+channel: 技術ノート
 category: LaTeX
 tags:
   - Atom

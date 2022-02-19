@@ -5,6 +5,7 @@ title: 'Docker + Docker Compose on Vagrant Ubuntu Server'
 og_description: 'VagrantでUbuntu Server + Docker + Docker Compose環境をセットアップする'
 date: '2020-10-22 16:30:00'
 draft: false
+channel: 技術ノート
 category: Docker
 tags:
   - Vagrant

@@ -2,6 +2,7 @@
 title: SendGrid
 date: '2021-09-11 13:10:00'
 draft: false
+channel: 技術ノート
 category: Eメール
 tags:
   - SendGrid

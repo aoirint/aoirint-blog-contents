@@ -5,6 +5,7 @@ title: Debianパッケージから内容物を抽出する
 og_description: Debianパッケージから内容物を抽出する
 date: '2020-12-08 22:40:00'
 draft: false
+channel: 技術ノート
 category: Ubuntu
 tags:
   - Ubuntu

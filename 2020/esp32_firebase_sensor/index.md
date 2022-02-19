@@ -5,6 +5,7 @@ title: ESP32とFirebaseでIoTセンサシステムを構築する
 og_description: ESP32とFirebaseでIoTセンサシステムを構築する
 date: '2020-11-03 00:00:00'
 draft: true
+channel: 技術ノート
 category: ESP32
 tags:
   - ESP32

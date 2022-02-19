@@ -3,6 +3,7 @@ title: npm startで構文エラーが消えないときの対処（React）
 date: '2021-06-05 01:30:00'
 updated: '2021-08-22 22:30:00'
 draft: false
+channel: 技術ノート
 category: React
 tags:
   - React

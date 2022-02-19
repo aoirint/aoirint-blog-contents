@@ -5,6 +5,7 @@ title: Dockerイメージから内容物を抽出する
 og_description: Dockerイメージから内容物を抽出する
 date: '2020-12-08 22:30:00'
 draft: false
+channel: 技術ノート
 category: Docker
 tags:
   - Docker

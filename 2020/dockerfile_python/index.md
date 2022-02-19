@@ -5,6 +5,7 @@ title: Pythonを追加するDockerfile
 og_description: Pythonを追加するDockerfile
 date: '2020-12-08 22:30:00'
 draft: false
+channel: 技術ノート
 category: Docker
 tags:
   - Docker

@@ -6,6 +6,7 @@ og_description: 'PulseAudioでマイク入力をスピーカから出力する'
 date: '2020-10-04 03:40:00'
 updated: '2021-08-16 15:00:00'
 draft: false
+channel: 技術ノート
 category: PulseAudio
 tags:
   - PulseAudio

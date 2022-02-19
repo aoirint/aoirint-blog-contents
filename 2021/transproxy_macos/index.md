@@ -2,6 +2,7 @@
 title: 透過プロキシ（macOS, go-transproxy）
 date: '2021-06-21 18:40:00'
 draft: false
+channel: 技術ノート
 category: Network
 tags:
   - Network

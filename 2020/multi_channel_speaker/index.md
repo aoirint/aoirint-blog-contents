@@ -5,6 +5,7 @@ title: ArduinoのPWM信号をアナログスイッチで非同時マルチチャ
 og_description: ArduinoのPWM信号をアナログスイッチで非同時マルチチャンネル音源として使う
 date: '2020-09-20 08:00:00'
 draft: true
+channel: 技術ノート
 category: Arduino
 tags:
   - 電子回路

@@ -2,6 +2,7 @@
 title: GNOME Shell Extension おすすめ
 date: '2021-11-14 11:30:00'
 draft: false
+channel: 技術ノート
 category: Ubuntu
 tags:
   - Ubuntu
