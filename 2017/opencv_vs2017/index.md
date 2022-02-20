@@ -40,7 +40,7 @@ OpenCV libraryのReleasesから最新の"Win pack"をダウンロード。
 
 ### PATHの設定
 
-展開ディレクトリ以下の`build\x64\vc14\binに`PATHを通す。
+展開ディレクトリ以下の`build\x64\vc14\bin`にPATHを通す。
 
 ### サンプル
 
