@@ -9,7 +9,7 @@ tags:
   - 'Windows'
   - 'Cortana'
 ---
-# VS2017でOpenCVをビルドする
+# Windows10でCortanaの検索結果から"Recent"を消去する
 
 17/11/05 追記：この記事でやっているのは履歴の消去のみ。記録を無効にするものではない。
 
