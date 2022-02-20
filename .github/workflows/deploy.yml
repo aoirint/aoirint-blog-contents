@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Dispatch deploy workflow
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'aoirint-web',
+              repo: 'blog.aoirint.com',
+              workflow_id: 'deploy.yml',
+              ref: 'main',
+            })
