@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/05/25/080329
 title: 'Open JTalk'
-date: '2019-05-25 00:03:29'
+date: '2019-05-25 08:03:29'
 draft: false
 channel: 技術ノート
 category: 音声合成
