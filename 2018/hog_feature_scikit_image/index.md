@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2018/12/15/021847
 title: 'HOG特徴量の計算（Scikit-image）'
-date: '2018-12-15 2:18:47'
+date: '2018-12-15 02:18:47'
 draft: false
 channel: 技術ノート
 category: 画像処理
