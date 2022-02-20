@@ -7,6 +7,7 @@ channel: 技術ノート
 category: 音声合成
 tags:
   - '音声合成'
+  - 'Open JTalk'
   - 'Python'
 ---
 # Open JTalk mpg123
