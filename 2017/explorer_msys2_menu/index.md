@@ -4,10 +4,10 @@ title: 'エクスプローラからMSYS2を開く + メニュー項目の追加'
 date: '2017-09-24 09:15:10'
 draft: false
 channel: 技術ノート
-category: Windows
+category: MSYS2
 tags:
-  - Windows
   - MSYS2
+  - Windows
 ---
 # エクスプローラからMSYS2を開く + メニュー項目の追加
 
