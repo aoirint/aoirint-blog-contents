@@ -53,7 +53,7 @@ def func(verbose=False):
 ```
 
 
-<h3>参考</h3>
+## 参考
 
 - [Cの共有ライブラリがPythonの標準出力に印刷されないようにするにはどうすればいいですか？ - コードログ](https://codeday.me/jp/qa/20190107/102213.html)
 - [ctypes - How do I prevent a C shared library to print on stdout in python? - Stack Overflow](https://stackoverflow.com/questions/5081657/how-do-i-prevent-a-c-shared-library-to-print-on-stdout-in-python/17954769#17954769)
