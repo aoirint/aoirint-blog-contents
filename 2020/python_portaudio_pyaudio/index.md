@@ -4,10 +4,10 @@ title: PortAudio, pyaudio
 date: '2020-03-19 10:17:00'
 draft: false
 channel: 技術ノート
-category: 音声処理
+category: Python
 tags:
-- 音声処理
 - Python
+- 音声処理
 ---
 # PortAudio, pyaudio
 
