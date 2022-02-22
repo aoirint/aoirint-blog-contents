@@ -4,10 +4,10 @@ title: OpenCV FullScreen Window
 date: '2020-03-20 16:19:30'
 draft: false
 channel: 技術ノート
-category: OpenCV
+category: Python
 tags:
-- OpenCV
 - Python
+- OpenCV
 ---
 # OpenCV FullScreen Window
 
