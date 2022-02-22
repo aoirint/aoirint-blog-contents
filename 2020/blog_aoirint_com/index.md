@@ -9,4 +9,4 @@ channel: 技術ノート
 
 9月にブログをGitHub Pagesに引っ越しました。
 
-[https://blog.aoirint.com/entry/2020/miyadaiku_github_actions/:title]
+- <https://blog.aoirint.com/entry/2020/miyadaiku_github_actions/>
