@@ -11,7 +11,7 @@ tags:
 ---
 # Jekyll Blogging お試し
 
-- https://jekyllrb.com/
+- <https://jekyllrb.com/>
 
 Ruby製の静的ウェブサイト生成ツール（Static Site Generator）。なんかMarkdownとかで書いたサイトをいい感じにHTMLにしてくれるやつ。
 
@@ -21,7 +21,7 @@ Ruby, RubyGems, gcc, makeが入っていれば動くらしい。公式Dockerイ�
 
 ふだんRubyは使わないので試行錯誤。
 
-- https://hub.docker.com/_/ruby
+- <https://hub.docker.com/_/ruby>
 
 まずはイメージをビルド。
 
