@@ -2,7 +2,7 @@
 title: はてなブログから古い記事を移しました
 date: '2022-02-22 20:40:00'
 draft: false
-channel: 技術ノート
+channel: レポート
 category: アナウンス
 tags:
   - アナウンス
