@@ -11,7 +11,7 @@ tags:
 # Lens Distortion
 
 - [OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html#details)
-- [歪みなしカメラ画像の座標変換 - aoirint's note](https://aoirint.hatenablog.com/entry/2020/03/21/044833)
+- [歪みなしカメラ画像の座標変換 - えやみぐさ](https://blog.aoirint.com/entry/2020/computer_vision_transform_distortless_camera_image/)
 
 カメラ座標 
 
