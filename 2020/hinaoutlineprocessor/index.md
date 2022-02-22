@@ -33,6 +33,6 @@ UI概観。
 
 設定ファイル。
 
-- <https://youtu.be/WE1oR2c4lQs>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WE1oR2c4lQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 SQLite BrowserのUIに刺激されて言語変更機能を付けた。
