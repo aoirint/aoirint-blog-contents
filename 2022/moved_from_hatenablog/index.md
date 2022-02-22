@@ -8,11 +8,11 @@ tags:
   - アナウンス
   - Blogging
 ---
-# はてなブログから記事を移しました
+# はてなブログから古い記事を移しました
 
-新しい記事 blog.aoirint.com へ、
+新しい記事 blog.aoirint.com へ投稿しつつ、
 古い記事は aoirint.hatenablog.com に残っていましたが、
-blog.aoirint.com に記事を移しました。
+古い記事を blog.aoirint.com に移しました。
 
 古い記事にはリダイレクトと移動先へのリンクを設置しています。
 
