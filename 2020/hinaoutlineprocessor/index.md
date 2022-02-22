@@ -12,25 +12,27 @@ tags:
 
 2017年の頭に開発していたxmlベースの階層型アウトラインプロセッサ。Java Swing製。
 
-[https://github.com/aoirint/HinaOutlineProcessor:embed]
+- <https://github.com/aoirint/HinaOutlineProcessor>
 
-[https://twitter.com/kanomiya/status/836616749252390912:embed]
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ひなホップ（Hina Outline Processor）の開発 <a href="https://t.co/2zd5fj5mN1">pic.twitter.com/2zd5fj5mN1</a></p>&mdash; kanomiya (@kanomiya) <a href="https://twitter.com/kanomiya/status/836616749252390912?ref_src=twsrc%5Etfw">February 28, 2017</a></blockquote> 
 
 UIの仕様はStory Editor（旧）をベースにしている。Story Editorのモダン化とマルチプラットフォーム化ができればいいな、と思っていた。マルチプラットフォームならWebでは、と思われるかもしれないが、ローカルにファイルを置いておきたい気持ち（また、同時編集の沼も存在する）。その後、先行ツールの意外な高機能性の発見や大学進学のストレスなどでモチベが失われ、Minecraft Moddingを再開した。
 
-[f:id:aoirint:20200324150508j:plain][f:id:aoirint:20200324150504j:plain][f:id:aoirint:20200324150506j:plain]
+![](images/20200324150508.jpg)
+![](images/20200324150504.jpg)
+![](images/20200324150506.jpg)
 
 UI概観。
 
-
-[f:id:aoirint:20200324150455j:plain]
+![](images/20200324150455.jpg)
 
 ドキュメントファイルはこんな感じ。これを作っていた時期に関しては見逃してほしい。
 
-[f:id:aoirint:20200324150459j:plain][f:id:aoirint:20200324150501j:plain]
+![](images/20200324150459.jpg)
+![](images/20200324150501.jpg)
 
 設定ファイル。
 
-[https://youtu.be/WE1oR2c4lQs:embed]
+- <https://youtu.be/WE1oR2c4lQs>
 
 SQLite BrowserのUIに刺激されて言語変更機能を付けた。
