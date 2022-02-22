@@ -3,7 +3,7 @@
 title: git, markdown python
 date: '2020-03-15 00:27:34'
 draft: false
-channel: 作業ログ
+channel: 技術ノート
 category: Python
 tags:
 - Python
@@ -13,9 +13,9 @@ tags:
 # git, markdown python
 
 ### Git
-- [https://qiita.com/TakesxiSximada/items/ea778bb98b8c057ffd07:title]
-- [https://gitpython.readthedocs.io/en/stable/tutorial.html:title]
+- [https://qiita.com/TakesxiSximada/items/ea778bb98b8c057ffd07]
+- [https://gitpython.readthedocs.io/en/stable/tutorial.html]
 
 ### Markdown convert
-- [https://python-markdown.github.io/:title]
-- [https://qiita.com/masakuni-ito/items/593b9d753c44da61937b:title]
+- [https://python-markdown.github.io/]
+- [https://qiita.com/masakuni-ito/items/593b9d753c44da61937b]
