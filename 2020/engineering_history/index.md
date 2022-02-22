@@ -1,0 +1,92 @@
+---
+# moved from https://aoirint.hatenablog.com/entry/2020/03/14/185056
+title: engineering history
+date: '2020-03-14 18:50:56'
+draft: true
+channel: 技術ノート
+---
+# engineering history
+
+- 2020年ごろ
+  - docker
+  - 個人Mac, iPhone
+  - Docker Hub
+  - PyPI
+  - イマココ！
+- 2019年ごろ
+  - Pythoner
+  - 深層学習, Web dev, Android dev, iOS dev
+  - Jetson Nano
+  - yaml
+  - ネット常時接続民（データ通信用SIM/スマートフォン）
+  - UPLIGHT dev
+  - MATLAB
+  - カラオケ
+  - デスクトップPCサーバ
+- 2018年ごろ
+  - Pythoner
+  - 深層学習, Web（Django）, iOS dev
+  - Raspberry Piサーバ
+  - 個人デスクトップ（GPU）
+  - Node.js
+  - モバイルネット接続民（データ通信用SIM/モバイルルータ）
+  - nfc
+  - Google Vision（ML）, Firebase（RtDB）
+  - アニソン
+  - ノートPCサーバ
+  - 技術系アルバイト（Web/モバイル/機械学習エンジニア）
+- 2017年ごろ
+  - Processing
+  - Unity/C#
+  - Arduino
+  - Computer Vision（OpenCV）
+  - C++
+  - Ubuntu
+  - Python, 深層学習
+  - Androidタブレット
+  - TERA
+  - キャッシュレス（traditional）民
+  - アニメ
+  - 技術系アルバイト（プログラマ）
+- 2016年ごろ
+  - Minecraft Modder（Java）
+  - OpenGL 1-2
+  - Java GUIer
+  - PHPer
+  - Git
+  - json
+- 2015年ごろ
+  - フリーソフト開発者
+  - Minecraft Modder（Java）
+  - PHP, Java（AWT/Swing）, SQL（SQLite3）
+  - さくらのレンタルサーバ
+- 2014年ごろ
+  - フリーソフト開発者
+  - Java
+  - mBed, 無線電子工作（TWE-Lite）
+  - Minecrafter
+  - Minecraft Modder（Java）
+  - なろう読み
+- 2013年ごろ
+  - フリーソフト開発者
+  - VB.NET
+  - HTML/CSS/JavaScript
+  - 忍者ツールズ
+  - Minecrafter
+  - Scratch
+- 2012年ごろ
+  - 個人PC
+  - VB.NET
+  - PSP
+  - Wii
+- 2011年ごろ
+  - C（改訂第3版 C言語スタートブック）
+- 2010年ごろ
+  - WWA creator
+- 2009年以前
+  - GBA
+  - DSLite
+  - PS
+  - GC
+  - 電脳コイル
+  - ケータイ小説読み, SS読み
