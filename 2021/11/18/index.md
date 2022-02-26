@@ -4,6 +4,7 @@ draft: false
 noindex: true
 channel: 雑記
 ---
+
 VOICEVOXのコア、Raspberry Pi版のプルリクエストがマージされた。うれしい。
 
 ﾂﾑｷﾞﾁｬﾝｶﾜｲｲﾔｯﾀｰ!
