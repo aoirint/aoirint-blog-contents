@@ -110,7 +110,7 @@ ffmpeg -i input.wav -ar 48000 output.mp3
 
 ---
 
-## レシピ
+## ごはん
 
 ```
 豚肉こまぎれ 200g
