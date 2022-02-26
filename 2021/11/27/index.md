@@ -1,5 +1,4 @@
 ---
-title: ArchiveBox
 date: '2021-11-17 04:00:00'
 draft: false
 noindex: true
