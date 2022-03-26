@@ -4,3 +4,5 @@ draft: false
 channel: 雑記
 ---
 ## ボイコネ2いきたい
+
+- <https://twitter.com/voiceconnect_ad>
