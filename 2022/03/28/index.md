@@ -31,9 +31,16 @@ channel: 雑記
 ヒホさんに挨拶できてよかった（まあ忙しかっただろうし、覚えてないと思うけど…）。
 即売会は、同好の士の社交の場という認識を強くした。まあわたしはこの文化圏に対して独自の成果物がある身ではなくファン目線なので、若干肩身が狭いけれど...。
 
+### 蒲田
 ![](./images/keikyu_kamata.jpg)
 
 <small>（シンゴジラでゴジラが初上陸したところの蒲田である。えっ蒲田に！？　というネタをやりたかった… ボイロ無関係だけれど）</small>
+
+### Seiren Voice
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Seirenの列</p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1507956284783751169?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote>
+
+あとで書く！
 
 ### 収集管理について
 
