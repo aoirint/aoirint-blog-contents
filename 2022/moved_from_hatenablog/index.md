@@ -1,5 +1,5 @@
 ---
-title: はてなブログから古い記事を移しました
+title: はてなブログから古い記事を移した
 date: '2022-02-22 20:40:00'
 draft: false
 channel: レポート
@@ -8,7 +8,7 @@ tags:
   - アナウンス
   - Blogging
 ---
-# はてなブログから古い記事を移しました
+# はてなブログから古い記事を移した
 
 新しい記事 blog.aoirint.com へ投稿しつつ、
 古い記事は aoirint.hatenablog.com に残っていましたが、
