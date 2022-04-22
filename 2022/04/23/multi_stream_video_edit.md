@@ -1,7 +1,7 @@
 ---
 title: '複数の音声ストリームを持つ動画ファイルを簡単に編集する方法がほしい'
 date: '2022-04-23 00:50:00'
-draft: true
+draft: false
 noindex: false
 channel: 雑記
 ---
