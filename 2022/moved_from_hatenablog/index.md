@@ -2,10 +2,9 @@
 title: はてなブログから古い記事を移した
 date: '2022-02-22 20:40:00'
 draft: false
-channel: レポート
-category: アナウンス
+channel: 技術ノート
+category: Blogging
 tags:
-  - アナウンス
   - Blogging
 ---
 # はてなブログから古い記事を移した
