@@ -1,9 +1,14 @@
 ---
+title: えやみぐさの改修ログ 2022-02-20
 date: '2022-02-20 08:10:00'
 draft: false
 noindex: false
-channel: 作業ログ
+channel: 技術ノート
+category: Blogging
+tags:
+  - Blogging
 ---
+# えやみぐさの改修ログ 2022-02-20
 
 えやみぐさ: blog.aoirint.com
 
