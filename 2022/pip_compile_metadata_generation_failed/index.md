@@ -14,7 +14,7 @@ Pythonパッケージのリスト`requirements.in`から、
 依存ツリーのライブラリバージョンリスト`requirements.txt`を出力してくれる便利なツールである。
 
 <details>
-<summary>入力例</summary>
+<summary>入力例 requirements.in</summary>
 
 ```
 django
@@ -29,7 +29,7 @@ schedule
 </details>
 
 <details>
-<summary>出力例</summary>
+<summary>出力例 requirements.txt</summary>
 
 ```
 #
