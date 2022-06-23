@@ -28,6 +28,10 @@ schedule
 
 </details>
 
+```shell
+pip-compile requirements.in
+```
+
 <details>
 <summary>出力例 requirements.txt</summary>
 
