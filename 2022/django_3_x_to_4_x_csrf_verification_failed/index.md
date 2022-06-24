@@ -21,5 +21,5 @@ CSRF検証のドキュメントを3.xと比べると、以下の記述が増え�
 
 > CsrfViewMiddleware verifies the Origin header, if provided by the browser, against the current host and the CSRF_TRUSTED_ORIGINS setting. This provides protection against cross-subdomain attacks.
 
-- 4.x: https://docs.djangoproject.com/en/4.0/ref/csrf/#how-it-works
-- 3.x: https://docs.djangoproject.com/en/3.2/ref/csrf/#how-it-works
+- 4.x: <https://docs.djangoproject.com/en/4.0/ref/csrf/#how-it-works>
+- 3.x: <https://docs.djangoproject.com/en/3.2/ref/csrf/#how-it-works>
