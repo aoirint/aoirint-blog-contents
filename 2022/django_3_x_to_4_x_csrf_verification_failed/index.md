@@ -15,6 +15,7 @@ tags:
 `settings.py`に`CSRF_TRUSTED_ORIGINS`を追加すればよい。
 
 - Origin: e.g. `https://example.com`
+  - <https://developer.mozilla.org/ja/docs/Glossary/Origin>
 
 CSRF検証のドキュメントを3.xと比べると、以下の記述が増えている。
 
