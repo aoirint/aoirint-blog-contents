@@ -21,6 +21,10 @@ GitLabの公式Shared Runnerがやっているように、docker-machineを使�
 おそらくdocker入りの仮想マシンをCIジョブごとに立てて、privilegedなコンテナからブレイクアウトしても仮想マシンの外に出られないようになっていると思う。
 GitLabはいろいろオープンなので、実際のShared Runnerの構成・設定が公開されている。たいへん助かる。
 
+- <https://docs.gitlab.com/ee/ci/runners/saas/linux_saas_runner.html>
+
+---
+
 - ツリー
   - <https://twitter.com/aoirint/status/1523826104343343105>
   - <https://twitter.com/aoirint/status/1524426103615500288>
