@@ -14,6 +14,7 @@ tags:
 
 `settings.py`に`CSRF_TRUSTED_ORIGINS`を追加すればよい。
 
+- <https://docs.djangoproject.com/en/4.0/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS>
 - Origin: e.g. `https://example.com`
   - <https://developer.mozilla.org/ja/docs/Glossary/Origin>
 
