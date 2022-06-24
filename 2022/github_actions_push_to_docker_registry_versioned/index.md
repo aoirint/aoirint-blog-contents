@@ -1,5 +1,5 @@
 ---
-title: GitHub ActionsでDocker RegistryにDockerイメージをpushする（latestタグ、GitHub Release連携バージョン付きタグ）
+title: GitHub ActionsでDocker RegistryにDockerイメージをpushする（latestタグ、GitHub Release連携でバージョン付け）
 date: '2022-06-24 09:10:00'
 draft: false
 noindex: false
@@ -9,7 +9,7 @@ tags:
   - GitHub
   - Docker
 ---
-# GitHub ActionsでDocker RegistryにDockerイメージをpushする（latestタグ、GitHub Release連携バージョン付きタグ）
+# GitHub ActionsでDocker RegistryにDockerイメージをpushする（latestタグ、GitHub Release連携でバージョン付け）
 
 - <https://blog.aoirint.com/entry/2021/github_actions_docker_io_token/>
 
