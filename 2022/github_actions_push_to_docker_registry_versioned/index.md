@@ -16,7 +16,7 @@ tags:
 上の記事のWorkflowテンプレートをちょっと改良した。
 
 - Docker Hub以外のDockerレジストリに対応
-- GitHub Release作成時にGitタグをイメージタグにしてpush
+- GitHub Release作成時にリリースタグをイメージタグにしてpush
 
 ## レジストリURL
 
