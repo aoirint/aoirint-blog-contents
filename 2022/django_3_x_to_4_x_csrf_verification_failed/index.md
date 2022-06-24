@@ -12,6 +12,8 @@ tags:
 ---
 # Django 3.xから4.xへの更新でPOSTリクエスト時にCSRF検証に失敗する
 
+想定: 3.xで動いていたフォーム送信が4.xへの更新でCSRF検証に失敗するために動かなくなった
+
 `settings.py`に`CSRF_TRUSTED_ORIGINS`を追加すればよい。
 
 - <https://docs.djangoproject.com/en/4.0/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS>
