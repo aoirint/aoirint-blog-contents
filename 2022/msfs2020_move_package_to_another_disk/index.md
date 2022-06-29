@@ -6,7 +6,7 @@ channel: 雑記
 category: ゲーム
 tags:
   - ゲーム
-  - MSFS
+  - MSFS2020
 ---
 # MSFS2020の追加ダウンロードファイルを別ディスクに移動する
 
