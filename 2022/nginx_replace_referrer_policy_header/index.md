@@ -1,6 +1,6 @@
 ---
 title: nginx, リバースプロキシからのReferrer-Policyヘッダを置換する
-date: '2022-07-01 9:00:00'
+date: '2022-07-01 09:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: nginx
