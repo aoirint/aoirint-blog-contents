@@ -12,6 +12,7 @@ tags:
 
 - Python 3.9.13 (pyenv)
 - Ubuntu 20.04 (WSL2)
+- <https://github.com/aoirint/python_asyncio_examples>
 
 ## 基本実装
 
