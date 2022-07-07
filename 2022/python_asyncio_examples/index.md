@@ -190,12 +190,14 @@ TBW
 ## アプリケーション
 
 ### FastAPI + schedule
+- threading.Event
 
 ```python
 import time
 import threading
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+import schedule
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -203,7 +205,7 @@ schedule_event = threading.Event()
 
 @app.on_event('startup')
 async def startup_schedule():
-  loop = asyncio.get_event_loop()
+  loop = asyncio.new_event_loop()
   executor = ThreadPoolExecutor()
 
   def loop_schedule(event):
@@ -219,6 +221,8 @@ async def startup_schedule():
     print('exit schedule')
 
   loop.run_in_executor(executor, loop_schedule, schedule_event)
+
+  schedule.every(1).second.do(lambda: print('tick'))
 
 @app.on_event('shutdown')
 async def shutdown_schedule():
