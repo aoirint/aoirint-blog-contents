@@ -191,6 +191,10 @@ TBW
 
 ### FastAPI + schedule
 - threading.Event
+- Dependencies
+  - fastapi==0.78.0
+  - schedule==1.1.0
+  - uvicorn==0.18.2
 
 ```python
 import time
