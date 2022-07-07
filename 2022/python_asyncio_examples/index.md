@@ -1,5 +1,5 @@
 ---
-title: Python, asyncioを使った実装例
+title: Python, asyncioを使った同期・非同期処理の実装例
 date: '2022-07-07T11:20:00+09:00'
 draft: false
 channel: 技術ノート
@@ -8,7 +8,7 @@ tags:
   - Python
   - 非同期処理
 ---
-# Python, asyncioを使った実装例
+# Python, asyncioを使った同期・非同期処理の実装例
 
 - Python 3.9.13 (pyenv)
 - Ubuntu 20.04 (WSL2)
