@@ -250,7 +250,7 @@ async def shutdown_schedule():
 </details>
 
 
-### FFmpegを子プロセスとして実行してログをキャプチャする
+### FFmpegを子プロセスとして同期的に実行しつつログを非同期にキャプチャする
 - FFmpeg 4.2.7-0ubuntu0.1
   - libx264: --enable-libx264
   - aac: native
