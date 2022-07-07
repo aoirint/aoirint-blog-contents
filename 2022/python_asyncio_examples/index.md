@@ -197,6 +197,8 @@ TBW
   - schedule==1.1.0
   - uvicorn==0.18.2
 
+<details>
+
 ```python
 import time
 import threading
@@ -233,6 +235,9 @@ async def startup_schedule():
 async def shutdown_schedule():
   schedule_event.set()
 ```
+
+</details>
+
 
 ### Capture FFmpeg subprocess report
 - TBW
