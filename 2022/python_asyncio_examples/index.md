@@ -14,6 +14,10 @@ tags:
 - Ubuntu 20.04 (WSL2)
 - <https://github.com/aoirint/python_asyncio_examples>
 
+なんかこう書くとうまく動くということしかわからん、という実装例です。
+
+- <https://twitter.com/aoirint/status/1544891079786627074>
+
 ## 基本実装
 
 ### 同期関数から非同期関数を同期的に呼び出す
