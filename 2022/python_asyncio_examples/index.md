@@ -233,3 +233,6 @@ async def startup_schedule():
 async def shutdown_schedule():
   schedule_event.set()
 ```
+
+### Capture FFmpeg subprocess report
+- TBW
