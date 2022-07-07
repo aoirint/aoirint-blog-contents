@@ -198,6 +198,16 @@ TBW
   - uvicorn==0.18.2
 
 <details>
+<summary>実行コマンド例</summary>
+
+```shell
+uvicorn fastapi_schedule:app
+```
+
+</details>
+
+<details>
+<summary>コード例</summary>
 
 ```python
 import time
@@ -245,6 +255,16 @@ async def shutdown_schedule():
   - aac: native
 
 <details>
+<summary>実行コマンド例</summary>
+
+```shell
+python3 ffmpeg_async.py a.mp4 b.mp4
+```
+
+</details>
+
+<details>
+<summary>コード例</summary>
 
 ```python
 from asyncio import create_subprocess_exec
