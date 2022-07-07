@@ -98,7 +98,7 @@ print('exited') # 3
 </details>
 
 ### 非同期関数から同期関数を非同期的に呼び出す
-- asyncio.get_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
+- asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 
 <details>
 
@@ -112,7 +112,7 @@ async def main():
     time.sleep(3)
     print('func exited') # 3
 
-  loop = asyncio.get_event_loop()
+  loop = asyncio.new_event_loop()
   executor = ThreadPoolExecutor()
   loop.run_in_executor(executor, func)
 
@@ -191,7 +191,7 @@ TBW
 ## アプリケーション
 
 ### FastAPI + schedule
-- asyncio.get_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
+- asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 - threading.Event
 - Dependencies
   - fastapi==0.78.0
@@ -223,7 +223,7 @@ schedule_event = threading.Event()
 
 @app.on_event('startup')
 async def startup_schedule():
-  loop = asyncio.get_event_loop()
+  loop = asyncio.new_event_loop()
   executor = ThreadPoolExecutor()
 
   def loop_schedule(event):
@@ -311,7 +311,7 @@ async def main(
     },
   )
 
-  loop = asyncio.get_event_loop()
+  loop = asyncio.new_event_loop()
   executor = ThreadPoolExecutor()
 
   report_lines = []
