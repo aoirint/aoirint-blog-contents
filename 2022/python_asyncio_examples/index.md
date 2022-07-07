@@ -347,10 +347,10 @@ if __name__ == '__main__':
   input_video_path = Path(args.input)
   output_video_path = Path(args.output)
 
-asyncio.run(main(
-  input_video_path=input_video_path,
-  output_video_path=output_video_path,
-))
+  asyncio.run(main(
+    input_video_path=input_video_path,
+    output_video_path=output_video_path,
+  ))
 ```
 
 </details>
