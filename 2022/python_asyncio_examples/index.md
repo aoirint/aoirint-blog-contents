@@ -180,6 +180,43 @@ asyncio.run(main())
 print('exited') # 2
 ```
 
+### 非同期関数から同期間数を非同期的に3つずつ呼び出す
+- asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
+
+<details>
+
+```python
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+import time
+
+async def main():
+  def func():
+    time.sleep(3)
+    print('func exited') # 3
+
+  loop = asyncio.new_event_loop()
+  executor = ThreadPoolExecutor(max_workers=3)
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+  loop.run_in_executor(executor, func)
+
+  await asyncio.sleep(1)
+  print('main exited') # 1
+
+asyncio.run(main())
+
+print('exited') # 2
+```
+
 </details>
 
 
