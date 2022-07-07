@@ -190,6 +190,7 @@ TBW
 ## アプリケーション
 
 ### FastAPI + schedule
+- asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 - threading.Event
 - Dependencies
   - fastapi==0.78.0
