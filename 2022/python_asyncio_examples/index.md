@@ -180,6 +180,8 @@ asyncio.run(main())
 print('exited') # 2
 ```
 
+</details>
+
 ### 非同期関数から同期間数を非同期的に3つずつ呼び出す
 - asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 
