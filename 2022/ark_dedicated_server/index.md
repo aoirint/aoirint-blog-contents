@@ -135,10 +135,13 @@ bPvEDisableFriendlyFire=True
 
 ## ゲームクライアントからの接続
 
+サーバー参加者には、`SESSION_NAME`と`SERVER_PASSWORD`を伝える。
+
 1. ゲーム起動後、「サーバー検索」を開く
 2. セッションフィルターを「非公式」に設定
 3. 「パスワードありを表示」にチェックを入れる
 4. ネームフィルターにセッション名 `SESSION_NAME` を入力
+5. 接続時にパスワード `SERVER_PASSWORD` を入力
 
 ![ARK スタート画面](images/20220730115252_1.jpg)
 
