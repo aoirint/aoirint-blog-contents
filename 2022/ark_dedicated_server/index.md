@@ -127,6 +127,7 @@ MatingIntervalMultiplier=0.01
 EggHatchSpeedMultiplier=60.0
 BabyMatureSpeedMultiplier=60.0
 BabyImprintAmountMultiplier=60.0
+BabyCuddleIntervalMultiplier=0.01
 bDisableStructurePlacementCollision=True
 bPvEDisableFriendlyFire=True
 ```
