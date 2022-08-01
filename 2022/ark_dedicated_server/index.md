@@ -116,6 +116,7 @@ PlayerCharacterWaterDrainMultiplier=0.3
 PlayerCharacterFoodDrainMultiplier=0.3
 MaxGateFrameOnSaddles=10
 AllowFlyerCarryPvE=True
+XPMultiplier=3.0
 ; (略)
 ```
 
