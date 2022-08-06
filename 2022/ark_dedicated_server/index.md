@@ -100,6 +100,7 @@ WARN_ON_STOP=true
 - <https://ark.fandom.com/ja/wiki/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E6%88%90>
 - <https://wikiwiki.jp/arkse/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%A8%AD%E5%AE%9A>
 - DifficultyOffset: <https://ark.fandom.com/ja/wiki/%E9%9B%A3%E6%98%93%E5%BA%A6>
+- Lv上限: <https://wikiwiki.jp/arkse-ps4/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F#u4288cfd>
 
 ### GameUserSettings.ini
 
