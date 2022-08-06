@@ -151,3 +151,51 @@ bPvEDisableFriendlyFire=True
 ![ARK スタート画面](images/20220730115252_1.jpg)
 
 ![ARK サーバー検索](images/20220730115650_1_mask.jpg)
+
+## RCONによる管理コマンド実行
+
+- RCONのDockerイメージ: <https://hub.docker.com/r/aoirint/rcon>
+  - RCONのリポジトリ: <https://github.com/n0la/rcon>
+
+### Makefile
+
+```makefile
+include .env
+
+.PHONY: list-players
+list-players:
+	docker run --rm --network host aoirint/rcon:20220806.1 rcon -H 127.0.0.1 -p 27020 -P "${ADMIN_PASSWORD}" --minecraft ListPlayers
+```
+
+## ゲーム内での管理コマンド実行
+
+- <https://ark.fandom.com/ja/wiki/Console_Commands>
+- <https://kamigame.jp/ARK/PS4/コマンド.html>
+
+ゲーム画面でTabキーを押すとコマンドを入力できる。もう1度Tabキーを押すとコマンドのログを確認できる。
+
+コマンドの実行には`ADMIN_PASSWORD`が必要。
+
+```
+EnableCheats ADMIN_PASSWORD
+
+SetCheatPlayer true
+```
+
+作業後、
+
+```
+SetCheatPlayer false
+```
+
+EnableCheatsによる管理者への昇格（チャット欄で名前の前に星が付く）は、一度サーバーからログアウトすると元に戻る。
+
+Tabキーで表示されるコマンドのログでパスワードはマスクされることはないので、録画や配信時は注意する。
+
+### TribeIDを調べる
+
+```
+SetCheatPlayer true
+```
+
+実行後、トライブの建造物や恐竜にフォーカスするとTribeIDが表示される。
