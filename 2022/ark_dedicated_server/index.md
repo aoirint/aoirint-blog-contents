@@ -109,6 +109,7 @@ WARN_ON_STOP=true
 TamingSpeedMultiplier=20.0
 serverPVE=True
 DifficultyOffset=1.0
+OverrideOfficialDifficulty=5.0
 ShowFloatingDamageText=True
 ResourcesRespawnPeriodMultiplier=0.1
 NightTimeSpeedScale=30.0
