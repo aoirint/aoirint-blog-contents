@@ -1,6 +1,7 @@
 ---
 title: 'Chrome Remote Desktop （Ubuntu）'
 date: '2021-11-13 17:40:00'
+updated: '2022-10-03 21:07:00'
 draft: false
 channel: 技術ノート
 category: Network
@@ -30,22 +31,34 @@ cp chrome-remote-desktop chrome-remote-desktop.bak
 
 ### /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
+- chrome-remote-desktop 106.0.5249.37
+
 ```python
 #FIRST_X_DISPLAY_NUMBER = 20
 FIRST_X_DISPLAY_NUMBER = 0
 ```
 
+※ 0の部分には、デスクトップ環境でターミナルを開き、`echo $DISPLAY`で表示される値を入れる。
+
 ```python
-def launch_session(self, x_args):
+def launch_session(self, server_args, backoff_time):
+  """Launches process required for session and records the backoff time
+  for inhibitors so that process restarts are not attempted again until
+  that time has passed."""
+  logging.info("Setting up and launching session")
   self._init_child_env()
-  self._setup_pulseaudio()
+  self.setup_audio()
   self._setup_gnubby()
-  #self._launch_x_server(x_args)
+  #self._launch_server(server_args)
   #if not self._launch_pre_session():
   #  # If there was no pre-session script, launch the session immediately.
-  #  self.launch_x_session()
+  #  self.launch_desktop_session()
   display = self.get_unused_display_number()
-  self.child_env["DISPLAY"] = f":{display}"
+  self.child_env['DISPLAY'] = f':{display}'
+  self.server_inhibitor.record_started(MINIMUM_PROCESS_LIFETIME,
+                                    backoff_time)
+  self.session_inhibitor.record_started(MINIMUM_PROCESS_LIFETIME,
+                                   backoff_time)
 ```
 
 ```shell
