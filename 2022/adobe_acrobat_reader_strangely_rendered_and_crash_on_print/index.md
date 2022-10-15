@@ -7,6 +7,7 @@ channel: 技術ノート
 category: Windows
 tags:
   - Windows
+  - 'Windows 10'
   - PDF
   - 'Adobe Acrobat Reader'
 ---
