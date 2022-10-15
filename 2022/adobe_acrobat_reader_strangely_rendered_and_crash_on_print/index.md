@@ -15,6 +15,8 @@ tags:
 
 特定のWindows 10 21H2環境で、Adobe Acrobat ReaderのUIが正しく描画されなかったり、PDFを印刷したりするとクラッシュする症状に悩まされていた。
 
+- <https://twitter.com/aoirint/status/1579530951029579776>
+
 ## 症状
 ### 一部のテキスト（太字？）が右上に傾いて表示される
 
