@@ -1,5 +1,5 @@
 ---
-title: 'Adobe Acrobat Readerが正しく描画されない・印刷しようとするとクラッシュする（Windows 10 21H2）'
+title: 'Adobe Acrobat ReaderのUIが正しく描画されない・印刷しようとするとクラッシュする（Windows 10 21H2）'
 date: '2022-10-15 19:00:00'
 draft: false
 noindex: false
@@ -11,7 +11,7 @@ tags:
   - PDF
   - 'Adobe Acrobat Reader'
 ---
-# Adobe Acrobat Readerが正しく描画されない・印刷しようとするとクラッシュする（Windows 10 21H2）
+# Adobe Acrobat ReaderのUIが正しく描画されない・印刷しようとするとクラッシュする（Windows 10 21H2）
 
 特定のWindows 10 21H2環境で、Adobe Acrobat ReaderのUIが正しく描画されなかったり、PDFを印刷したりするとクラッシュする症状に悩まされていた。
 
