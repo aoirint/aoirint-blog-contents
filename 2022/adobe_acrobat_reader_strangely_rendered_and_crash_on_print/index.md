@@ -64,7 +64,7 @@ tags:
 Windowsのデフォルトフォントは、（おそらくこういった不具合を防ぐため）通常の設定UIでは変更することができない。
 レジストリを書き換えることで、フォント名に対応するフォントを変更することができる。
 
-- デフォルトフォントの変更方法を指南するサイト: <https://techcult.com/change-default-system-font-in-windows-10/>
+- デフォルトフォントの変更方法を指南する記事: <https://techcult.com/change-default-system-font-in-windows-10/>
 
 ![](images/registry_1.png)
 
