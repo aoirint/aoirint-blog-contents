@@ -69,6 +69,8 @@ Windowsのデフォルトフォントは、（おそらくこういった不具�
 
 Acrobat Readerを正常に動作させるには、Segoe UIとして描画されるフォントが、正しくSegoe UIフォントである必要があるらしい。
 
+- <https://community.adobe.com/t5/acrobat-reader-discussions/acrobat-reader-quit-unexpectedly/m-p/11139813#M66281>
+
 上のリンク先の復元用regファイルを作成・実行、Windowsを再起動することで、Acrobat Readerを正常に動作させることができるようになった。
 
 ### recover.reg （TechCultより）
