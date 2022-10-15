@@ -72,7 +72,7 @@ Acrobat Readerを正常に動作させるには、Segoe UIとして描画され�
 
 - クラッシュの原因についてSegoe UIフォントの正常性との関係を指摘するコメント: <https://community.adobe.com/t5/acrobat-reader-discussions/acrobat-reader-quit-unexpectedly/m-p/11139813#M66281>
 
-上のデフォルトフォントの変更方法についてのリンク先を参照し、復元用regファイルを作成・実行、Windowsを再起動することで、Acrobat Readerを正常に動作させることができるようになった。
+上のデフォルトフォントの変更方法についての記事を参照し、復元用regファイルを作成・実行、Windowsを再起動することで、Acrobat Readerを正常に動作させることができるようになった。
 
 ### recover.reg （TechCultより）
 
