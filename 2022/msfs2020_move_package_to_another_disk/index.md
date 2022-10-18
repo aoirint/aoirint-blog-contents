@@ -2,10 +2,10 @@
 title: MSFS2020の追加ダウンロードファイルを別ディスクに移動する
 date: '2022-06-29 14:30:00'
 draft: false
-channel: 雑記
-category: ゲーム
+channel: 技術ノート
+category: Game
 tags:
-  - ゲーム
+  - Game
   - MSFS2020
 ---
 # MSFS2020の追加ダウンロードファイルを別ディスクに移動する
