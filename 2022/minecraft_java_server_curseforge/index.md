@@ -123,3 +123,8 @@ ONLINE_MODE=true
 ## サーバ側Modの追加
 
 ModPackへの追加は、初期化以外のタイミングでは反映されないため、`./data`ディレクトリの`mods`フォルダに、通常のMod導入手順と同様に追加します。
+
+上の.envでは、ブラウザマップModのDynmapForgeをの追加導入を想定しています。
+
+- <https://github.com/webbukkit/dynmap>
+- <https://www.curseforge.com/minecraft/mc-mods/dynmapforge>
