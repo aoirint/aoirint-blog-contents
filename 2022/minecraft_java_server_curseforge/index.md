@@ -122,4 +122,4 @@ ONLINE_MODE=true
 
 ## サーバ側Modの追加
 
-DynmapForgeを追加導入する。
+ModPackへの追加は、初期化以外のタイミングでは反映されないため、`./data`ディレクトリの`mods`フォルダに、通常のMod導入手順と同様に追加します。
