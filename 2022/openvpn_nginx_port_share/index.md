@@ -5,6 +5,7 @@ draft: false
 channel: 技術ノート
 category: Network
 tags:
+  - Network
   - OpenVPN
   - nginx
 ---
