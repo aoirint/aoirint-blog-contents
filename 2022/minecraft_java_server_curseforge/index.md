@@ -1,7 +1,7 @@
 ---
 title: 'CurseForge Modpackを導入したMinecraft Java版 サーバ in Docker'
 date: '2022-09-05T14:00:00+09:00'
-updated: '2022-09-05T14:00:00+09:00'
+updated: '2022-10-19T01:15:00+09:00'
 draft: false
 channel: 技術ノート
 category: Game
