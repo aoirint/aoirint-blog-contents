@@ -60,7 +60,7 @@ port-share 127.0.0.1 4443
 proto tcp
 ```
 
-## OpenVPNからnginxへのポート転送の許可（ufw）
+## OpenVPNからnginxへのパケット転送の許可（ufw）
 
 ```shell
 ufw allow from 10.8.0.0/24 to any port 4443
