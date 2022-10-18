@@ -60,6 +60,12 @@ port-share 127.0.0.1 4443
 proto tcp
 ```
 
+## OpenVPNからnginxへのポート転送の許可（ufw）
+
+```shell
+ufw allow from 10.8.0.0/24 to any port 4443
+```
+
 ## nginx, OpenVPNの再起動
 
 nginxおよびOpenVPNを再起動し、443番ポート宛てのHTTPS通信（nginx宛て）、443番ポート宛てのVPN接続（OpenVPN宛て）が正常に動作することを確認する。
