@@ -1,4 +1,4 @@
-# Kubernetesに入門する
+# MinikubeによるKubernetes入門
 
 ## Minikubeのインストール
 
