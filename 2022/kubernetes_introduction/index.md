@@ -1,6 +1,11 @@
-# MinikubeによるKubernetes入門
+# minikubeによるKubernetes入門
 
-## Minikubeのインストール
+- minikube: <https://github.com/kubernetes/minikube>
+- <https://kubernetes.io/ja/docs/setup/learning-environment/minikube/>
+- <https://qiita.com/progrhyme/items/116948c9fef37f3e995b>
+
+
+## minikubeのインストール
 
 - <https://minikube.sigs.k8s.io/docs/start/>
 
@@ -21,7 +26,7 @@ sudo apt-get update
 sudo apt-get install -y kubectl
 ```
 
-## Minikubeの開始
+## minikubeの開始
 
 ```shell
 minikube start
