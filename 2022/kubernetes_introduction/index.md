@@ -36,4 +36,6 @@ minikube start
 
 ```shell
 kubectl get po -A
+# Or
+kubectl get pods --all-namespaces
 ```
