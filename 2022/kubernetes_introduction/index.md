@@ -34,7 +34,7 @@ minikube start
 
 ## Podの一覧を確認
 
-- <https://kubernetes.io/ja/docs/reference/kubectl/cheatsheet/>
+- <https://kubernetes.io/ja/docs/reference/kubectl/cheatsheet/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E6%A4%9C%E7%B4%A2%E3%81%A8%E9%96%B2%E8%A6%A7>
 
 ```shell
 kubectl get po -A
