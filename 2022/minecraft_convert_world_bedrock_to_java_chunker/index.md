@@ -27,12 +27,35 @@ PCでゲームを遊ぶ割合が増えたことでJava版に移行すること�
 - <https://chunker.app/>
 - <https://apexminecrafthosting.com/convert-bedrock-to-java/>
 - <https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview>
+    - さまざまなMinecraftのサードパーティーツールを紹介する記事の1つ
+    - <https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools>
 
 ワールドデータをアップロードすると、異なるプラットフォーム・バージョン向けに変換してくれるWebアプリ。
 
 ![](images/chunker_start.png)
 
-右下のベルボタンから確認できる更新履歴を見る限り、少なくとも2020年5月にはChunker 1.4.1が存在していたらしい。
+右下のベルボタンから確認できる更新履歴を見る限り、少なくとも2020年5月にはChunker 1.4.1が存在していたようだ。
+
+Hive GamesというMinecraft公式パートナー（Minecraftのマーケットプレイスに出品できる契約をMicrosoftと結んでいるクリエイターのこと）が開発していて、内部ツールを公開したもののようだった。
+
+- <https://twitter.com/theHiveMC>
+
+> Born as an internal tool
+
+- <https://hivegames.io/>
+
+> As part of an exclusive licensing deal with Microsoft
+
+という記述があるが、Chunkerのために別途契約を結んでいるのか、公式パートナーのことを指すのかは読み取れなかった。
+
+2022年5月にリリースを伝える記事がいくつか見られ、TwitterでMinecraftの開発者の1人 David ([@CornerHardMC](https://twitter.com/CornerHardMC))氏が言及していたりする。
+公式ツールだとする記事があるが、ソースは見つけられなかった。
+個人的には、あくまで非公式ツールだと思っている。
+
+- <https://twitter.com/CornerHardMC/status/1527766756453822464>
+- <https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/>
+- <https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/>
+
 
 ## 軽量なワールドを変換してみた
 
