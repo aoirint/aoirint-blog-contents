@@ -102,7 +102,7 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 ![](images/amulet_chunk_delete_unselected.png)
 
 出てくるモーダルで、現在のチャンクデータを読み込んでUndo可能にするか聞かれるが、
-Noを押すとUndoできないが高速に作業を進められる。
+Noを選ぶとUndoできないが高速に作業を進められる。
 Yesを選ぶと、Undoポイントの作成に数分以上かかることがある。
 
 ![](images/amulet_chunk_undo.png)
