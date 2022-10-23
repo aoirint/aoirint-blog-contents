@@ -50,7 +50,7 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 
 2022年5月にリリースを伝える記事がいくつか見られ、TwitterでMinecraftの開発者の1人 David (@CornerHardMC)氏が言及していたりする。
 公式ツールだとする記事があるが、ソースは見つけられなかった。
-あくまで非公式ツールだと思っている。
+個人的には、あくまで非公式ツールだと思っている。
 
 - <https://twitter.com/CornerHardMC/status/1527766756453822464>
 - <https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/>
