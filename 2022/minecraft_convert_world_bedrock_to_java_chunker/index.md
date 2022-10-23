@@ -1,1 +1,1 @@
-# Minecraft Bedrock版ワールドをJava版ワールドに変換するWebアプリ「Chunker」
+# Minecraft ワールドをBedrock版とJava版の間で変換するWebアプリ「Chunker」
