@@ -1,3 +1,13 @@
+---
+title: Minecraft ワールドをBedrock版とJava版の間で変換するWebアプリ「Chunker」
+date: '2022-10-24 08:10:00+09:00'
+draft: false
+channel: 技術ノート
+category: Game
+tags:
+  - Game
+  - Minecraft
+---
 # Minecraft ワールドをBedrock版とJava版の間で変換するWebアプリ「Chunker」
 
 友達数人が参加するBedrock版サーバーを運用していたが、
