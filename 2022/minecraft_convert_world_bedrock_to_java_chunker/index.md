@@ -7,6 +7,7 @@ category: Game
 tags:
   - Game
   - Minecraft
+  - Chunker
 ---
 # Minecraft ワールドをBedrock版とJava版の間で変換するWebツール「Chunker」
 
