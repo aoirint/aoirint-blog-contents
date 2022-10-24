@@ -59,7 +59,7 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 
 ## 軽量なワールドを変換してみた
 
-十数日遊んだくらいの、35MB程度のワールドがあったので、Chunkerで変換してみた。
+十数日遊んだくらいの、35MB程度のBedrock版ワールドがあったので、ChunkerでJava版に変換してみた。
 
 ![](images/liteworld_map.png)
 
@@ -77,7 +77,7 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 
 - <https://www.reddit.com/r/Minecraft/comments/y0tngi/chunker_maximum_world_size_for_converting_from/>
 
-手元に733MBある本命のワールドがあり、これをアップロードしようとしたところ、サイズ制限のバリデーションに引っかかった（ディレクトリ・zipと2方式のアップロードボタンがあるが、どちらも同じ）。
+手元に733MBある本命のBedrock版ワールドがあり、これをアップロードしようとしたところ、サイズ制限のバリデーションに引っかかった（ディレクトリ・zipと2方式のアップロードボタンがあるが、どちらも同じ）。
 
 ![](images/chunker_733mb.png)
 
