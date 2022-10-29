@@ -26,6 +26,9 @@ SSGの悩み事: ビルド時間
 - 依存関係のバイナリビルドなどのインストール時処理が事前に済ませられる
     - Node.jsの一部パッケージはインストール時にバイナリビルドするものがおそらくある
     - Pythonにもインストール時にC/C++コンパイラやCMakeを要求するパッケージがある
+      - [r9r9/pyopenjtalk](https://github.com/r9y9/pyopenjtalk)
+      - たぶんNumPyとかOpenCVとか
+      - 新しすぎるPython本体バージョン・armなど特殊な環境だと、wheelが用意されていなくてバイナリビルドになることも（それでも開発者がビルドできるように整えてくれていると使える）
 
 ![](images/old_workflow_steps_duration.png)
 
