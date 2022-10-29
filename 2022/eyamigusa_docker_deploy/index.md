@@ -55,12 +55,12 @@ SSGの悩み事: ビルド時間
 
 ### GitHub Actionsを使ったデプロイ
 
-- 2022年7月にベータリリースされたGitHubの機能
+- 2022年7月にベータリリースされたGitHubの機能で、`gh-pages`ブランチを介さずにGitHub Pagesをデプロイできるようになった
     - <https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/>
 
 ![](images/github_actions_deployment.png)
 
 ![](images/github_actions_deployment_suggestion.png)
 
-- GitHub公式が提供しているGitHub ActionsのテンプレートStarter WorkflowにJekyll、Hugo、Gatsbyなどいくつかのフレームワークを使ったサンプルがある
+- GitHub公式が提供しているGitHub ActionsのテンプレートStarter WorkflowにJekyll、Hugo、Gatsby、Next.js、NuxtJSなどいくつかのフレームワークを使ったサンプルがある
   - <https://github.com/actions/starter-workflows/tree/5e60d02759829e0e27db87bd924ea5b45dd8503d/pages>
