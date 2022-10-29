@@ -43,8 +43,8 @@ SSGの悩み事: ビルド時間
 
 ## GitHub Pagesのデプロイ元をgh-pagesブランチからGitHub Actionsに変更
 
-- 2022年7月にベータリリースされたGitHubの機能
-    - <https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/>
+### gh-pagesブランチを使ったデプロイ
+
 - `gh-pages`ブランチの更新には、[peaceiris/actions-gh-pages@v3](https://github.com/peaceiris/actions-gh-pages/tree/v3)を使っていた
     - たぶんかなり有名（3000スター）で、自分でも布教している
 - 2021年12月から、`gh-pages`ブランチにpushすると、`pages-build-deployment`というWorkflowが実行され、GitHub Pagesのデプロイ処理が見えるようになった
@@ -52,3 +52,15 @@ SSGの悩み事: ビルド時間
     - <https://github.blog/2022-08-10-github-pages-now-uses-actions-by-default/>
 
 ![](images/pages_build_deployment.png)
+
+### GitHub Actionsを使ったデプロイ
+
+- 2022年7月にベータリリースされたGitHubの機能
+    - <https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/>
+
+![](images/github_actions_deployment.png)
+
+![](images/github_actions_deployment_suggestion.png)
+
+- GitHub公式が提供しているGitHub ActionsのテンプレートStarter WorkflowにJekyll、Hugo、Gatsbyなどいくつかのフレームワークを使ったサンプルがある
+  - <https://github.com/actions/starter-workflows/tree/5e60d02759829e0e27db87bd924ea5b45dd8503d/pages>
