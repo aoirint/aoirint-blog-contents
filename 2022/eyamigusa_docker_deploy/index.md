@@ -30,6 +30,8 @@ SSGを意識して使い始めたのは、2020年9月にPython製のMiyadaikuを
 
 ![](images/artifact_filesize.png)
 
+- <https://twitter.com/aoirint/status/1581232402994982912>
+
 ## デプロイ時間
 
 旧デプロイシステムでは、npmやGatsbyのキャッシュが効いていて9分半程度だった。
