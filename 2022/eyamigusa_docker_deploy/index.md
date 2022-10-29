@@ -28,6 +28,7 @@ SSGを意識して使い始めたのは、2020年9月にPython製のMiyadaikuを
 
 記事にまとめる体力がないものとか、記事化するかわからないネタのメモとかは、大抵Twitterで自己レスしている。
 
+![](images/artifact_filesize.png)
 
 ## デプロイ時間
 
