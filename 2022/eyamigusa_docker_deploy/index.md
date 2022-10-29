@@ -46,7 +46,7 @@ SSGの悩み事: ビルド時間
 - 2022年7月にベータリリースされたGitHubの機能
     - <https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/>
 - `gh-pages`ブランチの更新には、[peaceiris/actions-gh-pages@v3](https://github.com/peaceiris/actions-gh-pages/tree/v3)を使っていた
-    - たぶんかなり有名で、自分でも布教している
+    - たぶんかなり有名（3000スター）で、自分でも布教している
 - 2021年12月から、`gh-pages`ブランチにpushすると、`pages-build-deployment`というWorkflowが実行され、GitHub Pagesのデプロイ処理が見えるようになった
     - <https://github.blog/changelog/2021-12-16-github-pages-using-github-actions-for-builds-and-deployments-for-public-repositories/>
     - <https://github.blog/2022-08-10-github-pages-now-uses-actions-by-default/>
