@@ -15,6 +15,7 @@ channel: 雑記
 
 飽きさせない展開で、何度でも見れる。
 
+
 ## Guardian’s Sky ―女神の空― (2018年の小説)
 
 - 小説家になろう: <https://ncode.syosetu.com/n8719eb/>
