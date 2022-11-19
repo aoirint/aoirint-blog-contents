@@ -16,7 +16,7 @@ tags:
 上の記事では、諸般の事情によりElasticsearchを無効化していた。
 
 
-## Elasticsearchのライセンス変更
+## 2021年のElasticsearchのライセンス変更
 
 - SSPL
 - マネージドサービスの提供に関する制限
