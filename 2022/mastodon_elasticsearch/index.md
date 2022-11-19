@@ -90,7 +90,7 @@ ES_PORT=9200
 Elasticsearchのデータベース更新
 
 ```shell
-sudo docker compose run --rm web bundle exec bin/tootctl search deploy
+sudo docker compose exec web bundle exec bin/tootctl search deploy
 ```
 
 ```
@@ -104,7 +104,7 @@ Elasticsearchを`docker compose up -d`で初回起動すると、ターミナル
 Auto-configuration will not generate a password for the elastic built-in superuser, as we cannot  determine if there is a terminal attached to the elasticsearch process. You can use the `bin/elasticsearch-reset-password` tool to set the password for the elastic user.
 ```
 
-指示に従ってパスワードを設定する（自動生成）。
+指示に従ってパスワードを設定する（ランダム生成）。
 
 ```shell
 sudo docker compose exec es bin/elasticsearch-reset-password -u elastic -a
