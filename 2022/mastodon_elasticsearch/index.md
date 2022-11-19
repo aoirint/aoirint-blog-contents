@@ -6,8 +6,8 @@ noindex: false
 channel: 技術ノート
 category: Mastodon
 tags:
-  - GitHub
-  - Python
+  - Mastodon
+  - docker-compose
 ---
 # Mastodon on Docker Composeで全文検索エンジンElasticsearchを有効化する
 
