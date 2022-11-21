@@ -92,5 +92,10 @@ SEIKAサブカルフェスタ2022の会場内ステージで行われたトー�
 - セイカフェス2022の各部門グランプリ・準グランプリ: <https://live.nicovideo.jp/watch/lv338423389#57:05>
 - セイカフェス2022の特別賞: <https://live.nicovideo.jp/watch/lv338423389#1:23:53>
 
+また、とりごや 氏のフルサト・ノウゼイについて、精華町がオリジナル振付（振付: 香瑠鼓 氏）を発表した。
+
+- 実写: <https://www.nicovideo.jp/watch/so41382183>
+- 京町セイカ: <https://www.nicovideo.jp/watch/so41384172>
+
 
 ## 京町セイカ
