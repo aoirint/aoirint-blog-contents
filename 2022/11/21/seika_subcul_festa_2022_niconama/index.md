@@ -111,6 +111,7 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
 2022年11月17日、キャラクターシリーズの展開が発表された。
 東北ずん子、彩澄しゅお、彩澄りりせ、フリモメンの4種が発売予定。
 VOICEPEAK 東北ずん子には、VOICEPEAK ずんだもん（単体販売なし）が付属する。
+東北ずん子、彩澄しゅお、彩澄りりせには、VOICEPEAK フリモメン（単体販売と同等）が付属する。
 また、京町セイカのVOICEPEAK化クラウドファンディングの実施が案内された。
 
 - プレスリリース: <https://www.ah-soft.com/press/voice/20221117.html> ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000025.000060783.html))
