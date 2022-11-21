@@ -123,6 +123,7 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 
 - <https://live.nicovideo.jp/watch/lv338423389#2:58:07>
 
+
 ## VOICEPEAK
 
 VOICEPEAKは、AHS社が販売する音声合成ソフトウェア（Windows、macOS、Linux対応）。
