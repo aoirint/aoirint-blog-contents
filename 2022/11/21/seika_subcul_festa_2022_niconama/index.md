@@ -13,7 +13,7 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 同時開催イベントとして、音声合成オンリーイベント 声音の宴（同人誌即売会）、せいか祭り2022（地域のお祭り）、せいかビジネスフェア2022（地域の商工イベント）などが行われた。
 
 - SEIKAサブカルフェスタ2022 公式サイト: <https://subculfesta.kyomachi-seika.jp/>
-- SEIKAサブカルフェスタ2022 運営Twitter: <https://subculfesta.kyomachi-seika.jp/>
+- SEIKAサブカルフェスタ2022 運営Twitter: <https://twitter.com/seika_subcul>
 - 声音の宴 公式サイト: <https://kowa-uta.com/>
 - 声音の宴 運営Twitter: <https://twitter.com/kowa_uta>
 - けいはんなオープンイノベーションセンター 公式サイト: <http://kick.kyoto/>
