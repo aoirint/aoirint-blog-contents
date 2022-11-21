@@ -141,5 +141,3 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
     - SEIKAサブカルフェスタ2022への参加告知
     - 京町セイカ VOICEPEAK化 クラウドファンディング開始告知
   - <https://youtu.be/CSSah9cGuog?t=5798>
-
-.
