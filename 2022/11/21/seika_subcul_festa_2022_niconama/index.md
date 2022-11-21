@@ -33,6 +33,36 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 
 - <https://www.nicovideo.jp/watch/sm40423993>
 
+### コンテスト結果
+
+- 動画部門 グランプリ
+  - 【セイカフェス2022】セイカさんとずんだもん　～刺繍糸でセイカさんを作ってみたのだ～ (iyokan 氏): <https://www.nicovideo.jp/watch/sm40724521>
+- 動画部門 準グランプリ
+  - セイカとずんだもんが納税ダンスを踊るだけ【ソフトウェアトーク劇場】 (Sinα 氏): <https://www.nicovideo.jp/watch/sm40746930>
+- 歌部門 グランプリ
+  - 【京町セイカAI】はじまるよ！セイカフェス【Synthesizer V 】 (とりごや 氏): <https://www.nicovideo.jp/watch/sm40591127>
+- 歌部門 準グランプリ
+  - 【京町セイカ】妄想税【カバー】 (ハチナナ 氏): <https://www.nicovideo.jp/watch/sm40591127>
+- イラスト部門 グランプリ
+  - セイカフェス2022 (雅京士郎 氏): <https://seiga.nicovideo.jp/seiga/im10992277>
+- イラスト部門 準グランプリ
+  - ふるさと納税は京都府精華町へ！ (イトウ 氏): <https://seiga.nicovideo.jp/seiga/im10992272>
+- ニコニコ賞
+  - 【おいでよ！セイカの広報活動】誕生日だけどセイカさんが広報活動を頑張るようです (牛くん 氏): <https://www.nicovideo.jp/watch/sm40703862>
+- AHS賞
+  - オリジナル曲「Laßt zahle die Heimatortsteuer an die Stadt Seika! (ふるさと納税は精華町へ！)」 Synthesizer V 京町セイカ (Dharma 氏): <https://www.nicovideo.jp/watch/sm40732502>
+- 京町セイカ賞
+  - 【京町セイカAI】フルサト・ノウゼイ【Synthesizer V 】 (とりごや 氏): <https://www.nicovideo.jp/watch/sm40654065>
+- 京都精華大学賞
+  - ふるさと納税は京都府精華町へ (moiky 氏): <https://seiga.nicovideo.jp/seiga/im10991572>
+- 精華町賞
+  - せいか音頭　ユーロビートVer (すいめい 氏): <https://www.nicovideo.jp/watch/sm40703690>
+- 運営特別賞
+  - 【SynthV #京町セイカ オリジナル曲】21世紀の日記から私の名前が出てきた【 #セイカフェス2022 】 (コレフヂタケシ 氏): <https://www.nicovideo.jp/watch/sm40644877>
+  - 【京町セイカ】星明【オリジナル曲】 (SIGM@TURE 氏): <https://www.nicovideo.jp/watch/sm40742805>
+  - 【セイカフェス2022】「京町セイカ」人形 作ってみた (ウッドダイスP 氏): <https://www.nicovideo.jp/watch/sm40747246>
+  - いちごメイドのセイカさん (はよせな 氏): <https://seiga.nicovideo.jp/seiga/im10991689>
+
 
 ## ニコニコ動画
 
