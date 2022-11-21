@@ -31,13 +31,19 @@ PC裏は電源やUSBケーブル・オーディオケーブル・LANケーブル
 
 ![](images/motherboard_before.jpg)
 
-### 追加後のマザーボード全体
-
-![](images/motherboard_after.jpg)
+- 多少ほこりっぽかったり、メモリのメーカーがバラバラだったりするのは見逃してほしい
+- GPU2枚の間のPCIeポートが空いている
 
 ### 設置箇所 拡大
 
 ![](images/motherboard_zoom_after.jpg)
+
+- GPUの排熱の影響を受けそうだけれど、しばらくフルパワーで回していないのでよくわからない
+- ここしかポートがないので、よしとする
+
+### 追加後のマザーボード全体
+
+![](images/motherboard_after.jpg)
 
 ### ケース背面
 
