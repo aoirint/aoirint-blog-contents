@@ -136,7 +136,7 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
 - 3Dモデルの制作
 - 精華町のふるさと納税返礼品となるオリジナルグッズの制作
 
-.
+2022年11月17日放送のAHS公式生放送でもクラウドファンディングの実施が案内された。
 
 - AHS公式生放送第186回 (2022-11-17 放送): <https://www.youtube.com/watch?v=CSSah9cGuog>
   - ニュースコーナー 京町セイカ関連: <https://youtu.be/CSSah9cGuog?t=1244>
