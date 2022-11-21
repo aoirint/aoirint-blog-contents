@@ -137,3 +137,4 @@ VOICEPEAK 東北ずん子には、VOICEPEAK ずんだもん（単体販売なし
   - <https://youtu.be/CSSah9cGuog?t=5798>
 
 - 京町セイカ 公式Twitter クラウドファンディング告知ツイート: <https://twitter.com/kyomachi_seika/status/1593167307425009664>
+- 京町セイカ 公式ニコニコチャンネル クラウドファンディング告知動画: <https://www.nicovideo.jp/watch/so41373736>
