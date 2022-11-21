@@ -98,4 +98,41 @@ SEIKAサブカルフェスタ2022の会場内ステージで行われたトー�
 - 京町セイカ: <https://www.nicovideo.jp/watch/so41384172>
 
 
-## 京町セイカ
+## VOICEPEAK
+
+VOICEPEAKは、AHS社が販売する音声合成ソフトウェア（Windows、macOS、Linux対応）。
+Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
+キャラクターのいない音声合成ソフトウェアとして、「商用可能 6ナレーターセット」を発売する形で始まった。
+
+事例としては、京都市広報キャラクター「京乃つかさ」のキャラクターボイスとして採用された。
+
+- プレスリリース: <https://www.ah-soft.com/press/voice/20221017.html> ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000024.000060783.html))
+
+2022年11月17日、キャラクターシリーズの展開が発表された。
+東北ずん子、彩澄しゅお、彩澄りりせ、フリモメンの4種が発売予定。
+VOICEPEAK 東北ずん子には、VOICEPEAK ずんだもん（単体販売なし）が付属する。
+また、京町セイカのVOICEPEAK化クラウドファンディングの実施が案内された。
+
+- プレスリリース: <https://www.ah-soft.com/press/voice/20221117.html> ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000025.000060783.html))
+- AHS公式生放送第186回 (2022-11-17 放送): <https://www.youtube.com/watch?v=CSSah9cGuog>
+  - 発表当日の公式生放送で、東北ずん子の声優 佐藤聡美 氏や、東北ずん子プロジェクトを運営するSSS合同会社 小田恭央 氏が出演した。
+
+## 京町セイカRebootプロジェクト
+
+京町セイカRebootプロジェクトは、2022年11月17日に開始した京町セイカに関するクラウドファンディング。
+以下の4つの公約がある。
+
+- 京町セイカのVOICEPEAK化
+- キャラクターコスチューム（コスプレ衣装）の制作
+- 3Dモデルの制作
+- 精華町のふるさと納税返礼品となるオリジナルグッズの制作
+
+.
+
+- AHS公式生放送第186回 (2022-11-17 放送): <https://www.youtube.com/watch?v=CSSah9cGuog>
+  - ニュースコーナー 京町セイカ関連: <https://youtu.be/CSSah9cGuog?t=1244>
+    - SEIKAサブカルフェスタ2022への参加告知
+    - 京町セイカ VOICEPEAK化 クラウドファンディング開始告知
+  - <https://youtu.be/CSSah9cGuog?t=5798>
+
+- <https://twitter.com/kyomachi_seika/status/1594273863340216322>
