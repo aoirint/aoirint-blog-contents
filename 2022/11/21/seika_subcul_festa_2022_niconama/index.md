@@ -90,6 +90,7 @@ SEIKAサブカルフェスタ2022の会場内ステージで行われたトー�
 
 - セイカフェス2022の概要: <https://live.nicovideo.jp/watch/lv338423389#48:36>
 - セイカフェス2022の各部門グランプリ・準グランプリ: <https://live.nicovideo.jp/watch/lv338423389#57:05>
+- セイカフェス2022の特別賞: <https://live.nicovideo.jp/watch/lv338423389#1:23:53>
 
 
 ## 京町セイカ
