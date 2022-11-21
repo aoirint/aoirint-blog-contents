@@ -102,9 +102,11 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 
 VOICEPEAKは、AHS社が販売する音声合成ソフトウェア（Windows、macOS、Linux対応）。
 Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
-キャラクターのいない音声合成ソフトウェアとして、「商用可能 6ナレーターセット」を発売する形で始まった。
+キャラクターのいない音声合成ソフトウェアとして、「商用可能 6ナレーターセット」を2022年3月11日に発売する形で始まった。
 
-事例としては、京都市広報キャラクター「京乃つかさ」のキャラクターボイスとして採用された。
+- プレスリリース: <https://www.ah-soft.com/press/voice/> ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000015.000060783.html))
+
+事例としては、2022年10月に京都市広報キャラクター「京乃つかさ」のキャラクターボイスとして採用された。
 
 - プレスリリース: <https://www.ah-soft.com/press/voice/20221017.html> ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000024.000060783.html))
 
