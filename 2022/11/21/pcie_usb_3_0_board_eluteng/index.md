@@ -25,10 +25,20 @@ PC裏は電源やUSBケーブル・オーディオケーブル・LANケーブル
 - 空いているPCIeポートを活用する
 - 拡張ボード挿してみたい
 
+## 作業写真
+
+### 追加前のマザーボード全体
+
 ![](images/motherboard_before.jpg)
+
+### 追加後のマザーボード全体
 
 ![](images/motherboard_after.jpg)
 
+### 設置箇所 拡大
+
 ![](images/motherboard_zoom_after.jpg)
+
+### ケース背面
 
 ![](images/case_back_after.jpg)
