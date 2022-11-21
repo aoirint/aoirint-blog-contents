@@ -122,6 +122,11 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
 ## 京町セイカRebootプロジェクト
 
 京町セイカRebootプロジェクトは、2022年11月17日に精華町が開始した京町セイカに関するクラウドファンディング。
+
+- クラウドファンディングページ: <https://greenfunding.jp/lab/projects/6727/>
+- 京町セイカ 公式Twitter クラウドファンディング告知ツイート: <https://twitter.com/kyomachi_seika/status/1593167307425009664>
+- 京町セイカ 公式ニコニコチャンネル クラウドファンディング告知動画: <https://www.nicovideo.jp/watch/so41373736>
+
 以下の4つの公約がある。
 
 - 京町セイカのVOICEPEAK化
@@ -138,6 +143,3 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
   - <https://youtu.be/CSSah9cGuog?t=5798>
 
 .
-
-- 京町セイカ 公式Twitter クラウドファンディング告知ツイート: <https://twitter.com/kyomachi_seika/status/1593167307425009664>
-- 京町セイカ 公式ニコニコチャンネル クラウドファンディング告知動画: <https://www.nicovideo.jp/watch/so41373736>
