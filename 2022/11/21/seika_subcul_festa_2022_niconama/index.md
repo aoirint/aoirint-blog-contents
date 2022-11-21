@@ -1,6 +1,6 @@
 ---
 title: SEIKAサブカルフェスタ2022 ニコニコ公式生放送を見た
-date: '2022-11-21 21:00:00+09:00'
+date: '2022-11-21 21:30:00+09:00'
 draft: false
 noindex: false
 channel: 雑記
