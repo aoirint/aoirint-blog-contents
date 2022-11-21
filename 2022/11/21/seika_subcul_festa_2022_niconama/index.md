@@ -63,6 +63,7 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
   - 【セイカフェス2022】「京町セイカ」人形 作ってみた (ウッドダイスP 氏): <https://www.nicovideo.jp/watch/sm40747246>
   - いちごメイドのセイカさん (はよせな 氏): <https://seiga.nicovideo.jp/seiga/im10991689>
 
+
 ## ニコニコ公式生放送: 百花繚乱と栗田は見た！精華町は実在した！SEIKAサブカルフェスタ2022
 
 - <https://live.nicovideo.jp/watch/lv338423389>
