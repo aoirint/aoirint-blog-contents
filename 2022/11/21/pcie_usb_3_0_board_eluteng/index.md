@@ -24,3 +24,11 @@ PC裏は電源やUSBケーブル・オーディオケーブル・LANケーブル
 - 電源コンセントを空ける
 - 空いているPCIeポートを活用する
 - 拡張ボード挿してみたい
+
+![](images/motherboard_before.jpg)
+
+![](images/motherboard_after.jpg)
+
+![](images/motherboard_zoom_after.jpg)
+
+![](images/case_back_after.jpg)
