@@ -27,7 +27,7 @@ tags:
 
 - Elastic License 2.0の条文: <https://www.elastic.co/licensing/elastic-license>
 
-ちなみにElastic License 2.0は、Elasticsearchをマネージドサービスとして提供することを禁止していますが、SaaSアプリケーションのバックエンドとして使用すること（Elasticsearch APIへの直接アクセスを提供しないサービス提供）に影響しないという立場が示されている。
+ちなみにElastic License 2.0は、Elasticsearchをマネージドサービスとして提供することを禁止しているが、SaaSアプリケーションのバックエンドとして使用すること（Elasticsearch APIへの直接アクセスを提供しないサービス提供）に影響しないという立場が示されている。
 
 > Elasticsearchをバックエンドで使用するSaaSアプリを開発しているけど、どんな影響が生じる？
 > 
