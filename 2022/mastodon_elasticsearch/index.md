@@ -13,14 +13,37 @@ tags:
 
 - Mastodon on Docker Composeを立てる記事: <https://blog.aoirint.com/entry/2020/mastodon_docker/>
 
-上の記事では、諸般の事情によりElasticsearchを無効化していた。
+上の記事では、諸般の事情（主にスペック不足）によりElasticsearchを無効化した状態でMastodonインスタンスを立てていました。
 
 
 ## 2021年のElasticsearchのライセンス変更
 
-- SSPL
-- マネージドサービスの提供に関する制限
+クラウド事業者によるマネージドサービス提供における、オープンソースコミュニティへのコントリビューションの不足等を背景として、
+2021年のバージョン7.11リリース以降、ElasticsearchのライセンスはApache 2.0から独自のElastic License 2.0（およびServer Side Public Licenseのデュアルライセンス）に変更されました。
 
+- <https://www.elastic.co/jp/pricing/faq/licensing>
+
+この記事では、Elastic License 2.0によってライセンスされる公式のElasticsearchの配布パッケージを使用します。
+
+- Elastic License 2.0の条文: <https://www.elastic.co/licensing/elastic-license>
+
+ちなみにElastic License 2.0は、Elasticsearchをマネージドサービスとして提供することを禁止していますが、SaaSアプリケーションのバックエンドとして使用すること（Elasticsearch APIへの直接アクセスを提供しないサービス提供）に影響しないという立場が示されています。
+
+> Elasticsearchをバックエンドで使用するSaaSアプリを開発しているけど、どんな影響が生じる？
+> 
+> 今回のソースコードのライセンス変更はお客様に一切影響しません。Elastic Licenseに基づいて、デフォルトの配布パッケージを使用できるほか、このパッケージをベースに無料でアプリケーションを開発することもできます。Elastic Licenseはsource-available license（ソース利用許諾）であり、コピーレフトの側面を持たず、デフォルトの機能を無料とします。具体的な例として、よろしければMagentoプロジェクトに関する質問への回答をご参照ください。
+
+- <https://www.elastic.co/jp/pricing/faq/licensing#elasticsearch%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8Bsaas%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E9%96%8B%E7%99%BA%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%91%E3%81%A9%E3%80%81%E3%81%A9%E3%82%93%E3%81%AA%E5%BD%B1%E9%9F%BF%E3%81%8C%E7%94%9F%E3%81%98%E3%82%8B%EF%BC%9F>
+
+> I'm using Elasticsearch to put a search box on my cat-picture SaaS product.
+> 
+> This is permitted under ELv2. Meow!
+
+> I am a Managed Service Provider (MSP) running Elasticsearch and Kibana for my customers.
+>
+> If your customers do not access Elasticsearch and Kibana, this is permitted under ELv2. If your customers do have access to substantial portions of the functionality of either Elasticsearch and Kibana as part of your service, this may not be permitted.
+
+- <https://www.elastic.co/licensing/elastic-license/faq#can-you-provide-some-examples-around-what-qualifies-as-providing-the-software-to-third-parties-as-a-hosted-or-managed-service-or-not>
 
 ## GeoIPの更新エラー
 
