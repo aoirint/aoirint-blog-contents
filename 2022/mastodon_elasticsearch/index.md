@@ -124,7 +124,7 @@ ES_PASS=
 
 ```shell
 sudo docker compose up -d
-sudo docker compose run --rm web bundle exec bin/tootctl search deploy
+sudo docker compose exec web bundle exec bin/tootctl search deploy
 ```
 
 
