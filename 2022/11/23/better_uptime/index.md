@@ -11,7 +11,7 @@ aoirint.com関連サービスにBetter Uptimeを導入し、死活監視情報�
 
 登録時に電話番号が必要なのがネックだけれど、URLを入力して、オプションでカスタムドメインを使うためにDNSにCNAMEレコードを追加したくらいで、結構簡単に使い始められた。
 
-プランは以下を参照。
+プランは以下を参照。URL 10個まで無料で監視させられる（3分間隔）。
 
 - <https://betterstack.com/better-uptime/pricing>
 
