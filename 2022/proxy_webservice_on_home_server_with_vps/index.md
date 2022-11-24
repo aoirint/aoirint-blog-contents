@@ -34,8 +34,8 @@ stream {
 ```
 
 - 関連ツイート
-    - <https://twitter.com/aoirint/status/1510309731642257408>
-    - <https://twitter.com/aoirint/status/1511896279731040261>
+    - [https://twitter.com/aoirint/status/1510309731642257408](https://twitter.com/aoirint/status/1510309731642257408)
+    - [https://twitter.com/aoirint/status/1511896279731040261](https://twitter.com/aoirint/status/1511896279731040261)
 
 また、この記事の内容には関係ありませんが、envsubstでconfigファイルに環境変数を注入する、nginxのDocker Hub公式Dockerイメージのtemplate機能を使用しているため、
 nginx設定ファイルの拡張子がtemplateになっています。

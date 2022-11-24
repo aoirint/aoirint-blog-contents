@@ -11,8 +11,8 @@ tags:
 ---
 # Minecraft Server
 
-- <https://github.com/itzg/docker-minecraft-server>
-- <https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs>
+- [https://github.com/itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
+- [https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs)
 
 ## docker-compose.yml
 
@@ -76,13 +76,13 @@ ONLINE_MODE=true
 
 ### スーパーフラット
 
-- <https://github.com/itzg/docker-minecraft-server#level-type-and-generator-settings>
-- <https://minecraft.fandom.com/wiki/Superflat>
+- [https://github.com/itzg/docker-minecraft-server#level-type-and-generator-settings](https://github.com/itzg/docker-minecraft-server#level-type-and-generator-settings)
+- [https://minecraft.fandom.com/wiki/Superflat](https://minecraft.fandom.com/wiki/Superflat)
 
 ** ※ 1.17.1でうまく動きませんでした（常にデフォルトのフラットワールドが生成される）。
 代わりに、クライアントでワールドを生成してからサーバにコピーする方法が使えます。 **
 
-- <https://bugs.mojang.com/browse/MC-195468>
+- [https://bugs.mojang.com/browse/MC-195468](https://bugs.mojang.com/browse/MC-195468)
 
 ```env
 LEVEL_TYPE=flat
@@ -95,8 +95,8 @@ LEVEL_TYPE=flat
 GENERATOR_SETTINGS={"biome":"minecraft:plains","lakes":false,"features":false,"layers":[{"block":"minecraft:bedrock","height":1},{"block":"minecraft:stone","height":59},{"block":"minecraft:dirt","height":3},{"block":"minecraft:grass_block","height":1}],"structures":{"structures":{}}}
 ```
 
-- JSON生成: <https://misode.github.io/world/>
-    - <https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644>
+- JSON生成: [https://misode.github.io/world/](https://misode.github.io/world/)
+    - [https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644](https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644)
 
 ```shell
 # https://misode.github.io/world/ で生成したjsonをsuperflat.jsonとして保存

@@ -9,7 +9,7 @@ channel: 雑記
 # VOICEVOXへのプルリクエストを出した
 15日にVOICEVOXへのプルリクエストを出した。
 
-- <https://github.com/Hiroshiba/voicevox_core/pull/41>
+- [https://github.com/Hiroshiba/voicevox_core/pull/41](https://github.com/Hiroshiba/voicevox_core/pull/41)
 
 ONNX版がリリースされてからになるが、
 Raspberry Pi環境で製品版VOICEVOX COREが動くようになるといい。

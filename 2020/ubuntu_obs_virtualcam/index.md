@@ -13,7 +13,7 @@ tags:
 
 Zoomなどでデスクトップ画面をカメラ映像として共有するのに使える。
 
-- 参考： <https://github.com/CatxFish/obs-virtual-cam/issues/17>
+- 参考： [https://github.com/CatxFish/obs-virtual-cam/issues/17](https://github.com/CatxFish/obs-virtual-cam/issues/17)
 
 
 ## Environment
@@ -27,8 +27,8 @@ obs-v4l2sink `#1ec3c8a` はOBS Studioがクラッシュして使えなかった�
 
 ## How to
 
-- <https://github.com/obsproject/obs-studio>
-- <https://github.com/umlaeute/v4l2loopback>
+- [https://github.com/obsproject/obs-studio](https://github.com/obsproject/obs-studio)
+- [https://github.com/umlaeute/v4l2loopback](https://github.com/umlaeute/v4l2loopback)
 
 ```sh
 # sudo apt install v4l2loopback-dkms # これはバージョンの問題で使えないかも
@@ -98,7 +98,7 @@ sudo modprobe v4l2loopback devices=1 video_nr=10 card_label="OBS Cam" exclusive_
 
 ### OBSを使わない方法
 
-デスクトップ画面全体をffmpegで仮想カメラデバイスに送る場合のメモ。以下のコマンドが使える（ <https://github.com/CatxFish/obs-v4l2sink/issues/5> ）。デスクトップ番号が0でない場合は`-i :0`を書き換える。
+デスクトップ画面全体をffmpegで仮想カメラデバイスに送る場合のメモ。以下のコマンドが使える（ [https://github.com/CatxFish/obs-v4l2sink/issues/5](https://github.com/CatxFish/obs-v4l2sink/issues/5) ）。デスクトップ番号が0でない場合は`-i :0`を書き換える。
 
 ```sh
 ffmpeg -f x11grab -r 15 -s 1920x1080 -i :0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
@@ -109,7 +109,7 @@ ffmpeg -f x11grab -r 15 -s 1920x1080 -i :0 -vcodec rawvideo -pix_fmt yuv420p -th
 
 最終的には動作しなかったが、メモ。
 
-- <https://github.com/CatxFish/obs-v4l2sink>
+- [https://github.com/CatxFish/obs-v4l2sink](https://github.com/CatxFish/obs-v4l2sink)
 
 ```sh
 sudo apt install qtbase5-dev

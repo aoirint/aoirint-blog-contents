@@ -11,7 +11,7 @@ tags:
 ---
 # GitHub ActionsでDocker RegistryにDockerイメージをpushする（latestタグ、GitHub Release連携でバージョン付け）
 
-- <https://blog.aoirint.com/entry/2021/github_actions_docker_io_token/>
+- [https://blog.aoirint.com/entry/2021/github_actions_docker_io_token/](https://blog.aoirint.com/entry/2021/github_actions_docker_io_token/)
 
 上の記事のWorkflowテンプレートをちょっと改良した。
 
@@ -31,8 +31,8 @@ tags:
 
 ## GitHub Workflow .github/workflows/docker.yml
 
-- <https://github.com/docker/login-action>
-- <https://github.com/docker/build-push-action>
+- [https://github.com/docker/login-action](https://github.com/docker/login-action)
+- [https://github.com/docker/build-push-action](https://github.com/docker/build-push-action)
 
 ```yaml
 name: Push to Docker registry

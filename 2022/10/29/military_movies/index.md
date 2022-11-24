@@ -9,7 +9,7 @@ channel: 雑記
 
 ## シン・ゴジラ (2016年の映画)
 
-- Amazon Prime Video: <https://www.amazon.co.jp/dp/B01N7GC1IL>
+- Amazon Prime Video: [https://www.amazon.co.jp/dp/B01N7GC1IL](https://www.amazon.co.jp/dp/B01N7GC1IL)
 
 内閣官房副長官 矢口を主軸として、巨大不明生物 ゴジラからの首都圏防衛を描く怪獣映画。
 
@@ -18,7 +18,7 @@ channel: 雑記
 
 ## Guardian’s Sky ―女神の空― (2018年の小説)
 
-- 小説家になろう: <https://ncode.syosetu.com/n8719eb/>
+- 小説家になろう: [https://ncode.syosetu.com/n8719eb/](https://ncode.syosetu.com/n8719eb/)
 
 航空自衛隊 早期警戒管制機（AWACS）E-767 "アマテラス"の管制員 羽浦を主軸として、南西諸島有事を描くミリタリー小説。
 
@@ -26,7 +26,7 @@ channel: 雑記
 
 
 ## 空母いぶき (2019年の映画)
--  Amazon Prime Video: <https://www.amazon.co.jp/dp/B07ZHMPV54>
+-  Amazon Prime Video: [https://www.amazon.co.jp/dp/B07ZHMPV54](https://www.amazon.co.jp/dp/B07ZHMPV54)
 
 海上自衛隊 空母 "いぶき" 艦長 秋津を主軸として、南西諸島有事を描くミリタリー映画。
 

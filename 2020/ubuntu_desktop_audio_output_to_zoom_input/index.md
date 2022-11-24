@@ -29,7 +29,7 @@ Zoomの入力デバイスをpavucontrolから直接変えられないのはZoom�
 
 前回のデスクトップ映像の出力と組み合わせた場合、映像と音声の同期がとれないと思われるので、お気持ちでなんとかするか、あるいはffmpegで同時に送り出すことまでを保証する、くらいはできるのだろうか..
 
-- <https://aoirint.hatenablog.com/entry/2020/05/15/185853>
+- [https://aoirint.hatenablog.com/entry/2020/05/15/185853](https://aoirint.hatenablog.com/entry/2020/05/15/185853)
 
 ## 挿入音声の再生デバイス分離
 Zoomの音声を出力するデバイスと挿入音声を出力するデバイスを分離して、目的の音声だけ送り出せるようにしてみる。つまり、Zoomの音声出力は`YOUR_SPEAKER`のままにして、挿入音声を仮想音声出力デバイスに出力するようにする。
@@ -100,11 +100,11 @@ pulseaudio -D # Daemon startup failed?
 ```
 
 ## 参考
-- <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/>
-- <https://unix.stackexchange.com/questions/174379/how-can-i-create-a-virtual-output-in-pulseaudio>
-- <https://askubuntu.com/questions/403416/how-to-listen-live-sounds-from-input-from-external-sound-card>
-- <https://unix.stackexchange.com/questions/77101/no-bluez-device-after-pactl-list-sources-short>
-- <https://unix.stackexchange.com/questions/576785/redirecting-pulseaudio-sink-to-a-virtual-source>
+- [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/)
+- [https://unix.stackexchange.com/questions/174379/how-can-i-create-a-virtual-output-in-pulseaudio](https://unix.stackexchange.com/questions/174379/how-can-i-create-a-virtual-output-in-pulseaudio)
+- [https://askubuntu.com/questions/403416/how-to-listen-live-sounds-from-input-from-external-sound-card](https://askubuntu.com/questions/403416/how-to-listen-live-sounds-from-input-from-external-sound-card)
+- [https://unix.stackexchange.com/questions/77101/no-bluez-device-after-pactl-list-sources-short](https://unix.stackexchange.com/questions/77101/no-bluez-device-after-pactl-list-sources-short)
+- [https://unix.stackexchange.com/questions/576785/redirecting-pulseaudio-sink-to-a-virtual-source](https://unix.stackexchange.com/questions/576785/redirecting-pulseaudio-sink-to-a-virtual-source)
 
 ## ボツコマンド集
 ```sh

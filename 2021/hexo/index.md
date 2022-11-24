@@ -9,7 +9,7 @@ tags:
 ---
 # Hexo
 
-- <https://hexo.io/docs/#Installation>
+- [https://hexo.io/docs/#Installation](https://hexo.io/docs/#Installation)
 
 ```shell
 npm install -g hexo-cli
@@ -39,7 +39,7 @@ or you can check the docs: http://hexo.io/docs/
 `hexo init <folder>`は空のディレクトリに対して実行する必要がある。
 いったん仮のディレクトリを作ってからコピーする。`.github`、`.gitignore`ファイルがあるのでコピー忘れに注意。
 
-- <https://hexo.io/docs/setup>
+- [https://hexo.io/docs/setup](https://hexo.io/docs/setup)
 
 ```shell
 $ hexo init .
@@ -57,7 +57,7 @@ hexo server
 
 テーマをlightに変更する。
 
-- <https://github.com/hexojs/hexo-theme-light>
+- [https://github.com/hexojs/hexo-theme-light](https://github.com/hexojs/hexo-theme-light)
 
 ```shell
 git clone --depth 1 https://github.com/hexojs/hexo-theme-light themes/light
@@ -76,7 +76,7 @@ hexo generate
 
 GitHub上のgh-pagesブランチにデプロイする設定をする。
 
-- <https://hexo.io/docs/one-command-deployment.html>
+- [https://hexo.io/docs/one-command-deployment.html](https://hexo.io/docs/one-command-deployment.html)
 
 ```shell
 npm install hexo-deployer-git
@@ -98,8 +98,8 @@ hexo deploy
 
 記事を限定公開化するhiddenオプションをfront-matterに追加する。
 
-- <https://prokou.caitsith.info/hexo/setup.html#%E8%A8%98%E4%BA%8B%E3%82%92%E9%9A%A0%E3%81%99>
-- <https://github.com/prinsss/hexo-hide-posts>
+- [https://prokou.caitsith.info/hexo/setup.html#%E8%A8%98%E4%BA%8B%E3%82%92%E9%9A%A0%E3%81%99](https://prokou.caitsith.info/hexo/setup.html#%E8%A8%98%E4%BA%8B%E3%82%92%E9%9A%A0%E3%81%99)
+- [https://github.com/prinsss/hexo-hide-posts](https://github.com/prinsss/hexo-hide-posts)
 
 ```shell
 npm install hexo-hide-posts
@@ -107,7 +107,7 @@ npm install hexo-hide-posts
 
 外部リンクにnoreferrerを追加する。
 
-- <https://github.com/hexojs/hexo-filter-nofollow>
+- [https://github.com/hexojs/hexo-filter-nofollow](https://github.com/hexojs/hexo-filter-nofollow)
 
 ```
 npm install hexo-filter-nofollow

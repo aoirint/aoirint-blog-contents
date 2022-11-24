@@ -18,7 +18,7 @@ Python製のドキュメント生成ツール。
 * Python 3.8.5
 * Sphinx 3.4.2
 
-  * `Sphinx · PyPI <https://pypi.org/project/Sphinx/>`_
+  * `Sphinx · PyPI [https://pypi.org/project/Sphinx/](https://pypi.org/project/Sphinx/)`_
 
 
 .. code-block:: bash
@@ -70,8 +70,8 @@ SphinxではデフォルトでreStructuredTextというマークアップ言語�
 
 次はPythonモジュールのdocstringからドキュメントを自動生成する。
 
-* `Sphinx でPythonのAPIドキュメントを自動作成 - Qiita <https://qiita.com/some-nyan/items/1980198a05c12d90e5c3>`_
-* `python書くなら絶対に使いたい2つのドキュメント生成ツール - Qiita <https://qiita.com/hatsumi3/items/11c5bc835efe713e4767>`_
+* `Sphinx でPythonのAPIドキュメントを自動作成 - Qiita [https://qiita.com/some-nyan/items/1980198a05c12d90e5c3](https://qiita.com/some-nyan/items/1980198a05c12d90e5c3)`_
+* `python書くなら絶対に使いたい2つのドキュメント生成ツール - Qiita [https://qiita.com/hatsumi3/items/11c5bc835efe713e4767](https://qiita.com/hatsumi3/items/11c5bc835efe713e4767)`_
 
 .. code-block:: bash
 

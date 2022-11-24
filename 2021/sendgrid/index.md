@@ -13,7 +13,7 @@ tags:
 ## 背景
 Discourseをセットアップしようとしていたところ、いくつかのEmailプロバイダが紹介されていた。
 
-- <https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md>
+- [https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md](https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md)
     - [Mailgun](https://www.mailgun.com/)
     - [SendGrid](https://sendgrid.com/)
     - [Mailjet](https://www.mailjet.com/pricing)
@@ -24,12 +24,12 @@ Discourseはセットアップにメールサーバが要求される。以前�
 名前を聞いたことのあるSendGridを使う。業務上の利用を想定しているようだが、個人による利用として続行する。スケールする商用サービスでの利用ではないが、利用経験は技術選定の上で大事だと思う。その分、Abuseしないように考えなければならないが。
 
 ## Freeプラン
-- <https://sendgrid.com/pricing/>
+- [https://sendgrid.com/pricing/](https://sendgrid.com/pricing/)
 
 1日に100メールまではFreeプランが使用できる。自分しか使わない、またはごくごく小規模な利用では十分だろう。
 
 ## 登録
-- <https://sendgrid.com/>
+- [https://sendgrid.com/](https://sendgrid.com/)
 
 `Start For Free`から登録する。
 
@@ -41,11 +41,11 @@ Discourseはセットアップにメールサーバが要求される。以前�
 
 ダッシュボードを開く。
 
-- <https://app.sendgrid.com/>
+- [https://app.sendgrid.com/](https://app.sendgrid.com/)
 
 !["authenticate a domain instead"をクリックする](images/authenticate_a_domain_instead.png)
 
-- <https://app.sendgrid.com/settings/sender_auth/domain/create>
+- [https://app.sendgrid.com/settings/sender_auth/domain/create](https://app.sendgrid.com/settings/sender_auth/domain/create)
 
 ![DNSホストの選択](images/authenticate_your_domain.png)
 
@@ -74,7 +74,7 @@ DNSサーバに登録すべき認証用のレコードが表示される（DNS�
 
 ## APIキーの発行（送信テスト）
 
-- <https://app.sendgrid.com/guide/integrate>
+- [https://app.sendgrid.com/guide/integrate](https://app.sendgrid.com/guide/integrate)
 
 ![APIキーの利用方法の選択](images/choose_setup_method.png)
 
@@ -82,7 +82,7 @@ Web APIを選択する。
 
 ![プログラミング言語/利用プログラムの選択](images/webapi_langs.png)
 
-プログラミング言語/利用プログラムを選択する。チュートリアルの出し分けをするだけで、ここでの選択に特に意味はないと思われる（チュートリアルなしでAPIキーを発行もできる： <https://app.sendgrid.com/settings/api_keys>）。
+プログラミング言語/利用プログラムを選択する。チュートリアルの出し分けをするだけで、ここでの選択に特に意味はないと思われる（チュートリアルなしでAPIキーを発行もできる： [https://app.sendgrid.com/settings/api_keys](https://app.sendgrid.com/settings/api_keys)）。
 
 ![APIキーの発行](images/create_api_key.png)
 

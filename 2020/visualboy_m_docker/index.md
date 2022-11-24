@@ -14,7 +14,7 @@ tags:
 [VisualBoyAdvance - M](https://github.com/visualboyadvance-m/visualboyadvance-m)をDocker上で動かすDockerfile（とrunコマンドのオプションセット）を作った。
 要X Window System、Pulseaudio。Ubuntu Desktop 18.04（with NVIDIA Driver）で動作確認。
 
-- <https://github.com/aoirint/vbam-docker>
+- [https://github.com/aoirint/vbam-docker](https://github.com/aoirint/vbam-docker)
 
 ## Dockerfile
 

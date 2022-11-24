@@ -22,7 +22,7 @@ Webサイト（ボイボ寮）を作って、動画を作って、と告知の�
 
 PBL講義の一環として、Androidアプリを作る計画がある。
 
-- Kamishibai（仮名）：<https://github.com/aoirint/Kamishibai>
+- Kamishibai（仮名）：[https://github.com/aoirint/Kamishibai](https://github.com/aoirint/Kamishibai)
 
 イメージとしては、スライドショー付き音楽プレイヤーで、複雑なシステムではない。
 Spotifyのキャンバスが近いかもしれない。

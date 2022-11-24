@@ -10,32 +10,32 @@ tags:
 ---
 # Overleaf Community Edition
 
-- <https://overleaf.com/>
+- [https://overleaf.com/](https://overleaf.com/)
 
 オンラインLaTeXエディタのShareLaTeXとOverleafは、Overleaf v2として2017年に統合され、OverleafはShareLaTeXのエディタを使うようになった。
 
-- <https://www.sharelatex.com/>
-- <https://ja.overleaf.com/blog/sharelatex-joins-overleaf-2017-07-20>
+- [https://www.sharelatex.com/](https://www.sharelatex.com/)
+- [https://ja.overleaf.com/blog/sharelatex-joins-overleaf-2017-07-20](https://ja.overleaf.com/blog/sharelatex-joins-overleaf-2017-07-20)
 
 Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド版と、セルフホスト可能なオープンソース版（Community Edition）が公開されている。
 
-- <https://github.com/overleaf/overleaf>
+- [https://github.com/overleaf/overleaf](https://github.com/overleaf/overleaf)
 
 この記事では、Overleaf Community Editionの公式Dockerイメージ（イメージ名は`sharelatex/sharelatex`）を使って、セルフホストする。
 
-- <https://hub.docker.com/r/sharelatex/sharelatex/>
+- [https://hub.docker.com/r/sharelatex/sharelatex/](https://hub.docker.com/r/sharelatex/sharelatex/)
 
 クラウド版とCommunity Editionの機能の違いは、以下を参照。
 
-- <https://www.overleaf.com/for/enterprises/features>
+- [https://www.overleaf.com/for/enterprises/features](https://www.overleaf.com/for/enterprises/features)
 
 ## 使用できない機能
 ### Git管理
 
 Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。クラウド版のGit管理はクローズドソースなファイル履歴APIを利用して実装されており、これが技術的な課題になっているらしい。
 
-- <https://github.com/overleaf/overleaf/issues/782>
-- <https://github.com/overleaf/overleaf/issues/10>
+- [https://github.com/overleaf/overleaf/issues/782](https://github.com/overleaf/overleaf/issues/782)
+- [https://github.com/overleaf/overleaf/issues/10](https://github.com/overleaf/overleaf/issues/10)
 
 Overleafに管理させないでよいのなら、ファイルは`/var/lib/sharelatex/data/compiles/{project_id}-{user_id}`に保存されるので、ここを監視して自動コミットするようなプログラムを使ってもいいかもしれない。
 
@@ -48,14 +48,14 @@ docker-compose exec mongo mongo sharelatex --eval "db.users.find()"
 
 クラウド版・Pro版限定機能。
 
-- <https://github.com/overleaf/web/issues/203>
-- <https://github.com/overleaf/overleaf/issues/109>
-- <https://github.com/overleaf/overleaf/wiki/Server-Pro:-Setting-up-templates>
+- [https://github.com/overleaf/web/issues/203](https://github.com/overleaf/web/issues/203)
+- [https://github.com/overleaf/overleaf/issues/109](https://github.com/overleaf/overleaf/issues/109)
+- [https://github.com/overleaf/overleaf/wiki/Server-Pro:-Setting-up-templates](https://github.com/overleaf/overleaf/wiki/Server-Pro:-Setting-up-templates)
 
 ## docker-compose.yml
 
-- <https://github.com/overleaf/overleaf/blob/a752bbefdd7ef3316aaf0c34302f08e6024aaadb/docker-compose.yml>
-- <https://github.com/overleaf/overleaf/wiki/Configuring-Overleaf>
+- [https://github.com/overleaf/overleaf/blob/a752bbefdd7ef3316aaf0c34302f08e6024aaadb/docker-compose.yml](https://github.com/overleaf/overleaf/blob/a752bbefdd7ef3316aaf0c34302f08e6024aaadb/docker-compose.yml)
+- [https://github.com/overleaf/overleaf/wiki/Configuring-Overleaf](https://github.com/overleaf/overleaf/wiki/Configuring-Overleaf)
 
 ```yaml
 version: '3.9'
@@ -146,7 +146,7 @@ REDIS_ROOT=./data/redis
 
 ## 設定
 
-- <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide>
+- [https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide](https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide)
 
 ### TeXLiveのフルインストール
 
@@ -172,15 +172,15 @@ docker-compose exec sharelatex tlmgr install scheme-full
 docker-compose up -d --force-recreate
 ```
 
-- <http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html>
+- [http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html](http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html)
 
 なお、公式Wikiでは、ローカル用のDockerイメージを作る方法が案内されている。
 
-- <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#latex-environment>
+- [https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#latex-environment](https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#latex-environment)
 
 ### ユーザの登録
 
-- <https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#creating-and-managing-users>
+- [https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#creating-and-managing-users](https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide#creating-and-managing-users)
 
 初期状態では、`/launchpad`にアクセスすることで管理ユーザを作成できる（コマンドで作成も可）。
 
@@ -188,7 +188,7 @@ docker-compose up -d --force-recreate
 
 ## フォント（Noto Sans CJK JP）の追加
 
-- <https://github.com/overleaf/overleaf/issues/817>
+- [https://github.com/overleaf/overleaf/issues/817](https://github.com/overleaf/overleaf/issues/817)
 
 コンテナ内のシステム（`/usr/share/fonts`もしくは`/usr/local/share/fonts`）にフォントを追加すれば認識する。
 
@@ -242,7 +242,7 @@ docker-compose up -d
 
 ### latexmkrc
 
-- <https://doratex.hatenablog.jp/entry/20180503/1525338512>
+- [https://doratex.hatenablog.jp/entry/20180503/1525338512](https://doratex.hatenablog.jp/entry/20180503/1525338512)
 
 ```latexmkrc
 # https://doratex.hatenablog.jp/entry/20180503/1525338512

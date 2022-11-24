@@ -10,11 +10,11 @@ tags:
 ---
 # Ubuntu, CUDAを入れたあとにSteamが起動しない
 
-- <https://qiita.com/yakitatata/items/b2203f90defcad68bb9f>
+- [https://qiita.com/yakitatata/items/b2203f90defcad68bb9f](https://qiita.com/yakitatata/items/b2203f90defcad68bb9f)
 
 NVIDIAドライバのrunfileをダウンロードする（インストール済みのバージョンと合わせる）。
 
-- ドライバ: <https://www.nvidia.co.jp/Download/Find.aspx?lang=jp>
+- ドライバ: [https://www.nvidia.co.jp/Download/Find.aspx?lang=jp](https://www.nvidia.co.jp/Download/Find.aspx?lang=jp)
 
 ディレクトリに展開する。
 

@@ -11,7 +11,7 @@ tags:
 ---
 # GitHub ActionsでPyPIにPythonパッケージをpushする（GitHub Release連携でバージョン付け）
 
-- <https://qiita.com/aoirint/items/09ea153751a65bf4876f#github-release%E4%BD%9C%E6%88%90%E6%99%82%E3%81%ABpypi%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89>
+- [https://qiita.com/aoirint/items/09ea153751a65bf4876f#github-release%E4%BD%9C%E6%88%90%E6%99%82%E3%81%ABpypi%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89](https://qiita.com/aoirint/items/09ea153751a65bf4876f#github-release%E4%BD%9C%E6%88%90%E6%99%82%E3%81%ABpypi%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89)
 
 上の記事のWorkflowテンプレートをちょっと改良した。
 

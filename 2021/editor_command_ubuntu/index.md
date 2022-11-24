@@ -9,7 +9,7 @@ tags:
 ---
 # editorコマンドで起動するエディタを変更する（Ubuntu）
 
-- <https://unix.stackexchange.com/a/204896>
+- [https://unix.stackexchange.com/a/204896](https://unix.stackexchange.com/a/204896)
 
 ```shell
 sudo update-alternatives --config editor

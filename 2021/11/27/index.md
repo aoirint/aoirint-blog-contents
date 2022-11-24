@@ -22,8 +22,8 @@ VOICEVOX 0.9.1がリリースされ、つむぎちゃん、リツさんが実装
 Windows版のChromeはなにか対策が組み込まれているのか、はたまた偶然か、再現しなかった。
 Electronの方（VOICEVOXソフトウェア）では再現したので、Chromiumが抱える問題かもしれない（Chromeではなんやかんや修正されているとかあるかもしれない）。
 
-- <https://github.com/Hiroshiba/voicevox_resource/pull/1>
-- <https://github.com/Hiroshiba/voicevox_blog/pull/6>
+- [https://github.com/Hiroshiba/voicevox_resource/pull/1](https://github.com/Hiroshiba/voicevox_resource/pull/1)
+- [https://github.com/Hiroshiba/voicevox_blog/pull/6](https://github.com/Hiroshiba/voicevox_blog/pull/6)
 
 修正のため、それぞれPRを用意したけれど、Webページの方は自動縮小版画像が絡んで少しややこしそう。
 あと、再現性がよくわからない、おま環対策PRなのも不安要素（ヒホさんの環境では再現しないっぽい）。

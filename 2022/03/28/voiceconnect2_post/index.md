@@ -8,7 +8,7 @@ channel: 雑記
 
 ボイスコネクト：VOICEROID、CeVIO中心の同人即売会。
 
-- <https://twitter.com/voiceconnect_ad>
+- [https://twitter.com/voiceconnect_ad](https://twitter.com/voiceconnect_ad)
 
 ![ボイスコネクト2 戦利品](images/voiceconnect2_collected.jpg)
 

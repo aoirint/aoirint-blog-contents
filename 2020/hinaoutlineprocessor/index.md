@@ -12,7 +12,7 @@ tags:
 
 2017年の頭に開発していたxmlベースの階層型アウトラインプロセッサ。Java Swing製。
 
-- <https://github.com/aoirint/HinaOutlineProcessor>
+- [https://github.com/aoirint/HinaOutlineProcessor](https://github.com/aoirint/HinaOutlineProcessor)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ひなホップ（Hina Outline Processor）の開発 <a href="https://t.co/2zd5fj5mN1">pic.twitter.com/2zd5fj5mN1</a></p>&mdash; kanomiya (@kanomiya) <a href="https://twitter.com/kanomiya/status/836616749252390912?ref_src=twsrc%5Etfw">February 28, 2017</a></blockquote> 
 

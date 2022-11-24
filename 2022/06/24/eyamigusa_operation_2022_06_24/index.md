@@ -36,7 +36,7 @@ Twitterに投げるには分量が多いとか。
 
 JoplinとかScrapboxに書くのがちょうどいい？　うーん。
 
-- <https://blog.aoirint.com/entry/2022/pip_compile_metadata_generation_failed/>
+- [https://blog.aoirint.com/entry/2022/pip_compile_metadata_generation_failed/](https://blog.aoirint.com/entry/2022/pip_compile_metadata_generation_failed/)
 
 上を書くにあたって、Joplinに下書きして、記事としてまとめたものを公開して、下書きをScrapboxに公開する、とバージョン違いのコピーが3個できた。
 

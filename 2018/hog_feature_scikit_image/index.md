@@ -40,5 +40,5 @@ print(feature)
 ```
 
 - [画像からHOG特徴量の抽出 - Qiita](https://qiita.com/mikaji/items/3e3f85e93d894b4645f7)
-  - <https://web.archive.org/web/20170917002713/http://qiita.com/mikaji/items/3e3f85e93d894b4645f7>
-- ドキュメント： <https://scikit-image.org/docs/dev/api/skimage.feature.html#skimage.feature.hog>
+  - [https://web.archive.org/web/20170917002713/http://qiita.com/mikaji/items/3e3f85e93d894b4645f7](https://web.archive.org/web/20170917002713/http://qiita.com/mikaji/items/3e3f85e93d894b4645f7)
+- ドキュメント： [https://scikit-image.org/docs/dev/api/skimage.feature.html#skimage.feature.hog](https://scikit-image.org/docs/dev/api/skimage.feature.html#skimage.feature.hog)

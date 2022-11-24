@@ -12,11 +12,11 @@ tags:
 
 - Python 3.9.13 (pyenv)
 - Ubuntu 20.04 (WSL2)
-- <https://github.com/aoirint/python_asyncio_examples>
+- [https://github.com/aoirint/python_asyncio_examples](https://github.com/aoirint/python_asyncio_examples)
 
 なんかこう書くとうまく動くということしかわからん、という実装例です。
 
-- <https://twitter.com/aoirint/status/1544891079786627074>
+- [https://twitter.com/aoirint/status/1544891079786627074](https://twitter.com/aoirint/status/1544891079786627074)
 
 ## 基本実装
 

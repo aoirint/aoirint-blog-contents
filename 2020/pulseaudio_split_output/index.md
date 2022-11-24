@@ -15,7 +15,7 @@ tags:
 
 # PulseAudioで特定のアプリケーションからの音声出力だけを分離する
 
-- <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-loopback>
+- [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-loopback](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-loopback)
 
 以下のコマンドで仮想出力デバイス`DummyOutput0`と、そのループバック`Loopback from Monitor of DummyOutput0`が追加される。
 
@@ -67,7 +67,7 @@ pulseaudio --start
 
 ## デバイス接続時の入出力デバイス自動切り替えを無効化する
 
-- <https://askubuntu.com/questions/1061414/how-to-disable-pulseaudio-automatic-device-switch>
+- [https://askubuntu.com/questions/1061414/how-to-disable-pulseaudio-automatic-device-switch](https://askubuntu.com/questions/1061414/how-to-disable-pulseaudio-automatic-device-switch)
 
 新しい出力デバイスが検出されたとき、デフォルト出力デバイスが切り替わるのを防ぐ。
 
@@ -93,8 +93,8 @@ pulseaudio --start
 
 
 ## 電源メニューから音声デバイスを切り替えられるようにするGnome Shell Extension
-- <https://extensions.gnome.org/extension/906/sound-output-device-chooser/>
-- <https://github.com/kgshank/gse-sound-output-device-chooser>
+- [https://extensions.gnome.org/extension/906/sound-output-device-chooser/](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+- [https://github.com/kgshank/gse-sound-output-device-chooser](https://github.com/kgshank/gse-sound-output-device-chooser)
 
 PulseAudioを再起動するとデバイス一覧に古い項目が残り、選択するとGnome Desktopがフリーズするバグがある。
 PulseAudio再起動後はAlt+F2でrコマンドを実行することで拡張機能がリロードされ、この問題を回避できる。

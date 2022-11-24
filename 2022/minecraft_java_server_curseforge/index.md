@@ -12,23 +12,23 @@ tags:
 ---
 # CurseForge Modpackを導入したMinecraft Java版 サーバ in Docker
 
-- 前回の記事: <https://blog.aoirint.com/entry/2021/minecraft_server/>
-- <https://hub.docker.com/r/itzg/minecraft-server>
-- <https://github.com/itzg/docker-minecraft-server>
-- 例: <https://github.com/aoirint/minecraft-server-pixelmon-cj>
+- 前回の記事: [https://blog.aoirint.com/entry/2021/minecraft_server/](https://blog.aoirint.com/entry/2021/minecraft_server/)
+- [https://hub.docker.com/r/itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server)
+- [https://github.com/itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
+- 例: [https://github.com/aoirint/minecraft-server-pixelmon-cj](https://github.com/aoirint/minecraft-server-pixelmon-cj)
 
 
 ## 2021年12月に確認されたLog4j 脆弱性（Log4jShell）への対応（Minecraft 1.7～1.18を使用する場合）
 
 Minecraft公式から、旧バージョンにおける脆弱性対応手順が案内されています。
 
-- <https://www.minecraft.net/ja-jp/article/important-message--security-vulnerability-java-edition-jp>
+- [https://www.minecraft.net/ja-jp/article/important-message--security-vulnerability-java-edition-jp](https://www.minecraft.net/ja-jp/article/important-message--security-vulnerability-java-edition-jp)
 
 ### Minecraftサーバー
 
 この記事で使用するDockerイメージ`itzg/minecraft-server`では、自動的に脆弱性への対応が適用されます。
 
-- <https://github.com/itzg/docker-minecraft-server#mitigated-log4jshell-vulnerability>
+- [https://github.com/itzg/docker-minecraft-server#mitigated-log4jshell-vulnerability](https://github.com/itzg/docker-minecraft-server#mitigated-log4jshell-vulnerability)
 
 ### Minecraftクライアント（CurseForge Appに管理された環境）
 
@@ -36,7 +36,7 @@ CurseForge Appでは、Minecraft向けに対応するパッチが適用されて
 
 > We already released a patch to the app
 
-- <https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft>
+- [https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft](https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft)
 
 ### Mod
 
@@ -44,7 +44,7 @@ CurseForge上で脆弱性の影響を受けるModは削除されているよう�
 
 > to our best knowledge, any vulnerable mod was removed
 
-- <https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft>
+- [https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft](https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft)
 
 
 ## Modpackを導入して新規ワールド生成
@@ -53,7 +53,7 @@ CurseForge Appまたは`curseforge.com`から、導入するModpackのServer Pac
 
 以下では例としてMinecraft 1.12.2の環境ですが、Modpackに対応した本体バージョンに変更してください。
 
-- Minecraft公式リリースノート: <https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs>
+- Minecraft公式リリースノート: [https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs)
 
 ### docker-compose.yml
 
@@ -126,5 +126,5 @@ ModPackへの追加は、初期化以外のタイミングでは反映されな�
 
 上の`.env`では、ブラウザマップModのDynmapForgeをの追加導入を想定しています。
 
-- <https://github.com/webbukkit/dynmap>
-- <https://www.curseforge.com/minecraft/mc-mods/dynmapforge>
+- [https://github.com/webbukkit/dynmap](https://github.com/webbukkit/dynmap)
+- [https://www.curseforge.com/minecraft/mc-mods/dynmapforge](https://www.curseforge.com/minecraft/mc-mods/dynmapforge)

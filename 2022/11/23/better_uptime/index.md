@@ -13,10 +13,10 @@ aoirint.com関連サービスにBetter Uptimeを導入し、死活監視情報�
 
 プランは以下を参照。URL 10個まで無料で監視させられる（3分間隔）。
 
-- <https://betterstack.com/better-uptime/pricing>
+- [https://betterstack.com/better-uptime/pricing](https://betterstack.com/better-uptime/pricing)
 
 カスタムドメインのステータスページ。
 
-- <https://status.aoirint.com>
+- [https://status.aoirint.com](https://status.aoirint.com)
 
 ![](images/status_page.png)

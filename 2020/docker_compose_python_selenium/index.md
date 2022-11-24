@@ -20,7 +20,7 @@ tags:
 
 Seleniumのバージョンが上がって一部非推奨化したりしたので、そちらに対応した版を作成しました。
 
-- リポジトリ: <https://github.com/aoirint/compose-selenium-python-template>
+- リポジトリ: [https://github.com/aoirint/compose-selenium-python-template](https://github.com/aoirint/compose-selenium-python-template)
 
 ---
 

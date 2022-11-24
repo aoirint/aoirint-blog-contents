@@ -67,7 +67,7 @@ cronは、プログラムの出力をメールで送るという動作をする�
 
 シェルスクリプトからSlackに通知を送るには、以下のようにするとよい（`sudo apt install curl jq`）。
 
-- <https://api.slack.com/apps>
+- [https://api.slack.com/apps](https://api.slack.com/apps)
 
 ```shell
 #!/bin/bash
