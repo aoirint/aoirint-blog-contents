@@ -13,7 +13,7 @@ tags:
 
 darknetのmakeに失敗するので、CUDA/NVIDIA Driverの再セットアップ。
 
-- <https://developer.nvidia.com/cuda-downloads>
+- [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
 
 `runfile (local)`をダウンロード。
 
@@ -38,8 +38,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 上記の環境でdarknetのmakeに成功した。
 
-<https://pjreddie.com/darknet/>
+[https://pjreddie.com/darknet/](https://pjreddie.com/darknet/)
 
 ## 参考
 
-- <http://vastee.hatenablog.com/entry/2018/11/20/152234>
+- [http://vastee.hatenablog.com/entry/2018/11/20/152234](http://vastee.hatenablog.com/entry/2018/11/20/152234)

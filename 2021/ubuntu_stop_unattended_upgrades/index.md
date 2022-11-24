@@ -11,7 +11,7 @@ tags:
 ---
 # Ubuntu 20.04, Unattended Upgradesを停止
 
-- <https://unix.stackexchange.com/questions/470709/how-do-i-stop-disable-unattended-upgrades-from-being-launched-automatically>
+- [https://unix.stackexchange.com/questions/470709/how-do-i-stop-disable-unattended-upgrades-from-being-launched-automatically](https://unix.stackexchange.com/questions/470709/how-do-i-stop-disable-unattended-upgrades-from-being-launched-automatically)
 
 勝手にnvidia driverの更新が走って、
 カーネルに読み込まれているdriverバージョンと、

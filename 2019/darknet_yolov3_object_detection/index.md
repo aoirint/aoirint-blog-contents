@@ -11,7 +11,7 @@ tags:
 ---
 # Yolo v3でObject Detectionする（darknet）
 
-- <https://github.com/pjreddie/darknet>
+- [https://github.com/pjreddie/darknet](https://github.com/pjreddie/darknet)
 
 ```shell
 git clone https://github.com/pjreddie/darknet.git
@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
 ## 参考
 
-- <https://pjreddie.com/darknet/>
+- [https://pjreddie.com/darknet/](https://pjreddie.com/darknet/)
 - [Tutorial: Build your own custom real-time object classifier](https://towardsdatascience.com/tutorial-build-an-object-detection-system-using-yolo-9a930513643a)
 - [GitHub - AlexeyAB/darknet: Windows and Linux version of Darknet Yolo v3 & v2 Neural Networks for object detection (Tensor Cores are used)](https://github.com/AlexeyAB/darknet)
 

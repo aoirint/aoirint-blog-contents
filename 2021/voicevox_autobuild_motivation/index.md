@@ -13,11 +13,14 @@ tags:
 
 - [目次](../voicevox_autobuild/)
 
-<!--
-    コンテキストの共有
-    モチベーションの確認
-    技術情報の共有
--->
+---
+
+- 内容
+  - コンテキストの共有
+  - モチベーションの確認
+  - 技術情報の共有
+
+---
 
 ## ここを必ず読んでね
 
@@ -74,8 +77,8 @@ tags:
 
 OSSにプルリクエストを送った経験がほとんどなかったので、まずは小さいパッチを送って様子を見たいと思いました。
 
-- <https://github.com/miyadaiku/miyadaiku/pull/43>
-- <https://github.com/miyadaiku/miyadaiku/pull/44>
+- [https://github.com/miyadaiku/miyadaiku/pull/43](https://github.com/miyadaiku/miyadaiku/pull/43)
+- [https://github.com/miyadaiku/miyadaiku/pull/44](https://github.com/miyadaiku/miyadaiku/pull/44)
 
 身内以外へのプルリクエストは、上のMiyadaikuというPython製静的サイトジェネレータが初めてでした。
 

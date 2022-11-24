@@ -13,8 +13,8 @@ tags:
 
 ## watchmedo (watchdog)
 
-- <https://github.com/gorakhargosh/watchdog>
-- <https://pypi.org/project/watchdog/>
+- [https://github.com/gorakhargosh/watchdog](https://github.com/gorakhargosh/watchdog)
+- [https://pypi.org/project/watchdog/](https://pypi.org/project/watchdog/)
 
 ```shell
 watchmedo shell-command -R --command 'make build' ./src
@@ -45,9 +45,9 @@ AttributeError: 'RootHandler' object has no attribute 'event_dispatch_map'
 ```
 
 ## watchexec
-- <https://github.com/watchexec/watchexec>
-- <https://crates.io/crates/watchexec-cli>
-- <https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes>
+- [https://github.com/watchexec/watchexec](https://github.com/watchexec/watchexec)
+- [https://crates.io/crates/watchexec-cli](https://crates.io/crates/watchexec-cli)
+- [https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes](https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes)
 
 ```shell
 watchexec -w ./src -- make build
@@ -61,7 +61,7 @@ watchexec -p -w ./src -- make event-trigger
 
 ### インストール
 #### Rustのインストール
-- <https://www.rust-lang.org/ja/learn/get-started>
+- [https://www.rust-lang.org/ja/learn/get-started](https://www.rust-lang.org/ja/learn/get-started)
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

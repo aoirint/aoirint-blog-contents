@@ -13,15 +13,18 @@ tags:
 
 - [目次](../voicevox_autobuild/)
 
-<!--
-    コンテキストの共有
-    モチベーションの確認
-    技術情報の共有
--->
+---
+
+- 内容
+  - コンテキストの共有
+  - モチベーションの確認
+  - 技術情報の共有
+
+---
 
 
 ### VOICEVOX ENGINEのDockerイメージ化
 
 まず、VOICEVOX ENGINEのDockerイメージの作成を始めました。
 
-- <https://github.com/VOICEVOX/voicevox_engine/pull/86>
+- [https://github.com/VOICEVOX/voicevox_engine/pull/86](https://github.com/VOICEVOX/voicevox_engine/pull/86)

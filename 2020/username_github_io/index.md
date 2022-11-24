@@ -18,4 +18,4 @@ URL：USERNAME.github.io
 
 通常のGitHub Pagesと違ってmasterブランチが使われる
 
-- <https://qiita.com/ryokosuge/items/f929821ba5ae9ba2c32b>
+- [https://qiita.com/ryokosuge/items/f929821ba5ae9ba2c32b](https://qiita.com/ryokosuge/items/f929821ba5ae9ba2c32b)

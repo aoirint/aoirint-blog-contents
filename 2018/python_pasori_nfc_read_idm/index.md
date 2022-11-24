@@ -17,7 +17,7 @@ tags:
 - Sony PaSoRi RC-S380
 - Suica
 
-（2019/12/19 追記）未検証ですがnfcpyがv1.0.0でPython3対応したみたいです。<https://github.com/nfcpy/nfcpy/issues/47#issuecomment-499693493>
+（2019/12/19 追記）未検証ですがnfcpyがv1.0.0でPython3対応したみたいです。[https://github.com/nfcpy/nfcpy/issues/47#issuecomment-499693493](https://github.com/nfcpy/nfcpy/issues/47#issuecomment-499693493)
 
 ## セットアップ
 まずPaSoRiを接続する。PaSoRiをUSBポートに挿して、VirtualBox仮想マシンの設定からUSB、USB デバイスフィルターに`SONY RC-S380/P`を追加。
@@ -188,7 +188,7 @@ Type3Tag ID=$$$$$$$$$$$$$$$$ PMM=$$$$$$$$$$$$$$$$ SYS=0003
 ---
 
 - [nfc.tag — nfcpy 1.0.3 documentation](https://nfcpy.readthedocs.io/en/latest/modules/tag.html#module-nfc.tag.tt3)
-- <http://raspberry.mcoapps.com/archives/128>
+- [http://raspberry.mcoapps.com/archives/128](http://raspberry.mcoapps.com/archives/128)
 
 ---
 

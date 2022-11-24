@@ -23,7 +23,7 @@ Authentication is required to create a color managed device
 
 ## /etc/polkit-1/localauthority.conf.d/02-allow-colord.conf
 
-- <https://god-support.blogspot.com/2019/11/ubuntu1804-xrdp-authentication-is.html>
+- [https://god-support.blogspot.com/2019/11/ubuntu1804-xrdp-authentication-is.html](https://god-support.blogspot.com/2019/11/ubuntu1804-xrdp-authentication-is.html)
 
 ```javascript
 polkit.addRule(function(action, subject) {
@@ -44,7 +44,7 @@ polkit.addRule(function(action, subject) {
 
 ## /etc/polkit-1/localauthority/50-local.d/45-allow-colord.pkla
 
-- <https://www.cagylogic.com/archives/2021/03/23145121/11743.php>
+- [https://www.cagylogic.com/archives/2021/03/23145121/11743.php](https://www.cagylogic.com/archives/2021/03/23145121/11743.php)
 
 ```conf
 [Allow Colord all Users]

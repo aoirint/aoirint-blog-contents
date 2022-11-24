@@ -15,7 +15,7 @@ tags:
 
 ---
 
-- <https://diary.palm84.com/entry/20190527/1558967870>
+- [https://diary.palm84.com/entry/20190527/1558967870](https://diary.palm84.com/entry/20190527/1558967870)
 
 Firefox 69以降デフォルトで無効化されたらしいので、`about:config`から`stylesheets`で検索、`toolkit.legacyUserProfileCustomizations.stylesheets`を`true`にする。
 
@@ -27,8 +27,8 @@ Firefox 69以降デフォルトで無効化されたらしいので、`about:con
 body { background: black !important; }
 ```
 
-- <https://developer.mozilla.org/ja/docs/Web/CSS/@document>
-- <http://puppet.asablo.jp/blog/2008/11/25/3974444>
+- [https://developer.mozilla.org/ja/docs/Web/CSS/@document](https://developer.mozilla.org/ja/docs/Web/CSS/@document)
+- [http://puppet.asablo.jp/blog/2008/11/25/3974444](http://puppet.asablo.jp/blog/2008/11/25/3974444)
 
 `@-moz-document`で特定のドメインのWebサイトにだけスタイルを適用できる（`@document`では動かなかった）。ドキュメントは`@document`のものを見ればいいのかな（Firefoxにしかこのクエリは実装されてないらしい、CSS 4で検討中？）。ID/クラスが被ってる場合に使えるか。
 
@@ -38,4 +38,4 @@ body { background: black !important; }
 }
 ```
 
-- <https://qiita.com/uzumushi/items/f95f9e89fde2a507d7e8>
+- [https://qiita.com/uzumushi/items/f95f9e89fde2a507d7e8](https://qiita.com/uzumushi/items/f95f9e89fde2a507d7e8)

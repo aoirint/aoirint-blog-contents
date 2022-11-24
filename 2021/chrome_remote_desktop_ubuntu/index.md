@@ -10,12 +10,12 @@ tags:
 ---
 # Chrome Remote Desktop （Ubuntu）
 
-- <https://remotedesktop.google.com/access>
-- <https://qiita.com/ninose14/items/473369d76814174dd58f>
+- [https://remotedesktop.google.com/access](https://remotedesktop.google.com/access)
+- [https://qiita.com/ninose14/items/473369d76814174dd58f](https://qiita.com/ninose14/items/473369d76814174dd58f)
 
 ## インストール
 
-- <https://remotedesktop.google.com/headless>
+- [https://remotedesktop.google.com/headless](https://remotedesktop.google.com/headless)
 
 ```shell
 rm -f ~/.chrome-remote-desktop-session

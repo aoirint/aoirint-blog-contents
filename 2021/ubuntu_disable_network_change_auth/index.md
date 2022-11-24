@@ -19,8 +19,8 @@ Keyringのロックを解除するときも数秒間ハングするので、似�
 
 ひとまず、設定変更時の認証を要求されないようにして、ハングを防ぐことを試みました。結果として試みは成功し、ハングを回避できるようになりました。
 
-- <https://unix.stackexchange.com/questions/534469/system-policy-prevents-control-of-network-connections>
-- <https://code.luasoftware.com/tutorials/linux/ubuntu-prompt-system-policy-prevents-modification-of-network-settings-for-all-users/>
+- [https://unix.stackexchange.com/questions/534469/system-policy-prevents-control-of-network-connections](https://unix.stackexchange.com/questions/534469/system-policy-prevents-control-of-network-connections)
+- [https://code.luasoftware.com/tutorials/linux/ubuntu-prompt-system-policy-prevents-modification-of-network-settings-for-all-users/](https://code.luasoftware.com/tutorials/linux/ubuntu-prompt-system-policy-prevents-modification-of-network-settings-for-all-users/)
 
 ## /etc/polkit-1/localauthority/50-local.d/50-allow-network-manager.pkla
 

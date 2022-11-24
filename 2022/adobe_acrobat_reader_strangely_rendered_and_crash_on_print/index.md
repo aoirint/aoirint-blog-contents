@@ -15,7 +15,7 @@ tags:
 
 特定のWindows 10 21H2環境で、Adobe Acrobat ReaderのUIが正しく描画されなかったり、PDFを印刷したりするとクラッシュする症状に悩まされていた。
 
-- <https://twitter.com/aoirint/status/1579530951029579776>
+- [https://twitter.com/aoirint/status/1579530951029579776](https://twitter.com/aoirint/status/1579530951029579776)
 
 ## 症状
 ### 一部のテキスト（太字？）が右上に傾いて表示される
@@ -67,13 +67,13 @@ Windowsのデフォルトフォントは、（おそらくこういった不具�
 レジストリを書き換えることで、フォント名に対応するフォントを変更することができる。
 このとき、標準的にWindowsのUIフォントとして使われるSegoe UIフォントで描画する、という指定がされているUI上のテキストを、別のフォントを使って描画するように設定することで、デフォルトフォント（システムフォント）を変更する方法がある。
 
-- デフォルトフォントの変更方法を指南する記事: <https://techcult.com/change-default-system-font-in-windows-10/>
+- デフォルトフォントの変更方法を指南する記事: [https://techcult.com/change-default-system-font-in-windows-10/](https://techcult.com/change-default-system-font-in-windows-10/)
 
 ![](images/registry_1.png)
 
 Acrobat Readerを正常に動作させるには、Segoe UIとして描画されるフォントが、正しくSegoe UIフォントである必要があるらしい。
 
-- クラッシュの原因についてSegoe UIフォントの正常性との関係を指摘するコメント: <https://community.adobe.com/t5/acrobat-reader-discussions/acrobat-reader-quit-unexpectedly/m-p/11139813#M66281>
+- クラッシュの原因についてSegoe UIフォントの正常性との関係を指摘するコメント: [https://community.adobe.com/t5/acrobat-reader-discussions/acrobat-reader-quit-unexpectedly/m-p/11139813#M66281](https://community.adobe.com/t5/acrobat-reader-discussions/acrobat-reader-quit-unexpectedly/m-p/11139813#M66281)
 
 上のデフォルトフォントの変更方法についての記事を参照し、復元用regファイルを作成・実行、Windowsを再起動することで、Acrobat Readerを正常に動作させることができるようになった。
 

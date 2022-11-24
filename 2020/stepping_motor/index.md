@@ -48,8 +48,8 @@ tags:
 ### 配線
 ステッピングモータ本体からは、左から黒・緑・橙・青・赤の5本のケーブルが出ている。
 これは説明書を見ると
-黒・緑がA相（A・<span style="text-decoration: overline;">A</span>）、
-青・赤がB相（B・<span style="text-decoration: overline;">B</span>）、
+黒・緑がA相（$\rm A$・$\rm \overline{A}$）、
+青・赤がB相（$\rm B$・$\rm \overline{B}$）、
 橙が電源になっている。
 モータドライバ基板の対応する端子にこれらを接続する。
 

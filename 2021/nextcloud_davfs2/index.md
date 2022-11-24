@@ -10,7 +10,7 @@ tags:
 ---
 # Nextcloud davfs2 マウント設定（Ubuntu）
 
-- <https://wiki.archlinux.jp/index.php/Davfs2>
+- [https://wiki.archlinux.jp/index.php/Davfs2](https://wiki.archlinux.jp/index.php/Davfs2)
 
 ## /etc/fstab
 

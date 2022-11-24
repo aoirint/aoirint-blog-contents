@@ -19,11 +19,11 @@ cd zoom-oauth-sample-app
 npm install
 ```
 
-- <https://github.com/zoom/zoom-oauth-sample-app>
+- [https://github.com/zoom/zoom-oauth-sample-app](https://github.com/zoom/zoom-oauth-sample-app)
 
 ngrok（remote.itみたいなやつ）をダウンロード（実行ファイル）。ngrok.ioのサブドメインにポートを転送する。
 
-- <https://ngrok.com/>
+- [https://ngrok.com/](https://ngrok.com/)
 
 ```sh
 ./ngrok http 4000
@@ -31,7 +31,7 @@ ngrok（remote.itみたいなやつ）をダウンロード（実行ファイル
 
 OAuth AppをZoom上に作成。
 
-- <https://marketplace.zoom.us/develop/create>
+- [https://marketplace.zoom.us/develop/create](https://marketplace.zoom.us/develop/create)
 
 
 設定を書く.envファイルを作成。
@@ -52,10 +52,10 @@ redirectURL=ngrokのURL
 npm run start
 ```
 
-- API Document: <https://marketplace.zoom.us/docs/api-reference/introduction>
+- API Document: [https://marketplace.zoom.us/docs/api-reference/introduction](https://marketplace.zoom.us/docs/api-reference/introduction)
 
 上のURLでテスト呼び出しができるので、アクセストークンをとりあえず使いまわして検証。
 
 管理者でない場合は得られる情報が結構限られる（進行中のミーティングの参加者リストは管理者でないととれなさそう）。管理者の場合はOAuthではなくJWTを使ったほうが良さそう。今回の目的は達成できなさそうだったのでこれで終了（トークンとらなくても入出力サンプルはある）。
 
-- JWT参考：インタラクション2020のリモート開催で使われたシステム <https://github.com/hasevr/i2020zoom>
+- JWT参考：インタラクション2020のリモート開催で使われたシステム [https://github.com/hasevr/i2020zoom](https://github.com/hasevr/i2020zoom)

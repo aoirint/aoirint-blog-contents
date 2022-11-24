@@ -25,11 +25,11 @@ PCでゲームを遊ぶ割合が増えたことでJava版に移行すること�
 
 ## Chunker
 
-- <https://chunker.app/>
-- <https://apexminecrafthosting.com/convert-bedrock-to-java/>
-- <https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview>
+- [https://chunker.app/](https://chunker.app/)
+- [https://apexminecrafthosting.com/convert-bedrock-to-java/](https://apexminecrafthosting.com/convert-bedrock-to-java/)
+- [https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview](https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview)
     - さまざまなMinecraftのサードパーティーツールを紹介する記事の1つ
-    - <https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools>
+    - [https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools](https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools)
 
 ワールドデータをアップロードすると、異なるプラットフォーム・バージョン向けに変換してくれるWebツール。
 
@@ -39,11 +39,11 @@ PCでゲームを遊ぶ割合が増えたことでJava版に移行すること�
 
 Hive GamesというMinecraft公式パートナー（Minecraftのマーケットプレイスに出品できる契約をMicrosoftと結んでいるクリエイターのこと）が開発していて、内部ツールを公開したもののようだった。
 
-- <https://twitter.com/theHiveMC>
+- [https://twitter.com/theHiveMC](https://twitter.com/theHiveMC)
 
 > Born as an internal tool
 
-- <https://hivegames.io/>
+- [https://hivegames.io/](https://hivegames.io/)
 
 > As part of an exclusive licensing deal with Microsoft
 
@@ -53,9 +53,9 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 公式ツールだとする記事があるが、ソースは見つけられなかった。
 個人的には、あくまで非公式ツールだと思っている。
 
-- <https://twitter.com/CornerHardMC/status/1527766756453822464>
-- <https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/>
-- <https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/>
+- [https://twitter.com/CornerHardMC/status/1527766756453822464](https://twitter.com/CornerHardMC/status/1527766756453822464)
+- [https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/](https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/)
+- [https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/](https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/)
 
 
 ## 軽量なワールドを変換してみた
@@ -76,7 +76,7 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 
 Chunkerにアップロードできるワールドのサイズ制限はおそらく500MB（記事執筆時点）。
 
-- <https://www.reddit.com/r/Minecraft/comments/y0tngi/chunker_maximum_world_size_for_converting_from/>
+- [https://www.reddit.com/r/Minecraft/comments/y0tngi/chunker_maximum_world_size_for_converting_from/](https://www.reddit.com/r/Minecraft/comments/y0tngi/chunker_maximum_world_size_for_converting_from/)
 
 手元に733MBある本命のBedrock版ワールドがあり、これをアップロードしようとしたところ、サイズ制限のバリデーションに引っかかった（ディレクトリ・zipと2方式のアップロードボタンがあるが、どちらも同じ）。
 
@@ -88,8 +88,8 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 
 ## Amulet Editorによるチャンク削除
 
-- <https://www.amuletmc.com/>
-- <https://github.com/Amulet-Team/Amulet-Map-Editor>
+- [https://www.amuletmc.com/](https://www.amuletmc.com/)
+- [https://github.com/Amulet-Team/Amulet-Map-Editor](https://github.com/Amulet-Team/Amulet-Map-Editor)
 
 ![](images/amulet_start.png)
 

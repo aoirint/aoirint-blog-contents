@@ -13,7 +13,7 @@ tags:
 
 # GitLab CI, GitLab PagesにビルドしたHTMLを公開する
 
-- <https://docs.gitlab.com/ee/user/project/pages/>
+- [https://docs.gitlab.com/ee/user/project/pages/](https://docs.gitlab.com/ee/user/project/pages/)
 
 リポジトリのGitLab Pages機能を有効化したあと、
 GitLab CI上で`pages`というジョブに`public`というパスのArtifactがあるとき、
@@ -24,7 +24,7 @@ GitLab CI上で`pages`というジョブに`public`というパスのArtifactが
 
 ## .gitlab-ci.yml
 
-- <https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_from_scratch.html#specify-a-stage-to-deploy>
+- [https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_from_scratch.html#specify-a-stage-to-deploy](https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_from_scratch.html#specify-a-stage-to-deploy)
 
 ```yaml
 image: ruby:2.7

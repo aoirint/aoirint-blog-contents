@@ -15,7 +15,7 @@ tags:
 
 古い記事にはリダイレクトと移動先へのリンクを設置しています。
 
-- <https://github.com/x-motemen/blogsync>
+- [https://github.com/x-motemen/blogsync](https://github.com/x-motemen/blogsync)
 
 blogsyncで記事を取得したあと、以下のようなスクリプトでfrontmatterを変換しました。
 

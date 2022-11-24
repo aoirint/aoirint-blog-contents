@@ -39,7 +39,7 @@ Git管理結構、GitHub結構、SSG結構なのだけれども、_postsディ�
 
 リンクを張るならnoreferrerしないと、解析に残ってしまうな...。
 
-- <https://github.com/hexojs/hexo-filter-nofollow>
+- [https://github.com/hexojs/hexo-filter-nofollow](https://github.com/hexojs/hexo-filter-nofollow)
 
 これでよさそう。
 

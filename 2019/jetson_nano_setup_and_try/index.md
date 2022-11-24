@@ -22,7 +22,7 @@ tags:
 
 - [tp-link Archer T2U Nano AC600をLinuxで使う方法 ｜ Shizuka's Style (Duo)](https://yaplog.jp/shizuka2/archive/256)
 - [Jetson Nano で TP-LINK Archer T2U Nano を使う - Qiita](https://qiita.com/daisuzu_/items/8d6913f3bda1b7434526)
-- <https://devtalk.nvidia.com/default/topic/1051503/jetson-nano/make-usb-wifi-dongle-rtl8812au-works-on-nano/>
+- [https://devtalk.nvidia.com/default/topic/1051503/jetson-nano/make-usb-wifi-dongle-rtl8812au-works-on-nano/](https://devtalk.nvidia.com/default/topic/1051503/jetson-nano/make-usb-wifi-dongle-rtl8812au-works-on-nano/)
 
 NVIDIA Developer Forumsのつい最近（11/27）のポストで、新しいcommitで動かなくなっちゃったからCommit ID`d277c36`がいいよ、っていってる人がいる。でもT2U NanoのIDが登録されたのは2つ後の`4235b0e`なので、これを使ってみたけど、これで動いた（OSはr32.2.3）。この1つ後（現在masterの最新commit）の`fa68771`は接続が確立しなかった（パスワードの入力を何度でも求められる）。警告回避のためにリファクタリングしたらバグったっぽい（[コミットコメント](https://github.com/abperiasamy/rtl8812AU_8821AU_linux/commit/fa68771376a637c0b5f9cfa53da008570939a259#commitcomment-35946948)、[プルリク](https://github.com/abperiasamy/rtl8812AU_8821AU_linux/pull/310)）。
 
@@ -149,7 +149,7 @@ NV Power Mode: MAXN
 
 ## PyTorch
 
-- <https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano-version-1-3-0-now-available/>
+- [https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano-version-1-3-0-now-available/](https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano-version-1-3-0-now-available/)
 
 ```shell
 pip3 install numpy # takes long..

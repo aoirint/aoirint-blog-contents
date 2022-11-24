@@ -26,7 +26,7 @@ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 - SHA-512 (2020-04-11)
-- <https://ctan.org/tex-archive/systems/texlive/tlnet>
+- [https://ctan.org/tex-archive/systems/texlive/tlnet](https://ctan.org/tex-archive/systems/texlive/tlnet)
 
 ```sh
 sha512sum install-tl-unx.tar.gz
@@ -80,6 +80,6 @@ export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
 
 ...問題は直りませんでした。やっぱ関係ないか。本題についてはエンジンをplatexからuplatexに変更してみたら解決した気がする。ついでにAtomのバージョンが古くなっていたのでアップデート。レスポンス良くなった？
 
-- <https://texwiki.texjp.org/?Linux#texliveinstall>
-- <https://qiita.com/BitPositive/items/6b13e2038d628c33be8e>
-- <https://qiita.com/Shitimi_613/items/9706d57fb7bc17cbed0e>
+- [https://texwiki.texjp.org/?Linux#texliveinstall](https://texwiki.texjp.org/?Linux#texliveinstall)
+- [https://qiita.com/BitPositive/items/6b13e2038d628c33be8e](https://qiita.com/BitPositive/items/6b13e2038d628c33be8e)
+- [https://qiita.com/Shitimi_613/items/9706d57fb7bc17cbed0e](https://qiita.com/Shitimi_613/items/9706d57fb7bc17cbed0e)

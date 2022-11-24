@@ -83,8 +83,8 @@ urllib3==1.26.9
 
 </details>
 
-- <https://pypi.org/project/pip-tools/> （現在 pip-tools==6.6.2）
-- <https://github.com/jazzband/pip-tools>
+- [https://pypi.org/project/pip-tools/](https://pypi.org/project/pip-tools/) （現在 pip-tools==6.6.2）
+- [https://github.com/jazzband/pip-tools](https://github.com/jazzband/pip-tools)
 
 ところでPythonパッケージは、システムパッケージの事前インストールを要求することがある。
 以下、システムパッケージ名はDebian/Ubuntuを想定する。
@@ -103,7 +103,7 @@ pip._internal.exceptions.MetadataGenerationFailed: metadata generation failed
 いまのところpip-compileには、パッケージのインストール処理が記述されたsetup.pyの実行時に例外が起きたとき、その例外の内容が隠されてしまう問題があり、他に原因がある可能性もある。
 他に原因がありそうなときには、venvで仮想環境を作るなどして、一度通常のpip installを実行してみて、エラーログを確認して対処するとよいと思う。
 
-- <https://github.com/jazzband/pip-tools/issues/1583>
+- [https://github.com/jazzband/pip-tools/issues/1583](https://github.com/jazzband/pip-tools/issues/1583)
 
 ともあれ、このようなpipに管理されていない依存関係は、
 ドキュメントが整備されている通常のPythonパッケージであれば、
@@ -120,8 +120,8 @@ PyPIやパッケージの公式ドキュメントに利用者向けの記載が�
 sudo apt install python3-dev libpq-dev build-essential
 ```
 
-- <https://pypi.org/project/psycopg2/> （現在 psycopg2==2.9.3）
-- <https://www.psycopg.org/docs/install.html#build-prerequisites>
+- [https://pypi.org/project/psycopg2/](https://pypi.org/project/psycopg2/) （現在 psycopg2==2.9.3）
+- [https://www.psycopg.org/docs/install.html#build-prerequisites](https://www.psycopg.org/docs/install.html#build-prerequisites)
 
 MySQLドライバのmysqlclientは、以下のようなパッケージの事前インストールが必要である。
 
@@ -129,4 +129,4 @@ MySQLドライバのmysqlclientは、以下のようなパッケージの事前�
 sudo apt install python3-dev default-libmysqlclient-dev build-essential
 ```
 
-- <https://pypi.org/project/mysqlclient/> （現在 mysqlclient==2.1.1）
+- [https://pypi.org/project/mysqlclient/](https://pypi.org/project/mysqlclient/) （現在 mysqlclient==2.1.1）

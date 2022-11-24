@@ -24,8 +24,8 @@ Port Share機能の転送先をnginxに設定すれば、443番で待ち受け�
 
 UbuntuサーバへのOpenVPNの導入は、以下のDigitalOceanの記事が有用なので、参照されたい。
 
-- OpenVPNで使用するサーバー証明書・クライアント証明書を発行するCAサーバをセットアップする記事: <https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-ubuntu-20-04>
-- OpenVPNをセットアップする記事: <https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-ja>
+- OpenVPNで使用するサーバー証明書・クライアント証明書を発行するCAサーバをセットアップする記事: [https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-ubuntu-20-04)
+- OpenVPNをセットアップする記事: [https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-ja](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-ja)
 
 OpenVPNのインストールにあたっての重要な点として、
 `ステップ7 — OpenVPNの設定`の`（オプション）DNSの変更をプッシュして、VPNを介してすべてのトラフィックをリダイレクトする`を実行した上で、

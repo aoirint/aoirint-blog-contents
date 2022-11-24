@@ -11,7 +11,7 @@ PsychopyでOpenCV画像をImageStimで表示する
 PsychopyでOpenCV画像をImageStimで表示する
 =========================================
 
-`Psychopy - GitHub <https://github.com/psychopy/psychopy>`_
+`Psychopy - GitHub [https://github.com/psychopy/psychopy](https://github.com/psychopy/psychopy)`_
 
 .. image:: image.png
 

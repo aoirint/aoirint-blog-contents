@@ -14,7 +14,7 @@ tags:
 
 **※ VOICEVOX Coreにより生成した音声の利用にあたっては、VOICEVOX Coreの添付文書・利用規約を必ず確認し、従ってください。**
 
-- <https://github.com/Hiroshiba/voicevox_core>
+- [https://github.com/Hiroshiba/voicevox_core](https://github.com/Hiroshiba/voicevox_core)
 
 ```
 Ubuntu 20.04.3 LTS (Focal Fossa)
@@ -42,8 +42,8 @@ VOICEVOX Coreを効果的に使うには、ある程度音声合成の専門知�
 
 VOICEVOX Engineは、公式Dockerイメージが公開されています。
 
-- <https://github.com/Hiroshiba/voicevox_engine>
-- <https://hub.docker.com/r/hiroshiba/voicevox_engine>
+- [https://github.com/Hiroshiba/voicevox_engine](https://github.com/Hiroshiba/voicevox_engine)
+- [https://hub.docker.com/r/hiroshiba/voicevox_engine](https://hub.docker.com/r/hiroshiba/voicevox_engine)
 
 ### VOICEVOX Coreのインタフェースについて
 
@@ -63,8 +63,8 @@ OpenJTalkには、辞書に基づいてテキストを解析し、アクセン�
 `HTS-2.3 > Speaker dependent training demo > Japanese > tar.bz2`から`HTS-demo_NIT-ATR503-M001.tar.bz2`をダウンロード・展開し、
 `data/lab_format.pdf`を見ると英語で記述されています。
 
-- <https://hts.sp.nitech.ac.jp/?Download#u879c944>
-- <https://twitter.com/hiho_karuta/status/1059845813143138304>
+- [https://hts.sp.nitech.ac.jp/?Download#u879c944](https://hts.sp.nitech.ac.jp/?Download#u879c944)
+- [https://twitter.com/hiho_karuta/status/1059845813143138304](https://twitter.com/hiho_karuta/status/1059845813143138304)
 
 VOICEVOX Engineでは、フルコンテキストラベルやVOICEVOX Coreを使って、
 テキストを調声用のデータ構造（AudioQuery）に変換し、
@@ -82,10 +82,10 @@ VOICEVOXは、0.10から深層学習モデル推論時のバックエンドをLi
 
 PythonでONNX版のVOICEVOX Coreを使う手順はリポジトリにドキュメントがあるので参照してください（時間があればそのうち記事を書くかもです）。
 
-- <https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core>
+- [https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core](https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core)
 
 ## LibTorchのダウンロード
-- <https://pytorch.org/>
+- [https://pytorch.org/](https://pytorch.org/)
 
 Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 
@@ -96,7 +96,7 @@ Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 
 
 ## VOICEVOX Coreのダウンロード
-- <https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1>
+- [https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1](https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1)
 
 圧縮時・展開時ともに430MB。
 
@@ -116,7 +116,7 @@ source ~/.bashrc
 
 ## サンプルリポジトリをクローン
 
-- <https://github.com/Hiroshiba/voicevox_core>
+- [https://github.com/Hiroshiba/voicevox_core](https://github.com/Hiroshiba/voicevox_core)
 
 ```shell
 git clone https://github.com/Hiroshiba/voicevox_core.git
@@ -160,7 +160,7 @@ rm -rf build/ core.cpp
 `files.txt`にインストールされたファイル一覧が出力される。
 アンインストール時は、`files.txt`に列挙されたファイルを手動で削除する。
 
-- <https://qiita.com/orion0616/items/dfe476067e499cca8535>
+- [https://qiita.com/orion0616/items/dfe476067e499cca8535](https://qiita.com/orion0616/items/dfe476067e499cca8535)
 
 #### files.txt
 ```
@@ -201,11 +201,11 @@ CUDA_VISIBLE_DEVICES=1 python3 run.py --use_gpu --text "こんにちは" --speak
 ## その他参考
 `LD_LIBRARY_PATH`について調べていたが、コンパイル（`python3 setup.py install`）時に必要（`g++`が見に行くパス）なのは`LIBRARY_PATH`、実行時（`core`モジュールロード時）に必要なのは`LD_LIBRARY_PATH`ということらしかった。
 
-- <https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891>
+- [https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891](https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891)
 
 ---
 
-- <https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html>
-- <https://please-sleep.cou929.nu/20080718.html>
-- <https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47>
-- <https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007>
+- [https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html](https://atmarkit.itmedia.co.jp/flinux/rensai/linuxtips/a115makeerror.html)
+- [https://please-sleep.cou929.nu/20080718.html](https://please-sleep.cou929.nu/20080718.html)
+- [https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47](https://qiita.com/Esfahan/items/0064d845ca6faf7f3d47)
+- [https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007](https://qiita.com/kazatsuyu/items/5c8d9f539cd925fda007)

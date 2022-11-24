@@ -91,7 +91,7 @@ cmd:
 
 ## 途中のコマンドの終了ステータスを返す
 
-- <https://stackoverflow.com/a/44324918>
+- [https://stackoverflow.com/a/44324918](https://stackoverflow.com/a/44324918)
 
 ```makefile
 .ONESHELL: cmd

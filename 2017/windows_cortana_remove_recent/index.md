@@ -17,6 +17,6 @@ Winキー、アプリケーション名入力、Enterでアプリケーション
 
 この"Recent"、右クリック、"この一覧から消去"では消えなかった。Cortana（検索）を開き直すと復活する。アプリケーションを右クリックして出るジャンプリストも同じだ。
 
-- <https://account.microsoft.com/privacy/cortana>
+- [https://account.microsoft.com/privacy/cortana](https://account.microsoft.com/privacy/cortana)
 
 ここから"Cortana データを消去する"で消すことができた。

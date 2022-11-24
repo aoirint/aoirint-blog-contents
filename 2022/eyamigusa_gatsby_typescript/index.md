@@ -17,7 +17,7 @@ tags:
 レイアウト用の型定義を`gatsby-node`や`gatsby-config`で利用するために、これらのGatsby設定ファイルをTypeScript化することになりました。
 以下の記事が参考になりました。
 
-- <https://miyauchi.dev/ja/posts/gatsby-typescript/>
+- [https://miyauchi.dev/ja/posts/gatsby-typescript/](https://miyauchi.dev/ja/posts/gatsby-typescript/)
 
 ## えやみぐさに「チャンネル」機能を追加
 
