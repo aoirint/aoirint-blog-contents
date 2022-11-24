@@ -168,7 +168,7 @@ linux_entry ()
 EOF
 ```
 
-${rel_dirname}や${basename}は関数`version_find_latest $list`から生成しているようだ。
+`${rel_dirname}`や`${basename}`は関数`version_find_latest $list`から生成しているようだ。
 menuentryのループを回している部分では、以下のように`version_find_latest $list`を呼び出していて、
 `is_top_level`は初回のループで`true`になり、このとき一番上のメニューを生成する。
 関数`linux_entry`を呼び出しているところは上に書いたものと同じ部分である。
