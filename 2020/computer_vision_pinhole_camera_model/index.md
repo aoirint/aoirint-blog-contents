@@ -13,25 +13,25 @@ tags:
 - [Pinhole camera model - Wikipedia](https://en.wikipedia.org/wiki/Pinhole_camera_model)
 - [OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html)
 
-3次元空間をカメラで撮影したときの、「3次元空間（実世界）上の点の座標[tex: (x, y, z)]」と「2次元写真平面上の点の座標[tex: (u, v) ]」の変換[tex: (u, v) = T(x, y, z) ]を考える。
+3次元空間をカメラで撮影したときの、「3次元空間（実世界）上の点の座標$(x, y, z)$」と「2次元写真平面上の点の座標$(u, v)$」の変換$(u, v) = T(x, y, z)$を考える。
 
-カメラの位置を3次元空間における原点[tex: O]とする。
+カメラの位置を3次元空間における原点$O$とする。
 
-ここでカメラに固有なパラメータとして、焦点距離[tex: f (> 0) ]を導入する。焦点距離は、カメラ（原点[tex: O ]）に入射した光が写真として実像を結ぶスクリーン（写真平面）までの距離である。この設定から、3次元空間上で写真平面（スクリーン）は[tex: z = -f ]にあるとわかる（写真平面をx-y平面と並行とし、z軸を3次元空間上の奥行きとする）。なお、[tex: f ]がより大きいカメラで撮影したとき、同じ距離にある被写体はより大きく写る（凸レンズ）。
+ここでカメラに固有なパラメータとして、焦点距離$f (> 0)$を導入する。焦点距離は、カメラ（原点$O$）に入射した光が写真として実像を結ぶスクリーン（写真平面）までの距離である。この設定から、3次元空間上で写真平面（スクリーン）は$z = -f$にあるとわかる（写真平面をx-y平面と並行とし、z軸を3次元空間上の奥行きとする）。なお、$f$がより大きいカメラで撮影したとき、同じ距離にある被写体はより大きく写る（凸レンズ）。
 
 ![](images/20200321015919.png)
 
 （図は[Pinhole camera model - Wikipedia](https://en.wikipedia.org/wiki/Pinhole_camera_model#The_geometry_and_mathematics_of_the_pinhole_camera)から引用。軸X1, X2, X3はx, y, zに、Y1, Y2はu, vに対応）
 
-点P[tex: (x, y, z) ]から原点Oを通過し、スクリーン上の点Q[tex: (-u, -v, -f) ]に入射する光を考える。なお、実像は光軸を中心に上下左右に反転するため、このとき点Qは写真において座標[tex: (u, v) ]にある。
+点P$(x, y, z)$から原点Oを通過し、スクリーン上の点Q$(-u, -v, -f)$に入射する光を考える。なお、実像は光軸を中心に上下左右に反転するため、このとき点Qは写真において座標$(u, v)$にある。
 
-点Pからxz平面上に落とした点P'[tex: (x, 0, z)]、点Qからxz平面上に落とした点Q'[tex: (-u, 0, -f)]を導入する。ここで、三角形POP'と三角形QOQ'は共通の角度を持つ相似な三角形である。この性質から、辺POと辺P'Oの長さの比[tex: x / z ]、辺QOと辺Q'Oの長さの比[tex: (-u) / (-f) ]は等しい。すなわち、[tex: \frac{x}{z} = \frac{u}{f} ]。[tex: u]について整理すると、[tex: u = f \frac{x}{z} ]。
+点Pからxz平面上に落とした点P'$(x, 0, z)$、点Qからxz平面上に落とした点Q'$(-u, 0, -f)$を導入する。ここで、三角形POP'と三角形QOQ'は共通の角度を持つ相似な三角形である。この性質から、辺POと辺P'Oの長さの比$x / z$、辺QOと辺Q'Oの長さの比$(-u) / (-f)$は等しい。すなわち、$\frac{x}{z} = \frac{u}{f}$。$u$について整理すると、$u = f \frac{x}{z}$。
 
 ![](images/20200321020107.png)
 
-（図は[Pinhole camera model - Wikipedia](https://en.wikipedia.org/wiki/Pinhole_camera_model#The_geometry_and_mathematics_of_the_pinhole_camera)から引用。青線がスクリーン上の実像、赤線が実体。計算では図中の[tex: f]を[tex: -f]としている）
+（図は[Pinhole camera model - Wikipedia](https://en.wikipedia.org/wiki/Pinhole_camera_model#The_geometry_and_mathematics_of_the_pinhole_camera)から引用。青線がスクリーン上の実像、赤線が実体。計算では図中の$f$を$-f$としている）
 
-同様にyz平面上に落とした点からなる三角形について考えると、[tex: v ]について同様の議論が成り立つ。よって、次の座標変換式が得られる。
+同様にyz平面上に落とした点からなる三角形について考えると、$v$について同様の議論が成り立つ。よって、次の座標変換式が得られる。
 
 $$
 \left( \begin{array}{c} u \\ v \end{array} \right) = \frac{f}{z} \left( \begin{array}{c} x \\ y \end{array} \right)
@@ -41,4 +41,4 @@ $$
 
 ![](images/20200321015758.png)
 
-（図は[Detailed Description @ OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html#details)から引用。焦点[tex: F_c]を原点とする）
+（図は[Detailed Description @ OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html#details)から引用。焦点$F_c$を原点とする）
