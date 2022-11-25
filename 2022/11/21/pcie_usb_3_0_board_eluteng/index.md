@@ -7,13 +7,13 @@ channel: 雑記
 ---
 # PCIe USB 3.0増設ボード（ELUTENG）を追加した
 
-- [https://www.amazon.co.jp/dp/B07CWP8DBT](https://www.amazon.co.jp/dp/B07CWP8DBT)
+- [Amazon.co.jp: ELUTENG USB3.0 増設ボード 4ポート 2ポート インターフェースカード 外部給電不要 独立給電 5Gbps高速伝送 拡張カード 独立コンデンサー 過電流保護 良い安定性 PCIE x16 x8 x4 x1対応 PCIE Express to USB3.0 Win10 8.1 8 7 XP対応 PS3/PS4 Linux Mac非対応 (４ポート)](https://www.amazon.co.jp/dp/B07CWP8DBT)
 
 10月末に1568円で買っていた。
 
 これまで、USB 3.0の増設用途には、2018年6月に1755円で購入した外部電源付きのUSBハブを使っていた。
 
-- [https://www.amazon.co.jp/dp/B00KKJJCXC](https://www.amazon.co.jp/dp/B00KKJJCXC)
+- [Amazon.co.jp: エレコム USB3.0 ハブ 4ポート ACアダプタ付 セルフ/バス両対応 ブラック U3H-A408SBK](https://www.amazon.co.jp/dp/B00KKJJCXC)
 
 PC裏は電源やUSBケーブル・オーディオケーブル・LANケーブルなどで配線地獄になってしまう。
 また、様々な電源を必要とする機器によって、電源コンセントが埋まってしまう。
