@@ -4,10 +4,12 @@ title: Jekyll Blogging お試し
 date: '2020-06-01 01:22:51'
 draft: false
 channel: 技術ノート
-category: Jekyll
+category: 'Get started'
 tags:
-- Jekyll
-- StaticWeb
+  - 'Get started'
+  - Jekyll
+  - 'Static Website'
+  - 静的サイトジェネレータ
 ---
 # Jekyll Blogging お試し
 
