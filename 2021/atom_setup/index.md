@@ -4,8 +4,9 @@ date: '2021-05-14 01:00:00'
 updated: '2021-10-09 22:00:00'
 draft: false
 channel: 技術ノート
-category: Editor
+category: 'Get started'
 tags:
+  - 'Get started'
   - Atom
   - テキストエディタ
 ---
