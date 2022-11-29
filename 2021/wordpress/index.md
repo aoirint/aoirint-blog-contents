@@ -3,9 +3,8 @@ title: 'WordPress'
 date: '2021-11-13 13:00:00'
 draft: false
 channel: 技術ノート
-category: 'Get started'
+category: Blogging
 tags:
-  - 'Get started'
   - WordPress
   - Blogging
 ---

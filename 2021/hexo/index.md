@@ -3,9 +3,8 @@ title: Hexo
 date: '2021-11-17 04:00:00'
 draft: false
 channel: 技術ノート
-category: 'Get started'
+category: Blogging
 tags:
-  - 'Get started'
   - Blogging
 ---
 # Hexo

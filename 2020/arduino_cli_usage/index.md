@@ -7,11 +7,10 @@ date: '2020-11-09 08:00:00'
 updated: '2021-05-09 17:30:00'
 draft: false
 channel: 技術ノート
-category: 'Get started'
+category: Arduino
 tags:
-  - 'Get started'
-  - Arduino
-  - 'arduino-cli'
+- Arduino
+- 'arduino-cli'
 ---
 
 # arduino-cliの使い方
