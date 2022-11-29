@@ -3,7 +3,13 @@ title: 死活監視サービスBetter Uptimeを導入した
 date: '2022-11-23 11:35:00+09:00'
 draft: false
 noindex: false
-channel: 雑記
+channel: 技術ノート
+category: サーバー運用
+tags:
+  - サーバー運用
+  - 死活監視
+  - Webサービス
+  - 'Better Uptime'
 ---
 # 死活監視サービスBetter Uptimeを導入した
 
