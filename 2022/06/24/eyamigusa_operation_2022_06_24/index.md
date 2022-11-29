@@ -4,9 +4,8 @@ date: '2022-06-24 09:30:00'
 draft: false
 noindex: false
 channel: 雑記
-category: サービス運用ログ
+category: Blogging
 tags:
-  - サービス運用ログ
   - Blogging
   - えやみぐさの記事運用
 ---
