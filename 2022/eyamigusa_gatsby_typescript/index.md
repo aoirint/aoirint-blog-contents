@@ -4,8 +4,9 @@ date: '2022-02-20 08:10:00'
 draft: false
 noindex: false
 channel: 技術ノート
-category: Blogging
+category: サービス運用ログ
 tags:
+  - サービス運用ログ
   - Blogging
 ---
 # えやみぐさの改修ログ 2022-02-20

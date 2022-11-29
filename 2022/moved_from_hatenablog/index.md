@@ -3,8 +3,9 @@ title: はてなブログから古い記事を移した
 date: '2022-02-22 20:40:00'
 draft: false
 channel: 技術ノート
-category: Blogging
+category: サービス運用ログ
 tags:
+  - サービス運用ログ
   - Blogging
 ---
 # はてなブログから古い記事を移した
