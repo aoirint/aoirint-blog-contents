@@ -4,12 +4,13 @@ title: OpenGL 2.1/4.1（GLFW）でOpenCVの画像を表示する（Python, Mac�
 date: '2020-03-23 01:11:57'
 draft: false
 channel: 技術ノート
-category: OpenCV
+category: 画像処理
 tags:
-- OpenCV
-- OpenGL
-- ComputerVision
-- Python
+  - 画像処理
+  - OpenCV
+  - OpenGL
+  - 'Computer Vision'
+  - Python
 ---
 # OpenGL 2.1/4.1（GLFW）でOpenCVの画像を表示する（Python, Mac）
 

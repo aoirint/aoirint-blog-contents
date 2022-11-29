@@ -4,10 +4,11 @@ title: Fisheye distortion
 date: '2020-03-21 05:33:06'
 draft: false
 channel: 技術ノート
-category: ComputerVision
+category: 画像処理
 tags:
-- ComputerVision
-- OpenCV
+  - 画像処理
+  - 'Computer Vision'
+  - OpenCV
 ---
 # Fisheye distortion
 

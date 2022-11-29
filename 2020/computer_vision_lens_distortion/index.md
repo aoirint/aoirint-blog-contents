@@ -4,9 +4,10 @@ title: Lens Distortion
 date: '2020-03-21 05:18:34'
 draft: false
 channel: 技術ノート
-category: ComputerVision
+category: 画像処理
 tags:
-- ComputerVision
+  - 画像処理
+  - 'Computer Vision'
 ---
 # Lens Distortion
 
