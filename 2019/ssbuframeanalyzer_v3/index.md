@@ -4,10 +4,12 @@ title: SSBUFrameAnalyzer v3
 date: '2019-08-05 19:43:14'
 draft: false
 channel: 技術ノート
-category: スマブラSP
+category: リリースノート
 tags:
-- スマブラSP
-- 画像処理
+  - リリースノート
+  - SSBUFrameAnalyzer
+  - スマブラSP
+  - 画像処理
 ---
 # SSBUFrameAnalyzer v3
 
