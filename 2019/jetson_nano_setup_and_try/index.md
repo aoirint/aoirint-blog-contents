@@ -4,11 +4,13 @@ title: Jetson Nano セットアップとおためし
 date: '2019-12-02 10:00:00'
 draft: false
 channel: 技術ノート
-category: Jetson Nano
+category: 'Get started'
 tags:
-- Jetson Nano
-- 機械学習
-- 組み込み
+  - 'Get started'
+  - Jetson Nano
+  - 電子工作
+  - 機械学習
+  - 組み込み
 ---
 # Jetson Nano セットアップとおためし
 
