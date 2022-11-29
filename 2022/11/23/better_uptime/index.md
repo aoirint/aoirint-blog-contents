@@ -4,8 +4,9 @@ date: '2022-11-23 11:35:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
-category: サーバー運用
+category: サービス運用ログ
 tags:
+  - サービス運用ログ
   - サーバー運用
   - 死活監視
   - Webサービス

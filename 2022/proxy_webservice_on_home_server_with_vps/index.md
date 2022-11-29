@@ -3,8 +3,9 @@ title: 自宅サーバのWebサービスをVPSで中継するようにした
 date: '2022-04-07 11:00:00'
 draft: false
 channel: 技術ノート
-category: Network
+category: サービス運用ログ
 tags:
+  - サービス運用ログ
   - Network
   - 自宅サーバ
   - VPS
