@@ -4,8 +4,9 @@ date: '2021-01-05T07:40:00+09:00'
 updated: '2021-11-13T18:00:00+09:00'
 draft: false
 channel: 技術ノート
-category: Blogging
+category: 'Get started'
 tags:
+  - 'Get started'
   - Python
   - Sphinx
   - Documentation
