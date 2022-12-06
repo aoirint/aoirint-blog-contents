@@ -142,7 +142,7 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 
 （追記 19/10/27） ※ examples/以下にちゃんとしたサンプルがあるみたいです.
 
-`_darknet.py`の`darknet.so`を指定してる箇所（<https://github.com/pjreddie/darknet/blob/master/python/darknet.py#L48>）を環境変数化したりすると汎用性上がると思う。
+`_darknet.py`の`darknet.so`を指定してる箇所（[https://github.com/pjreddie/darknet/blob/master/python/darknet.py#L48](https://github.com/pjreddie/darknet/blob/master/python/darknet.py#L48)）を環境変数化したりすると汎用性上がると思う。
 
 ### darknet/python/Darknet.py
 

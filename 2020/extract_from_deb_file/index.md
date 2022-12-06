@@ -15,7 +15,7 @@ tags:
 # Debianパッケージから内容物を抽出する
 
 - [Debian -- buster の bash パッケージに関する詳細](https://packages.debian.org/buster/bash)
-  - <http://ftp.jp.debian.org/debian/pool/main/b/bash/bash_5.0-4_amd64.deb>
+  - [http://ftp.jp.debian.org/debian/pool/main/b/bash/bash_5.0-4_amd64.deb](http://ftp.jp.debian.org/debian/pool/main/b/bash/bash_5.0-4_amd64.deb)
 
 ```bash
 wget http://ftp.jp.debian.org/debian/pool/main/b/bash/bash_5.0-4_amd64.deb

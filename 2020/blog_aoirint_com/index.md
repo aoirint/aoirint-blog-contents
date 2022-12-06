@@ -5,7 +5,7 @@ date: '2020-12-31T13:11:47+09:00'
 draft: true
 channel: 技術ノート
 ---
-# <https://blog.aoirint.com>
+# [https://blog.aoirint.com](https://blog.aoirint.com)
 
 9月にブログをGitHub Pagesに引っ越しました。
 

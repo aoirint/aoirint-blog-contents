@@ -28,8 +28,8 @@ pip3 install Sphinx
 
 SphinxではデフォルトでreStructuredTextというマークアップ言語を使う。
 
-- <https://www.sphinx-doc.org/ja/master/usage/restructuredtext/basics.html>
-- <https://atom.io/packages/language-restructuredtext>
+- [https://www.sphinx-doc.org/ja/master/usage/restructuredtext/basics.html](https://www.sphinx-doc.org/ja/master/usage/restructuredtext/basics.html)
+- [https://atom.io/packages/language-restructuredtext](https://atom.io/packages/language-restructuredtext)
 
 ## 既存Pythonプロジェクトにドキュメントを追加する
 
@@ -124,4 +124,4 @@ GitHub ActionsやGitLab CIを使ってドキュメントの生成、GitHub Pages
 
 ## Docker化・GitHub Actions整備の例
 
-- <https://github.com/aoirint/sphinx-docs-test>
+- [https://github.com/aoirint/sphinx-docs-test](https://github.com/aoirint/sphinx-docs-test)
