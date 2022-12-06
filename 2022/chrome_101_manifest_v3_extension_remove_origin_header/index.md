@@ -26,7 +26,7 @@ chrome.declarativeNetRequest.updateDynamicRules({
         ],
       },
       condition: {
-        urlFilter: '127.0.0.1:50021/*',
+        urlFilter: '127.0.0.1:8000/*',
         initiatorDomains: [chrome.runtime.id], // chrome-extension://{extension_id}
       },
     },
