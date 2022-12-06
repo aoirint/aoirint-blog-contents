@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/24/150956
 title: 作ってるものの立ち位置
-date: '2020-03-24 15:09:56'
+date: '2020-03-24T15:09:56+09:00'
 draft: true
 channel: 技術ノート
 ---

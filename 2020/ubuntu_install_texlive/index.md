@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/04/12/014901
 title: Install TexLive on Ubuntu 18.04
-date: '2020-04-12 01:49:01'
+date: '2020-04-12T01:49:01+09:00'
 draft: false
 channel: 技術ノート
 category: TeX

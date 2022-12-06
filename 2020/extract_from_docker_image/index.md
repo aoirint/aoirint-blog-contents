@@ -3,7 +3,7 @@ title: Dockerイメージから内容物を抽出する
 # og_image:
 # twitter_card: summary_large_image
 og_description: Dockerイメージから内容物を抽出する
-date: '2020-12-08 22:30:00'
+date: '2020-12-08T22:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

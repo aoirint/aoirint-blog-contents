@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2018/08/29/040907
 title: 'SSD換装時のOS移動（スケールダウン）'
-date: '2018-08-29 04:09:07'
+date: '2018-08-29T04:09:07+09:00'
 draft: false
 channel: 技術ノート
 category: ストレージ

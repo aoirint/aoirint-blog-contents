@@ -1,6 +1,6 @@
 ---
 title: pip-compileでMetadataGenerationFailedの例外が起きる
-date: '2022-06-24 07:10:00'
+date: '2022-06-24T07:10:00+09:00'
 draft: false
 channel: 技術ノート
 category: Python

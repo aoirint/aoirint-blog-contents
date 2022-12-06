@@ -3,7 +3,7 @@ title: 'Docker + Docker Compose on Vagrant Ubuntu Server'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'VagrantでUbuntu Server + Docker + Docker Compose環境をセットアップする'
-date: '2020-10-22 16:30:00'
+date: '2020-10-22T16:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

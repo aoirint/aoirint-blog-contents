@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/05/19/123527
 title: Ubuntu上のデスクトップ音声出力をZoomの音声入力にする（PulseAudio）
-date: '2020-05-19 12:35:27'
+date: '2020-05-19T12:35:27+09:00'
 draft: false
 channel: 技術ノート
 category: Remote

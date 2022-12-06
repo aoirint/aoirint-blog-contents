@@ -1,7 +1,7 @@
 ---
 title: Atom Text Editor Setup
-date: '2021-05-14 01:00:00'
-updated: '2021-10-09 22:00:00'
+date: '2021-05-14T01:00:00+09:00'
+updated: '2021-10-09T22:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: 'Get started'

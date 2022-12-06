@@ -3,7 +3,7 @@ title: 'PulseAudioをDockerで使う'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'ホストのPulseAudioにDockerからアクセスします'
-date: '2020-11-14 14:30:00'
+date: '2020-11-14T14:30:00+09:00'
 draft: true
 channel: 技術ノート
 category: 記事

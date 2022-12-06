@@ -3,7 +3,7 @@ title: Imagemagickで画像のDPIを変更する
 # og_image:
 # twitter_card: summary_large_image
 og_description: Imagemagickで画像のDPIを変更する
-date: '2020-11-09 06:30:00'
+date: '2020-11-09T06:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: LaTeX

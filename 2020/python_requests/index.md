@@ -3,7 +3,7 @@ title: 'Python Requests'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'Python Requests'
-date: '2020-09-28 11:30:00'
+date: '2020-09-28T11:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Python

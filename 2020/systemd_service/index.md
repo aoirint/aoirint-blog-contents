@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/19/063201
 title: systemd service
-date: '2020-03-19 06:32:01'
+date: '2020-03-19T06:32:01+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

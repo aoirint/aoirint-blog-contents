@@ -1,6 +1,6 @@
 ---
 title: OpenVPNとnginxをOpenVPNのPort Share機能で共存させる
-date: '2022-10-19 00:50:00+09:00'
+date: '2022-10-19T00:50:00+09:00'
 draft: false
 channel: 技術ノート
 category: Network

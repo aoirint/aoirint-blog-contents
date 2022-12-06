@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2018/08/30/164619
 title: 'PythonからPaSoRiを使って交通系ICカードのIDmを読む'
-date: '2018-08-30 16:46:19'
+date: '2018-08-30T16:46:19+09:00'
 draft: false
 channel: 技術ノート
 category: NFC

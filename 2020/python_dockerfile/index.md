@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/16/143009
 title: Python Dockerfile
-date: '2020-03-16 14:30:09'
+date: '2020-03-16T14:30:09+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

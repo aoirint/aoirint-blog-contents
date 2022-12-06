@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/23/011222
 title: GLSL 座標変換 テンプレート
-date: '2020-03-23 01:12:22'
+date: '2020-03-23T01:12:22+09:00'
 draft: true
 channel: 技術ノート
 category: GLSL

@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2018/08/29/034708
 title: 'プライベートリポジトリに対してgit cloneがNot Found吐くとき（複数アカウント運用）'
-date: '2018-08-29 03:47:08'
+date: '2018-08-29T03:47:08+09:00'
 draft: false
 channel: 技術ノート
 category: Windows

@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/15/100937
 title: github.io
-date: '2020-03-15 10:09:37'
+date: '2020-03-15T10:09:37+09:00'
 draft: false
 channel: 技術ノート
 category: GitHub

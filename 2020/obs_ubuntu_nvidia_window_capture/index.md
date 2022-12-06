@@ -1,7 +1,7 @@
 ---
 title: OBS Studio on Ubuntu 20.04 + NVIDIA GPUでWindow Captureを動作させる
-date: '2020-11-09 06:10:00'
-updated: '2022-01-23 11:50:00'
+date: '2020-11-09T06:10:00+09:00'
+updated: '2022-01-23T11:50:00+09:00'
 draft: false
 channel: 技術ノート
 category: OBS Studio

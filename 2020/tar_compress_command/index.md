@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/17/143710
 title: tar 圧縮
-date: '2020-03-17 14:37:10'
+date: '2020-03-17T14:37:10+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

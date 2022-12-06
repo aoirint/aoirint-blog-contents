@@ -1,7 +1,7 @@
 ---
 title: GitHubのPAT（Personal Access Token）認証手順（Ubuntu）
-date: '2020-12-18 11:00:00'
-updated: '2021-09-11 13:40:00'
+date: '2020-12-18T11:00:00+09:00'
+updated: '2021-09-11T13:40:00+09:00'
 draft: false
 channel: 技術ノート
 category: GitHub

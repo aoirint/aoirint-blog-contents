@@ -1,6 +1,6 @@
 ---
 title: SendGrid
-date: '2021-09-11 13:10:00'
+date: '2021-09-11T13:10:00+09:00'
 draft: false
 channel: 技術ノート
 category: Eメール

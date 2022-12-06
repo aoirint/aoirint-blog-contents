@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/12/31/131147
 title: https://blog.aoirint.com
-date: '2020-12-31 13:11:47'
+date: '2020-12-31T13:11:47+09:00'
 draft: true
 channel: 技術ノート
 ---

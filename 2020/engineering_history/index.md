@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/14/185056
 title: engineering history
-date: '2020-03-14 18:50:56'
+date: '2020-03-14T18:50:56+09:00'
 draft: true
 channel: 技術ノート
 ---

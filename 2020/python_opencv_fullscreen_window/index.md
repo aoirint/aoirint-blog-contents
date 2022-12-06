@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/20/161930
 title: OpenCV FullScreen Window
-date: '2020-03-20 16:19:30'
+date: '2020-03-20T16:19:30+09:00'
 draft: false
 channel: 技術ノート
 category: Python

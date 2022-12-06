@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2017/09/24/110338
 title: 'VS2017でOpenCVを使う（Win pack）'
-date: '2017-09-24 11:03:38'
+date: '2017-09-24T11:03:38+09:00'
 draft: false
 channel: 技術ノート
 category: OpenCV

@@ -1,6 +1,6 @@
 ---
 title: Hexo
-date: '2021-11-17 04:00:00'
+date: '2021-11-17T04:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: Blogging

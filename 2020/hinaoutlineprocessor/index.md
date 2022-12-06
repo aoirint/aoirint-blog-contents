@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/24/154739
 title: HinaOutlineProcessor（ひなホップ） 2017/01-03
-date: '2020-03-24 15:47:39'
+date: '2020-03-24T15:47:39+09:00'
 draft: true
 channel: 技術ノート
 category: Work

@@ -3,8 +3,8 @@ title: arduino-cliの使い方
 # og_image:
 # twitter_card: summary_large_image
 og_description: arduino-cliの使い方
-date: '2020-11-09 08:00:00'
-updated: '2021-05-09 17:30:00'
+date: '2020-11-09T08:00:00+09:00'
+updated: '2021-05-09T17:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Arduino

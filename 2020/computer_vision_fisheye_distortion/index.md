@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/21/053306
 title: Fisheye distortion
-date: '2020-03-21 05:33:06'
+date: '2020-03-21T05:33:06+09:00'
 draft: false
 channel: 技術ノート
 category: 画像処理

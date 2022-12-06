@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/10/10/123924
 title: ■
-date: '2019-10-10 12:38:07'
+date: '2019-10-10T12:38:07+09:00'
 draft: true
 channel: 技術ノート
 ---

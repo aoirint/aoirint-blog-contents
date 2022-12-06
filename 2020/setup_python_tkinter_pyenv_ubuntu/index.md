@@ -3,7 +3,7 @@ title: 'Ubuntu, pyenv環境でtkinterを使う'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'Ubuntu, pyenv環境でtkinterを使う'
-date: '2020-10-04 03:30:00'
+date: '2020-10-04T03:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Python

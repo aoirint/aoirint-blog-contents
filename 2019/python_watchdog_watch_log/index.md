@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/07/10/000955
 title: ログ監視 Python watchdog（ログローテーション未完成）
-date: '2019-07-10 00:09:55'
+date: '2019-07-10T00:09:55+09:00'
 draft: false
 channel: 技術ノート
 category: Python

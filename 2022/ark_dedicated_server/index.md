@@ -1,6 +1,6 @@
 ---
 title: 'ARK: Survival Evolved Dedicated Server'
-date: '2022-07-30 12:00:00'
+date: '2022-07-30T12:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート

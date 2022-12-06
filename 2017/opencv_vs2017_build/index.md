@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2017/09/24/123203
 title: 'VS2017でOpenCVをビルドする'
-date: '2017-09-24 12:32:03'
+date: '2017-09-24T12:32:03+09:00'
 draft: false
 channel: 技術ノート
 category: OpenCV

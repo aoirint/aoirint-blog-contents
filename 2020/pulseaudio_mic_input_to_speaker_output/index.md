@@ -3,8 +3,8 @@ title: 'PulseAudioでマイク入力をスピーカから出力する'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'PulseAudioでマイク入力をスピーカから出力する'
-date: '2020-10-04 03:40:00'
-updated: '2021-08-16 15:00:00'
+date: '2020-10-04T03:40:00+09:00'
+updated: '2021-08-16T15:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: PulseAudio

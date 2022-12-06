@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/11/27/020647
 title: Raspberry Pi 3B+（Raspbian）でNextcloud（Docker）を動かす（MySQL）
-date: '2019-11-27 02:06:47'
+date: '2019-11-27T02:06:47+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

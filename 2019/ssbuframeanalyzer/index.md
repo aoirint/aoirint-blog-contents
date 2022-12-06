@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/07/21/054224
 title: SSBUFrameAnalyzer
-date: '2019-07-21 05:42:24'
+date: '2019-07-21T05:42:24+09:00'
 draft: false
 channel: 技術ノート
 category: リリースノート

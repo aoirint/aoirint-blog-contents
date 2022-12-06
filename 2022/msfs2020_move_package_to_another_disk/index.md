@@ -1,6 +1,6 @@
 ---
 title: MSFS2020の追加ダウンロードファイルを別ディスクに移動する
-date: '2022-06-29 14:30:00'
+date: '2022-06-29T14:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Game

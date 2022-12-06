@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/21/031621
 title: ピンホールカメラモデル
-date: '2020-03-21 03:16:21'
+date: '2020-03-21T03:16:21+09:00'
 draft: false
 channel: 技術ノート
 category: 画像処理

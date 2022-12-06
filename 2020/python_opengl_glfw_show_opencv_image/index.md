@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/23/011157
 title: OpenGL 2.1/4.1（GLFW）でOpenCVの画像を表示する（Python, Mac）
-date: '2020-03-23 01:11:57'
+date: '2020-03-23T01:11:57+09:00'
 draft: false
 channel: 技術ノート
 category: 画像処理
