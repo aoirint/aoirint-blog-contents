@@ -5,7 +5,7 @@ date: '2022-05-10 12:47:51'
 updated: '2022-06-24 10:10:00'
 draft: false
 noindex: false
-channel: 雑記
+channel: ダイアリー
 category: 技術
 tags:
   - GitLab

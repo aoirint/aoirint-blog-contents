@@ -3,7 +3,7 @@ title: えやみぐさの記事運用 2022-06-24
 date: '2022-06-24 09:30:00'
 draft: false
 noindex: false
-channel: 雑記
+channel: ダイアリー
 category: Blogging
 tags:
   - Blogging

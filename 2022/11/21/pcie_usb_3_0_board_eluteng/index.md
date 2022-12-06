@@ -3,7 +3,7 @@ title: PCIe USB 3.0増設ボード（ELUTENG）を追加した
 date: '2022-11-21 16:00:00+09:00'
 draft: false
 noindex: false
-channel: 雑記
+channel: ダイアリー
 ---
 # PCIe USB 3.0増設ボード（ELUTENG）を追加した
 
