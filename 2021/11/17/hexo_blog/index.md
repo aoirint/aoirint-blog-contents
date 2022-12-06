@@ -3,7 +3,7 @@ title: Hexoで日記用のブログを用意した
 date: '2021-11-17 04:00:00'
 draft: false
 noindex: true
-channel: 雑記
+channel: ダイアリー
 ---
 
 # Hexoで日記用のブログを用意した

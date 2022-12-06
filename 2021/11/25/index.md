@@ -2,7 +2,7 @@
 date: '2021-11-25 05:00:00'
 draft: false
 noindex: true
-channel: 雑記
+channel: ダイアリー
 ---
 
 ## Vent
