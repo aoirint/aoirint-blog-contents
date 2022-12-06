@@ -92,8 +92,8 @@ VPNや他のTCPプロキシをセットアップするより簡単に隠され�
 
 作ったシステムはGitHubにおいています。
 
-- ホストZ用のシステム：<https://github.com/aoirint/SSHPortForwardingProxy>
-- ホストX用のシステム：<https://github.com/aoirint/SSHPortForwardingProxyClient>
+- ホストZ用のシステム：[https://github.com/aoirint/SSHPortForwardingProxy](https://github.com/aoirint/SSHPortForwardingProxy)
+- ホストX用のシステム：[https://github.com/aoirint/SSHPortForwardingProxyClient](https://github.com/aoirint/SSHPortForwardingProxyClient)
 - ホストY：通常の`ssh`コマンドを使用
 
 仮想化の不完全な点として、ホストX用のシステムについて、設定が煩雑になるのを避けるため、`network_mode: host`（`--net host`）を指定してしまっています。
