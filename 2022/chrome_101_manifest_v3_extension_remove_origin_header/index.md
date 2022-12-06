@@ -36,6 +36,7 @@ Originヘッダを削除します。
 ### background.js
 
 ```js
+// license: CC0
 chrome.declarativeNetRequest.updateDynamicRules({
   removeRuleIds: [1],
   addRules: [
