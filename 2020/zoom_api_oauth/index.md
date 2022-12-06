@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/05/09/073722
 title: Zoom API (OAuth)を試したメモ
-date: '2020-05-09 07:37:22'
+date: '2020-05-09T07:37:22+09:00'
 draft: false
 channel: 技術ノート
 category: Remote

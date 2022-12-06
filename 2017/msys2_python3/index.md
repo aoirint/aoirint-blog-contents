@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2017/09/24/094424
 title: 'MSYS2でPython3を使う'
-date: '2017-09-24 09:44:24'
+date: '2017-09-24T09:44:24+09:00'
 draft: false
 channel: 技術ノート
 category: MSYS2

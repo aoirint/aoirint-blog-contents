@@ -1,6 +1,6 @@
 ---
 title: PulseAudioでSSHサーバ側の音声をクライアント側で再生する
-date: '2021-10-09 20:00:00'
+date: '2021-10-09T20:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: PulseAudio

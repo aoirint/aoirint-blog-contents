@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/05/10/221714
 title: Vue 入門
-date: '2020-05-10 22:17:14'
+date: '2020-05-10T22:17:14+09:00'
 draft: false
 channel: 技術ノート
 category: Vue

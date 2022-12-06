@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/15/103903
 title: Ubuntu, add user to group
-date: '2020-03-15 10:39:03'
+date: '2020-03-15T10:39:03+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

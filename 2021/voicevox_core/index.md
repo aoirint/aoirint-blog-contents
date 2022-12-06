@@ -1,6 +1,6 @@
 ---
 title: VOICEVOX Core 0.5.1をUbuntu + GPU + Pythonで使う（exampleを動かすまで）
-date: '2021-09-11 23:40:00'
+date: '2021-09-11T23:40:00+09:00'
 updated: '2022-02-03 10:30:00'
 draft: false
 channel: 技術ノート

@@ -1,7 +1,7 @@
 ---
 # https://scrapbox.io/eyamigusa/Self-hosted_GitLab_Runner%E3%81%A7%E5%AE%89%E5%85%A8%E3%81%ABdocker%E3%82%92%E6%89%B1%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B
 title: Self-hosted GitLab Runnerで安全にdockerを扱えるようにするためにどうしたらいいかわからない
-date: '2022-05-10 12:47:51'
+date: '2022-05-10T12:47:51+09:00'
 updated: '2022-06-24 10:10:00'
 draft: false
 noindex: false

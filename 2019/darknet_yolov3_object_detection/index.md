@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/09/27/170100
 title: Yolo v3でObject Detectionする（darknet）
-date: '2019-09-27 17:01:00'
+date: '2019-09-27T17:01:00+09:00'
 draft: false
 channel: 技術ノート
 category: Python

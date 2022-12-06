@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2017/10/29/122430
 title: 'Windows10でCortanaの検索結果から"Recent"を消去する'
-date: '2017-10-29 12:24:30'
+date: '2017-10-29T12:24:30+09:00'
 draft: false
 channel: 技術ノート
 category: Windows

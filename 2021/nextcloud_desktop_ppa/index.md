@@ -1,6 +1,6 @@
 ---
 title: 'Nextcloud Desktop Client PPA （Ubuntu）'
-date: '2021-11-13 13:40:00'
+date: '2021-11-13T13:40:00+09:00'
 draft: false
 channel: 技術ノート
 category: Nextcloud

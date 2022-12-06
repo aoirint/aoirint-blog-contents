@@ -1,6 +1,6 @@
 ---
 title: えやみぐさの改修ログ 2022-02-20
-date: '2022-02-20 08:10:00'
+date: '2022-02-20T08:10:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート

@@ -3,7 +3,7 @@ title: Ubuntu/Raspberry Pi/Debianの時刻ずれを解消する
 # og_image:
 # twitter_card: summary_large_image
 # og_description: テンプレート
-date: '2021-04-04 06:00:00'
+date: '2021-04-04T06:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

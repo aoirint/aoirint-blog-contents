@@ -1,6 +1,6 @@
 ---
 title: Makefile Tips
-date: '2021-07-01 13:00:00'
+date: '2021-07-01T13:00:00+09:00'
 updated: '2022-01-14 22:40:00'
 draft: false
 channel: 技術ノート

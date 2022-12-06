@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/11/23/084759
 title: RealSenseのカラー画像が暗い
-date: '2019-11-23 08:47:59'
+date: '2019-11-23T08:47:59+09:00'
 draft: false
 channel: 技術ノート
 category: Python

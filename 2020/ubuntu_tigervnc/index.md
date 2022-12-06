@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/18/185309
 title: Ubuntu, TigerVNC
-date: '2020-03-18 18:53:09'
+date: '2020-03-18T18:53:09+09:00'
 draft: false
 channel: 技術ノート
 category: Remote

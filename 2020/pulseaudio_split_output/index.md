@@ -3,7 +3,7 @@ title: PulseAudioで特定のアプリケーションからの音声出力だけ
 # og_image:
 # twitter_card: summary_large_image
 og_description: PulseAudioで特定のアプリケーションからの音声出力だけを分離する
-date: '2020-11-09 06:00:00'
+date: '2020-11-09T06:00:00+09:00'
 updated: '2021-08-22 21:40:00'
 draft: false
 channel: 技術ノート

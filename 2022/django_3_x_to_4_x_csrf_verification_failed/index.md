@@ -1,6 +1,6 @@
 ---
 title: Django 3.xから4.xへの更新でPOSTリクエスト時にCSRF検証に失敗する
-date: '2022-06-24 13:10:00'
+date: '2022-06-24T13:10:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート

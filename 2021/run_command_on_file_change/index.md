@@ -1,6 +1,6 @@
 ---
 title: ファイル変更時にコマンド実行（watchmedo, watchexec）
-date: '2021-08-22 06:30:00'
+date: '2021-08-22T06:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Command Utility

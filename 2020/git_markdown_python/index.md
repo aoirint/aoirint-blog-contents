@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/15/002734
 title: git, markdown python
-date: '2020-03-15 00:27:34'
+date: '2020-03-15T00:27:34+09:00'
 draft: false
 channel: 技術ノート
 category: Python

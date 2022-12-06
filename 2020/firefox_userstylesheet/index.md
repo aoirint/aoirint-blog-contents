@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/05/22/060000
 title: User Style Sheet（Firefox）
-date: '2020-05-22 06:00:00'
+date: '2020-05-22T06:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: StyleSheet

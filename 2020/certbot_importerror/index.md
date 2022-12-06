@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/27/100941
 title: 'Let''s Encrypt certbot Error Ubuntu（ImportError: cannot import name ''constants''）'
-date: '2020-03-27 10:09:41'
+date: '2020-03-27T10:09:41+09:00'
 draft: false
 channel: 技術ノート
 category: Let's Encrypt

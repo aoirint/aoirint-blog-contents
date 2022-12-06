@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/27/103013
 title: nginx basic auth, reverse proxy, static files
-date: '2020-03-27 10:30:13'
+date: '2020-03-27T10:30:13+09:00'
 draft: false
 channel: 技術ノート
 category: nginx

@@ -1,6 +1,6 @@
 ---
 title: 最近おすすめのミリタリー作品
-date: '2022-10-29 19:00:00+09:00'
+date: '2022-10-29T19:00:00+09:00'
 draft: false
 noindex: false
 channel: ダイアリー

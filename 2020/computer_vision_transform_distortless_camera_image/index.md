@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/21/044833
 title: 歪みなしカメラ画像の座標変換
-date: '2020-03-21 04:48:33'
+date: '2020-03-21T04:48:33+09:00'
 draft: false
 channel: 技術ノート
 category: 画像処理

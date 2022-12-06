@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/21/051834
 title: Lens Distortion
-date: '2020-03-21 05:18:34'
+date: '2020-03-21T05:18:34+09:00'
 draft: false
 channel: 技術ノート
 category: 画像処理

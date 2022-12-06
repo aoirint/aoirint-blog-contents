@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 20.04, 自動ログイン＋Chrome Remote Desktopの起動時に繰り返し認証を求められる'
-date: '2021-11-13 17:50:00'
+date: '2021-11-13T17:50:00+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

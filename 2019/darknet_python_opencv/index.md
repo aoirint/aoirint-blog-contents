@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/10/30/140348
 title: darknet.py OpenCV
-date: '2019-10-30 14:03:48'
+date: '2019-10-30T14:03:48+09:00'
 draft: false
 channel: 技術ノート
 category: Python

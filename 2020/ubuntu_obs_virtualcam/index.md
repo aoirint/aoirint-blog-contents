@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/05/15/185853
 title: Ubuntu上のOBSでVirtualCamを使う（デスクトップ映像を仮想カメラに送る）
-date: '2020-05-15 18:58:53'
+date: '2020-05-15T18:58:53+09:00'
 draft: false
 channel: 技術ノート
 category: Remote

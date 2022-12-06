@@ -3,7 +3,7 @@ title: ESP32でFirebase Realtime Databaseを使う
 # og_image:
 # twitter_card: summary_large_image
 og_description: ESP32でFirebase Realtime Databaseを使う
-date: '2020-11-09 07:00:00'
+date: '2020-11-09T07:00:00+09:00'
 draft: true
 channel: 技術ノート
 category: ESP32

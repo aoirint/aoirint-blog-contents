@@ -1,6 +1,6 @@
 ---
 title: WebDAV in Docker
-date: '2021-08-22 11:15:00'
+date: '2021-08-22T11:15:00+09:00'
 draft: false
 channel: 技術ノート
 category: Network

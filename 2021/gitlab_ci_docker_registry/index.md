@@ -1,6 +1,6 @@
 ---
 title: GitLab CI, DockerイメージをビルドしてContainer Registryにpushする
-date: '2021-05-29 02:00:00'
+date: '2021-05-29T02:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: GitLab

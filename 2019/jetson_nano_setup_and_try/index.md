@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/12/02/100000
 title: Jetson Nano セットアップとおためし
-date: '2019-12-02 10:00:00'
+date: '2019-12-02T10:00:00+09:00'
 draft: false
 channel: 技術ノート
 category: Jetson Nano

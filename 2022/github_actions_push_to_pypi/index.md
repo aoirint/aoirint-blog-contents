@@ -1,6 +1,6 @@
 ---
 title: GitHub ActionsでPyPIにPythonパッケージをpushする（GitHub Release連携でバージョン付け）
-date: '2022-06-24 09:20:00'
+date: '2022-06-24T09:20:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート

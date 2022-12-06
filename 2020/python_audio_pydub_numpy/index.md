@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/14/180502
 title: pydub numpy
-date: '2020-03-14 18:05:02'
+date: '2020-03-14T18:05:02+09:00'
 draft: false
 channel: 技術ノート
 category: Python

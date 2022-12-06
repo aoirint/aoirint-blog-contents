@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/09/25/234251
 title: Python ログ出力抑制 デコレータ
-date: '2019-09-25 23:42:51'
+date: '2019-09-25T23:42:51+09:00'
 draft: false
 channel: 技術ノート
 category: Python

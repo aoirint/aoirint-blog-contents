@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/16/142042
 title: Install Docker on Ubuntu
-date: '2020-03-16 14:20:42'
+date: '2020-03-16T14:20:42+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

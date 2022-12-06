@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/02/06/131412
 title: 'Java 11 JRE付きエクスポート'
-date: '2019-02-06 13:14:12'
+date: '2019-02-06T13:14:12+09:00'
 draft: false
 channel: 技術ノート
 category: Java

@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/15/101834
 title: OGP / Open Graph Protocol, favicon
-date: '2020-03-15 10:18:34'
+date: '2020-03-15T10:18:34+09:00'
 draft: false
 channel: 技術ノート
 category: Web

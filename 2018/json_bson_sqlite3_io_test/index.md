@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2018/12/15/105618
 title: 'json, bson, sqlite3 IOの実験メモ'
-date: '2018-12-15 10:56:18'
+date: '2018-12-15T10:56:18+09:00'
 draft: false
 channel: 技術ノート
 category: Python

@@ -3,7 +3,7 @@ title: Debianパッケージから内容物を抽出する
 # og_image:
 # twitter_card: summary_large_image
 og_description: Debianパッケージから内容物を抽出する
-date: '2020-12-08 22:40:00'
+date: '2020-12-08T22:40:00+09:00'
 draft: false
 channel: 技術ノート
 category: Ubuntu

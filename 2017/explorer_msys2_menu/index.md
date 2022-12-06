@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2017/09/24/091510
 title: 'エクスプローラからMSYS2を開く + メニュー項目の追加'
-date: '2017-09-24 09:15:10'
+date: '2017-09-24T09:15:10+09:00'
 draft: false
 channel: 技術ノート
 category: MSYS2

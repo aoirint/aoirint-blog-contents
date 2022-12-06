@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/06/01/012251
 title: Jekyll Blogging お試し
-date: '2020-06-01 01:22:51'
+date: '2020-06-01T01:22:51+09:00'
 draft: false
 channel: 技術ノート
 category: Jekyll

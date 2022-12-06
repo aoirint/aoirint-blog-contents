@@ -3,7 +3,7 @@ title: 'GitHub Actions, ビルド結果を別ブランチにpushする'
 # og_image:
 # twitter_card: summary_large_image
 og_description: 'GitHub Actions実行中に生成した`build`ディレクトリの内容を別ブランチにpushする'
-date: '2020-09-27 16:30:00'
+date: '2020-09-27T16:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: GitHub

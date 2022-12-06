@@ -1,5 +1,5 @@
 ---
-date: '2021-11-27 03:30:00'
+date: '2021-11-27T03:30:00+09:00'
 draft: false
 noindex: true
 channel: ダイアリー

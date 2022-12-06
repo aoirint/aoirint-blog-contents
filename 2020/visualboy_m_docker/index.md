@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/09/06/213051
 title: VBA-M on Docker
-date: '2020-09-06 21:30:51'
+date: '2020-09-06T21:30:51+09:00'
 draft: false
 channel: 技術ノート
 category: Emulator

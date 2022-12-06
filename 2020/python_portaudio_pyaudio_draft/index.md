@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/19/084225
 title: PortAudio, pyaudio
-date: '2020-03-19 08:42:25'
+date: '2020-03-19T08:42:25+09:00'
 draft: true
 channel: 技術ノート
 category: Python

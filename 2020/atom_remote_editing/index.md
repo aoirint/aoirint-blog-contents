@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2020/03/19/151704
 title: Remote editing with Atom (rmate, sshfs)
-date: '2020-03-19 15:17:04'
+date: '2020-03-19T15:17:04+09:00'
 draft: false
 channel: 技術ノート
 category: Remote

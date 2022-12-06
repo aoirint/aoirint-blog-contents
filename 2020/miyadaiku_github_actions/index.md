@@ -3,7 +3,7 @@ title: 静的サイトジェネレータMiyadaiku + GitHub Actions + GitHub Page
 # og_image:
 # twitter_card: summary_large_image
 og_description: 静的サイトジェネレータMiyadaikuを使ってブログ環境を整備する
-date: '2020-09-09 09:48:39'
+date: '2020-09-09T09:48:39+09:00'
 draft: false
 channel: 技術ノート
 category: Blogging

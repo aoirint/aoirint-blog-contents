@@ -1,6 +1,6 @@
 ---
 title: Minecraft Server
-date: '2021-11-06 17:50:00'
+date: '2021-11-06T17:50:00+09:00'
 draft: false
 channel: 技術ノート
 category: Game

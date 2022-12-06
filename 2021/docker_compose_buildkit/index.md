@@ -1,6 +1,6 @@
 ---
 title: 'docker-composeでBuildKitを使う'
-date: '2021-11-08 07:30:00'
+date: '2021-11-08T07:30:00+09:00'
 draft: false
 channel: 技術ノート
 category: Docker

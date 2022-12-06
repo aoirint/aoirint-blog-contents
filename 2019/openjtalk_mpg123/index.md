@@ -1,7 +1,7 @@
 ---
 # moved from https://aoirint.hatenablog.com/entry/2019/05/25/082902
 title: 'Open JTalk mpg123'
-date: '2019-05-25 08:29:02'
+date: '2019-05-25T08:29:02+09:00'
 draft: false
 channel: 技術ノート
 category: 音声合成

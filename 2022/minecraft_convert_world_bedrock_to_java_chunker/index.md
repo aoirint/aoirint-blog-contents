@@ -1,6 +1,6 @@
 ---
 title: Minecraft ワールドをBedrock版とJava版の間で変換するWebツール「Chunker」
-date: '2022-10-24 08:10:00+09:00'
+date: '2022-10-24T08:10:00+09:00'
 draft: false
 channel: 技術ノート
 category: Game
