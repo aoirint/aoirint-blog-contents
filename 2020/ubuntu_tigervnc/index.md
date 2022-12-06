@@ -40,7 +40,7 @@ configure `LocalForward LOCALPORT localhost:5900` in ~/.ssh/config.
 
 - TigerVNCのクライアントはあんまり機能が多くない
 - RealVNC社のクライアントはWindows, Linux, Mac, Mobileにリリースされてて便利
-  - <https://www.realvnc.com/en/connect/download/viewer/>
+  - [https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
 
 ---
 

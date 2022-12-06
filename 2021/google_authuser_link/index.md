@@ -17,8 +17,8 @@ URLのGETパラメータに`authuser=mail@example.com`のようにGoogleアカ�
 
 ## Google Classroom
 
-- <https://classroom.google.com/c/CLASS_ID?authuser=mail@example.com>
+- [https://classroom.google.com/c/CLASS_ID?authuser=mail@example.com](https://classroom.google.com/c/CLASS_ID?authuser=mail@example.com)
 
 ## Gmail
 
-- <https://mail.google.com/?authuser=mail@example.com>
+- [https://mail.google.com/?authuser=mail@example.com](https://mail.google.com/?authuser=mail@example.com)
