@@ -1,0 +1,13 @@
+# https://github.com/DavidAnson/markdownlint
+# https://github.com/DavidAnson/markdownlint-cli2
+
+globs:
+  - "**/*.md"
+
+ignores:
+  - ".git/**"
+  - ".github/**"
+
+config:
+  # inline HTML
+  MD033: false

@@ -18,6 +18,7 @@ git clone https://github.com/pjreddie/darknet.git
 ```
 
 ## データセットの作成
+
 ### mydata.data
 
 ```
@@ -59,7 +60,6 @@ label center_x center_y width height
 画像中のオブジェクトの種類はlabel（0始まりの数値）で表現する。
 
 画像中のオブジェクトのBoundingBoxは`center_x`、`center_y`、`width`、`height`（オブジェクト中心X座標、オブジェクト中心Y座標、オブジェクト幅、オブジェクト高さ）の4パラメータで表現する。`center_x`、`width`は画像幅で除算、`center_y`、`height`は画像高さで除算し、実数で記述する。
-
 
 ## 設定ファイルの作成
 
@@ -115,7 +115,6 @@ classes=1
 filters=18
 ```
 
-
 ## コマンド
 
 darknetの学習済みモデルをダウンロードする。
@@ -137,14 +136,13 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 
 ※ ファイルパス・カテゴリ名は（たぶん）ASCIIでないとSegmentation Error吐きます
 
-
 ## Python
 
 `darknet/python/darknet.py`は`libdarknet.so`をctypesでPythonから呼び出すことのできるスクリプトになっているが、Python 2ベースのようなのでPython 3で使うのに便利なインタフェースを作成した。`darknet.py`は`_darknet.py`にリネームした。PIL.Imageの場合にtempfileを使わない改修をしたほうがいいかもしれないが、今回は割愛。
 
 （追記 19/10/27） ※ examples/以下にちゃんとしたサンプルがあるみたいです.
 
-`_darknet.py`の`darknet.so`を指定してる箇所（https://github.com/pjreddie/darknet/blob/master/python/darknet.py#L48）を環境変数化したりすると汎用性上がると思う。
+`_darknet.py`の`darknet.so`を指定してる箇所（<https://github.com/pjreddie/darknet/blob/master/python/darknet.py#L48>）を環境変数化したりすると汎用性上がると思う。
 
 ### darknet/python/Darknet.py
 
@@ -252,13 +250,11 @@ if __name__ == "__main__":
         print(name, conf, box)
 ```
 
-
 ## 参考
 
 - [https://pjreddie.com/darknet/](https://pjreddie.com/darknet/)
 - [Tutorial: Build your own custom real-time object classifier](https://towardsdatascience.com/tutorial-build-an-object-detection-system-using-yolo-9a930513643a)
 - [GitHub - AlexeyAB/darknet: Windows and Linux version of Darknet Yolo v3 & v2 Neural Networks for object detection (Tensor Cores are used)](https://github.com/AlexeyAB/darknet)
-
 
 ## 付録
 

@@ -16,36 +16,39 @@ tags:
 # ロータリエンコーダ付きステッピングモータをArduinoで制御して角度を取得する
 
 ## 機材
+
 - Arduino UNO（中華）
 - ロータリエンコーダ付きステッピングモータ
-    - PKP214U06A-R2EL
-    - [PKP214U06A-R2EL-L｜PKPシリーズ／PKシリーズ｜ステッピングモーター｜オリエンタルモーター株式会社](https://www.orientalmotor.co.jp/products/detail.action?hinmei=PKP214U06A-R2EL-L)
-      - モータ部説明書（PDF、HM-7433J.pdf）
-      - ロータリエンコーダ部説明書（PDF、HM-7439JE.pdf）
-      - [特性図（画像）](https://www.orientalmotor.co.jp/file_addon/products/st/image/tj_pkp214u06a-r2el-l_d.gif)（DC24V駆動時）
-      - モータ部
-        - 2相
-        - ユニポーラ5本リード線
-        - 基本ステップ角度1.8°
-        - AC 50/60Hz 0.5kV 絶縁耐圧（1分間）
-      - ロータリエンコーダ部
-        - 分解能 200 パルス/回転（pulse/revolution）
-        - A相、B相、Z相：3チャンネル出力
-        - DC5V駆動
+  - PKP214U06A-R2EL
+  - [PKP214U06A-R2EL-L｜PKPシリーズ／PKシリーズ｜ステッピングモーター｜オリエンタルモーター株式会社](https://www.orientalmotor.co.jp/products/detail.action?hinmei=PKP214U06A-R2EL-L)
+    - モータ部説明書（PDF、HM-7433J.pdf）
+    - ロータリエンコーダ部説明書（PDF、HM-7439JE.pdf）
+    - [特性図（画像）](https://www.orientalmotor.co.jp/file_addon/products/st/image/tj_pkp214u06a-r2el-l_d.gif)（DC24V駆動時）
+    - モータ部
+      - 2相
+      - ユニポーラ5本リード線
+      - 基本ステップ角度1.8°
+      - AC 50/60Hz 0.5kV 絶縁耐圧（1分間）
+    - ロータリエンコーダ部
+      - 分解能 200 パルス/回転（pulse/revolution）
+      - A相、B相、Z相：3チャンネル出力
+      - DC5V駆動
 - モータドライバ
-    - SLA7078MPRT
-    - [SLA7078MPRT ｜サンケン電気](https://www.semicon.sanken-ele.co.jp/ctrl/product/category/2Ph_StepMotorUnp/detail/?product=SLA7078MPRT)
-    - [２相ステッピングモータードライバー　ユニポーラ駆動用　ＳＬＡ７０７８ＭＰＲＴ: 半導体 秋月電子通商-電子部品・ネット通販](https://akizukidenshi.com/catalog/g/gI-08015/)
-    - [データシート（PDF、sla7073mprt_ds_jp.pdf）](https://www.semicon.sanken-ele.co.jp/sk_content/sla7073mprt_ds_jp.pdf)
-    - μステップ対応品
-    - 実使用電圧 10-44V
+  - SLA7078MPRT
+  - [SLA7078MPRT ｜サンケン電気](https://www.semicon.sanken-ele.co.jp/ctrl/product/category/2Ph_StepMotorUnp/detail/?product=SLA7078MPRT)
+  - [２相ステッピングモータードライバー　ユニポーラ駆動用　ＳＬＡ７０７８ＭＰＲＴ: 半導体 秋月電子通商-電子部品・ネット通販](https://akizukidenshi.com/catalog/g/gI-08015/)
+  - [データシート（PDF、sla7073mprt_ds_jp.pdf）](https://www.semicon.sanken-ele.co.jp/sk_content/sla7073mprt_ds_jp.pdf)
+  - μステップ対応品
+  - 実使用電圧 10-44V
 - モータドライバ基板
-    - SEC20120330A
-    - [エレ・メカ・ホビーショップＳＥＣ 資料置き場](http://sec-suzuki.com/newpage333.htm)
-        - [新型 ２相ステップドライバ資料（PDF、step-2p-v1.pdf）](http://sec-suzuki.com/step-2p-v1.pdf)
+  - SEC20120330A
+  - [エレ・メカ・ホビーショップＳＥＣ 資料置き場](http://sec-suzuki.com/newpage333.htm)
+    - [新型 ２相ステップドライバ資料（PDF、step-2p-v1.pdf）](http://sec-suzuki.com/step-2p-v1.pdf)
 
 ## ステッピングモータの制御
+
 ### 配線
+
 ステッピングモータ本体からは、左から黒・緑・橙・青・赤の5本のケーブルが出ている。
 これは説明書を見ると
 黒・緑がA相（$\rm A$・$\rm \overline{A}$）、
@@ -56,6 +59,7 @@ tags:
 モータ電源として24V DC電源（[ATS065-P240](https://akizukidenshi.com/catalog/g/gM-06962/)）を使用した。
 
 ### ドライバ設定
+
 μステップ機能（角度をより細かく制御できる）を使い、
 励磁方式をW1-2相励磁（4分割）にするため、ドライバのM3端子をHIGHにする。
 今回使ったドライバ基板ではDIPスイッチの4番をONにする。
@@ -68,6 +72,7 @@ tags:
 実際に回すときは、求められるトルクと発熱のトレードオフで調節すると思われる。
 
 ### 制御コード
+
 以下のような機能を実現する簡単な制御コードを書いた。要[TimerOne](https://github.com/PaulStoffregen/TimerOne)。
 
 - パルスの開始・停止
@@ -147,8 +152,8 @@ void setCCW() {
 }
 ```
 
-
 ### 実行コード
+
 以下のようにテスト用の実行コードを作った。
 30rpm、300rpm、1000rpm、300rpm、30rpm、停止、のように回転し、一巡するごとに回転方向を反転する（あまり急激に変化させると脱調してしまい回らない）。
 
@@ -219,11 +224,10 @@ void loop() {
 }
 ```
 
-
-
 ## ロータリエンコーダによる角度取得
 
 ### 配線
+
 ロータリエンコーダ本体からは、左から白・橙・黄・青・緑・茶・赤・黒の8本のケーブルが出ている。
 これは説明書を見ると
 赤・茶がA相（A+・A-）、
@@ -325,6 +329,7 @@ void onRotaryEncoderPulse() {
 ```
 
 ### 実行コード
+
 以下のようにテスト用の実行コードを作った。
 感電に注意しつつ、手で軸を回して角度が変化することを確認する。
 
@@ -343,10 +348,10 @@ void loop() {
 }
 ```
 
-
 ## ステッピングモータ+ロータリエンコーダ
 
 ### シリアル通信で送られてきたJSONをパースする
+
 シリアル通信で改行文字で区切られたJSONをやり取りするため、`SerialJsonLineReader.ino`を作った。要[ArduinoJson](https://github.com/bblanchon/ArduinoJson)。
 
 ```c

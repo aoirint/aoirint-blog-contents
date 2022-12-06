@@ -15,7 +15,6 @@ channel: ダイアリー
 
 飽きさせない展開で、何度でも見れる。
 
-
 ## Guardian’s Sky ―女神の空― (2018年の小説)
 
 - 小説家になろう: [https://ncode.syosetu.com/n8719eb/](https://ncode.syosetu.com/n8719eb/)
@@ -24,9 +23,9 @@ channel: ダイアリー
 
 なかなか長く（全93部分）全編を読むのは大変だけれど、5章または3章あたりの展開が楽しめたら最初から読むとかいうのもいいと思う。
 
-
 ## 空母いぶき (2019年の映画)
--  Amazon Prime Video: [https://www.amazon.co.jp/dp/B07ZHMPV54](https://www.amazon.co.jp/dp/B07ZHMPV54)
+
+- Amazon Prime Video: [https://www.amazon.co.jp/dp/B07ZHMPV54](https://www.amazon.co.jp/dp/B07ZHMPV54)
 
 海上自衛隊 空母 "いぶき" 艦長 秋津を主軸として、南西諸島有事を描くミリタリー映画。
 

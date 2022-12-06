@@ -28,8 +28,8 @@ PCでゲームを遊ぶ割合が増えたことでJava版に移行すること�
 - [https://chunker.app/](https://chunker.app/)
 - [https://apexminecrafthosting.com/convert-bedrock-to-java/](https://apexminecrafthosting.com/convert-bedrock-to-java/)
 - [https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview](https://learn.microsoft.com/ja-jp/minecraft/creator/documents/chunkeroverview)
-    - さまざまなMinecraftのサードパーティーツールを紹介する記事の1つ
-    - [https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools](https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools)
+  - さまざまなMinecraftのサードパーティーツールを紹介する記事の1つ
+  - [https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools](https://learn.microsoft.com/ja-jp/minecraft/creator/documents/commonlyusedtools)
 
 ワールドデータをアップロードすると、異なるプラットフォーム・バージョン向けに変換してくれるWebツール。
 
@@ -56,7 +56,6 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 - [https://twitter.com/CornerHardMC/status/1527766756453822464](https://twitter.com/CornerHardMC/status/1527766756453822464)
 - [https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/](https://foxynotail.com/minecraft-news/29/minecraft-releases-official-world-converter-and-pruning-tool/)
 - [https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/](https://www.reddit.com/r/Minecraft/comments/uv5p4c/minecraft_official_chunker_a_map_editor_and/)
-
 
 ## 軽量なワールドを変換してみた
 

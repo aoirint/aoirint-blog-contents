@@ -42,8 +42,8 @@ Gitの場合は接続先名を変えるために`git remote set-url`する必要
 パスワードを暗号化して保存するにはデスクトップ環境が必要で、サーバ上で利用する場合はSSH認証を使うのがよさそう。
 GitHubでは、アカウントごとのほか、リポジトリごとにDeploy Keysとして公開鍵を登録できる。
 
-
 ## libsecretの場合
+
 [password - What is the correct way to use git with gnome-keyring and http(s) repos? - Ask Ubuntu](https://askubuntu.com/a/959662)
 
 ```sh
@@ -52,8 +52,8 @@ sudo make --directory=/usr/share/doc/git/contrib/credential/libsecret
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 ```
 
-
 ## libgnone-keyringの場合（非推奨）
+
 [zenn:tlls/gnome-keyringでgitクレデンシャルを保存する](https://zenn.dev/tlls/articles/gnome-keyring-git-credential)
 
 ```sh

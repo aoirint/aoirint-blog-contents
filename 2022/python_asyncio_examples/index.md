@@ -21,6 +21,7 @@ tags:
 ## 基本実装
 
 ### 同期関数から非同期関数を同期的に呼び出す
+
 - asyncio.run
 
 <details>
@@ -47,6 +48,7 @@ print('exited') # 3
 </details>
 
 ### 同期関数から非同期関数を非同期的に呼び出す
+
 - threading.Thread + asyncio.run
 
 <details>
@@ -76,6 +78,7 @@ print('exited') # 2
 </details>
 
 ### 非同期関数から同期関数を同期的に呼び出す
+
 - ふつうに呼び出す
 
 <details>
@@ -102,6 +105,7 @@ print('exited') # 3
 </details>
 
 ### 非同期関数から同期関数を非同期的に呼び出す
+
 - asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 
 <details>
@@ -131,6 +135,7 @@ print('exited') # 2
 </details>
 
 ### 非同期関数から非同期関数を同期的に呼び出す
+
 - awaitキーワード
 
 <details>
@@ -156,6 +161,7 @@ print('exited') # 3
 </details>
 
 ### 非同期関数から非同期関数を非同期的に呼び出す
+
 - threading.Thread + asyncio.run
 
 <details>
@@ -183,6 +189,7 @@ print('exited') # 2
 </details>
 
 ### 非同期関数から同期間数を非同期的に3つずつ呼び出す
+
 - asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 
 <details>
@@ -221,19 +228,20 @@ print('exited') # 2
 
 </details>
 
-
 ## よく見るエラー
 
 ### RuntimeError: Event loop is closed
+
 TBW
 
 ### RuntimeError: This event loop is already running
-TBW
 
+TBW
 
 ## アプリケーション
 
 ### FastAPI + schedule
+
 - asyncio.new_event_loop + ThreadPoolExecutor + EventLoop.run_in_executor
 - threading.Event
 - Dependencies
@@ -292,8 +300,8 @@ async def shutdown_schedule():
 
 </details>
 
-
 ### FFmpegを子プロセスとして同期的に実行しつつログを非同期にキャプチャする
+
 - FFmpeg 4.2.7-0ubuntu0.1
   - libx264: --enable-libx264
   - aac: native

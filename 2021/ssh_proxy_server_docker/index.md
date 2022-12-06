@@ -59,8 +59,6 @@ I am "hostX.networkB.example:80".
 この方法は、ネットワーク内のあるホストにSSH接続ができる環境さえあれば、
 VPNや他のTCPプロキシをセットアップするより簡単に隠されたネットワークにアクセスすることができるように思います。
 
-
-
 ## ポートプロキシサーバ：2種類のSSHポートフォワーディングの組み合わせ
 
 ここで、別の構成のネットワークについても考えてみます。
@@ -80,9 +78,8 @@ VPNや他のTCPプロキシをセットアップするより簡単に隠され�
 あらかじめホストXをホストZに常時接続するように設定しておけば、
 その接続（ポートQからポートPへの転送）が生きている限り、好きなタイミングでホストYからホストXに接続（ポートRからポートQへの転送、すなわちポートRからポートPへの転送）することができます。
 
-
-
 ## SSH Port Forwardingを使ったPort Proxy Server in Docker
+
 前項のポートプロキシサーバの問題として、次の3つを考えました。
 
 1. ホストYのユーザは、ホストZ上のローカルポート（ローカルループバックアドレスにバインドしたポート）に自由にアクセスできる
@@ -95,16 +92,16 @@ VPNや他のTCPプロキシをセットアップするより簡単に隠され�
 
 作ったシステムはGitHubにおいています。
 
-- ホストZ用のシステム：https://github.com/aoirint/SSHPortForwardingProxy
-- ホストX用のシステム：https://github.com/aoirint/SSHPortForwardingProxyClient
+- ホストZ用のシステム：<https://github.com/aoirint/SSHPortForwardingProxy>
+- ホストX用のシステム：<https://github.com/aoirint/SSHPortForwardingProxyClient>
 - ホストY：通常の`ssh`コマンドを使用
 
 仮想化の不完全な点として、ホストX用のシステムについて、設定が煩雑になるのを避けるため、`network_mode: host`（`--net host`）を指定してしまっています。
 また、パスワードログインやログインシェルは無効化していますが、まだSSHサーバの設定（アクセス制限）に不備があるかもしれません。
 他に、ホストXからホストZ上の仮想SSHサーバへの初回接続でフィンガープリントの確認をスキップしています。
 
-
 ### 事前準備の手順
+
 認証はすべて公開鍵認証を使うことを想定します。
 そのため、あらかじめ各ホスト間で公開鍵の共有が必要です。
 
@@ -113,6 +110,7 @@ VPNや他のTCPプロキシをセットアップするより簡単に隠され�
 3. [ホストY] SSH鍵を生成し、公開鍵をホストXに転送する
 
 ### 準備手順
+
 1. [ホストZ] `git clone https://github.com/aoirint/SSHPortForwardingProxy.git`
 2. [ホストZ] `docker-compose.override.yml.template`を`docker-compose.override.yml`にコピーする
 3. [ホストZ] どのポートで仮想SSHサーバをホストするか決め、`docker-compose.override.yml`にポートマッピングを記述する
@@ -131,13 +129,14 @@ VPNや他のTCPプロキシをセットアップするより簡単に隠され�
 9. [ホストX] `docker-compose up -d`
 
 ### 使用手順
+
 1. [ホストY] `ssh userY@hostZ.networkA.example -p 10080 -N -i "VirtualZへの秘密鍵のパス" -L "127.0.0.1:20080:127.0.0.1:10022"`
     - 接続をバックグランドで維持しておく
     - ホストXのSSHサーバにホストYの20080番ポートからアクセスできるようになった（ここではホストY内のローカルアクセスに限定）
 2. [ホストY] `ssh userYinHostX@localhost -p 20080 -i "ホストXへの秘密鍵のパス"`
     - ホストYからホストXにSSH接続ができる（目的達成）
 
-
 ## 未解決の問題
+
 - ホストYは、ネットワークAから見えるホストに（ホストZのアドレスで）自由に接続できる
-    - `--cap-add​=NET_ADMIN`と`iptables`を使って制限できるかもしれない
+  - `--cap-add​=NET_ADMIN`と`iptables`を使って制限できるかもしれない

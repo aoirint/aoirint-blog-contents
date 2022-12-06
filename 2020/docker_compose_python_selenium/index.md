@@ -27,6 +27,7 @@ Seleniumのバージョンが上がって一部非推奨化したりしたので
 ## 2020-09-28
 
 ### docker-compose.yml
+
 ```yaml
 version: '3.8'
 services:
@@ -46,6 +47,7 @@ services:
 ```
 
 ### app/Dockerfile
+
 ```dockerfile
 FROM python:3
 
@@ -61,12 +63,14 @@ ADD code/ /code
 ```
 
 ### app/requirements.txt
+
 ```requirements
 requests >= 2.24.0
 selenium
 ```
 
 ### app/code/main.py
+
 ```python
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException

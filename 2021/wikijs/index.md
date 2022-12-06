@@ -76,8 +76,8 @@ volumes:
 
 wikiサービスのポートの割り当てはホストのnginxからリバースプロキシすることを想定している。
 
-
 ## 初期設定
+
 ポートにアクセスすると初期（管理者）アカウントの設定を求められる。
 
 ![wikijs_configure_first_account.png](images/wikijs_configure_first_account.png)
@@ -91,6 +91,7 @@ wikiサービスのポートの割り当てはホストのnginxからリバー�
 ![wikijs_first_page_3.png](images/wikijs_first_page_3.png)
 
 ## ロケール
+
 Wikiページの言語にあたる、ロケールの設定が悩ましいところ。
 
 言語を変えるとUIの言語だけでなくページ作成時のデフォルトURLプレフィクス（`/en/PAGE`とか`/ja/PAGE`）が変わる。
@@ -101,8 +102,8 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 
 ![wikijs_locale_ja.png](images/wikijs_locale_ja.png)
 
-
 ## 非公開Wiki
+
 - [https://docs.requarks.io/groups](https://docs.requarks.io/groups) (`Guides > Private Wiki`)
 
 管理画面の`Users > Groups > Guests`のPermissionsをすべて無効にする。
@@ -111,11 +112,9 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 
 ![wikijs_group_permissions.png](images/wikijs_group_permissions.png)
 
-
 権限のないページを開くとUnauthorizedページが表示される。
 
 ![wikijs_unauthorized.png](images/wikijs_unauthorized.png)
-
 
 ## Gitリポジトリによる管理
 
@@ -138,7 +137,6 @@ Gitストレージを設定する前に投稿した記事や画像は変更が�
 
 ![wikijs_git_storage.png](images/wikijs_git_storage.png)
 
-
 Markdownページは、以下のようなYAMLヘッダ（Front Matter）がついたファイルとして保存される。
 
 ```plain
@@ -160,7 +158,6 @@ dateCreated: 2021-06-01T18:48:16.731Z
 
 そのままGitHub上でGitHub Pagesを有効にすれば、
 デフォルト設定のJekyllで生成されたHTMLがホストされる。
-
 
 ## リファラを送らない
 

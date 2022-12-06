@@ -12,6 +12,7 @@ tags:
 # nginx basic auth, reverse proxy, static files
 
 ### Basic auth
+
 - [Nginx で Basic 認証 - Qiita](https://qiita.com/kotarella1110/items/be76b17cdbe61ff7b5ca)
 
 ```
@@ -20,6 +21,7 @@ tags:
 ```
 
 ### Reverse proxy
+
 - [Nginxによるリバースプロキシの設定方法 - Qiita](https://qiita.com/schwarz471/items/9b44adfbec006eab60b0)
 
 ```
@@ -35,6 +37,7 @@ tags:
 ```
 
 ### Static files
+
 - [Nginxの静的ファイル配信でハマった - shoya\.io](https://shoya.io/ja/posts/nginx-root/)
 
 ```

@@ -17,7 +17,6 @@ tags:
 
 - GitHub Release作成時にリリースタグをパッケージバージョンにしてpush
 
-
 ## 構成
 
 `mypackage/__init__.py`に以下のように開発用のバージョン情報を記述する。

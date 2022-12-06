@@ -18,12 +18,14 @@ ses = requests.Session()
 ```
 
 ## Headers
+
 ```python
 ses.headers.update({
 })
 ```
 
 ## Copy cookies from Selenium
+
 ```python
 ses.cookies.clear()
 for cookie in driver.get_cookies():
@@ -32,6 +34,7 @@ for cookie in driver.get_cookies():
 ```
 
 ## Download a file
+
 ```python
 file_url: str
 dest_path: str

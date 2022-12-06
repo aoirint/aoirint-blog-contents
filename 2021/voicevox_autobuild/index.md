@@ -49,6 +49,6 @@ tags:
 - [コンテキスト共有編](../voicevox_autobuild_context/)
 - [モチベーション編](../voicevox_autobuild_motivation/)
 - 技術情報の共有
-    - [ENGINE Dockerイメージ作成編](../voicevox_autobuild_engine_docker/)
-    - [ENGINE バイナリ自動ビルド編](../voicevox_autobuild_engine_binary/)
-    - [エディタ バイナリ自動ビルド編](../voicevox_autobuild_editor_binary/)
+  - [ENGINE Dockerイメージ作成編](../voicevox_autobuild_engine_docker/)
+  - [ENGINE バイナリ自動ビルド編](../voicevox_autobuild_engine_binary/)
+  - [エディタ バイナリ自動ビルド編](../voicevox_autobuild_editor_binary/)

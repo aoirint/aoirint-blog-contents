@@ -39,8 +39,8 @@ pacmd unload-module module-loopback
 pacmd unload-module module-null-sink
 ```
 
-
 ## ログイン時に自動作成する
+
 ### /etc/pulse/default.pa
 
 ```pulseaudio
@@ -72,6 +72,7 @@ pulseaudio --start
 新しい出力デバイスが検出されたとき、デフォルト出力デバイスが切り替わるのを防ぐ。
 
 ### /etc/pulse/default.pa
+
 `load-module module-switch-on-port-available`、`load-module module-switch-on-connect`をコメントアウトする。
 
 ```pulseaudio
@@ -91,8 +92,8 @@ pulseaudio --kill
 pulseaudio --start
 ```
 
-
 ## 電源メニューから音声デバイスを切り替えられるようにするGnome Shell Extension
+
 - [https://extensions.gnome.org/extension/906/sound-output-device-chooser/](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 - [https://github.com/kgshank/gse-sound-output-device-chooser](https://github.com/kgshank/gse-sound-output-device-chooser)
 

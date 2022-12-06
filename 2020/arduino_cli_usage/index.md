@@ -20,8 +20,8 @@ $ arduino-cli version
 arduino-cli Version: 0.13.0 Commit: 693a045
 ```
 
-
 ## インストール
+
 - [Installation - Arduino CLI](https://arduino.github.io/arduino-cli/latest/installation/)
 - [arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli)
 
@@ -49,6 +49,7 @@ sudo adduser $USER dialout
 ```
 
 ## スケッチの作成
+
 特に特殊なファイルを必要としたりはしないので、
 Arduino IDEで作成しても、好きなテキストエディタで作成してもよい。
 
@@ -60,8 +61,8 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 
 以下、`arduino-cli`のコマンドはスケッチのディレクトリで実行する。
 
-
 ## FQBNの確認
+
 `arduino-cli`でボードを扱うときには、ボード名にあたる`FQBN`というコロンで区切られた文字列を使う。
 
 `arduino-cli board listall`コマンドで
@@ -73,10 +74,9 @@ Arduino IDEで作成しても、好きなテキストエディタで作成して
 
 - Arduino UNO: `arduino:avr:uno`
 - Arduino Nano: `arduino:avr:nano`
-    - ブートローダが古い場合?: [https://github.com/arduino/arduino-cli/issues/29](https://github.com/arduino/arduino-cli/issues/29)
+  - ブートローダが古い場合?: [https://github.com/arduino/arduino-cli/issues/29](https://github.com/arduino/arduino-cli/issues/29)
 - Arduino Nano Every: `arduino:megaavr:nona4809`
 - ESP32-DevKitC: `esp32:esp32:esp32`
-
 
 ## プラットフォームコアのインストール
 
@@ -93,7 +93,6 @@ arduino-cli core install arduino:megaavr
 arduino-cli core install esp32:esp32
 ```
 
-
 ## ライブラリのインストール
 
 ライブラリの導入には、`arduino-cli lib`コマンドを使う。
@@ -105,7 +104,6 @@ arduino-cli lib search ArduinoJson
 
 arduino-cli lib install ArduinoJson
 ```
-
 
 ## スケッチのコンパイル
 
@@ -119,7 +117,6 @@ arduino-cli compile -b arduino:avr:uno
 
 コンパイル成果物はデフォルトで`./build`ディレクトリに書き出されるので、
 `.gitignore`などに追加しておく。
-
 
 Arduino Nano EveryはATmega4809を搭載しているが、デフォルトでArduino UnoやNanoのATmega328Pをエミュレートする互換モードになる。
 違いはよくわからないが、低レベルAPIを直接使っている場合に影響があるかもしれない。
@@ -178,14 +175,13 @@ Programmers:               Id                                                   
 arduino-cli upload -b arduino:avr:uno -p /dev/ttyACM0
 ```
 
-
 ## シリアルモニタ
 
 `arduino-cli`にはシリアルモニタ機能がない（追加される予定もない）ので、
 ほかのツールを使う必要がある。
 
 - [Feature Request: Serial Monitor · Issue #876 · arduino/arduino-cli](https://github.com/arduino/arduino-cli/issues/876)
-    - 機能提案はリジェクトされている（別のツールを使ってね）
+  - 機能提案はリジェクトされている（別のツールを使ってね）
 
 `screen`コマンドがよく使われるようだったので、これを使う。
 Ubuntuの場合`apt install screen`で導入できる。
@@ -197,8 +193,8 @@ screen /dev/ttyACM0 115200
 
 閉じるには`Ctrl+a k`を入力する。
 
-
 ## プロキシ設定
+
 - ["board list" command doesn't follow proxy configuration · Issue #660 · arduino/arduino-cli](https://github.com/arduino/arduino-cli/issues/660)
 - [how to use net proxy? · Issue #271 · arduino/arduino-pro-ide](https://github.com/arduino/arduino-pro-ide/issues/271)
 
@@ -220,6 +216,6 @@ network:
   proxy: http://proxy:port
 ```
 
-
 ## 関連
+
 - [[Arduino] arduino-cli初期設定(内蔵LEDでLチカ) - Life with IT](https://l-w-i.net/t/arduino/cli_001.txt)

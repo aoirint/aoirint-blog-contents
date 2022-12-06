@@ -15,8 +15,8 @@ tags:
 
 Ruby製の静的ウェブサイト生成ツール（Static Site Generator）。なんかMarkdownとかで書いたサイトをいい感じにHTMLにしてくれるやつ。
 
-
 ## Dockerイメージの準備
+
 Ruby, RubyGems, gcc, makeが入っていれば動くらしい。公式Dockerイメージもあるみたいだけど、あえてスルーしてrubyイメージからやってみる。
 
 ふだんRubyは使わないので試行錯誤。
@@ -34,7 +34,6 @@ RUN gem install jekyll bundler
 ```
 
 ここで`gem install`してもいいのか、という問題がありそうだけどよくわからない..（キャッシュについてはいいとして）
-
 
 ```sh
 sudo docker build . -t myjekyll
@@ -79,9 +78,10 @@ sudo docker run --rm -v `pwd`/myblog:/code -e BUNDLE_PATH=vendor/bundle -p 4000:
 
 `http://localhost:4000`でチェック。
 
-
 ## ディレクトリ構成
+
 ### ./
+
 Gemfileなどがあるディレクトリ。ここはテンプレート（テーマ）置き場に使うみたい。
 
 デフォルトで`index.markdown`ファイルはこうなっていた。
@@ -96,6 +96,7 @@ layout: home
 ```
 
 ### \_posts/
+
 記事のMarkdownファイルをおく場所。
 
 サンプル記事`2020-05-31-welcome-to-jekyll.markdown`の冒頭（適当に改行を入れた）はこうなっていた。
@@ -116,20 +117,22 @@ server and auto-regenerates your site when a file is updated.
 
 ヘッダ部分（最初の`---`で囲まれた場所）を`Front Matter`というらしい（YAMLフォーマット）。ここにメタデータを書く。
 
-
 ### \_site/
+
 ビルドされた静的サイトを構成するファイル群が出力される場所。
 
-
 ## 基本的なコマンド
+
 ### jekyll build
+
 Jekyllが生成した静的サイトを構成するファイルは`_site`ディレクトリ以下に出力される。自分の作成したMarkdown記事からHTMLを生成するときは`jekyll build`を実行する。
 
 ### jekyll serve
+
 開発用サーバを立ち上げるコマンド。生成された静的サイトを確認するときは`jekyll serve`を実行する。デバッガ（プレビュー）的な機能があるようで、変更が自動的に反映される（自動的に`jekyll build`してくれる）らしい。記事以外を編集した場合は反映されないみたい？
 
-
 ## 記事（Post）の作成
+
 `_posts`ディレクトリ内に`.md`/`.markdown`ファイルを増やせばよい。サンプル記事に書いてあるのだが、ファイル名は`YEAR-MONTH-DAY-title.MARKUP`にする必要があるらしい。
 
 `2020-05-31-my-first-post.md`
@@ -148,8 +151,8 @@ Hello Jekyll!
 
 ```
 
-
 ## テーマの変更（例：Minimal Mistakes）
+
 Jekyll 3.2からgemでデフォルトのテーマを導入するようになったらしい。デフォルトは`minima`。
 そのため`_layouts`, `_includes`などのテーマ編集用のファイルが新規プロジェクトに生成されなくなった。
 
@@ -175,19 +178,15 @@ gem "minimal-mistakes-jekyll"
 theme: minimal-mistakes-jekyll
 ```
 
-
 デフォルトの`index.markdown`をMinimal Mistakesの`index.html`に置き換える（`index.markdown`を削除、`index.html`をダウンロードして置き換えなど）
 
 - [minimal-mistakes/index.html at master · mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html)
 
-
 投稿の`layout`が`post`から`single`になっているので各Markdownファイルを修正する（`about.markdown`も忘れずに、あるいは削除）。
-
 
 それから、タグ検索ページを追加する。`_pages/tag-archive.md`を下からコピーしてくればOK（`_config.yml`はリポジトリのものに置き換えたと想定）。
 
 - [minimal-mistakes/tag-archive.md at master · mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/tag-archive.md)
-
 
 これで`build`すればテーマが変わる。細かい作業が多くて結構面倒くさい..。Git管理することを考えて、できる限りもとのファイルを維持したまま置き換えようとしたからかな？　諦めて`_posts`だけを移行するようにして、丸ごと入れ替えてしまったほうが楽だったかもしれない。なんか昔のHTMLテンプレートを記事だけ使いまわせるようにした、みたいな...。
 

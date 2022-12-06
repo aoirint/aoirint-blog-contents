@@ -35,6 +35,7 @@ SSHサーバの前段階に設けることでHTTPと同様なアクセス振り�
 ```
 
 ## SSHサーバを立てる
+
 SSHサーバを立てる。Dockerfileは[maltyxx/sshd](https://github.com/maltyxx/docker-sshd)を使う。
 
 ### docker-compose.yml
@@ -46,7 +47,6 @@ debianのリポジトリとリンクして自動ビルドされるようなこ�
 ```
 Commit ID: 24a1f32f6060054c64e294d3b074885c856b29d2
 ```
-
 
 ```yaml
 version: '3.8'
@@ -63,6 +63,7 @@ services:
 ```
 
 #### 説明
+
 コマンド部分にユーザ情報を書くと自動でコンテナ内ユーザが作成される（README参照、複数ユーザも可）。
 ここではパスワードなしのユーザ`myuser`とする。
 
@@ -70,6 +71,7 @@ services:
 公開鍵認証ができる。
 
 ### テスト
+
 ここではテストのため、ホストの`0.0.0.0:2222`にSSHサーバのポートを割り当てている。
 
 ホストから秘密鍵`YOUR_PRIVATE_KEY`を使ってこのSSHサーバにログインできるか確認する。
@@ -82,6 +84,7 @@ ssh localhost -p 2222 -l myuser -i ~/.ssh/YOUR_PRIVATE_KEY
 確認後はポートの割り当ては不要なので削除する。
 
 ## HTTPプロキシを立てる
+
 HTTPプロキシを立てる。[Squid](https://github.com/squid-cache/squid)を使う。Dockerイメージは[sameersbn/squid](https://github.com/sameersbn/docker-squid)を使う。
 
 ```
@@ -143,10 +146,9 @@ ProxyCommand部の設定方法はOSによって変わるので注意（別記事
 
 `ssh`の直後の`sshd`の名前解決はSSHサーバ側で行われる（ProxyCommandの`%h`に入る）。
 
-
 ## リバースプロキシを立てる
-リバースプロキシを立てる。nginxを使う。Dockerイメージは[_/nginx](https://hub.docker.com/_/nginx)を使う。
 
+リバースプロキシを立てる。nginxを使う。Dockerイメージは[_/nginx](https://hub.docker.com/_/nginx)を使う。
 
 ### docker-compose.yml
 
@@ -195,11 +197,11 @@ server {
   # listen 80;
   # server_name proxy.example.com;
 
-	proxy_set_header X-Forwarded-Server $host;
-	proxy_set_header X-Real-IP $remote_addr;
-	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	proxy_set_header X-Forwarded-Proto $scheme;
-	proxy_redirect off;
+ proxy_set_header X-Forwarded-Server $host;
+ proxy_set_header X-Real-IP $remote_addr;
+ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+ proxy_set_header X-Forwarded-Proto $scheme;
+ proxy_redirect off;
 
   proxy_pass http://@http_proxy;
 
@@ -207,9 +209,8 @@ server {
 
 ```
 
-
-
 ### おまけ：Stream Proxy
+
 `stream`という機能でTCP/UDPプロキシが張れる。
 しかしTCP/UDPの仕様上リバースプロキシはできないと思われるので
 今回は使わなかった。
@@ -270,7 +271,6 @@ services:
 ```sh
 ssh localhost -p 8000 -l myuser -i ./YOUR_PRIVATE_KEY
 ```
-
 
 - [multiplexing - Can nginx serve SSH and HTTP(S) at the same time on the same port? - Super User](https://superuser.com/questions/1135208/can-nginx-serve-ssh-and-https-at-the-same-time-on-the-same-port)
 

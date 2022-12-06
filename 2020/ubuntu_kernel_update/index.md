@@ -14,10 +14,13 @@ tags:
   - DKMS
 ---
 # Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
+
 環境の整理を兼ねて、UbuntuのKernelのアップデートをしたので、そのときのメモ。
 
 ## Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
+
 ### カーネルバージョンについて
+
 `/lib/modules`を見る限りインストール時のバージョンは`4.10.0-28`で、
 `/usr/src`を見る限り`4.15.0-115`をしばらく使ったあと、
 `4.16.18`に更新していた。
@@ -34,8 +37,8 @@ UKUUを使ってカーネルをインストールするとこの部分がバー�
 これはABIとは違いそうだ（ABIは0から255までの範囲のように思われる）。
 ABIのドキュメントらしきものがあったので、機会があれば読みたい：[KernelTeam/BuildSystem/ABI - Ubuntu Wiki](https://wiki.ubuntu.com/KernelTeam/BuildSystem/ABI "KernelTeam/BuildSystem/ABI - Ubuntu Wiki")
 
-
 ### UKUUとセキュリティアップデートについて
+
 - [Ubuntu 20.04 その164 - Linux kernelにDoSや任意コード実行の脆弱性・アップデートを - kledgeb](https://kledgeb.blogspot.com/2020/09/ubuntu-2004-164-linux-kerneldos.html "Ubuntu 20.04 その164 - Linux kernelにDoSや任意コード実行の脆弱性・アップデートを - kledgeb")
 - [USN-4489-1: Linux kernel vulnerability | Ubuntu security notices | Ubuntu](https://ubuntu.com/security/notices/USN-4489-1 "USN-4489-1: Linux kernel vulnerability | Ubuntu security notices | Ubuntu")
 
@@ -50,6 +53,7 @@ e1000eの自動ビルドはおそらく無駄で（4.10から4.15では意味が
 4.16.xカーネルのセキュリティアップデートも行われていなかったのではないかと思っている。
 
 ### HWEカーネルのインストール
+
 はじめはUKUUを使って5.4.xにアップデートしたものの、
 前項の懸念からUbuntuが公式に提供しているHWEカーネルというものを使うことにした。
 これならばaptでカーネルが管理され、自動でパッチが適用されるものと思われる。
@@ -65,6 +69,7 @@ sudo apt install linux-generic-hwe-18.04
 ```
 
 このあとから以下のようになったので、このシステムでaptが管理していたカーネルバージョンは`4.15.0-115`だったことがわかる。
+
 ```
 The following packages were automatically installed and are no longer required:
   linux-headers-4.15.0-115 linux-headers-4.15.0-115-generic
@@ -73,6 +78,7 @@ The following packages were automatically installed and are no longer required:
 ```
 
 ### 余談：UKUUを使ったカーネル導入とデフォルトカーネルとgrubの設定
+
 ここで、grubのデフォルトエントリがUKUUで入れた5.4.xカーネルのままで、
 新たにインストールしたUbuntu HWEカーネルではなかった。
 この項ではこの理由を検討するが、実際にはgrub（またはUbuntuに同梱されているgrub）のデフォルトの挙動であったので、
@@ -100,6 +106,7 @@ done
 ```
 
 `/boot/grub/grub.cfg`をみると、
+
 ```grub
 menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 entry_id_option 'gnulinux-simple-ed8cbed5-714e-4201-b606-c41d570f834d' {
@@ -138,7 +145,6 @@ grub.d以下は標準出力をgrub.cfgに書き出し、エラー出力を`updat
 grubのメニューには`Ubuntu`（menuentry）、`Advanced options for Ubuntu`（submenu./men）のように並ぶ。
 
 [【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する：Linux基本コマンドTips（277） - ＠IT](https://www.atmarkit.co.jp/ait/articles/1901/31/news048.html "【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する：Linux基本コマンドTips（277） - ＠IT")
-
 
 一番上のmenuentryを生成している`/etc/grub.d/10_linux`の一部：
 
@@ -291,9 +297,10 @@ UKUUは特殊なことをしていないとわかったので、
 単純にUKUUから入れたカーネルを削除して`update-grub`すればデフォルトが（もっとも新しい）HWEカーネルになりそうだとわかった。
 一度別のカーネル（HWEでOK）で起動して、UKUUのGUIを使ってUKUU側の5.4.xを削除（ふつうに選択してRemove）すればデフォルトでもっとも新しいHWEカーネルが起動するようになる。
 
-
 ## （準備中）e1000eのDKMS設定
+
 ### Intel NICのドライバe1000eについて
+
 ```sh
 $ find /lib/modules/5.4.0-47-generic -name e1000e*
 /lib/modules/5.4.0-47-generic/kernel/drivers/net/ethernet/intel/e1000e
@@ -306,24 +313,25 @@ $ find /lib/modules/5.4.0-47-generic -name e1000e*
 ```sh
 # lspci -vvv
 00:1f.6 Ethernet controller: Intel Corporation Ethernet Connection (2) I219-V
-	Subsystem: Intel Corporation Ethernet Connection (2) I219-V
-	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
-	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Interrupt: pin A routed to IRQ 16
-	Region 0: Memory at df100000 (32-bit, non-prefetchable) [size=128K]
-	Capabilities: [c8] Power Management version 3
-		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=1 PME-
-	Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit+
-		Address: 00000000fee00338  Data: 0000
-	Capabilities: [e0] PCI Advanced Features
-		AFCap: TP+ FLR+
-		AFCtrl: FLR-
-		AFStatus: TP-
-	Kernel modules: e1000e  <-- これが動かない
+ Subsystem: Intel Corporation Ethernet Connection (2) I219-V
+ Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ Interrupt: pin A routed to IRQ 16
+ Region 0: Memory at df100000 (32-bit, non-prefetchable) [size=128K]
+ Capabilities: [c8] Power Management version 3
+  Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+  Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=1 PME-
+ Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit+
+  Address: 00000000fee00338  Data: 0000
+ Capabilities: [e0] PCI Advanced Features
+  AFCap: TP+ FLR+
+  AFCtrl: FLR-
+  AFStatus: TP-
+ Kernel modules: e1000e  <-- これが動かない
 ```
 
 エラーログ
+
 ```sh
 $ zegrep e1000e /var/log/kern.log*
 kernel: [    1.296005] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
@@ -346,6 +354,7 @@ sed -i "/s32 e1000e_validate_nvm_checksum_generic(struct e1000_hw \*hw)/N;s/\n{/
 ```
 
 ### UKUUとe1000eのビルドについて
+
 今回はUKUUを使わないためこれは余談なのだが、UKUUで導入したカーネルでe1000eをビルドするときには、チェックサム検証の問題に加えてABIに関連した問題が起こる。
 ここにe1000eのソースコード（`kcompat.h`）の一部を引用するが、以下のようにe1000eのプログラム内でABIのチェックが行われていて、
 4.16.xのカーネルをUKUUで導入した際はこのバージョンチェックをコメントアウトする必要があった。
@@ -387,6 +396,7 @@ sed -i "s/#error UTS_UBUNTU_RELEASE_ABI is too large.../\/\/#error UTS_UBUNTU_RE
 これを直接Cコードに埋め込んだりすると8進数扱いされて（さらに数字に8以上が含まれていて）ビルドが通らないということがあった（どのソフトウェアか覚えていないが）。
 
 ### これまでのe1000e自動ビルドについて
+
 Linuxにはカーネルバージョンをアップデートしたときにドライバなどのモジュールを再ビルドするための
 DKMS（Dynamic Kernel Module Support）というソフトウェアがあるのだが、
 導入当時はこれを使うキャパシティがなかったので、当時でもなんとなく使い方のわかっていたsystemdを使って
@@ -437,6 +447,7 @@ $ sudo rm -r /etc/uscript/e1000e-latest
 ```
 
 ### DKMSを使ったe1000e自動ビルドについて
+
 [Ubuntu 16.04でRTL8189FTV （RTL8188FU）ドライバのDKMS化 (r271-635)](https://netlog.jpn.org/r271-635/2019/06/ubuntu_rtl8189ftv_dkms.html "Ubuntu 16.04でRTL8189FTV （RTL8188FU）ドライバのDKMS化 (r271-635)")
 
 これを参考にカーネルアップデート時に自動でリビルドするDKMSに対応させる作業をした。
@@ -455,6 +466,7 @@ sudo apt install dkms
 dkms.confの細かい説明：[Ubuntu Manpage: dkms - Dynamic Kernel Module Support](https://manpages.ubuntu.com/manpages/bionic/man8/dkms.8.html#dkms.conf "Ubuntu Manpage: dkms - Dynamic Kernel Module Support")
 
 ディレクトリ構造
+
 ```
 | /usr/src/e1000e-3.8.4/
 |-- README
@@ -467,6 +479,7 @@ dkms.confの細かい説明：[Ubuntu Manpage: dkms - Dynamic Kernel Module Supp
 ```
 
 dkms.conf
+
 ```dkms
 PACKAGE_NAME="e1000e"
 PACKAGE_VERSION="3.8.4"
@@ -540,6 +553,7 @@ DKMS: install completed.
 ```
 
 デフォルトの`e1000e`を無効化する。
+
 ```sh
 sudo modprobe -r e1000e
 
@@ -548,6 +562,7 @@ sudo modprobe -r e1000e
 ```
 
 自動でモジュールが読み込まれないと思われるので、`dkms`の方の`e1000e`を`modprobe`を使って手動で読み込む。
+
 ```sh
 sudo modprobe e1000e-dkms
 modinfo e1000e-dkms

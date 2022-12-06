@@ -14,7 +14,7 @@ tags:
 
 - [https://github.com/aoirint/HinaOutlineProcessor](https://github.com/aoirint/HinaOutlineProcessor)
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ひなホップ（Hina Outline Processor）の開発 <a href="https://t.co/2zd5fj5mN1">pic.twitter.com/2zd5fj5mN1</a></p>&mdash; kanomiya (@kanomiya) <a href="https://twitter.com/kanomiya/status/836616749252390912?ref_src=twsrc%5Etfw">February 28, 2017</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ひなホップ（Hina Outline Processor）の開発 <a href="https://t.co/2zd5fj5mN1">pic.twitter.com/2zd5fj5mN1</a></p>&mdash; kanomiya (@kanomiya) <a href="https://twitter.com/kanomiya/status/836616749252390912?ref_src=twsrc%5Etfw">February 28, 2017</a></blockquote>
 
 UIの仕様はStory Editor（旧）をベースにしている。Story Editorのモダン化とマルチプラットフォーム化ができればいいな、と思っていた。マルチプラットフォームならWebでは、と思われるかもしれないが、ローカルにファイルを置いておきたい気持ち（また、同時編集の沼も存在する）。その後、先行ツールの意外な高機能性の発見や大学進学のストレスなどでモチベが失われ、Minecraft Moddingを再開した。
 

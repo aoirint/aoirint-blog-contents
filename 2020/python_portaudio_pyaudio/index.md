@@ -66,7 +66,6 @@ Host API: 1
 {'index': 1, 'structVersion': 2, 'name': 'Built-in Output', 'hostApi': 0, 'maxInputChannels': 0, 'maxOutputChannels': 2, 'defaultLowInputLatency': 0.01, 'defaultLowOutputLatency': 0.007800453514739229, 'defaultHighInputLatency': 0.1, 'defaultHighOutputLatency': 0.017959183673469388, 'defaultSampleRate': 44100.0}
 ```
 
-
 ### Check Devices
 
 ```python

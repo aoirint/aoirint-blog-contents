@@ -22,7 +22,6 @@ tags:
 
 ---
 
-
 ### VOICEVOX ENGINEのDockerイメージ化
 
 まず、VOICEVOX ENGINEのDockerイメージの作成を始めました。

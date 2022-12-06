@@ -27,8 +27,8 @@ Docker Hubにアクセストークンを追加する。
 
 mainブランチにgit pushされたとき、Dockerイメージのビルドが走り、イメージがDocker Hubにdocker pushされる。
 
-
 ## .github/workflows/docker.yml
+
 ```
 #!yaml
 name: Push to Docker registry

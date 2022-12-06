@@ -24,7 +24,6 @@ arduino-cliの使い方については、別記事参照。
 
 - [arduino-cliの使い方 - えやみぐさ](https://blog.aoirint.com/entry/2020/arduino_cli_usage/)
 
-
 ## 秘密情報の埋め込み
 
 秘密情報の埋め込みには、以下のようなシェルスクリプト`compile.sh`を作成するのが楽でよい。
@@ -37,7 +36,6 @@ arduino-cliの使い方については、別記事参照。
 ボードへの書き込みには以下の`upload.sh`のようなスクリプトを使うとよい。
 
 `screen`コマンドをラップするスクリプト`serialmon.sh`もおいておく。
-
 
 ### compile.sh
 
@@ -109,8 +107,8 @@ void initWiFi() {
 }
 ```
 
-
 ### upload.sh
+
 ```bash
 #!/bin/bash
 
@@ -139,8 +137,8 @@ arduino-cli upload \
 ./upload.sh /dev/ttyACM0
 ```
 
-
 ### serialmon.sh
+
 ```bash
 #!/bin/bash
 
@@ -159,6 +157,7 @@ screen "$SERIAL_PORT" "$BAUDRATE"
 閉じるには`Ctrl+A k`を押した後に`y`を押して`Enter`。
 
 ### update.sh
+
 まとめて実行する
 
 ```bash
@@ -175,16 +174,16 @@ SERIAL_PORT="$1"
 ./update.sh
 ```
 
-
 ### compile.shの中身
+
 同ディレクトリ中にある`.env`ファイルを読み込み、
 C言語の定数として取り込まれる`build.defines`に手動で変数を列挙している
 （nginx Dockerのtemplate置換のように定義済みの環境変数を自動で入れ込む改良もしたい）。
 
-またDEFINESの中身をエスケープしたい（変数内に` -D`を許容したい）が、
+またDEFINESの中身をエスケープしたい（変数内に`-D`を許容したい）が、
 まだやり方がわかっていない。
 
-
 ## 関連
+
 - [Arduinoスケッチに安全に秘匿値を埋め込む｜o3c9｜note](https://note.com/o3c9/n/ne14c1817be11)
-    - Arduino IDEのコマンドライン機能を使ったりMakefile作ったりしている
+  - Arduino IDEのコマンドライン機能を使ったりMakefile作ったりしている

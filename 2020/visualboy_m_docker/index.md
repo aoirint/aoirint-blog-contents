@@ -107,7 +107,6 @@ xhost + local:root
 これでDockerコンテナに共有する`/tmp/.X11-unix`を介してDockerコンテナ上のrootユーザがX Clientを実行できるようになる。
 rootだったらいい気がするが、一応全部のアクセス制限を復活させるときは`xhost -`。
 
-
 ```sh
 sudo docker run -it --rm --name vbam \
   -e DISPLAY \

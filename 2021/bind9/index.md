@@ -29,7 +29,6 @@ IP4.DNS[3]:                             1.1.1.1
 
 - [Command-line to list DNS servers used by my system - Ask Ubuntu](https://askubuntu.com/questions/152593/command-line-to-list-dns-servers-used-by-my-system)
 
-
 ## 用語
 
 - [BIND DNSサーバー構築 | CentOSサーバー構築入門](http://cos.linux-dvr.biz/archives/category/bind-dns%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A7%8B%E7%AF%89)
@@ -62,12 +61,10 @@ ISPの提供するDNSサーバや会社などの組織内DNSサーバ、Google�
 
 - [ASCII.jp：DNSによる名前解決の仕組みを理解しよう (1/2)](https://ascii.jp/elem/000/000/463/463076/)
 
-
 ### 回送
 
 プロキシのように、受け取った名前解決要求を他のDNSサーバに送り、
 応答を返す。
-
 
 ## /etc/bind/named.conf.options
 
@@ -120,7 +117,6 @@ forwarders {
 
 - [初歩から解説！BINDでシンプルDNSサーバー構築【構築編】｜ 開発者ブログ ｜ 株式会社アイソルート](https://www.isoroot.jp/blog/2929/)
 
-
 ### 確認
 
 ```shell
@@ -131,15 +127,14 @@ server$ systemctl restart bind9.service
 client$ dig @192.168.x.x aoirint.com
 ...
 ;; ANSWER SECTION:
-aoirint.com.		3600	IN	A	185.199.108.153
-aoirint.com.		3600	IN	A	185.199.111.153
-aoirint.com.		3600	IN	A	185.199.109.153
-aoirint.com.		3600	IN	A	185.199.110.153
+aoirint.com.  3600 IN A 185.199.108.153
+aoirint.com.  3600 IN A 185.199.111.153
+aoirint.com.  3600 IN A 185.199.109.153
+aoirint.com.  3600 IN A 185.199.110.153
 ...
 ```
 
 - [digコマンドの使い方 - Qiita](https://qiita.com/hana_shin/items/e99f64a01f2632b7a719)
-
 
 ## /etc/bind/named.conf.local
 
@@ -191,21 +186,21 @@ server$ systemctl restart bind9.service
 client$ dig @192.168.x.x example.com
 ...
 ;; ANSWER SECTION:
-example.com.		3600	IN	A	192.168.xx.xx
+example.com.  3600 IN A 192.168.xx.xx
 ...
 
 
 client$ dig @192.168.x.x local.example.com
 ...
 ;; ANSWER SECTION:
-local.example.com.		3600	IN	A	192.168.xx.xx
+local.example.com.  3600 IN A 192.168.xx.xx
 ...
 
 
 client$ dig @192.168.x.x dev.example.com
 ...
 ;; ANSWER SECTION:
-dev.example.com.		3600	IN	A	192.168.xx.xx
+dev.example.com.  3600 IN A 192.168.xx.xx
 ...
 ```
 

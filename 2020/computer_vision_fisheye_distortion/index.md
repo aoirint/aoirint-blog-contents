@@ -53,6 +53,7 @@ v
 \end{array}
 \right)
 =
+
 \left(
 \begin{array}{ccc}
 f_x & 0 & c_x \\
@@ -70,6 +71,7 @@ y'' \\
 $$
 
 ### OpenCV
+
 ```python
 K = np.array([
     [ 1, 0, 320 ],

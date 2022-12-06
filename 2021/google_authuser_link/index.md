@@ -16,7 +16,9 @@ Googleサービスでは、URL中の`/u/0/`や`/u/1/`の数値部分を書き換
 URLのGETパラメータに`authuser=mail@example.com`のようにGoogleアカウントのメールアドレスを記述する。
 
 ## Google Classroom
-- https://classroom.google.com/c/CLASS_ID?authuser=mail@example.com
+
+- <https://classroom.google.com/c/CLASS_ID?authuser=mail@example.com>
 
 ## Gmail
-- https://mail.google.com/?authuser=mail@example.com
+
+- <https://mail.google.com/?authuser=mail@example.com>
