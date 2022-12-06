@@ -85,6 +85,7 @@ PythonでONNX版のVOICEVOX Coreを使う手順はリポジトリにドキュメ
 - [https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core](https://github.com/VOICEVOX/voicevox_core/tree/f27fd1ca22aa299755d0f646874919a034bc5085#voicevox-core)
 
 ## LibTorchのダウンロード
+
 - [https://pytorch.org/](https://pytorch.org/)
 
 Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
@@ -94,8 +95,8 @@ Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 
 `~/local/libtorch`以下に、`~/local/libtorch/build-version`のように全ファイルを展開する。
 
-
 ## VOICEVOX Coreのダウンロード
+
 - [https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1](https://github.com/Hiroshiba/voicevox_core/releases/tag/0.5.1)
 
 圧縮時・展開時ともに430MB。
@@ -103,6 +104,7 @@ Stable > Linux > LibTorch > C++/Java > CUDA 11.1 > Download here (cxx11 ABI)
 `~/local/voicevox_core`以下に、`~/local/voicevox_core/libcore.so`のように全ファイルを展開する。
 
 ## .bashrc
+
 ```shell
 export LIBRARY_PATH="$HOME/local/voicevox_core:$LIBRARY_PATH"
 export LIBRARY_PATH="$HOME/local/libtorch/lib:$LIBRARY_PATH"
@@ -127,6 +129,7 @@ git checkout 89d0962ab54269023fe0ec3170c7075744f38702
 ```
 
 ## core.hをコピー
+
 ```shell
 cp core.h example/python/
 
@@ -141,12 +144,14 @@ pip3 install -r requirements.txt
 ```
 
 ### pipを使ったインストール
+
 ```shell
 # coreモジュール（VOICEVOX Core Pythonライブラリ）のインストール
 pip3 install .
 ```
 
 ### distutilsを使ったインストール
+
 ```shell
 # coreモジュール（VOICEVOX Core Pythonライブラリ）のインストール
 python3 setup.py install --record files.txt
@@ -163,12 +168,14 @@ rm -rf build/ core.cpp
 - [https://qiita.com/orion0616/items/dfe476067e499cca8535](https://qiita.com/orion0616/items/dfe476067e499cca8535)
 
 #### files.txt
+
 ```
 ***/lib/python3.9/site-packages/core.cpython-39-x86_64-linux-gnu.so
 ***/lib/python3.9/site-packages/core-0.0.0-py3.9.egg-info
 ```
 
 ## サンプルプログラム（run.py）の改変
+
 `core.initialize`の第1引数を`libcore.so`のあるディレクトリのパスに変更する。（末尾のスラッシュは必須）。
 
 ```python
@@ -176,7 +183,9 @@ rm -rf build/ core.cpp
 ```
 
 ## 改変したサンプルプログラム（run.py）の実行
+
 ### 四国めたん
+
 ```shell
 python3 run.py --use_gpu --text "こんにちは" --speaker_id 0
 
@@ -184,6 +193,7 @@ paplay "./こんにちは-0.wav"
 ```
 
 ### ずんだもん
+
 ```shell
 python3 run.py --use_gpu --text "こんにちはなのだ" --speaker_id 1
 
@@ -191,6 +201,7 @@ paplay "./こんにちはなのだ-0.wav"
 ```
 
 ## 使用するGPUの変更（複数台のGPUが接続された環境）
+
 CUDAを使うアプリケーション一般に適用できる方法。数値は`nvidia-smi`で確認できるGPU番号とは異なることがあるので注意。
 
 ```shell
@@ -199,6 +210,7 @@ CUDA_VISIBLE_DEVICES=1 python3 run.py --use_gpu --text "こんにちは" --speak
 ```
 
 ## その他参考
+
 `LD_LIBRARY_PATH`について調べていたが、コンパイル（`python3 setup.py install`）時に必要（`g++`が見に行くパス）なのは`LIBRARY_PATH`、実行時（`core`モジュールロード時）に必要なのは`LD_LIBRARY_PATH`ということらしかった。
 
 - [https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891](https://bettamodoki.hatenadiary.jp/entry/20121121/1353480891)

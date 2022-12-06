@@ -18,6 +18,7 @@ Docker Hub公式のDockerイメージが公開されている。
 - [Mediawiki - Official Image | Docker Hub](https://hub.docker.com/_/mediawiki/)
 
 ### 事前準備
+
 #### docker-compose.yml
 
 ```yaml
@@ -105,14 +106,17 @@ server {
 6. 「メンテナンス：データベース構造の更新」を実行
 
 ### 数式（Math）
+
 - [Extension:Math - MediaWiki](https://www.mediawiki.org/wiki/Extension:Math)
 - [Download MediaWiki extension - MediaWiki](https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Math)
 
 ### シンタックスハイライト（SyntaxHighlight）
+
 - [Extension:SyntaxHighlight - MediaWiki](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight)
 - [Download MediaWiki extension - MediaWiki](https://www.mediawiki.org/wiki/Special:ExtensionDistributor/SyntaxHighlight_GeSHi)
 
 ## 設定
+
 ### ロゴを変更
 
 #### LocalSettings.php
@@ -131,6 +135,7 @@ $wgLogos = [ '1x' => "$wgResourceBasePath/images/logo.png" ];
 3. 「メンテナンス：再起動」を実行
 
 ### 既定のタイムゾーンを変更
+
 - [Manual:Timezone - MediaWiki](https://www.mediawiki.org/wiki/Manual:Timezone)
 
 #### LocalSettings.php

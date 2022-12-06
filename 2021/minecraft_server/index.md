@@ -79,8 +79,8 @@ ONLINE_MODE=true
 - [https://github.com/itzg/docker-minecraft-server#level-type-and-generator-settings](https://github.com/itzg/docker-minecraft-server#level-type-and-generator-settings)
 - [https://minecraft.fandom.com/wiki/Superflat](https://minecraft.fandom.com/wiki/Superflat)
 
-** ※ 1.17.1でうまく動きませんでした（常にデフォルトのフラットワールドが生成される）。
-代わりに、クライアントでワールドを生成してからサーバにコピーする方法が使えます。 **
+**※ 1.17.1でうまく動きませんでした（常にデフォルトのフラットワールドが生成される）。
+代わりに、クライアントでワールドを生成してからサーバにコピーする方法が使えます。**
 
 - [https://bugs.mojang.com/browse/MC-195468](https://bugs.mojang.com/browse/MC-195468)
 
@@ -96,7 +96,7 @@ GENERATOR_SETTINGS={"biome":"minecraft:plains","lakes":false,"features":false,"l
 ```
 
 - JSON生成: [https://misode.github.io/world/](https://misode.github.io/world/)
-    - [https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644](https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644)
+  - [https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644](https://github.com/itzg/docker-minecraft-server/issues/999#issuecomment-907849644)
 
 ```shell
 # https://misode.github.io/world/ で生成したjsonをsuperflat.jsonとして保存

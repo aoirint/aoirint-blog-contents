@@ -12,6 +12,7 @@ tags:
   - Docker
 ---
 # PulseAudioをDockerで使う
+
 Raspberry Piを使ったデバイスを作るときや、
 デスクトップアプリケーションを動かしたいとき、
 Dockerコンテナから音を鳴らしたい、ということが
@@ -19,8 +20,8 @@ Dockerコンテナから音を鳴らしたい、ということが
 
 ここでは、UbuntuまたはRaspberry Pi OS上でPulseAudio・Dockerを一般ユーザで動かすことを前提に進めていきます。
 
-
 ## いろいろ設定が必要
+
 今のところ、PulseAudioをDocker内から使うには
 ホスト側でそれなりの設定が必要になるほか、
 Docker内ユーザのUID・GIDをホストユーザのUID・GIDと同じにすることが
@@ -28,8 +29,8 @@ Docker内ユーザのUID・GIDをホストユーザのUID・GIDと同じにす�
 ホスト側のセキュリティを緩めればできるかもですが、
 調査が必要なので今回は扱いません。
 
-
 ## ホスト側PulseAudioの設定
+
 以下の内容は、デスクトップ環境（Ubuntu Desktop）などではすでに設定されているかもしれません。
 Raspberry Pi OS Lite（2020-08-20）では設定されていなかったようなので、手順を書いておきます。
 
@@ -63,6 +64,7 @@ sudo loginctl enable-linger $USER
 こちらのGistの設定ファイルが有用だったので使わせてもらいます。
 
 ~/.config/systemd/user/pulseaudio.service
+
 ```systemd
 [Unit]
 Description=Pulseaudio Sound Service
@@ -80,6 +82,7 @@ WantedBy=default.target
 ```
 
 ~/.config/systemd/user/pulseaudio.socket
+
 ```systemd
 [Unit]
 Description=Pulseaudio Sound System
@@ -106,8 +109,8 @@ systemctl --user enable pulseaudio.socket
 systemctl --user start pulseaudio.service
 ```
 
-
 ## Docker側の設定
+
 まず、Dockerコンテナの作業ユーザを`root`ではなく一般ユーザにします。
 また、ここではホストのPulseAudioと通信するため、
 Dockerコンテナを作成したユーザと同じ`PID`・`GID`をもつユーザにします。
@@ -122,15 +125,18 @@ PulseAudioのプロセスと通信するUnixソケットファイルが生成さ
 今回はDockerコンテナにこれらのファイルをマウントすることでPulseAudioと通信していきます。
 
 ### 起動コマンドを使った設定
+
 Dockerfile
+
 ```dockerfile
 RUN apt update && apt install -y \
   pulseaudio \
   sox \
-	libsox-fmt-all
+ libsox-fmt-all
 ```
 
 ビルドします。
+
 ```bash
 docker build . -t aoirint/pulseaudio
 ```
@@ -145,19 +151,20 @@ docker run \
 
 ### docker-composeを使った設定
 
-
 ### エントリポイントを使った設定
+
 一応、エントリポイント（`ENTRYPOINT`、Dockerコンテナ起動時に毎回実行されるコマンド）を
 使う方法を書いておきます。
 ここでは、`gosu`を使って`CMD`（`ENTRYPOINT`の引数、またはデフォルトで実行されるコマンド）を
 一般ユーザで実行するようにします。
 
 Dockerfile
+
 ```dockerfile
 RUN apt update && apt install -y \
   pulseaudio \
   sox \
-	libsox-fmt-all \
+ libsox-fmt-all \
   gosu
 
 ADD ./docker-entrypoint.sh /
@@ -165,6 +172,7 @@ ENTRYPOINT [ "/docker-entrypoint.sh" ]
 ```
 
 docker-entrypoint.sh（ホスト側で実行権限を付与）
+
 ```shell
 #!/bin/sh
 

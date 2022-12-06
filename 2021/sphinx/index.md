@@ -16,7 +16,6 @@ tags:
 
 Python製のドキュメント生成ツール。
 
-
 - Python 3.8.5
 - Sphinx 3.4.2
   - [Sphinx · PyPI](https://pypi.org/project/Sphinx/)
@@ -25,14 +24,12 @@ Python製のドキュメント生成ツール。
 pip3 install Sphinx
 ```
 
-
 ## reST（reStructuredText）
 
 SphinxではデフォルトでreStructuredTextというマークアップ言語を使う。
 
-- https://www.sphinx-doc.org/ja/master/usage/restructuredtext/basics.html
-- https://atom.io/packages/language-restructuredtext
-
+- <https://www.sphinx-doc.org/ja/master/usage/restructuredtext/basics.html>
+- <https://atom.io/packages/language-restructuredtext>
 
 ## 既存Pythonプロジェクトにドキュメントを追加する
 
@@ -63,7 +60,6 @@ python3 -m http.server -b localhost -d build/html
 ```
 
 などで確認する。
-
 
 次はPythonモジュールのdocstringからドキュメントを自動生成する。
 
@@ -120,14 +116,12 @@ make html
   api/modules
 ```
 
-
 ## CI,CDを整備する
 
 自動生成されるHTMLをソースコードと同じブランチでGit管理したくはないので、
 `docs/build` ディレクトリを `.gitignore` に追加し、
 GitHub ActionsやGitLab CIを使ってドキュメントの生成、GitHub PagesやGitLab Pagesへの自動デプロイを整備する。
 
-
 ## Docker化・GitHub Actions整備の例
 
-- https://github.com/aoirint/sphinx-docs-test
+- <https://github.com/aoirint/sphinx-docs-test>

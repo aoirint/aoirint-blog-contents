@@ -16,6 +16,7 @@ tags:
 ---
 
 # Mastodonをdocker-composeで立てる（Ubuntu 18.04）
+
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
 - [Mastodon documentation](https://docs.joinmastodon.org/)
 
@@ -24,10 +25,10 @@ tags:
 ```
 $ lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 18.04.5 LTS
-Release:	18.04
-Codename:	bionic
+Distributor ID: Ubuntu
+Description: Ubuntu 18.04.5 LTS
+Release: 18.04
+Codename: bionic
 
 $ uname -r
 5.4.0-56-generic
@@ -42,7 +43,6 @@ $ docker images tootsuite/mastodon --digests
 REPOSITORY           TAG                 DIGEST                                                                    IMAGE ID            CREATED             SIZE
 tootsuite/mastodon   v3.2.1              sha256:41cd5fb48d8b15ec806f08ab06fec98df33ec9b83a1f879e0fb30da9994018dc   37ca50fc92bd        6 weeks ago         1.86GB
 ```
-
 
 今回はDocker Hub上のイメージを使用し、ローカルビルドをしない想定でいく（ごちゃごちゃするので）。
 Mastodonを改造したい場合など、必要に応じて`github:tootsuite/mastodon`をFork/Cloneし、自分で/CIでビルドして信頼できるDockerレジストリに登録すればいいと思う。
@@ -60,7 +60,6 @@ DB、Redis、Mastodon各サービスのDockerイメージを取得する。
 docker-compose pull
 ```
 
-
 DB（PostgreSQL）のパスワードを生成する。
 
 ```bash
@@ -70,7 +69,7 @@ pwgen 32
 ```
 
 `docker-compose.yml`中のDB部分にDB名・ユーザ名・パスワードを設定する
-（`docker-compose.yml`に直接書きたくない場合は`.env.db`などを作成、`env_file: `以下にファイルパスを設定する。または`docker-compose.override.yml`を作成する）。
+（`docker-compose.yml`に直接書きたくない場合は`.env.db`などを作成、`env_file:`以下にファイルパスを設定する。または`docker-compose.override.yml`を作成する）。
 `healthcheck`のところのユーザ名の書き換え、DB名の書き換えを忘れないように注意（`FATAL: role "postgres" does not exist`、`FATAL:  database "mastodon" does not exist`）。
 
 ```yaml
@@ -90,9 +89,7 @@ pwgen 32
       POSTGRES_PASSWORD: YOUR_PASSWORD
 ```
 
-
 Mastodonの環境変数設定ファイル`.env.production`の編集に移る。
-
 
 Federationのセクションにいき、`LOCAL_DOMAIN`を編集する。
 起動テスト目的なら適当なドメイン、またはngrokでHTTP 3000番（Mastodonのデフォルトポート）を開けておいてそのドメインを使うというのでいいと思う（そうした場合、実運用時は初期化した方がよさそうだが）。
@@ -106,7 +103,6 @@ Federationのセクションにいき、`LOCAL_DOMAIN`を編集する。
 LOCAL_DOMAIN=mstdn.example.com
 ```
 
-
 Redisのセクションにいき、`REDIS_HOST`を編集する。
 docker-composeが作成するネットワークを使用するので、ホスト名`redis`（サービス名）で接続できる。
 
@@ -116,7 +112,6 @@ docker-composeが作成するネットワークを使用するので、ホスト
 REDIS_HOST=redis
 REDIS_PORT=6379
 ```
-
 
 PostgreSQLのセクションにいき、`DB_HOST`、`DB_PASS`を編集する。
 docker-composeが作成するネットワークを使用するので、ホスト名`db`（サービス名）で接続できる。
@@ -139,7 +134,6 @@ DB_PORT=5432
 ES_ENABLED=false
 ```
 
-
 セッション用と二要素認証用の2つのシークレットをDocker Hub上のMastodonイメージ（`docker.io/tootsuite/mastodon`）内の`Rakefile`を使って生成する。
 標準出力にランダム文字列が吐き出されるのでコピーする。
 
@@ -151,13 +145,11 @@ docker run --rm tootsuite/mastodon:v3.2.1 bundle exec rake secret
 docker run --rm tootsuite/mastodon:v3.2.1 bundle exec rake secret
 ```
 
-
 Web Pushの公開鍵・秘密鍵を生成する（環境変数を設定しないとエラー）。標準出力に.envの形式で吐き出されるのでコピーする。
 
 ```bash
 docker run --rm --env-file ./.env.production tootsuite/mastodon:v3.2.1 bundle exec rake mastodon:webpush:generate_vapid_key
 ```
-
 
 メールアドレス検証・通知などに使うメールサーバ（SMTPサーバ）を設定する。
 
@@ -180,7 +172,6 @@ SMTP_PASSWORD=YOUR_APP_PASSWORD
 SMTP_FROM_ADDRESS=YOUR_NAME@gmail.com
 ```
 
-
 オブジェクトストレージ接続機能はひとまず無効化しておく。
 
 ```env
@@ -190,7 +181,6 @@ S3_ENABLED=false
 ```
 
 設定ファイルの編集は以上。
-
 
 DBの初期化と静的ファイル生成。
 
@@ -209,7 +199,6 @@ docker-compose run --rmでweb以外のコンテナが止まらないので一度
 docker-compose down
 ```
 
-
 本起動。
 `restart: always`が設定されているため`docker-compose down`しない限りはホスト再起動時も自動で起動する。
 
@@ -218,11 +207,11 @@ docker-compose up -d
 ```
 
 途中で操作間違えたり、DB初期化中にkillしたりして失敗したときはコンテナ・マウントディレクトリを削除して初期化。
+
 ```bash
 docker-compose down
 sudo rm -rf postgres/ public/ redis/
 ```
-
 
 HTTP 3000番から接続し、ブラウザ上でアカウントを作成する。
 検証メールが届く。
@@ -245,7 +234,6 @@ docker-compose run --rm web bundle exec bin/tootctl accounts create hoge --email
 ngrok http 3000
 ```
 
-
 プロフィール画像アップロード時にエラーが出てしまった。
 `./public/system`をマウント時にdockerが作成しているために`root`所有になっているのが原因。
 
@@ -257,20 +245,17 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 
 多人数が利用する OR 長期的に利用する予定で、VPSでホストするような場合、添付ファイルがVPSの容量を喰いつぶしてしまうことが想定されるので、そのような場合オブジェクトストレージを用意したい。
 
-
 一人専用サーバの場合、`.env.production`に以下の設定を追加すると便利。`/`へのアクセスをユーザページにリダイレクトしてくれるようになり、新規登録を停止する。
 
 ```
 SINGLE_USER_MODE=true
 ```
 
-
 HTTPS化のためnginxによるリバースプロキシを設定する。
 GitHub上にあった設定ファイルを参考にしている。
 おそらく`X-Forwarded-Proto https`を設定しないと`https://localhost`にリダイレクトされるという事象が起こるので注意。
 証明書の設定は書いていないが、`certbot`（Let's Encrypt）を使用する場合`sudo certbot --nginx`で自動挿入してくれる。
 Mastodon側のポート番号はデフォルトのローカルループバックアドレスへのbindをそのまま使うことを想定。
-
 
 ```nginx
 # https://github.com/tootsuite/mastodon/blob/master/nanobox/nginx-local.conf
@@ -348,18 +333,18 @@ server {
 }
 ```
 
-
 ## 参考
+
 - [tootsuite/mastodon: Your self-hosted, globally interconnected microblogging community](https://github.com/tootsuite/mastodon)
 - [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/)
-    - Docker用のドキュメントはないのか?
+  - Docker用のドキュメントはないのか?
 - [tootsuite/mastodon - Docker Hub](https://hub.docker.com/r/tootsuite/mastodon)
 - [postgres - Docker Hub](https://hub.docker.com/_/postgres)
 - [redis - Docker Hub](https://hub.docker.com/_/redis)
 - docker-compose 2 時代の記事
-    - [Docker応用チュートリアル：Mastodon - Qiita](https://qiita.com/zembutsu/items/f1f1ede26102ba27fce2)
-    - [Dockerで雑にMastodonを起動する方法 - Qiita](https://qiita.com/zembutsu/items/fd52a504321dd5d6f0b8)
+  - [Docker応用チュートリアル：Mastodon - Qiita](https://qiita.com/zembutsu/items/f1f1ede26102ba27fce2)
+  - [Dockerで雑にMastodonを起動する方法 - Qiita](https://qiita.com/zembutsu/items/fd52a504321dd5d6f0b8)
 - [Rails5をproduction（本番環境）で起動する時に嵌ったこと - Qiita](https://qiita.com/qqhann/items/7cd01f4b5cff4a31e053)
 - [Mastodon 保守メモ - Qiita](https://qiita.com/kumasun/items/bf4997f181f893130041)
-    - [勝手 Mastodon tootctl リファレンス - Qiita](https://qiita.com/kumasun/items/870769d7db4d95cde238)
-    - 出回っている（日本語）情報はMastodonが流行った2017年前後のものが多いと思われるが、ここはかなり新しい情報が載っているようだ
+  - [勝手 Mastodon tootctl リファレンス - Qiita](https://qiita.com/kumasun/items/870769d7db4d95cde238)
+  - 出回っている（日本語）情報はMastodonが流行った2017年前後のものが多いと思われるが、ここはかなり新しい情報が載っているようだ

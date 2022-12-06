@@ -11,24 +11,27 @@ tags:
 # SendGrid
 
 ## 背景
+
 Discourseをセットアップしようとしていたところ、いくつかのEmailプロバイダが紹介されていた。
 
 - [https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md](https://github.com/discourse/discourse/blob/4e0a43f2117ac83bcf7e0f9bed65370f6c4c15bb/docs/INSTALL-email.md)
-    - [Mailgun](https://www.mailgun.com/)
-    - [SendGrid](https://sendgrid.com/)
-    - [Mailjet](https://www.mailjet.com/pricing)
-    - [Elastic Email](https://elasticemail.com/)
+  - [Mailgun](https://www.mailgun.com/)
+  - [SendGrid](https://sendgrid.com/)
+  - [Mailjet](https://www.mailjet.com/pricing)
+  - [Elastic Email](https://elasticemail.com/)
 
 Discourseはセットアップにメールサーバが要求される。以前のMastodonのセットアップでは、Gmailとアプリパスワードを使った簡易セットアップを使ったが、経験積みとセキュリティ上の懸念から、今回はメールサーバを用意することにした。
 
 名前を聞いたことのあるSendGridを使う。業務上の利用を想定しているようだが、個人による利用として続行する。スケールする商用サービスでの利用ではないが、利用経験は技術選定の上で大事だと思う。その分、Abuseしないように考えなければならないが。
 
 ## Freeプラン
+
 - [https://sendgrid.com/pricing/](https://sendgrid.com/pricing/)
 
 1日に100メールまではFreeプランが使用できる。自分しか使わない、またはごくごく小規模な利用では十分だろう。
 
 ## 登録
+
 - [https://sendgrid.com/](https://sendgrid.com/)
 
 `Start For Free`から登録する。
@@ -70,7 +73,6 @@ DNSサーバに登録すべき認証用のレコードが表示される（DNS�
 
 ドメインが認証された。
 これでSendGridを使って、このドメインからのメールを送信できるようになった。
-
 
 ## APIキーの発行（送信テスト）
 

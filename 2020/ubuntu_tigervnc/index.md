@@ -14,6 +14,7 @@ tags:
 Setup VNC via ssh on Ubuntu Desktop.
 
 Install TigerVNC.
+
 ```sh
 # Ubuntu 18.04
 sudo apt install tigervnc-scraping-server
@@ -23,11 +24,13 @@ sudo apt install tigervncserver
 ```
 
 Set password.
+
 ```sh
 vncpasswd
 ```
 
 startVNC.sh
+
 ```sh
 #!/bin/bash
 x0tigervncserver PasswordFile=~/.vnc/passwd Display=:0
@@ -37,7 +40,7 @@ configure `LocalForward LOCALPORT localhost:5900` in ~/.ssh/config.
 
 - TigerVNCのクライアントはあんまり機能が多くない
 - RealVNC社のクライアントはWindows, Linux, Mac, Mobileにリリースされてて便利
-    - https://www.realvnc.com/en/connect/download/viewer/
+  - <https://www.realvnc.com/en/connect/download/viewer/>
 
 ---
 

@@ -19,12 +19,14 @@ pip3 install PyOpenGL glfw
 ```
 
 モジュールバージョン
+
 ```
 PyOpenGL==3.1.5
 glfw==1.11.0
 ```
 
 システムのOpenGLバージョン
+
 ```sh
 Vendor : b'Intel Inc.'
 GPU : b'Intel Iris OpenGL Engine'
@@ -142,13 +144,11 @@ if __name__ == '__main__':
     glfw.terminate()
 ```
 
-
 ### OpenGL 4.1 / GLSL
 
 - [PythonでVAOによるGLSLシェーダープログラミング！ - CodeLabo](https://codelabo.com/posts/20200228182137)
 - [Suspected fragment shader problem, No color, OpenGL 4, GLFW 3, GLEW - OpenGL / OpenGL: Basic Coding - Khronos Forums](https://community.khronos.org/t/suspected-fragment-shader-problem-no-color-opengl-4-glfw-3-glew/70399)
 - [床井研究室 - 第２回 テクスチャの割り当て](marina.sys.wakayama-u.ac.jp/~tokoi/?date=20040914)
-
 
 ```sh
 Vendor : b'Intel Inc.'

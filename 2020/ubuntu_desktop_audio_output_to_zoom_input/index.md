@@ -12,6 +12,7 @@ tags:
 # Ubuntu上のデスクトップ音声出力をZoomの音声入力にする（PulseAudio）
 
 ## Environment
+
 - Ubuntu 18.04
 - PulseAudio
 
@@ -32,6 +33,7 @@ Zoomの入力デバイスをpavucontrolから直接変えられないのはZoom�
 - [https://aoirint.hatenablog.com/entry/2020/05/15/185853](https://aoirint.hatenablog.com/entry/2020/05/15/185853)
 
 ## 挿入音声の再生デバイス分離
+
 Zoomの音声を出力するデバイスと挿入音声を出力するデバイスを分離して、目的の音声だけ送り出せるようにしてみる。つまり、Zoomの音声出力は`YOUR_SPEAKER`のままにして、挿入音声を仮想音声出力デバイスに出力するようにする。
 
 ```sh
@@ -55,6 +57,7 @@ pacmd unload-module module-loopback
 ```
 
 ## 物理マイクの入力をミックスする
+
 ここでZoomの入力デバイスに送り出されるのは自分のコンピュータ上で出力された音声だけになっているので、物理マイクを接続していてもこれに入力された音声をZoomに送り出すことはできていない。物理マイクへの入力もZoom上に送り出せるようにする。
 
 まず、物理マイクのPulseaudio上でのデバイス名を調べる。
@@ -75,7 +78,6 @@ pacmd unload-module module-loopback
 ```
 
 音声の出力先（`sink`）は`pavucontrol`上で変更できる。
-
 
 ## Pulseaudioを再起動する
 
@@ -100,6 +102,7 @@ pulseaudio -D # Daemon startup failed?
 ```
 
 ## 参考
+
 - [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/)
 - [https://unix.stackexchange.com/questions/174379/how-can-i-create-a-virtual-output-in-pulseaudio](https://unix.stackexchange.com/questions/174379/how-can-i-create-a-virtual-output-in-pulseaudio)
 - [https://askubuntu.com/questions/403416/how-to-listen-live-sounds-from-input-from-external-sound-card](https://askubuntu.com/questions/403416/how-to-listen-live-sounds-from-input-from-external-sound-card)
@@ -107,6 +110,7 @@ pulseaudio -D # Daemon startup failed?
 - [https://unix.stackexchange.com/questions/576785/redirecting-pulseaudio-sink-to-a-virtual-source](https://unix.stackexchange.com/questions/576785/redirecting-pulseaudio-sink-to-a-virtual-source)
 
 ## ボツコマンド集
+
 ```sh
 # 入力FIFOデバイスの作成、これに出力を与える方法がわからない
 pacmd load-module module-pipe-source file=/tmp/DummyInput0.input source_name=DummyInput0 source_properties=device.description=DummyInput0

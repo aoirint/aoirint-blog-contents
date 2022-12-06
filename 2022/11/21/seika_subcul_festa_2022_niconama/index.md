@@ -13,7 +13,6 @@ channel: ダイアリー
 ただ現地組のTwitterを眺める以上に、遠地にいてもイベントの雰囲気を感じられる、とても楽しい生放送でした。
 今後とも、精華町広報キャラクター 京町セイカ、そして精華町を応援しています。
 
-
 ## SEIKAサブカルフェスタ2022
 
 SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精華町で行われたイベント（会場: けいはんなオープンイノベーションセンター）。
@@ -29,7 +28,6 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 
 ![](images/website.png)
 （SEIKAサブカルフェスタ2022 公式サイト より）
-
 
 ## セイカフェス2022
 
@@ -51,7 +49,6 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 
 - [https://www.kyoto-np.co.jp/articles/-/800595](https://www.kyoto-np.co.jp/articles/-/800595)
 - [https://twitter.com/sirusira/status/1530447040475385857](https://twitter.com/sirusira/status/1530447040475385857)
-
 
 ### コンテスト結果
 
@@ -82,7 +79,6 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
   - 【京町セイカ】星明【オリジナル曲】 (SIGM@TURE 氏): [https://www.nicovideo.jp/watch/sm40742805](https://www.nicovideo.jp/watch/sm40742805)
   - 【セイカフェス2022】「京町セイカ」人形 作ってみた (ウッドダイスP 氏): [https://www.nicovideo.jp/watch/sm40747246](https://www.nicovideo.jp/watch/sm40747246)
   - いちごメイドのセイカさん (はよせな 氏): [https://seiga.nicovideo.jp/seiga/im10991689](https://seiga.nicovideo.jp/seiga/im10991689)
-
 
 ## 百花繚乱と栗田は見た！精華町は実在した！SEIKAサブカルフェスタ2022
 
@@ -133,7 +129,6 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 - [https://twitter.com/manatsukin/status/1572536542757027840](https://twitter.com/manatsukin/status/1572536542757027840)
 - [https://twitter.com/manatsukin/status/1594244077037289472](https://twitter.com/manatsukin/status/1594244077037289472)
 
-
 ## VOICEPEAK
 
 VOICEPEAKは、AHS社が販売する音声合成ソフトウェア（Windows、macOS、Linux対応）。
@@ -155,7 +150,6 @@ Dreamtonics社が開発した音声合成エンジンSyllaflowを搭載。
 - プレスリリース: [https://www.ah-soft.com/press/voice/20221117.html](https://www.ah-soft.com/press/voice/20221117.html) ([PR TIMES](https://prtimes.jp/main/html/rd/p/000000025.000060783.html))
 - AHS公式生放送第186回 (2022-11-17 放送): [https://www.youtube.com/watch?v=CSSah9cGuog](https://www.youtube.com/watch?v=CSSah9cGuog)
   - 発表当日の公式生放送で、東北ずん子の声優 佐藤聡美 氏や、東北ずん子プロジェクトを運営するSSS合同会社 小田恭央 氏が出演した。
-
 
 ## 京町セイカRebootプロジェクト
 

@@ -17,30 +17,33 @@ tags:
 # Atom + LaTeX in Docker
 
 ## 概要
+
 LaTeXをホストにインストールせず、Docker内で動かしつつ、
 Atomからこれを利用できるようにする。
 
 ## Requirements
+
 - Ubuntu 18.04
 - Docker
 - Atom
 - Atom Packages
-    - [latex](https://atom.io/packages/latex)
+  - [latex](https://atom.io/packages/latex)
 
 ## Atom Packages
+
 [latex](https://atom.io/packages/latex)を入れれば最低限ビルドコマンドは叩けるようになる。
 
 - [latex](https://atom.io/packages/latex)
 - シンタックスハイライト
-    - [language-latex](https://atom.io/packages/language-latex)
+  - [language-latex](https://atom.io/packages/language-latex)
 - アウトライン表示
-    - [document-outline](https://atom.io/packages/document-outline)
+  - [document-outline](https://atom.io/packages/document-outline)
 - PDFプレビュー
-    - [pdf-view]()（メモリリーク? Atomを一度閉じれば解消する）
-    - または [pdf-view-plus]()（メモリリーク対策版らしい。`latex`との連携はないので注意）
-
+  - [pdf-view]()（メモリリーク? Atomを一度閉じれば解消する）
+  - または [pdf-view-plus]()（メモリリーク対策版らしい。`latex`との連携はないので注意）
 
 ## Dockerイメージ
+
 [paperist/alpine-texlive-ja](https://hub.docker.com/r/paperist/alpine-texlive-ja/)を使う。
 
 ```
@@ -49,6 +52,7 @@ sudo docker pull paperist/alpine-texlive-ja
 ```
 
 ## Docker
+
 `sudo`なしでDockerを実行できるようにする。AtomからDockerコンテナを作るのに必要。
 
 注意として、この方法で一般ユーザがDockerを使えるようにすると特権昇格できてしまうため、
@@ -98,9 +102,11 @@ docker run --rm \
 ```
 
 ## 注意点
+
 カレントディレクトリ以下をマウントするため、外部においた`.sty`などは読み込めないので注意（デフォルトでロードされるディレクトリがあれば追加のマウントをすればOKと思われる）。
 
 ## おまけ
+
 ### stderrにコマンドを吐き出してエラー終了するスクリプト
 
 ```

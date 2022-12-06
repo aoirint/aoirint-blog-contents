@@ -25,6 +25,7 @@ tags:
 - Javaランタイム（JRE）を同梱しなくても、システムにインストールされたPublic JREで実行できた
 
 ## これから
+
 - システムにJREがない
 - 同様に実行できるようにするには、JREをアプリケーションに同梱する必要がある（？）
   - これまでも`rt.jar`がJREの同梱された形としてあったはず
@@ -114,7 +115,6 @@ jlink --module-path './sample.jar;JDK_DIRECTORY/jmods' --add-modules sample.modu
 `--launcher mycmd=sample.module/com.example.sample.Main`
 
 OpenJDK 11.0.1 (Windows)で実行すると、dll, exe, ランチャーシェルスクリプト, bat他が生成された。OpenJDKの中身を絞って移してきてる？　複数OS想定する場合、JREはOS別に作る必要があるのか？　それとも別の方法があるのか。
-
 
 ## 実行可能Jarのエクスポート（Maven、JREあり、ランチャー）
 

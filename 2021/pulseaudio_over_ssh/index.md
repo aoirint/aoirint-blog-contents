@@ -16,7 +16,7 @@ RDPと違い、VNCでは接続先の音声を送れないことがある。
 
 - [https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink](https://raspberrypi.stackexchange.com/questions/8621/how-to-set-up-a-pulseaudio-sink)
 - [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-tunnel-sink-new](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#module-tunnel-sink-new)
-    - `module-tunnel-sink-new`の実装はすでに`module-tunnel-sink`で動くようになっている（`pulseaudio 13.99.1`）
+  - `module-tunnel-sink-new`の実装はすでに`module-tunnel-sink`で動くようになっている（`pulseaudio 13.99.1`）
 
 ## 音声を受け取る側（SSH・VNCクライアント、PulseAudioサーバ）
 
@@ -32,7 +32,6 @@ load-module module-loopback source=DummyOutputRemote0.monitor source_dont_move=t
 DummyOutputRemote0に対して音声が送られてくる。
 
 DummyOutputRemote0.monitorで入力として音声を拾うこともできる。
-
 
 ### ~/.ssh/config
 
@@ -57,4 +56,4 @@ PulseAudio再起動（`pulseaudio -k`）後、
 DummyOutputRemote0が表示されない場合、どこか設定が間違っていると思われる。
 
 - 電源メニューから音声デバイスを変更できるようにするGNOME拡張
-    - [https://extensions.gnome.org/extension/906/sound-output-device-chooser/](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+  - [https://extensions.gnome.org/extension/906/sound-output-device-chooser/](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)

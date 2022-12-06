@@ -32,13 +32,12 @@ NO_PROXYには必ずlocalhost/ローカルループバックアドレスを設�
 
 デスクトップの場合はGUI設定でOK。
 
-
 ## /usr/local/bin/transproxy
 
 - [https://github.com/wadahiro/go-transproxy](https://github.com/wadahiro/go-transproxy)
 
-
 ## /usr/local/bin/transproxy-start
+
 ```bash
 #!/bin/bash
 
@@ -52,8 +51,8 @@ iptables -t nat -I OUTPUT -p tcp --dport 443 -j REDIRECT --to-ports 3130
 transproxy -disable-iptables # -dns-over-https-enabled
 ```
 
-
 ## /usr/local/bin/transproxy-stop
+
 ```bash
 #!/bin/bash
 
@@ -70,7 +69,6 @@ iptablesのルールを書き換えるため、実行時にはroot権限が必�
 sudoで実行すれば、/etc/sudoersの設定から現在のシェルの環境変数が引き継がれる（-Eオプションでもいいが）。
 
 transproxyは内部で環境変数からプロキシ設定を読み出し、透過プロキシサーバを立てる。
-
 
 ## 自動起動設定 /etc/systemd/system/transproxy.service
 

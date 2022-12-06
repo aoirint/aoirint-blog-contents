@@ -14,16 +14,19 @@ tags:
 間違えてOSのパッケージリポジトリからcertbotを入れてしまった.
 
 コマンド
+
 ```sh
 sudo certbot --nginx
 ```
 
 エラー1（初期状態）
+
 ```
 ImportError: cannot import name 'constants'
 ```
 
 エラー2（`pip3 uninstall certbot`の後）
+
 ```
 AttributeError: module 'acme.challenges' has no attribute 'TLSSNI01Response'
 ```

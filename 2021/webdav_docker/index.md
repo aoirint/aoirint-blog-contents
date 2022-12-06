@@ -44,7 +44,6 @@ services:
 
 データは`./dav/data`に格納される。
 
-
 ## Optional: /etc/fstab
 
 シンボリックリンクは動作しないので、`bindfs`を使う。

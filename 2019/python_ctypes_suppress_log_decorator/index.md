@@ -52,7 +52,6 @@ def func(verbose=False):
     funcB()
 ```
 
-
 ## 参考
 
 - [Cの共有ライブラリがPythonの標準出力に印刷されないようにするにはどうすればいいですか？ - コードログ](https://codeday.me/jp/qa/20190107/102213.html)

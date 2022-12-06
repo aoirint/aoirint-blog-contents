@@ -15,16 +15,17 @@ tags:
 # PulseAudioでマイク入力をスピーカから出力する
 
 まずはPCに接続されている音声入力デバイスのIDを確認する。
+
 ```sh
 pactl list short sources
 # pactl list sources
 ```
 
 ```
-3	alsa_output.pci-0000_00_1f.3.analog-stereo.monitor	module-alsa-card.c	s16le 2ch 44100Hz	RUNNING
-4	alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor	module-alsa-card.c	s16le 2ch 44100Hz	RUNNING
-5	alsa_output.usb-GeneralPlus_USB_Audio_Device-00.iec958-stereo.monitor	module-alsa-card.c	s16le 2ch 44100Hz	RUNNING
-6	alsa_input.usb-GeneralPlus_USB_Audio_Device-00.analog-mono	module-alsa-card.c	s16le 1ch 44100Hz	RUNNING
+3 alsa_output.pci-0000_00_1f.3.analog-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
+4 alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
+5 alsa_output.usb-GeneralPlus_USB_Audio_Device-00.iec958-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
+6 alsa_input.usb-GeneralPlus_USB_Audio_Device-00.analog-mono module-alsa-card.c s16le 1ch 44100Hz RUNNING
 ```
 
 ここでは、以下のようになっている。

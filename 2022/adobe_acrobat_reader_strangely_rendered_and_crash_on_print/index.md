@@ -18,6 +18,7 @@ tags:
 - [https://twitter.com/aoirint/status/1579530951029579776](https://twitter.com/aoirint/status/1579530951029579776)
 
 ## 症状
+
 ### 一部のテキスト（太字？）が右上に傾いて表示される
 
 ![](images/strangely_rendered_1.png)
@@ -57,7 +58,6 @@ tags:
 #### 正しい表示（解決後のスクリーンショット）
 
 ![](images/good_rendered_1.png)
-
 
 ## 自分の環境での原因・解決
 

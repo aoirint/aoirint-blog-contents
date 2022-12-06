@@ -17,7 +17,6 @@ tags:
 - [https://github.com/itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
 - 例: [https://github.com/aoirint/minecraft-server-pixelmon-cj](https://github.com/aoirint/minecraft-server-pixelmon-cj)
 
-
 ## 2021年12月に確認されたLog4j 脆弱性（Log4jShell）への対応（Minecraft 1.7～1.18を使用する場合）
 
 Minecraft公式から、旧バージョンにおける脆弱性対応手順が案内されています。
@@ -45,7 +44,6 @@ CurseForge上で脆弱性の影響を受けるModは削除されているよう�
 > to our best knowledge, any vulnerable mod was removed
 
 - [https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft](https://support.overwolf.com/en/support/solutions/articles/9000196615-curseforge-known-issues#Minecraft)
-
 
 ## Modpackを導入して新規ワールド生成
 
@@ -118,7 +116,6 @@ ONLINE_MODE=true
 - HOST_MINECRAFT_PORT: 外部に直接公開（TCP）
 - HOST_DYNMAP_PORT: リバースプロキシでHTTPS化を想定してローカルループバックアドレスにバインド
 - WHITELIST, OPS: カンマ区切りでプロフィール名を記述
-
 
 ## サーバ側Modの追加
 

@@ -24,6 +24,7 @@ watchmedo auto-restart -R -d ./src -- make serve
 ```
 
 ### インストール
+
 ```shell
 pip3 install watchdog[watchmedo]==2.1.3
 ```
@@ -45,6 +46,7 @@ AttributeError: 'RootHandler' object has no attribute 'event_dispatch_map'
 ```
 
 ## watchexec
+
 - [https://github.com/watchexec/watchexec](https://github.com/watchexec/watchexec)
 - [https://crates.io/crates/watchexec-cli](https://crates.io/crates/watchexec-cli)
 - [https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes](https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes)
@@ -60,7 +62,9 @@ watchexec -p -w ./src -- make event-trigger
 ```
 
 ### インストール
+
 #### Rustのインストール
+
 - [https://www.rust-lang.org/ja/learn/get-started](https://www.rust-lang.org/ja/learn/get-started)
 
 ```shell
@@ -68,6 +72,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 #### watchexecのインストール
+
 ```shell
 cargo install watchexec-cli
 ```

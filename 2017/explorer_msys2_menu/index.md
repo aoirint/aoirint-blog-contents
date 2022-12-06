@@ -43,6 +43,7 @@ Windows Registry Editor Version 5.00
 `msys2.ini`で上のコメントアウトを外し、起動時にパスがエクスプローラ側のフォルダになるようにする（どこから持ってきてるんだ？　作業フォルダ？）。
 
 ## Appendix
+
 エクスプローラの右クリックメニューに任意の項目を追加する
 
 以下のレジストリキーに特定のサブキーを追加する。
@@ -85,6 +86,7 @@ Windows Registry Editor Version 5.00
 ```
 
 ## Reference
+
 - [作業メモ：msys2インストール、エクスプローラーから起動 - milk_spoonのブログ](http://spoonblog.hatenablog.com/entry/2017/03/01/215247)
 - [エクスプローラの右クリックメニューをカスタマイズする - Qiita](https://qiita.com/tueda/items/0036ee8e9280f70f04f0)
 - [.reg ファイルを使用してレジストリ サブキーおよび値を追加、変更または削除する方法](https://support.microsoft.com/ja-jp/help/310516/)

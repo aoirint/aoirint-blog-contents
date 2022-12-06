@@ -15,7 +15,6 @@ tags:
 
 上の記事では、諸般の事情（主にスペック不足）によりElasticsearchを無効化した状態でMastodonインスタンスを立てていた。
 
-
 ## 2021年のElasticsearchのライセンス変更
 
 クラウド事業者によるマネージドサービス提供における、オープンソースコミュニティへのコントリビューションの不足等を背景として、
@@ -30,13 +29,13 @@ tags:
 ちなみにElastic License 2.0は、Elasticsearchをマネージドサービスとして提供することを禁止しているが、SaaSアプリケーションのバックエンドとして使用すること（Elasticsearch APIへの直接アクセスを提供しないサービス提供）に影響しないという立場が示されている。
 
 > Elasticsearchをバックエンドで使用するSaaSアプリを開発しているけど、どんな影響が生じる？
-> 
+>
 > 今回のソースコードのライセンス変更はお客様に一切影響しません。Elastic Licenseに基づいて、デフォルトの配布パッケージを使用できるほか、このパッケージをベースに無料でアプリケーションを開発することもできます。Elastic Licenseはsource-available license（ソース利用許諾）であり、コピーレフトの側面を持たず、デフォルトの機能を無料とします。具体的な例として、よろしければMagentoプロジェクトに関する質問への回答をご参照ください。
 
 - [https://www.elastic.co/jp/pricing/faq/licensing#elasticsearch%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8Bsaas%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E9%96%8B%E7%99%BA%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%91%E3%81%A9%E3%80%81%E3%81%A9%E3%82%93%E3%81%AA%E5%BD%B1%E9%9F%BF%E3%81%8C%E7%94%9F%E3%81%98%E3%82%8B%EF%BC%9F](https://www.elastic.co/jp/pricing/faq/licensing#elasticsearch%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8Bsaas%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E9%96%8B%E7%99%BA%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%91%E3%81%A9%E3%80%81%E3%81%A9%E3%82%93%E3%81%AA%E5%BD%B1%E9%9F%BF%E3%81%8C%E7%94%9F%E3%81%98%E3%82%8B%EF%BC%9F)
 
 > I'm using Elasticsearch to put a search box on my cat-picture SaaS product.
-> 
+>
 > This is permitted under ELv2. Meow!
 
 > I am a Managed Service Provider (MSP) running Elasticsearch and Kibana for my customers.
@@ -44,7 +43,6 @@ tags:
 > If your customers do not access Elasticsearch and Kibana, this is permitted under ELv2. If your customers do have access to substantial portions of the functionality of either Elasticsearch and Kibana as part of your service, this may not be permitted.
 
 - [https://www.elastic.co/licensing/elastic-license/faq#can-you-provide-some-examples-around-what-qualifies-as-providing-the-software-to-third-parties-as-a-hosted-or-managed-service-or-not](https://www.elastic.co/licensing/elastic-license/faq#can-you-provide-some-examples-around-what-qualifies-as-providing-the-software-to-third-parties-as-a-hosted-or-managed-service-or-not)
-
 
 ## docker-compose.yml の更新
 
@@ -88,7 +86,6 @@ tags:
       - ./public/system:/mastodon/public/system
 ```
 
-
 ## Elasticsearchのパスワード設定
 
 Elasticsearchを`docker compose up -d`で初回起動すると、ターミナルが割り当てられないため、パスワードが設定されない（以下、Elasticsearchのログ）。
@@ -104,7 +101,6 @@ sudo docker compose up -d es
 sudo docker compose exec es bin/elasticsearch-reset-password -u elastic -a
 ```
 
-
 ## .env.production の更新
 
 Elasticsearch関連のコメントアウトを解除し、生成したElasticsearchのパスワードを`ES_PASS`に指定する。
@@ -119,14 +115,12 @@ ES_USER=elastic
 ES_PASS=
 ```
 
-
 ### Elasticsearchのデータベース更新
 
 ```shell
 sudo docker compose up -d
 sudo docker compose exec web bundle exec bin/tootctl search deploy
 ```
-
 
 ## よくあるエラー
 
@@ -138,7 +132,6 @@ sudo docker compose exec web bundle exec bin/tootctl search deploy
 bundler: failed to load command: bin/tootctl (bin/tootctl)
 /opt/mastodon/vendor/bundle/ruby/3.0.0/gems/elasticsearch-transport-7.13.3/lib/elasticsearch/transport/transport/base.rb:218:in `__raise_transport_error': [401] {"error":{"root_cause":[{"type":"security_exception","reason":"missing authentication credentials for REST request [/chewy_specifications/_search]","header":{"WWW-Authenticate":["Basic realm=\\"security\\" charset=\\"UTF-8\\"","ApiKey"]}}],"type":"security_exception","reason":"missing authentication credentials for REST request [/chewy_specifications/_search]","header":{"WWW-Authenticate":["Basic realm=\\"security\\" charset=\\"UTF-8\\"","ApiKey"]}},"status":401} (Elasticsearch::Transport::Transport::Errors::Unauthorized)
 ```
-
 
 ### GeoIPの更新エラー
 
@@ -158,7 +151,6 @@ GeoIPデータベースの更新が`exception during geoip databases update`と�
 - [https://discuss.elastic.co/t/how-to-disable-geoip-usage-in-7-14-0/281076](https://discuss.elastic.co/t/how-to-disable-geoip-usage-in-7-14-0/281076)
 - [https://stackoverflow.com/questions/72597824/org-elasticsearch-elasticsearchexception-not-all-primary-shards-of-geoip-data](https://stackoverflow.com/questions/72597824/org-elasticsearch-elasticsearchexception-not-all-primary-shards-of-geoip-data)
 - [https://github.com/elastic/elasticsearch/issues/76586](https://github.com/elastic/elasticsearch/issues/76586)
-
 
 ## 参考
 

@@ -12,6 +12,7 @@ tags:
 # PythonからPaSoRiを使って交通系ICカードのIDmを読む
 
 ## 環境
+
 - Ubuntu 18.04 (VirtualBox on Windows 10)
 - Python 2.7.15rc1（nfcpyは[Python3非対応](https://github.com/nfcpy/nfcpy/issues/47)のため）
 - Sony PaSoRi RC-S380
@@ -20,6 +21,7 @@ tags:
 （2019/12/19 追記）未検証ですがnfcpyがv1.0.0でPython3対応したみたいです。[https://github.com/nfcpy/nfcpy/issues/47#issuecomment-499693493](https://github.com/nfcpy/nfcpy/issues/47#issuecomment-499693493)
 
 ## セットアップ
+
 まずPaSoRiを接続する。PaSoRiをUSBポートに挿して、VirtualBox仮想マシンの設定からUSB、USB デバイスフィルターに`SONY RC-S380/P`を追加。
 
 ```shell

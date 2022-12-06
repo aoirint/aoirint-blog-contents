@@ -21,7 +21,6 @@ tags:
 ROOT_DIR = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 ```
 
-
 ## エラー時に処理を続行する
 
 コマンドの前に`-`（ハイフン）をつける。
@@ -29,11 +28,10 @@ ROOT_DIR = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 ```makefile
 .PHONY: cmd
 cmd:
-	ls
-	-fail_command a b c
-	ls
+ ls
+ -fail_command a b c
+ ls
 ```
-
 
 ## インデントはスペースではなくタブを使う
 
@@ -46,6 +44,7 @@ vimrcで`set expandtab`している場合にひっかかる。
 ```
 
 ### .vimrc
+
 ```vim
 set expandtab
 
@@ -56,7 +55,6 @@ endif
 ```
 
 - [vimでMakefileだけTabスペースではなくTabとして入力する - Qiita](https://qiita.com/Lacty/items/23a89d2b999cb0e9fae1)
-
 
 ## ファイルの存在に関係なくターゲットを実行する
 
@@ -69,24 +67,24 @@ Makeは本来Cのコンパイルなどに使うとき、ターゲット名に一
 ```makefile
 .PHONY: cmd
 cmd:
-	ls
+ ls
 ```
 
 ## 複数のコマンドを1つのシェルで実行する
 
 ```makefile
 cmd:
-	echo Hello;\
-	VAR=World;\
-	echo $$VAR
+ echo Hello;\
+ VAR=World;\
+ echo $$VAR
 ```
 
 ```makefile
 .ONESHELL: cmd
 cmd:
-	echo "Hello"
-	VAR=World
-	echo $$VAR
+ echo "Hello"
+ VAR=World
+ echo $$VAR
 ```
 
 ## 途中のコマンドの終了ステータスを返す
@@ -97,8 +95,8 @@ cmd:
 .ONESHELL: cmd
 .PHONY: cmd
 cmd:
-	sh -c 'exit 123'
-	EXIT_CODE=$$?
-	echo "Exit code: $$EXIT_CODE"
-	exit $$EXIT_CODE
+ sh -c 'exit 123'
+ EXIT_CODE=$$?
+ echo "Exit code: $$EXIT_CODE"
+ exit $$EXIT_CODE
 ```

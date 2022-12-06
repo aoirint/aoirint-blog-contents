@@ -7,6 +7,7 @@ channel: ダイアリー
 ---
 
 # VOICEVOXへのプルリクエストを出した
+
 15日にVOICEVOXへのプルリクエストを出した。
 
 - [https://github.com/Hiroshiba/voicevox_core/pull/41](https://github.com/Hiroshiba/voicevox_core/pull/41)

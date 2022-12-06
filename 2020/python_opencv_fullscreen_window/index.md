@@ -26,7 +26,6 @@ This application failed to start because no Qt platform plugin could be initiali
 
 - [python-opencvでQt plugin "cocoa"が見つからないというエラー - Qiita](https://qiita.com/jmtsn/items/aa73d837b3a8d4158885)
 
-
 ### 黒画面
 
 ```python

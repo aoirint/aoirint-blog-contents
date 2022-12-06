@@ -37,8 +37,8 @@ Open-source version of the X.Org X Window System
 - Docker Desktop for Mac 3.0.2 (50996)
 - macOS Catalina Version 10.15.7
 
-
 ## XQuartzのインストール（HomebrewとHomebrew Cask）
+
 現在は`brew cask`コマンドは非推奨で、`brew`だけでOK（あるいは`--cask`オプションをつける）。
 XQuartzの場合は`--cask`をつけなくても内部で勝手に`brew cask`としてインストールしてくれた。
 Homebrew CaskというのはGUIアプリケーション向けのHomebrewの拡張らしいが、Homebrewと何が違うのかわからん。
@@ -82,8 +82,8 @@ xeyes
 Dockerからアクセスするために必要。
 また、この設定はXQuartzを再起動しないと反映されないので、一度XQuartzをQuitして起動しなおす。
 
-
 ## テスト用Dockerイメージ
+
 ```dockerfile
 FROM alpine:3
 
@@ -97,6 +97,7 @@ docker build . -t xeyes
 ```
 
 ## 確認：Docker Desktop for MacのDNS設定
+
 以下のようなdocker pullに失敗する事象のため、Docker daemonのDNS設定を変更していた。
 具体的には、Docker Desktop for Macのタスクバーアイコン > Preferences > Docker EngineのJSON設定欄に
 `"dns": [ "primary dns address", "secondary dns address" ]`のように設定を書き足して解決していた。
@@ -118,13 +119,13 @@ dial tcp 54.236.131.166:443: i/o timeout
 なお最初に起きていた事象は、ネットワークのファイアウォールによってOP53B（DNSブロック）されていたのが原因と思われるが、
 この設定を削除したとき、同様のネットワークで事象は復活しなかった（ネットワークの切り替え直後だったために起きていた一時的な問題？）。
 
-
 ## host.docker.internalを使う方法（旧 docker.for.mac.localhost, docker.for.mac.host.internal）
+
 - [How to show X11 windows with Docker on Mac | by Marc Reichelt | Medium](https://medium.com/@mreichelt/how-to-show-x11-windows-within-docker-on-mac-50759f4b65cb)
 - [How to display a gui app in a Docker container in macOS | Alessandro Chimetto](http://www.achimetto.me/docker-gui-app-on-macos.html)
 - [Mac+dockerでx11アプリケーションを起動する - livaの雑記帳](http://raphine.hatenablog.com/entry/2018/08/14/004634)
 - [X11 in docker on macOS へのコメント](https://gist.github.com/cschiewek/246a244ba23da8b9f0e7b11a68bf3285#gistcomment-3477013)
-    - [Docker X11 macOS](https://gist.github.com/paul-krohn/e45f96181b1cf5e536325d1bdee6c949)
+  - [Docker X11 macOS](https://gist.github.com/paul-krohn/e45f96181b1cf5e536325d1bdee6c949)
 
 この方法がシンプルで安全なように思われた。
 以下は、X Serverのすべてのアクセス制限を復活させたのち、localhostからのアクセスのみを許可した状態でxeyesをDocker上で起動する。
@@ -136,23 +137,27 @@ xhost + localhost
 docker run --rm -e DISPLAY=host.docker.internal:0 xeyes
 ```
 
-
 ## hostnameを使う＋~/.Xauthorityを共有する方法
+
 - [Docker for Mac で X11 アプリケーションを動かす - Qiita](https://qiita.com/hoto17296/items/bdb2ab24bc32b6b7f360)
 - [macOS で Docker 内で動かした X11 アプリを表示させる - Qiita](https://qiita.com/kawaz/items/6cf04f923ebfac45a997)
 
 ## hostnameを使う＋/tmp/.X11-unixを共有する方法
+
 - [X11 in docker on macOS](https://gist.github.com/cschiewek/246a244ba23da8b9f0e7b11a68bf3285)
 
 ## プライベートIPを使う方法
+
 - [Mac DockerでGUIを使いたい（XQuartz版） - あよなの足跡](https://gokids.hatenablog.com/entry/2018/11/14/190000)
 - [macos - Running GUI apps on docker container with a MacBookPro host - Stack Overflow](https://stackoverflow.com/questions/37523980/running-gui-apps-on-docker-container-with-a-macbookpro-host)
 - [Running GUI applications using Docker for Mac - Sourabh](https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/)
 - [X11 in docker on macOS へのコメント](https://gist.github.com/cschiewek/246a244ba23da8b9f0e7b11a68bf3285#gistcomment-3119974)
 
 ## socatを使う方法（UnixソケットをTCPにリレーする方法）
+
 - [Dockerで稼働するGUIアプリをMacOSXから利用する](https://gist.github.com/asufana/229cdac01fccee1a7d32ca8b5d7cfee6)
 - [macos - Xt error: Can't open display, if using default DISPLAY - Stack Overflow](https://stackoverflow.com/questions/37826094/xt-error-cant-open-display-if-using-default-display)
 
 ## SSH X11 Forwardingを使う方法
+
 - [dockerコンテナの中で立ち上げたGUIアプリをmacに表示してみる - Qiita](https://qiita.com/machisuke/items/84626eba60ab76d8fc4e)

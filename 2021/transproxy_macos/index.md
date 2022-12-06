@@ -24,8 +24,8 @@ export NO_PROXY=localhost,127.0.0.0/8,::1
 
 NO_PROXYには必ずlocalhost/ローカルループバックアドレスを設定しておくこと（無限ループする）。
 
-
 ## ビルド
+
 - [https://github.com/wadahiro/go-transproxy](https://github.com/wadahiro/go-transproxy)
 
 ```shell
@@ -53,12 +53,14 @@ pass out on en0 route-to lo0 inet $Packets port {80, 443} keep state
 ```
 
 ## 有効化
+
 ```shell
 sudo pfctl -ef ~/transproxy/pf.conf
 transproxy -disable-iptables
 ```
 
 ## 無効化
+
 ```shell
 # stop transproxy process (Ctrl+C)
 

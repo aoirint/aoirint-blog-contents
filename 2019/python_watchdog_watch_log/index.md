@@ -94,7 +94,6 @@ handler.close()
 print('closed')
 ```
 
-
 ※ ちょっと修正してみたけど、やっぱり微妙
 
 ```python

@@ -17,6 +17,7 @@ tags:
 # Ubuntu プロキシ設定
 
 ## User (Desktop): Settings > Network > Network Proxy
+
 Settings > Network > Network Proxy > Manualに設定する。
 自動的に環境変数HTTP_PROXY, HTTPS_PROXYにスキームが追加された状態で設定される。
 
@@ -29,6 +30,7 @@ curlやwget、pipなど主要コマンドは
 例えばsudo curlしたときにプロキシに接続しにいかない。
 
 ## /etc/sudoers
+
 sudoでコマンドを実行したとき、実行時シェルに設定されている環境変数を引き継ぐようにする。
 sudoersは書き込み禁止になっているためvisudoで編集する。
 
@@ -45,6 +47,7 @@ Defaults env_keep+="EDITOR"
 ```
 
 ## /etc/environment
+
 システム全体の環境変数として設定される。影響範囲が大きいので注意。
 デスクトップユーザではSettings側の設定（Disabledなら設定されない）が優先されるようだった。
 
@@ -62,6 +65,7 @@ Acquire::https::proxy "http://proxy:port";
 ```
 
 ## Snap: systemctl edit snapd.service
+
 /etc/systemd/system/snapd.service.d/override.confにsystemdの設定ファイルを作成する。
 
 ```sh
@@ -82,9 +86,8 @@ Environment=http_proxy=http://proxy:port
 Environment=https_proxy=http://proxy:port
 ```
 
-* [社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ](http://blog.livedoor.jp/tamanooboshi/archives/31598849.html "社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ")
-* [Set snapd proxy via core configuration - snapd - snapcraft.io](https://forum.snapcraft.io/t/set-snapd-proxy-via-core-configuration/467/21 "Set snapd proxy via core configuration - snapd - snapcraft.io")
-
+- [社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ](http://blog.livedoor.jp/tamanooboshi/archives/31598849.html "社内Proxyに阻まれSnapでパッケージ管理できないあなたへ : サイコロイドの備忘ログ")
+- [Set snapd proxy via core configuration - snapd - snapcraft.io](https://forum.snapcraft.io/t/set-snapd-proxy-via-core-configuration/467/21 "Set snapd proxy via core configuration - snapd - snapcraft.io")
 
 ## 透過プロキシ
 

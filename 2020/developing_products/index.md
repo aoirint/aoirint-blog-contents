@@ -10,9 +10,11 @@ channel: 技術ノート
 開発中のものですってやつです
 
 ### CampMusicPlayer
+
 [aoirint/CampMusicPlayer: (Prototype in Dev) Music Player for Android](https://github.com/aoirint/CampMusicPlayer)
 
 ### Starline
+
 [aoirint/Starline: (Prototype in Dev) Hierarchical outline document editor made with Java](https://github.com/aoirint/Starline)
 
 階層型アウトラインエディタ。

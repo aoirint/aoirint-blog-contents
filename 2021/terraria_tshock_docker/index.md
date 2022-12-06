@@ -20,6 +20,7 @@ tags:
 既存のワールドを使用する場合は、`./data/worlds/`に`.wld`ファイルを配置し、`WORLD_FILENAME`を変更する。
 
 ## docker-compose.yml
+
 ```yaml
 version: '3.9'
 services:
@@ -41,6 +42,7 @@ services:
 ```
 
 ## ワールドの新規作成
+
 autocreateオプションにはワールドサイズを数値で指定する（1: Small, 2: Medium, 3: Large）。
 ここではSmallを指定している。
 
@@ -55,6 +57,7 @@ docker-compose run --rm -e WORLD_FILENAME= terraria -world /root/.local/share/Te
 バックグラウンド起動にするため、ここでは一旦サーバを停止しておく。
 
 ## サーバの起動
+
 ```shell
 docker-compose up -d
 docker-compose logs -f
@@ -63,6 +66,7 @@ tail -f data/logs/*.log
 ```
 
 ## サーバコンソールを開く
+
 Dockerコンテナ名を調べる。ここでは、`tshock_terraria_1`とする。
 
 ```shell
@@ -77,6 +81,7 @@ docker attach tshock_terraria_1
 ```
 
 ## 設定・権限の変更
+
 TShockにはバニラと異なる細かいデフォルト設定や権限機能があるので注意。
 設定では、デフォルトで初期スポーン地点保護が有効化、墓生成が無効化されている。
 権限では、デフォルトでNPCの部屋割り当て、ボス召喚などが無効化されている。
@@ -85,16 +90,19 @@ TShockにはバニラと異なる細かいデフォルト設定や権限機能�
 ### ./data/worlds/config.json
 
 #### ServerPassword
+
 サーバアクセス時に入力を要求するパスワード
 
 #### SpawnProtection
+
 初期スポーン保護
 
 #### DisableTombstones
+
 死亡時の墓生成の無効化
 
-
 ### 権限の変更
+
 TShockサーバにはゲームキャラクタと独立したアカウントの概念があり、ユーザの権限はアカウントが属するグループに基づく。
 
 サーバ初回起動時に生成される`./data/worlds/setup-code.txt`内のパスワードを使い、`/setup <setup-code>`を実行することで、一時的に最高権限のsuperadminになる。

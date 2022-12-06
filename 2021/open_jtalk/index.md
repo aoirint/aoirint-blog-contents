@@ -44,6 +44,7 @@ docker build . -t aoirint/open_jtalk
 ```
 
 実行する。
+
 ```shell
 echo "こんにちは" > text.txt
 
@@ -77,7 +78,6 @@ Input #0, wav, from 'output.wav':
 # 他のhtsvoiceを使う（mei_normal.htsvoice）
 docker run --rm -v "$PWD:/data" aoirint/open_jtalk -x /var/lib/mecab/dic/open-jtalk/naist-jdic/ -m /data/mei_normal.htsvoice text.txt -ow output.wav
 ```
-
 
 ヘルプはこのようになっている。
 

@@ -34,7 +34,6 @@ GitHub上にあるCampMusicPlayerとMadPlayerDroidがそれにあたる。
 ReactかNext.jsかElectronかで書こうとしたリポジトリもあった気がするけど、
 Android組み込みのメディア機能を使いたい感じがしていて、相性がよくわからない。
 
-
 Hexoのテーマをforkして、noindexとno-referrerを挿し込んでみた。
 なんか二重にnoindexが定義されちゃうけど、仕方ない。
 特定のカテゴリにnoindexと、ブログトップからの除去を実装したいけど、面倒くさい。

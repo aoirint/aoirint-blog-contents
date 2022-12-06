@@ -27,6 +27,7 @@ Windows 10 Home
 例えばPython 3.6.2を入れたとして、実行するには`python`、`python3`か`python3.6`。
 
 ## Appendix
+
 ### バージョン合わせ
 
 ```shell

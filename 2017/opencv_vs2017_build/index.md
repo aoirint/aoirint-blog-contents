@@ -12,18 +12,23 @@ tags:
   - Windows
 ---
 # VS2017でOpenCVをビルドする
+
 ## What
+
 Visual Studio 2017でOpenCVをビルドしたい。
 
 ## Environment
+
 - Windows 10 Home
 - Visual Studio 2017
 - CMake 3.9.3
 
 ## How
+
 ### Download Sources
+
 ```shell
-$ git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv.git
 ```
 
 または
@@ -56,4 +61,5 @@ Configureを押して`Visual Studio 15 2017 Win64`を選択、"Finish"。設定�
 `install\x64\vc15\bin`にPATHを通し、上のページに従ってVSプロジェクトを設定（ライブラリは適宜必要なもの）する。
 
 ## Reference
+
 - [OpenCV: Installation in Windows](http://docs.opencv.org/3.3.0/d3/d52/tutorial_windows_install.html)

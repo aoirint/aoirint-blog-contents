@@ -21,8 +21,8 @@ tags:
 このICには4回路入っています（4つスイッチがあります）。
 アナログ信号（PWM信号）源としてArduino UNO（互換品）を使いました。
 
-
 ## PWM
+
 PWM（Pulse Width Modulation）はパルス信号の幅（デューティ比）を変化させる変調のことです。
 ここでは、スイッチのON/OFFの比率を調節する形で、
 デジタルパルス信号の平均電圧を可変にする（擬似的なアナログ信号を作る）ために使います（参考：[パルス幅変調 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E5%B9%85%E5%A4%89%E8%AA%BF)）。
@@ -35,8 +35,8 @@ $$
 
 デューティ比 \(D\) 、パルス電圧 \(V\) のとき、平均電圧 \(V' = D V\) となります。
 
-
 ## ArduinoのPWM制御
+
 ArduinoにはPWMを利用したアナログ出力関数（[analogWrite - Arduinoリファレンス](https://cdn.arduino.cc/reference/jp/language/functions/analog-io/analogwrite/)）があります。
 
 - [Arduino - PWM](https://www.arduino.cc/en/Tutorial/PWM)
@@ -58,8 +58,8 @@ Arduinoの本体であるAVRマイコンATmegaのレジスタを直接操作す�
 
 今回はPCで再生するような音声信号をPWMで再生します。よくある音声のサンプリング周波数は44100Hzまたは48000Hz（この周期で振幅＝電圧が変化する）で、これを再生するには490Hzのパルスでは遅すぎます。
 
-
 ## 音声データの設定
+
 [【Arduino】WAVまたはMP3ファイルを再生する - おもちゃラボ](https://nn-hokuson.hatenablog.com/entry/2017/09/01/092945)を参考にしていきます。
 
 今回は音声データをArduinoのプログラムメモリに直接載せて再生することにします。
@@ -83,11 +83,11 @@ Arduinoの本体であるAVRマイコンATmegaのレジスタを直接操作す�
 `xxd`コマンドが使える場合、`xxd -i handel_2s.raw`で`unsigned char handel_2s_raw[]`を定義するCコードが出力されます。この頭に`const PROGMEM`を付けてArduino用のソースコードに貼り付けます。
 
 ## 単チャンネル再生
+
 基本的には先に挙げた記事と同じことをしていきます。シリアル通信を入れると遅くなってしまうので、動作確認などで入れた場合は最終的には外したほうがいいです。
 
 - [analogWrite() - Arduinoで遊ぶページ](https://garretlab.web.fc2.com/arduino/inside/hardware/arduino/avr/cores/arduino/wiring_analog.c/analogWrite.html "analogWrite()")
 - [Timer2 - AVRWiki](https://avrwiki.osdn.jp/cgi-bin/wiki.cgi?page=Timer2 "Timer2 - FreeStyleWiki")
-
 
 ```c
 const PROGMEM unsigned char handel_2s_raw[] = {
@@ -114,7 +114,6 @@ void loop(void) {
 ```
 
 Arduinoの3番ピン・GNDのとスピーカの端子（ダイナミックスピーカの場合はPAM8012やPAM8403などのアンプがほしい、圧電スピーカ・イヤホンなどの場合は不要）を接続する。
-
 
 ## 多チャンネル再生
 

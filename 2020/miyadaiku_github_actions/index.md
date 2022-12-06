@@ -18,20 +18,20 @@ tags:
 # 静的サイトジェネレータMiyadaiku + GitHub Actions + GitHub Pagesでブログを作る
 
 ## 概要
+
 新しく静的サイトジェネレータでブログ環境を整備した。
 細かい使い方には触れないが、構成を書いておく。
-
 
 ## 静的サイトジェネレータとCI/CD
 
 ### 静的サイトジェネレータ
+
 静的サイトジェネレータというのはSphinx（Python製）とかJekyll（Ruby製、GitHub Pages標準らしい）とかHugo（Go製）みたいなやつで、
 MarkdownだとかreStructuredTextだとかのファイル群からHTMLを生成するツール。
 
 - [Sphinx](https://www.sphinx-doc.org/)
 - [Jekyll](https://jekyllrb.com/)
 - [Hugo](https://gohugo.io/)
-
 
 ### Miyadaiku
 
@@ -41,7 +41,6 @@ Flaskで使うテンプレートエンジンのJinja2が使えることが特徴
 
 - [github:miyadaiku/miyadaiku](https://github.com/miyadaiku/miyadaiku)
 - [pypi:miyadaiku](https://pypi.org/project/miyadaiku/)
-
 
 ### GitHub Actions
 
@@ -55,7 +54,6 @@ Pull Requestなどへの自動ラベル付けやSlackへの通知なんかも設
 GitHubが落ちたら解消するまで（手元にリポジトリがあっても）GitHub ActionsによるCI/CDができないのが難点な気がする。
 
 - [GitHub Status](https://www.githubstatus.com/)
-
 
 ## 考えていること
 
@@ -119,7 +117,6 @@ jobs:
 
 `name`、`run`のところをコピーして増やせばコマンドを増やすことができる。
 
-
 ### テーマと文書の分離
 
 テーマのリポジトリと文書のリポジトリを分離したい。
@@ -148,7 +145,6 @@ PC上で文書を書いているときには、ブラウザの更新がかかっ
 またUbuntu、Mac、WindowsのPCを時と場所と気分と目的によって切り替えて使っていて、タイミングによっては特定のPCにアクセスできないようなこともあるので、基本的に文書がリモートにないと面倒なのだが、（あんまり分散管理という感じがしないが）GitHubを経由して同期すればいいというのがGitを使う利点の一つであるように思う。
 
 それから、複数の書きかけの文書/記事があるとき、何度も変更して大量に履歴ができたり、複数の記事の履歴が入り乱れるとつらそう。これは記事ごとにブランチを切る（あとでmergeする）とか、squash/rebaseを使うとか、Pull Requestを使うとかしてうまく対処できないか考えている。
-
 
 #### 複数のコミットを1つにまとめる例
 
@@ -191,7 +187,6 @@ branch A: W--X--Y'
 
 - [【git rebase -i】gitのcommitをまとめる - Qiita](https://qiita.com/tsuuuuu_san/items/f708a9f7ea8ab8eb6945)
 
-
 #### 複数の記事を同時に書く際の例
 
 まず、masterブランチ、記事Aを書いているブランチA、記事Bを書いているブランチBがあるとする。ブランチAとブランチBはmasterブランチの最終commit Xから分岐している。
@@ -221,8 +216,7 @@ branch B:            |--Z
 
 すでに古いcommit履歴のbranch Bがリモートにpushされているときは`git push -f`する必要がある。
 
--   [fast-forwardマージから理解するgit rebase - Qiita](https://qiita.com/vsanna/items/451b42f886c599a16a55)
-
+- [fast-forwardマージから理解するgit rebase - Qiita](https://qiita.com/vsanna/items/451b42f886c599a16a55)
 
 ## Miyadaikuを使う
 

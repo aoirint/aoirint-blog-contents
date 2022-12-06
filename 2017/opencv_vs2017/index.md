@@ -11,16 +11,20 @@ tags:
   - Windows
 ---
 # VS2017でOpenCVを使う（Win pack）
+
 ## What
+
 Visual Studio 2017でOpenCVを使いたい。
 
 ## Environment
+
 - Windows 10 Home
 - Visual Studio 2017
 
 ## How
 
 ### OpenCVのダウンロード
+
 - [OpenCV library](http://opencv.org/)
 
 OpenCV libraryのReleasesから最新の"Win pack"をダウンロード。
@@ -28,6 +32,7 @@ OpenCV libraryのReleasesから最新の"Win pack"をダウンロード。
 "Win pack"は自己展開exeになっているので、適当なディレクトリを指定して展開。
 
 ### VSプロジェクトの設定
+
 新規にプロジェクトを作る場合、Visual C++から空のプロジェクトを作成。
 
 ソリューションエクスプローラからプロジェクトのプロパティを開き、"VC++ディレクトリ"のツリーに移る。

@@ -30,6 +30,7 @@ Overleaf（ShareLaTeX）は、`overleaf.com`で提供されているクラウド
 - [https://www.overleaf.com/for/enterprises/features](https://www.overleaf.com/for/enterprises/features)
 
 ## 使用できない機能
+
 ### Git管理
 
 Git管理やGitHub連携については、Community Editionには実装されていない（クラウド版のみ）。クラウド版のGit管理はクローズドソースなファイル履歴APIを利用して実装されており、これが技術的な課題になっているらしい。
@@ -193,6 +194,7 @@ docker-compose up -d --force-recreate
 コンテナ内のシステム（`/usr/share/fonts`もしくは`/usr/local/share/fonts`）にフォントを追加すれば認識する。
 
 ### Dockerfile
+
 ```dockerfile
 # syntax=docker/dockerfile:1.3-labs
 FROM sharelatex/sharelatex:3
@@ -206,6 +208,7 @@ EOF
 ```
 
 ### docker-compose.yml
+
 ```yaml
 # ...
 services:
@@ -217,11 +220,13 @@ services:
 ```
 
 ### .dockerignore
+
 ```
 /data
 ```
 
 ### .gitignore
+
 ```
 /data
 .env*
@@ -257,6 +262,7 @@ $ENV{TTFONTS} = '/usr/share/fonts//:';
 ```
 
 ### main.tex
+
 ```tex
 \documentclass[uplatex,10pt,a4paper,twocolumn]{jsarticle}
 

@@ -33,7 +33,6 @@ OAuth AppをZoom上に作成。
 
 - [https://marketplace.zoom.us/develop/create](https://marketplace.zoom.us/develop/create)
 
-
 設定を書く.envファイルを作成。
 
 ```sh

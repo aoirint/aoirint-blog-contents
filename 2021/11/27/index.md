@@ -30,7 +30,6 @@ Electronの方（VOICEVOXソフトウェア）では再現したので、Chromiu
 一回Issueを作ってからでもよかったけれど、修正策は一応分かっているので...。
 もっといい方法があるかもしれないというのは気になるが。
 
-
 ## おためし
 
 <audio src="assets/ぼやけつっむです.mp3" controls></audio>
@@ -38,7 +37,6 @@ Electronの方（VOICEVOXソフトウェア）では再現したので、Chromiu
 VOICEVOX:春日部つむぎ, <a href="assets/ぼやけつっむです.vvproj" download>ぼやけつっむです.vvproj</a>（VOICEVOX 0.9.1）
 
 なんか0.9.1時点ではちょっと音割れ気味な感じがあるので、音量を控えめにした方がいいかもしれない（0.50くらい?）。
-
 
 誰にでも様付けするデルシェア姫（胃世界料理道）のイメージを反映してみたい（ボイロ同士の掛け合い）。
 
@@ -97,9 +95,6 @@ VOICEVOX:波音リツ, <a href="assets/波音リツ_使いどころさん！？ 
 
 VOICEVOX:波音リツ, <a href="assets/波音リツ_次は、明大前、明大前.vvproj" download>波音リツ_次は、明大前、明大前.vvproj</a>（VOICEVOX 0.9.1）
 
-
-
-
 ## コマンド
 
 ```shell
@@ -138,4 +133,3 @@ ffmpeg -i input.wav -ar 48000 output.mp3
 <details>
 <img src="assets/grilled_meat.jpg" alt="grilled_meat" width="100px" />
 </details>
-

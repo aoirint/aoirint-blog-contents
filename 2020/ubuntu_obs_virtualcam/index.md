@@ -15,15 +15,14 @@ Zoomなどでデスクトップ画面をカメラ映像として共有するの�
 
 - 参考： [https://github.com/CatxFish/obs-virtual-cam/issues/17](https://github.com/CatxFish/obs-virtual-cam/issues/17)
 
-
 ## Environment
+
 - Ubuntu 18.04
 - FFmpeg 3.4.6-0ubuntu0.18.04.1
 - v4l2loopback `#ed2b709`
 - OBS Studio 25.0.8 `#14b0565`
 
 obs-v4l2sink `#1ec3c8a` はOBS Studioがクラッシュして使えなかった。
-
 
 ## How to
 
@@ -81,7 +80,6 @@ rawvideoの指定できるRecordingでも同じように設定できた（Record
 
 あとはOBS上でStart Streamingすれば仮想カメラへの配信が始まる。Stop Streamingするとffmpegが終了してしまうのだけれど、終了しないように設定できるのかな？
 
-
 ## 付録
 
 ### 一部のアプリケーション用の設定
@@ -95,7 +93,6 @@ Zoomの場合は逆にexclusive_capsを指定するとStart Videoできなくな
 sudo modprobe v4l2loopback devices=1 video_nr=10 card_label="OBS Cam" exclusive_caps=1
 ```
 
-
 ### OBSを使わない方法
 
 デスクトップ画面全体をffmpegで仮想カメラデバイスに送る場合のメモ。以下のコマンドが使える（ [https://github.com/CatxFish/obs-v4l2sink/issues/5](https://github.com/CatxFish/obs-v4l2sink/issues/5) ）。デスクトップ番号が0でない場合は`-i :0`を書き換える。
@@ -103,7 +100,6 @@ sudo modprobe v4l2loopback devices=1 video_nr=10 card_label="OBS Cam" exclusive_
 ```sh
 ffmpeg -f x11grab -r 15 -s 1920x1080 -i :0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
 ```
-
 
 ### ボツ：obs-v4l2sinkを導入
 

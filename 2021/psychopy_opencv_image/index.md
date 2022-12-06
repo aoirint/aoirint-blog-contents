@@ -18,14 +18,12 @@ tags:
 
 ![](screenshot.png)
 
-
 y軸反転と画素値をfloat（0-1）に変換すればOK。
 
 ```python
 npimg: np.ndarray # (height, width, num_channels)
 stimimg = np.flip(npimg.astype(np.float32) / 255, axis=0)
 ```
-
 
 ## ウインドウに表示させるサンプル
 
