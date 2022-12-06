@@ -11,5 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      # https://github.com/marketplace/actions/markdownlint-cli2-action
+      # https://github.com/DavidAnson/markdownlint-cli2-action
       - uses: DavidAnson/markdownlint-cli2-action@v8
         continue-on-error: true
