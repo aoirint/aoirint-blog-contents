@@ -1,0 +1,6 @@
+globs:
+  - "**/*.md"
+
+ignores:
+  - ".git/**"
+  - ".github/**"
