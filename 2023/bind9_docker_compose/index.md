@@ -16,7 +16,7 @@ tags:
 - これまでホストで直接動かしていたけれど、OOMか何かに3,4日に1度くらいでキルされていたので不便だった
 - これでdocker composeのrestart機構で再起動がかかるようになる
   - systemdのrestart機構ワカラナイ
-- Dockerイメージ: https://hub.docker.com/r/ubuntu/bind9
+- Dockerイメージ: [https://hub.docker.com/r/ubuntu/bind9](https://hub.docker.com/r/ubuntu/bind9)
 
 ## コード
 
