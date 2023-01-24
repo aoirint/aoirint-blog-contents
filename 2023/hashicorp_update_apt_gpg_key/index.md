@@ -12,7 +12,7 @@ tags:
 ---
 # HashiCorpのapt GPGキーを更新する
 
-```shell
+```plain
 $ sudo apt update
 
 Err:2 https://apt.releases.hashicorp.com focal InRelease
