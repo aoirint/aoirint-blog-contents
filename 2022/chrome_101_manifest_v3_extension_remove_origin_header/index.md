@@ -1,5 +1,5 @@
 ---
-title: 'Chrome 101+ Manifest V3のChrome拡張でHTTPリクエストからOriginヘッダを削除する'
+title: 'HTTPリクエストからOriginヘッダを削除（Manifest V3 Chrome拡張, Chrome 101+）'
 date: '2022-12-07T08:30:00+09:00'
 draft: false
 noindex: false
@@ -8,7 +8,7 @@ category: ブラウザ拡張
 tags:
   - ブラウザ拡張
 ---
-# Chrome 101+ Manifest V3のChrome拡張でHTTPリクエストからOriginヘッダを削除する
+# HTTPリクエストからOriginヘッダを削除（Manifest V3 Chrome拡張, Chrome 101+）
 
 ## 動作環境
 
