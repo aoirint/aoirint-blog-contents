@@ -90,6 +90,8 @@ sudo docker network inspect $(sudo docker network ls -q) | grep -E "Subnet|Name"
 また、Dockerのインストール時には、コンテナのネットワークとしてデフォルトで使用される`docker0`というブリッジネットワークが作成され、
 プライベートIPアドレスが割り当てられます。
 
+- [https://www.mtioutput.com/entry/docker-bridge-tutorial](https://www.mtioutput.com/entry/docker-bridge-tutorial)
+
 また、libvirtがインストールされた環境であれば、`virbr0`、`virbr1`などの仮想NICが作成され、
 プライベートIPアドレスが割り当てられます。
 libvirtが管理するネットワークのリストは、`virsh net-list`で確認できます。
@@ -108,6 +110,14 @@ Docker Networkに使用するIPアドレスの範囲は、`/etc/docker/daemon.js
 また、`172.16.0.0/12`があれば十分そうだったため、いったん`192.168.0.0/16`は、家庭内ネットワークのために予約することにしました。
 
 - [https://tech.actindi.net/2019/03/14/170000](https://tech.actindi.net/2019/03/14/170000)
+
+Dockerの公式ドキュメントでは、Docker Swarmに関連する文脈ですが、
+ネットワークの作成にあたって、ホスト部を増やすことは非推奨のようでしたが、
+ホスト部を減らすことはしてよさそうでした。
+
+> If you need more than 256 IP addresses, do not increase the IP block size. You can either use dnsrr endpoint mode with an external load balancer, or use multiple smaller overlay networks.
+
+- [https://docs.docker.com/engine/reference/commandline/network_create/#overlay-network-limitations](https://docs.docker.com/engine/reference/commandline/network_create/#overlay-network-limitations)
 
 `/etc/docker/daemon.json`に以下の項目を追加しました。
 
