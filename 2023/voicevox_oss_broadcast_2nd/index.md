@@ -43,7 +43,7 @@ VOICEVOXには、2021年9月から個人でコントリビュートしており�
 ## マルチエンジン機能とは
 
 VOICEVOXは、主にエディタ・エンジン・コアの3つのコンポーネントからなっています（詳細はGitHub上の[全体構成](https://github.com/VOICEVOX/voicevox/blob/a22046c731dbd88794a0e2e0d0a632b977bf5e29/docs/%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90.md)を参照）。
-ソースコードが公開されていることから、VOICEVOXと互換性のあるAPIを持つ音声合成ソフト（ボイボ系ソフト）がいくつかリリースされています。
+ソースコードが公開されていることから、VOICEVOXと互換性のあるAPIを持ち、VOICEVOXのUIを再利用した音声合成ソフト（ボイボ系ソフト）がいくつかリリースされています。
 
 - [COEIROINK（コエイロインク）](https://coeiroink.com/): [シロワニさん](https://twitter.com/shirowanisan)
 - [LMROID（レミロイド）](https://lmroidsoftware.wixsite.com/nhoshio): [のほしお](https://twitter.com/ssohsn)さん
