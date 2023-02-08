@@ -16,7 +16,7 @@ VOICEVOXの新機能であるマルチエンジン機能をユーザと開発者
 
 - [【VOICEVOX OSS 放送 第２回】マルチエンジン実装 - 2023/2/4(土) 21:00開始 - ニコニコ生放送]()
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">📢VOICEVOX OSS 放送の告知 📢<br>2月4日(土)の21時から、VOICEVOXのマルチエンジン機能を、メインで実装してくださったおふたりをゲストに招いてご紹介する放送をします！<br>VOICEVOXのコントリビューターの方はもちろん、VOICEVOXのOSS活動にご興味ある方もぜひお越しください！<a href="https://t.co/hlNU6cWoXi">https://t.co/hlNU6cWoXi</a></p>&mdash; ヒホ（ヒロシバ）🗑️ (@hiho_karuta) <a href="https://twitter.com/hiho_karuta/status/1620382357344911360?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">📢VOICEVOX OSS 放送の告知 📢<br />2月4日(土)の21時から、VOICEVOXのマルチエンジン機能を、メインで実装してくださったおふたりをゲストに招いてご紹介する放送をします！<br />VOICEVOXのコントリビューターの方はもちろん、VOICEVOXのOSS活動にご興味ある方もぜひお越しください！<a href="https://t.co/hlNU6cWoXi">https://t.co/hlNU6cWoXi</a></p>&mdash; ヒホ（ヒロシバ）🗑️ (@hiho_karuta) <a href="https://twitter.com/hiho_karuta/status/1620382357344911360?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
 
 ## VOICEVOXとは
 
@@ -50,7 +50,7 @@ VOICEVOXは、主にエディタ・エンジン・コアの3つのコンポー�
 - [SHAREVOX（シェアボックス）](https://www.sharevox.app/): [Yちゃん](https://twitter.com/y_chan_dev)
 - [ITVOICE（イタボイス）](https://itahobi.booth.pm/items/4374126): [いたほび](https://twitter.com/itahobi)さん
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🎉 マルチエンジン機能が実装されました！<br><br>これまでボイボ系ソフトは、複数のキャラクター音声を生成するために複数のソフトを起動する必要がありました。<br>マルチエンジン機能により、VOICEVOX API に準拠している別々のエンジンのキャラクターが、１つのソフトに集まれるようになりました。 <a href="https://t.co/ZN0rgkYAX8">pic.twitter.com/ZN0rgkYAX8</a></p>&mdash; VOICEVOX (@voicevox_pj) <a href="https://twitter.com/voicevox_pj/status/1620376485025685505?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🎉 マルチエンジン機能が実装されました！<br /><br />これまでボイボ系ソフトは、複数のキャラクター音声を生成するために複数のソフトを起動する必要がありました。<br />マルチエンジン機能により、VOICEVOX API に準拠している別々のエンジンのキャラクターが、１つのソフトに集まれるようになりました。 <a href="https://t.co/ZN0rgkYAX8">pic.twitter.com/ZN0rgkYAX8</a></p>&mdash; VOICEVOX (@voicevox_pj) <a href="https://twitter.com/voicevox_pj/status/1620376485025685505?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
 
 今回のマルチエンジン機能は、ボイボ系ソフトのエディタが、これまで自身のブランドのエンジンにしか接続できなかったものを、異なるボイボ系ソフトのエンジンにも接続できるようにするものです。上のリリース告知ツイートに添付された画像による図解を見ると、イメージしやすいです。
 
