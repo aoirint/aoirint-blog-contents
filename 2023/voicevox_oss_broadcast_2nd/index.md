@@ -1,6 +1,7 @@
 ---
 title: '「VOICEVOX OSS 放送 第2回」に出演しました'
 date: '2023-02-09T03:00:00+09:00'
+updated: '2023-02-10T12:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -85,3 +86,7 @@ VOICEVOXに搭載された複数のキャラクターの権利元である東北
 - [ずんだホライずん【無料公開2/15まで】 - YouTube](https://www.youtube.com/watch?v=DjGhj1wUBd4)
 - [ずんだホライずん - ニコニコ動画](https://www.nicovideo.jp/watch/so32568633)
 - [アニメ ずんだホライずん](https://zunko.jp/con_ani.html)（公式サイト）
+
+2023-02-10追記: クラウドファンディングの第11ゴールが発表されました。「ずんだホライずん」のテレビ再放送のようです（2022年12月30日にもTOKYO MXで放送していました）。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">第11ゴールは、ずんだホライずんのTV放送です((o(*´∀`*)o))<a href="https://t.co/cpA4SovRuS">https://t.co/cpA4SovRuS</a> <a href="https://t.co/ehcm37k7M1">pic.twitter.com/ehcm37k7M1</a></p>&mdash; 東北ずん子💚きりたんボイスピ クラウドファンディング (@t_zunko) <a href="https://twitter.com/t_zunko/status/1623660520594354176?ref_src=twsrc%5Etfw">February 9, 2023</a></blockquote>
