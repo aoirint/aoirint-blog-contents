@@ -4,7 +4,7 @@ date: '2022-12-06T15:30:00+09:00'
 updated: '2023-02-10T12:00:00+09:00'
 draft: false
 noindex: false
-channel: サービス運用
+channel: 技術ノート
 category: 障害報告
 tags:
   - サービス運用
