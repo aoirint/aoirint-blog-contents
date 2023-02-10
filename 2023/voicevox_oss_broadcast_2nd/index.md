@@ -90,3 +90,5 @@ VOICEVOXに搭載された複数のキャラクターの権利元である東北
 2023-02-10追記: クラウドファンディングの第11ゴールが発表されました。「ずんだホライずん」のテレビ再放送のようです（2022年12月30日にもTOKYO MXで放送していました）。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">第11ゴールは、ずんだホライずんのTV放送です((o(*´∀`*)o))<a href="https://t.co/cpA4SovRuS">https://t.co/cpA4SovRuS</a> <a href="https://t.co/ehcm37k7M1">pic.twitter.com/ehcm37k7M1</a></p>&mdash; 東北ずん子💚きりたんボイスピ クラウドファンディング (@t_zunko) <a href="https://twitter.com/t_zunko/status/1623660520594354176?ref_src=twsrc%5Etfw">February 9, 2023</a></blockquote>
+
+<iframe src="https://greenfunding.jp/pub/projects/6932/widget?format=landscape&type=3" width="600px" height="255px" frameborder="0"></iframe>
