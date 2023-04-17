@@ -5,9 +5,9 @@ updated: '2023-02-10T12:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
-category: アナウンス
+category: 技術イベント
 tags:
-  - アナウンス
+  - 技術イベント
   - VOICEVOX
 ---
 # 「VOICEVOX OSS 放送 第2回」に出演しました
