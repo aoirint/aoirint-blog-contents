@@ -31,7 +31,8 @@ VOICEVOX開発者の[ヒホ](https://twitter.com/hiho_karuta)さん、
 VOICEVOXコミュニティDiscord運営の[コイル六重奏](https://twitter.com/hk_coil424)さん、
 SHAREVOX開発者・VOICEVOXメンテナーの[Yちゃん](https://twitter.com/y_chan_dev)、
 VOICEVOXレビュワーの[SuitCase](https://twitter.com/pickled_chair)さんとお会いして、
-夕食をご一緒しました。
+開発の話をしたり、
+夕食をご一緒したりしました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">VOICEVOXコントリビューター(広義)エンカ会<a href="https://twitter.com/hiho_karuta?ref_src=twsrc%5Etfw">@hiho_karuta</a><a href="https://twitter.com/hk_coil424?ref_src=twsrc%5Etfw">@hk_coil424</a><a href="https://twitter.com/pickled_chair?ref_src=twsrc%5Etfw">@pickled_chair</a> <a href="https://twitter.com/aoirint?ref_src=twsrc%5Etfw">@aoirint</a> <a href="https://t.co/jWpRS9tFkN">pic.twitter.com/jWpRS9tFkN</a></p>&mdash; Yちゃん (@y_chan_dev) <a href="https://twitter.com/y_chan_dev/status/1639558087760826368?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
