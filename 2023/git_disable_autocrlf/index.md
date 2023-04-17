@@ -1,6 +1,6 @@
 ---
 title: 'Gitの改行コード自動置換機能（autocrlf）を無効化する'
-date: '2023-04-17T09:00:00+09:00'
+date: '2023-04-16T12:58:39+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -9,7 +9,7 @@ tags:
   - Git
   - Windows
 ---
-## Gitの改行コード自動置換機能（autocrlf）を無効化する
+# Gitの改行コード自動置換機能（autocrlf）を無効化する
 
 - [https://stackoverflow.com/questions/21822650/disable-git-eol-conversions](https://stackoverflow.com/questions/21822650/disable-git-eol-conversions)
 
