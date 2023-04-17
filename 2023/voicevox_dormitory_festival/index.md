@@ -45,6 +45,15 @@ VOICEVOXレビュワーの[SuitCase](https://twitter.com/pickled_chair)さんと
 
 ![サラダと水の写真](images/voivofest_salad.jpg "サラダと水")
 
+## 戦利品
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">戦利品！ <a href="https://t.co/o4FgISabZg">pic.twitter.com/o4FgISabZg</a></p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1639921011008339971?ref_src=twsrc%5Etfw">March 26, 2023</a></blockquote>
+
+![ボイボ寮祭・ずんだぱ～てぃ9の戦利品](images/voivofest_collected.jpg "ボイボ寮祭・ずんだぱ～てぃ9の戦利品")
+
+今回は、Googleスプレッドシートにほしい頒布物を並べて印刷したものを用意し、会場配置図を印刷したものと一緒にクリアファイルに挟んで持ち込むという方式にしてみました。
+前回はタスク管理ツールのボードを使って管理していましたが、その方式のことはすっかり忘れていました。
+
 ## 名札
 
 前回は、Seiren Voiceのデモに赴くにあたって、アイコンで本人確認してもらうために、
@@ -54,19 +63,10 @@ TwitterかGitHubのプロフィール画面をスマートフォンで見せる�
 さよみこうしき（VOICEVOX小夜さん・櫻歌ミコさんの合同）ブースに集まっていたヒホさんとVOICEVOX関係者に挨拶するときと、
 雨晴はうさんブースの「診察券」頒布で活躍しました。
 
-本当に念のために用意した名札の予備を後述のクリアファイルに挟んでいたのですが、会場で落としそうで結構ひやひやしました。
+本当に念のために用意した名札の予備を前述のクリアファイルに挟んでいたのですが、会場で落としそうで結構ひやひやしました。
 
 aoirintのアイコンは、どうにもCMYKで表現するのが難しい色域らしく、ふつうに印刷するとそこそこ色味が変わってしまいます。
 実は、前回はアイコンの缶バッジを用意するというこじゃれたことをしており（活躍する機会は残念ながらなかったのですが）、
 そのときは許容範囲だと思っていました（そのときはコンビニのコピー機も試しましたが、家庭用プリンターCanon MG3530の方がいい結果でした）。
 今回は、（配ることは想定していないものの）名刺形式ということもあり、少しでも色味を近づけるため、Macbookを開き、標準ソフトでCMYK変換しました。
 名刺の画面構成は、ローカルフォント（ラノベポップ V2）を使うため、diagrams.net（drawio）のデスクトップアプリを使いました。
-
-## 戦利品
-
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">戦利品！ <a href="https://t.co/o4FgISabZg">pic.twitter.com/o4FgISabZg</a></p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1639921011008339971?ref_src=twsrc%5Etfw">March 26, 2023</a></blockquote>
-
-![ボイボ寮祭・ずんだぱ～てぃ9の戦利品](images/voivofest_collected.jpg "ボイボ寮祭・ずんだぱ～てぃ9の戦利品")
-
-今回は、Googleスプレッドシートにほしい頒布物を並べて印刷したものを用意し、会場配置図を印刷したものと一緒にクリアファイルに挟んで持ち込むという方式にしてみました。
-前回はタスク管理ツールのボードを使って管理していましたが、その方式のことはすっかり忘れていました。
