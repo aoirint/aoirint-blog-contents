@@ -4,9 +4,9 @@ date: '2022-11-21T16:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
-category: PCパーツ
+category: ガジェット
 tags:
-  - PCパーツ
+  - ガジェット
 ---
 # PCIe USB 3.0増設ボード（ELUTENG）を追加した
 
