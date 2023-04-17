@@ -3,11 +3,6 @@
   indexNoIndex: false
   indexCategoryIndex: true
   topPostCount: true
-- key: サービス運用
-  description: サービスの公開、更新、障害報告など
-  indexNoIndex: false
-  indexCategoryIndex: true
-  topPostCount: true
 - key: ダイアリー
   description: 個人的な記事、趣味
   indexNoIndex: true
