@@ -9,5 +9,7 @@ ignores:
   - ".github/**"
 
 config:
+  # h1
+  MD025: false
   # inline HTML
   MD033: false
