@@ -17,6 +17,12 @@ tags:
 
 ```shell
 npm install -g markdownlint-cli2
+
+# lint
+markdownlint-cli2
+
+# format
+markdownlint-cli2-fix
 ```
 
 ## Config .markdownlint-cli2.yaml
