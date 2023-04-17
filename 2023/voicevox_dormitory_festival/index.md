@@ -1,7 +1,7 @@
 ---
 title: ボイボ寮祭・ずんだぱ～てぃ9に一般参加してきました
 date: '2023-04-17T18:00:00+09:00'
-draft: true
+draft: false
 channel: ダイアリー
 tags:
   - 即売会
