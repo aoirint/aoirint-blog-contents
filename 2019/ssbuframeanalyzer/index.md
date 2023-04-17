@@ -4,9 +4,8 @@ title: SSBUFrameAnalyzer
 date: '2019-07-21T05:42:24+09:00'
 draft: false
 channel: 技術ノート
-category: リリースノート
+category: SSBUFrameAnalyzer
 tags:
-  - リリースノート
   - SSBUFrameAnalyzer
   - スマブラSP
   - 画像処理
