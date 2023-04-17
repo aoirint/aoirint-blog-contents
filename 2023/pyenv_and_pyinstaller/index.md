@@ -11,7 +11,7 @@ tags:
 ---
 # pyenvでPyInstallerを使えるようにする
 
-```plain
+```shell
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.3
 ```
 
