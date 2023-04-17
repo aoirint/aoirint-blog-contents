@@ -7,8 +7,9 @@ date: '2020-09-17T08:35:00+09:00'
 updated: '2021-05-14T01:00:00+09:00'
 draft: false
 channel: 技術ノート
-category: LaTeX
+category: TeX
 tags:
+  - TeX
   - Atom
   - LaTeX
   - TeXLive

@@ -6,10 +6,13 @@ og_description: Imagemagickで画像のDPIを変更する
 date: '2020-11-09T06:30:00+09:00'
 draft: false
 channel: 技術ノート
-category: LaTeX
+category: 'Command Utility'
 tags:
+  - 'Command Utility'
   - '画像'
   - 'Imagemagick'
+  - TeX
+  - LaTeX
 ---
 
 # Imagemagickで画像のDPIを変更する
