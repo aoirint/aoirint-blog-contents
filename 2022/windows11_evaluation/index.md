@@ -1,6 +1,6 @@
 ---
 title: 'Windows 11 評価版を入手する'
-date: '2023-04-17T09:00:00+09:00'
+date: '2022-03-18T02:51:33+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
