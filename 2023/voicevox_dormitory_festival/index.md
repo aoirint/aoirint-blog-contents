@@ -24,6 +24,11 @@ tags:
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">川崎に着弾</p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1639460283168210944?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
+主な参加動機は、
+コミュニティの熱量を見たい、というヒホさんに同調して、モチベーションに繋がればと思ったこと、
+普段生放送や動画を見ているクリエイターの方や、キャラクター運営さんや代理人の方、
+動画投稿者名義のほうで交流のある方がいらっしゃることです。
+
 ## VOICEVOXオフ
 
 オフラインでVOICEVOX関係者と会う貴重な機会で、
