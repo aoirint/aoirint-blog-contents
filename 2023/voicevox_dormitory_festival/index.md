@@ -24,6 +24,8 @@ tags:
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">川崎に着弾</p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1639460283168210944?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
+## VOICEVOXオフ
+
 オフラインでVOICEVOX関係者と会う貴重な機会で、
 VOICEVOX開発者の[ヒホ](https://twitter.com/hiho_karuta)さん、
 VOICEVOXコミュニティDiscord運営の[コイル六重奏](https://twitter.com/hk_coil424)さん、
@@ -33,6 +35,12 @@ VOICEVOXレビュワーの[SuitCase](https://twitter.com/pickled_chair)さんと
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">VOICEVOXコントリビューター(広義)エンカ会<a href="https://twitter.com/hiho_karuta?ref_src=twsrc%5Etfw">@hiho_karuta</a><a href="https://twitter.com/hk_coil424?ref_src=twsrc%5Etfw">@hk_coil424</a><a href="https://twitter.com/pickled_chair?ref_src=twsrc%5Etfw">@pickled_chair</a> <a href="https://twitter.com/aoirint?ref_src=twsrc%5Etfw">@aoirint</a> <a href="https://t.co/jWpRS9tFkN">pic.twitter.com/jWpRS9tFkN</a></p>&mdash; Yちゃん (@y_chan_dev) <a href="https://twitter.com/y_chan_dev/status/1639558087760826368?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
 
-![川崎駅に集まるVOICEVOXコントリビューターの写真](images/voicevox_contributors_2023-03-25_720p.jpg)
+![川崎駅に集まるVOICEVOXコントリビューターの写真](images/voicevox_contributors_2023-03-25_1280w.jpg "川崎駅に集まるVOICEVOXコントリビューター")
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ごはん！ <a href="https://t.co/OPjdZoo55m">pic.twitter.com/OPjdZoo55m</a></p>&mdash; aoirint🎐 (@aoirint) <a href="https://twitter.com/aoirint/status/1639603865451630592?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote>
+
+夕食では、ラゾーナ川崎プラザ 4Fのチャイニーズレストラン 西安餃子で海老チリ＆油淋鶏セットをいただきました。
+
+![海老チリ＆油淋鶏セットの写真](images/gohan1_1280w.jpg "海老チリ＆油淋鶏セット")
+
+![サラダと水の写真](images/gohan2_1280w.jpg "サラダと水")
