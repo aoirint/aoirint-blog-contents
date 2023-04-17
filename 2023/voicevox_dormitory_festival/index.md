@@ -82,11 +82,11 @@ aoirintのアイコンは、どうにもCMYKで表現するのが難しい色域
 
 ![](images/voivofest_card_kanomiya.jpg)
 
-Twitterのアイコンは、以下の公式ブランドツールキットから使っています。
+Twitterのロゴアイコンは、以下の公式ブランドツールキットから使っています。
 
 - [https://about.twitter.com/en/who-we-are/brand-toolkit](https://about.twitter.com/en/who-we-are/brand-toolkit)
 
-ニコニコのアイコンは、2023年2月に（ようやく）公式に公開されたロゴ（シンボルマーク）を使っています。
+ニコニコのロゴアイコンは、2023年2月に（ようやく）公式に公開されたロゴ（シンボルマーク）を使っています。
 「ニコニコでの活動を多くの人に知ってほしい！というクリエイターのみなさんに向け」ということで公開されたロゴなので、この用途は大丈夫でしょう。
 
 - [https://commons.nicovideo.jp/material/nc296561](https://commons.nicovideo.jp/material/nc296561)
