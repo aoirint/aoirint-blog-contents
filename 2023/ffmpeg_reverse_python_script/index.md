@@ -8,6 +8,7 @@ category: 動画編集
 tags:
   - 動画編集
   - FFmpeg
+  - Python
 ---
 # FFmpegで動画を逆再生化するPythonスクリプト
 
