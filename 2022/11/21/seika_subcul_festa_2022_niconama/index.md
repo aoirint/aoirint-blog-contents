@@ -4,6 +4,12 @@ date: '2022-11-21T21:30:00+09:00'
 draft: false
 noindex: false
 channel: ダイアリー
+category: 音声合成キャラクター
+tags:
+  - 音声合成キャラクター
+  - 即売会
+  - 京町セイカ
+  - SEIKAサブカルフェスタ
 ---
 # SEIKAサブカルフェスタ2022 ニコニコ公式生放送を見た
 
