@@ -11,7 +11,7 @@ tags:
 ---
 # 動画を繋げる（FFmpeg）
 
-- Ubuntu 20.04 (WSL2)
+- Git Bash (Git for Windows) 2.32.0
 - ffmpeg version N-109977-gaca7ef78cc-20230309
 
 連番の動画ファイルを順番通りに繋げて、1つの動画ファイルにします。
