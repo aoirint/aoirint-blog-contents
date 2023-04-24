@@ -7,12 +7,12 @@ date: '2020-09-28T11:00:00+09:00'
 updated: '2022-08-06T21:30:00+09:00'
 draft: false
 channel: 技術ノート
-category: Python
+category: Selenium
 tags:
+  - Selenium
   - Docker
   - Docker Compose
   - Python
-  - Selenium
 ---
 # docker-composeによるPython + Selenium環境
 
