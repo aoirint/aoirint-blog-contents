@@ -24,9 +24,10 @@ from selenium.webdriver import (
     DesiredCapabilities,
 )
 
+
 desired_capabilities = DesiredCapabilities.CHROME
-desired_capabilities['goog:loggingPrefs'] = {
-    'performance': 'ALL',
+desired_capabilities["goog:loggingPrefs"] = {
+    "performance": "ALL",
 }
 
 driver = Chrome(
@@ -34,22 +35,22 @@ driver = Chrome(
 )
 driver.implicitly_wait(5)
 
-driver.get('https://www.google.com/')
+driver.get("https://www.google.com/")
 
 known_url_set = set()
 
 while True:
-    performance_log_entries = driver.get_log('performance')
+    performance_log_entries = driver.get_log("performance")
 
     for log_entry in performance_log_entries:
-        log_message = json.loads(log_entry.get('message', '{}')).get('message', {})
+        log_message = json.loads(log_entry.get("message", "{}")).get("message", {})
 
-        method = log_message.get('method')
-        params = log_message.get('params', {})
+        method = log_message.get("method")
+        params = log_message.get("params", {})
 
-        if method == 'Network.responseReceived':
-            response = params.get('response', {})
-            url = response.get('url')
+        if method == "Network.responseReceived":
+            response = params.get("response", {})
+            url = response.get("url")
 
             if url in known_url_set:
                 continue
