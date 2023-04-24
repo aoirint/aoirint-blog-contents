@@ -4,9 +4,9 @@ date: '2023-04-18T21:40:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
-category: 動画編集
+category: 動画処理
 tags:
-  - 動画編集
+  - 動画処理
   - FFmpeg
   - Python
 ---
