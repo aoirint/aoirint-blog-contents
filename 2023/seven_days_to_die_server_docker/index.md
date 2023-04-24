@@ -13,6 +13,7 @@ tags:
 
 - [vinanrra/7dtd-server - Docker Image | Docker Hub](https://hub.docker.com/r/vinanrra/7dtd-server)
 - [vinanrra/Docker-7DaysToDie: 7 days to die server using LinuxGSM in Docker with backups, monitor, auto-installable mods and more](https://github.com/vinanrra/Docker-7DaysToDie)
+- [aoirint/seven-days-server-test: 7 Days to Die Dedicated ServerのDocker Compose構成テスト](https://github.com/aoirint/seven-days-server-test)
 
 `vinanrra/7dtd-server`を使用します。
 
@@ -22,6 +23,8 @@ tags:
     - もしくはDLL改変で上限を外せる可能性がある
       - [UnKnoWnCheaTs - Multiplayer Game Hacking and Cheats - View Single Post - [Question] 7 days to die - Max players in group/party](https://www.unknowncheats.me/forum/3398373-post4.html)
 - RAM: 8人・マップPREGEN6kで8GB程度はほしい、1人でも最低4GB
+
+## docker-compose.yml
 
 ```yaml
 # Based on https://github.com/vinanrra/Docker-7DaysToDie/blob/d5dbbb4e2ec65614b985d653f51725932d171dc7/docs/usage.md
@@ -53,3 +56,22 @@ services:
       # - 8081:8081/tcp # OPTIONAL - TELNET
       # - 8082:8082/tcp # OPTIONAL - WEBSERVER https://7dtd.illy.bz/wiki/Server%20fixes
 ```
+
+## 7 Days to Dieサーバ本体のアップデート
+
+- [https://github.com/vinanrra/Docker-7DaysToDie/blob/9327daecb66d412b520532f739111955e7985aa5/docs/parameters.md#start-modes](https://github.com/vinanrra/Docker-7DaysToDie/blob/9327daecb66d412b520532f739111955e7985aa5/docs/parameters.md#start-modes)
+
+`docker-compose.yml`の`environment`を以下のように変更します。
+
+- `VERSION`: 目的のバージョン
+- `START_MODE`: `3`
+
+`docker compose up -d --force-recreate`を実行し、アップデート完了まで待機します。
+
+`docker compose logs -f`でログを確認します。
+
+アップデートが完了し、サーバが起動したら、`START_MODE`を`1`に戻し、サーバを再起動します。
+
+## 設定
+
+## 管理コマンド
