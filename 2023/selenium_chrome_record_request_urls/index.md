@@ -15,6 +15,7 @@ tags:
 - Selenium 4.9.0
 - Chrome 112
 - ChromeDriver 112.0.5615.49
+- Python 3.11
 
 ```python
 import time
