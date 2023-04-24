@@ -12,6 +12,9 @@ tags:
 ---
 # Selenium デフォルトダウンロードディレクトリを変更する（Chrome, Python）
 
+- Chrome 112
+- Selenium 4.9.0
+
 ```python
 from selenium.webdriver import (
     Chrome,
