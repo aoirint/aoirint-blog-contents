@@ -4,10 +4,10 @@ title: pydub numpy
 date: '2020-03-14T18:05:02+09:00'
 draft: false
 channel: 技術ノート
-category: Python
+category: 音声処理
 tags:
-- Python
-- 音声処理
+  - 音声処理
+  - Python
 ---
 # pydub numpy
 

@@ -4,6 +4,13 @@ title: 'PyTorch pydub.AudioSegmentをtorch.Tensorに変換する'
 date: '2020-03-26T11:10:41+09:00'
 draft: false
 channel: 技術ノート
+category: 音声処理
+tags:
+  - 音声処理
+  - Python
+  - pydub
+  - PyTorch
+  - TorchAudio
 ---
 # PyTorch pydub.AudioSegmentをtorch.Tensorに変換する
 
