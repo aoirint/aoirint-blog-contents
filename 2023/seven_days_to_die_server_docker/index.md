@@ -124,7 +124,7 @@ services:
 
 ### 難易度
 
-### GameWorld
+#### GameWorld
 
 > "RWG" (see WorldGenSeed and WorldGenSize options below) or any already existing world name in the Worlds folder (currently shipping with e.g. "Navezgane", "PREGEN01", ...)
 
@@ -132,22 +132,22 @@ services:
 - `Navezgane`
 - `PREGEN6k`: 固定マップ
 
-### GameDifficulty
+#### GameDifficulty
 
 > 0 - 5, 0=easiest, 5=hardest
 
-### DropOnDeath
+#### DropOnDeath
 
 > 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only, 4 = delete all
 
-### AirDropMarker
+#### AirDropMarker
 
 > Sets if a marker is added to map/compass for air drops.
 
 - `true`
 - `false`
 
-### PlayerKillingMode
+#### PlayerKillingMode
 
 > Player Killing Settings (0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone)
 
