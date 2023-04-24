@@ -88,17 +88,30 @@ services:
 
 > Visibility of this server: 2 = public, 1 = only shown to friends, 0 = not listed. As you are never friend of a dedicated server setting this to "1" will only work when the first player connects manually by IP.
 
+- `0`
+- `1`
+- `2`
+
 #### EACEnabled
 
 > Enables/Disables EasyAntiCheat
+
+- `true`
+- `false`
 
 #### BuildCreate
 
 > cheat mode on/off
 
+- `true`
+- `false`
+
 #### PersistentPlayerProfiles
 
 > If disabled a player can join with any selected profile. If true they will join with the last profile they joined with
+
+- `true`
+- `false`
 
 ### 負荷
 
