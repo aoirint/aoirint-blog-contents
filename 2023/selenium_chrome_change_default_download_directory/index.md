@@ -22,7 +22,8 @@ from selenium.webdriver import (
     ChromeOptions,
 )
 
-download_dir = './downloads'
+
+download_dir = "./downloads"
 os.makedirs(download_dir, exist_ok=True)
 
 options = ChromeOptions()
