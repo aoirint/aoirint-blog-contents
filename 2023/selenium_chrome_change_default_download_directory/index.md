@@ -1,6 +1,6 @@
 ---
 title: 'Selenium デフォルトダウンロードディレクトリを変更する（Chrome, Python）'
-date: '2023-04-24T16:00:00+09:00'
+date: '2023-04-24T16:10:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
