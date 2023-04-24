@@ -72,6 +72,88 @@ services:
 
 アップデートが完了し、サーバが起動したら、`START_MODE`を`1`に戻し、サーバを再起動します。
 
-## 設定
+## サーバ設定
 
-## 管理コマンド
+サーバ設定を変更するには、`volumes/ServerFiles/sdtdserver.xml`を編集します。
+
+### セキュリティ
+
+#### ServerPassword
+
+> Password to gain entry to the server
+
+サーバに接続するときに、パスワードを要求します。
+
+#### ServerVisibility
+
+> Visibility of this server: 2 = public, 1 = only shown to friends, 0 = not listed. As you are never friend of a dedicated server setting this to "1" will only work when the first player connects manually by IP.
+
+#### EACEnabled
+
+> Enables/Disables EasyAntiCheat
+
+#### BuildCreate
+
+> cheat mode on/off
+
+#### PersistentPlayerProfiles
+
+> If disabled a player can join with any selected profile. If true they will join with the last profile they joined with
+
+### 負荷
+
+#### ServerMaxPlayerCount
+
+> Maximum Concurrent Players
+
+#### ServerMaxWorldTransferSpeedKiBs
+
+> Maximum (!) speed in kiB/s the world is transferred at to a client on first connect if it does not have the world yet. Maximum is about 1300 kiB/s, even if you set a higher value.
+
+#### MaxSpawnedZombies
+
+> This setting covers the entire map. There can only be this many zombies on the entire map at one time. Changing this setting has a huge impact on performance.
+
+#### MaxSpawnedAnimals
+
+> If your server has a large number of players you can increase this limit to add more wildlife. Animals don't consume as much CPU as zombies. NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.
+
+#### ServerMaxAllowedViewDistance
+
+> Max viewdistance a client may request (6 - 12). High impact on memory usage and performance.
+
+### 難易度
+
+### GameWorld
+
+> "RWG" (see WorldGenSeed and WorldGenSize options below) or any already existing world name in the Worlds folder (currently shipping with e.g. "Navezgane", "PREGEN01", ...)
+
+- `RWG`: ランダム生成
+- `Navezgane`
+- `PREGEN6k`: 固定マップ
+
+### GameDifficulty
+
+> 0 - 5, 0=easiest, 5=hardest
+
+### DropOnDeath
+
+> 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only, 4 = delete all
+
+### AirDropMarker
+
+> Sets if a marker is added to map/compass for air drops.
+
+- `true`
+- `false`
+
+### PlayerKillingMode
+
+> Player Killing Settings (0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone)
+
+- `0`
+- `1`
+- `2`
+- `3`
+
+## ゲーム内コマンド
