@@ -12,6 +12,12 @@ tags:
 ---
 # FFmpegでRTMP中継サーバを立てる
 
+## TL;DR
+
+```shell
+ffmpeg -listen 1 -re -y -rtmp_playpath "${STREAM_KEY}" -i "rtmp://0.0.0.0:1935/live" -f flv -rtmp_playpath "${YTLIVE_STREAM_KEY}" "rtmps://a.rtmps.youtube.com/live2" -f flv -rtmp_playpath "${NICOLIVE_STREAM_KEY}" "rtmp://iliveorigin.dmc.nico/named_input"
+```
+
 ## 背景
 
 以下のような設定で、フルHD配信を5Mbps程度でしている。
