@@ -74,6 +74,14 @@ build:
 
 - ※ docker buildx buildのコマンドは複数行になっていますが、2行目以降を1行目と異なるインデント数にしないでください。2行目以降が別のコマンド扱いになり、動作しなくなります。
 
+### `docker buildx create --use`
+
+`docker buildx build`実行時に、以下のようなエラーが出るため追加しています。
+
+```
+ERROR: cache export feature is currently not supported for docker driver. Please switch to a different driver (eg. "docker buildx create --use")
+```
+
 ## 参考
 
 - [Release CI/CD examples | GitLab](https://docs.gitlab.com/ee/user/project/releases/release_cicd_examples.html)
