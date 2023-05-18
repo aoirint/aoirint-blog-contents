@@ -6,7 +6,7 @@ channel: 技術ノート
 category: GitLab
 tags:
   - GitLab
-  - 'GitLab Actions'
+  - 'GitLab CI'
   - 'CI CD'
   - Docker
 ---
