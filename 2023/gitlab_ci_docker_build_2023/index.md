@@ -73,3 +73,13 @@ build:
 ```
 
 - ※ docker buildx buildのコマンドは複数行になっていますが、2行目以降を1行目と異なるインデント数にしないでください。2行目以降が別のコマンド扱いになり、動作しなくなります。
+
+## 参考
+
+- [Release CI/CD examples | GitLab](https://docs.gitlab.com/ee/user/project/releases/release_cicd_examples.html)
+- [YAMLで複数行テキストを書きたい時のあれこれ - Qiita](https://qiita.com/jerrywdlee/items/d5d31c10617ec7342d56)
+- [GitLab CIでDockerイメージをビルドする - Qiita](https://qiita.com/MH35JP/items/ba2147b8d153a1500899#buildx%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84)
+- [Registry cache | Docker Documentation](https://docs.docker.com/build/cache/backends/registry/)
+- [if statement - How to use if-else condition on gitlabci - Stack Overflow](https://stackoverflow.com/questions/54761464/how-to-use-if-else-condition-on-gitlabci)
+- [GitLab CI/CD variables | GitLab](https://docs.gitlab.com/ee/ci/variables/)
+- [Choose when to run jobs | GitLab](https://docs.gitlab.com/ee/ci/jobs/job_control.html)
