@@ -82,6 +82,22 @@ build:
 ERROR: cache export feature is currently not supported for docker driver. Please switch to a different driver (eg. "docker buildx create --use")
 ```
 
+## 関連トピック
+
+### SLSA
+
+SLSA（Supply-chain Levels for Software Artifacts、サルサ）は、ソフトウェアのサプライチェーンを検証可能にしようという仕組みです。
+米国の大統領令EO14028、EUのサイバーレジリエンス法（CRA）などの規制に関連する可能性があります。
+
+Dockerでは、`--provenance`オプションが導入され、DockerイメージにSLSA関連のメタデータを付加することができます。
+
+- [docker/build-push-action v3.3.0で導入されたprovenanceオプションにまつわる問題 - chroju.dev/blog](https://chroju.dev/blog/docker_buildx_slsa_provenance)
+- [【Infostand海外ITトピックス】オープンソース業界に広がる懸念　欧州で導入予定のサイバーレジリエンス法 - クラウド Watch](https://cloud.watch.impress.co.jp/docs/column/infostand/1497776.html)
+- [米国大統領令とEUのCRAが示すソフトウェアサプライチェーンセキュリティとは：ソフトウェアサプライチェーンの守り方（1）（1/2 ページ） - MONOist](https://monoist.itmedia.co.jp/mn/articles/2212/06/news004.html)
+- [SLSA • Supply-chain Levels for Software Artifacts](https://slsa.dev/)
+- [SLSAとは【用語集詳細】](https://www.sompocybersecurity.com/column/glossary/slsa)
+- [aoirint🎐: "👀 / docker/build-push-action …" - mstdn.aoirint.com](https://mstdn.aoirint.com/@aoirint/110224046831353435)
+
 ## 参考
 
 - [Release CI/CD examples | GitLab](https://docs.gitlab.com/ee/user/project/releases/release_cicd_examples.html)
