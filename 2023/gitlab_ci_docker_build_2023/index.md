@@ -82,9 +82,7 @@ build:
 ERROR: cache export feature is currently not supported for docker driver. Please switch to a different driver (eg. "docker buildx create --use")
 ```
 
-## 関連トピック
-
-### SLSA
+## 関連トピック：SLSA
 
 SLSA（Supply-chain Levels for Software Artifacts、サルサ）は、ソフトウェアのサプライチェーンを検証可能にしようという仕組みです。
 米国の大統領令EO14028、EUのサイバーレジリエンス法（CRA）などの規制に関連する可能性があります。
