@@ -20,7 +20,7 @@ tags:
 - レイヤーキャッシュ（Registry cache）
 - タグによるバージョン付け
 
-## 注意：Self Hosted GitLab RunnerでのDockerイメージビルドは推奨しません
+## 注意：Self Hosted GitLab RunnerでのDockerデーモンを使ったイメージビルドは推奨しません
 
 DinDでのビルドのため、ホストOSのroot権限が取得可能な、コンテナの特権実行（`--privileged`）、またはDockerソケットのマウント（DooD）が要求されます。
 
