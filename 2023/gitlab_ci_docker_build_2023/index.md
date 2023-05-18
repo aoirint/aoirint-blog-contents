@@ -94,4 +94,4 @@ ERROR: cache export feature is currently not supported for docker driver. Please
 
 ## その他リンク
 
-- [実験用リポジトリ](https://gitlab.com/aoirint/docker_ci_example)
+- [実験用リポジトリ（GitLab.com）](https://gitlab.com/aoirint/docker_ci_example)
