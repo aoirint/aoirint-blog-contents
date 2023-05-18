@@ -19,9 +19,9 @@ tags:
 
 - 7 Days to Die α20.7
 - パーティ人数は7 Days to Dieの仕様で8人まで
-    - 9人以上の仲間で遊ぶ場合は複数パーティ組むなどの工夫が必要
-    - もしくはDLL改変で上限を外せる可能性がある
-      - [UnKnoWnCheaTs - Multiplayer Game Hacking and Cheats - View Single Post - [Question] 7 days to die - Max players in group/party](https://www.unknowncheats.me/forum/3398373-post4.html)
+  - 9人以上の仲間で遊ぶ場合は複数パーティ組むなどの工夫が必要
+  - もしくはDLL改変で上限を外せる可能性がある
+    - [UnKnoWnCheaTs - Multiplayer Game Hacking and Cheats - View Single Post - [Question] 7 days to die - Max players in group/party](https://www.unknowncheats.me/forum/3398373-post4.html)
 - RAM: 8人・マップPREGEN6kで8GB程度はほしい、1人でも最低4GB
 
 ## docker-compose.yml
