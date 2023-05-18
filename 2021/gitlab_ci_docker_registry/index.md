@@ -13,6 +13,10 @@ tags:
 
 # GitLab CI, DockerイメージをビルドしてContainer Registryにpushする
 
+2023-05-18 追記：この記事には、[改訂版（2023年版）](/entry/2023/gitlab_ci_docker_build_2023/)があります。
+
+---
+
 ## リポジトリ構造
 
 - .gitlab-ci.yml
