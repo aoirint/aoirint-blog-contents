@@ -39,3 +39,7 @@ speedometer -l -r eth0 -t eth0 -m $(( 1024 * 1024 * 3 / 2 ))
 
 speedometer -l -r wlan0 -t wlan0 -m $(( 1024 * 1024 * 3 / 2 ))
 ```
+
+## 参考
+
+- [networking - How to display network traffic in the terminal? - Ask Ubuntu](https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal)
