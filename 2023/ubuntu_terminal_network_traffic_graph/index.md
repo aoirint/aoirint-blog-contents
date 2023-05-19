@@ -19,7 +19,7 @@ tags:
 sudo apt install speedometer
 ```
 
-見たいネットワークデバイスの名前を調べる（`eno1`、`enp0s31f6`、`enp3s0`、`eth0`、`wlan0`など）。
+通信量を見たいネットワークデバイスの名前を調べる（`eno1`、`enp0s31f6`、`enp3s0`、`eth0`、`wlan0`など）。
 
 ```shell
 ip addr
