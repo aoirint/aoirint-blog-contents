@@ -20,7 +20,7 @@ tags:
 
 ```shell
 ls -v *.ts | sed "s/.*/file '&'/" > list.txt
-ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
+ffmpeg -f concat -safe 0 -i list.txt -c copy -map 0 -map_metadata 0 output.mp4
 ```
 
 - [Concatenate – FFmpeg](https://trac.ffmpeg.org/wiki/Concatenate)
