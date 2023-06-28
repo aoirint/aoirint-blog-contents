@@ -12,6 +12,10 @@ tags:
 # Ubuntu ネットワーク帯域を制限する（Wondershaper）
 
 ```shell
+sudo apt install wondershaper
+```
+
+```shell
 # 上下300kbpsに制限
 sudo wondershaper eno1 300 300
 sudo wondershaper enp0s31f6 300 300
