@@ -233,6 +233,14 @@ poetry source add --priority=explicit pytorch-cu118 "https://download.pytorch.or
 poetry add --source pytorch-cu118 torch torchvision torchaudio
 ```
 
+### Gitリポジトリで管理されたパッケージをインストール
+
+```shell
+poetry add git+https://github.com/org/repo.git#commithash
+
+poetry add git+https://github.com/org/repo.git#commithash&subdirectory=subdir
+```
+
 ### 開発時だけ使うパッケージのインストール
 
 ```shell
