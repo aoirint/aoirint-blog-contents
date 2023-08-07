@@ -78,6 +78,9 @@ https://mstdn.aoirint.com/share?text=hello
 |url||
 |visibility|public, unlisted, private, directのいずれか|
 
+- [URLパラメータを用いて Mastodon に投稿内容を渡して投稿フォームを表示する方法 - 約束の地](https://obel.hatenablog.jp/entry/20230217/1676624400)
+- [Intent/share URLs · Issue #442 · mastodon/mastodon](https://github.com/mastodon/mastodon/issues/442)
+
 ## 課題と関連サービス
 
 Fediverseでは、従来のTwitter (X)やFacebookと異なり、
@@ -105,9 +108,8 @@ https://mastoshare.net/share?text=Hello%20Mastoshare!&url=https://mastoshare.net
 
 サービス管理者がサーバ一覧を管理する形式。
 
-## 関連URL
+### 関連URL
 
-- [URLパラメータを用いて Mastodon に投稿内容を渡して投稿フォームを表示する方法 - 約束の地](https://obel.hatenablog.jp/entry/20230217/1676624400)
 - [Intent/share URLs · Issue #442 · mastodon/mastodon](https://github.com/mastodon/mastodon/issues/442)
 - [URL scheme for remote follow, share buttons · Issue #2291 · mastodon/mastodon](https://github.com/mastodon/mastodon/issues/2291)
 - [Use web-based protocol handlers to make following across instances easier · Issue #19679 · mastodon/mastodon](https://github.com/mastodon/mastodon/issues/19679)
