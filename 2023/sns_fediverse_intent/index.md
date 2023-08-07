@@ -107,3 +107,4 @@ https://mastoshare.net/share?text=Hello%20Mastoshare!&url=https://mastoshare.net
 - [URLパラメータを用いて Mastodon に投稿内容を渡して投稿フォームを表示する方法 - 約束の地](https://obel.hatenablog.jp/entry/20230217/1676624400)
 - [Intent/share URLs · Issue #442 · mastodon/mastodon](https://github.com/mastodon/mastodon/issues/442)
 - [Mastodon向け簡易シェアボタン - Qiita](https://qiita.com/mod_poppo/items/d80ff225b4cc93318ee8)
+- [https://mstdn.aoirint.com/@aoirint/110740279312480478](https://mstdn.aoirint.com/@aoirint/110740279312480478)
