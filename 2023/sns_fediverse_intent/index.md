@@ -20,7 +20,7 @@ Twitter (X)、Misskey、Mastodonには、URLのGETパラメータに投稿本文
 
 ## Twitter Web Intent (2023-07-19時点)
 
-ドキュメント: [Web Intent | Docs | Twitter Developer Platform](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent)
+- ドキュメント: [Web Intent | Docs | Twitter Developer Platform](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent)
 
 ```
 https://twitter.com/intent/tweet
@@ -37,7 +37,7 @@ https://twitter.com/intent/tweet
 
 ## Misskey 共有フォーム (v13.13.2時点, 2023-07-13)
 
-ドキュメント: [共有フォーム | Misskey Hub](https://misskey-hub.net/docs/features/share-form.html)
+- ドキュメント: [共有フォーム | Misskey Hub](https://misskey-hub.net/docs/features/share-form.html)
 
 [Misskey.io](https://misskey.io/)を例とします。
 
@@ -62,7 +62,8 @@ https://misskey.io/share?text=hello
 
 ## Mastodon (v4.1.4時点, 2023-07-08)
 
-ドキュメント: 見つけられなかった
+- ドキュメント: 見つけられなかった
+  - 実装はここ: [https://github.com/mastodon/mastodon/blob/3f5af768c8f1401f77d14ad5b6aeccdb7e02a9f0/app/helpers/application_helper.rb#L196-L204](https://github.com/mastodon/mastodon/blob/3f5af768c8f1401f77d14ad5b6aeccdb7e02a9f0/app/helpers/application_helper.rb#L196-L204)
 
 [mstdn.aoirint.com](https://mstdn.aoirint.com/)を例とします。
 
