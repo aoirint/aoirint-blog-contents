@@ -26,7 +26,7 @@ Twitter (X)、Misskey、Mastodonには、URLのGETパラメータに投稿本文
 https://twitter.com/intent/tweet
 ```
 
-|GETパラメータ|説明|
+|GETパラメータ|備考|
 |:--|:--|
 |text||
 |url||
@@ -45,7 +45,7 @@ https://twitter.com/intent/tweet
 https://misskey.io/share?text=hello
 ```
 
-|GETパラメータ|説明|
+|GETパラメータ|備考|
 |:--|:--|
 |title||
 |text||
@@ -71,7 +71,7 @@ https://misskey.io/share?text=hello
 https://mstdn.aoirint.com/share?text=hello
 ```
 
-|GETパラメータ|説明|
+|GETパラメータ|備考|
 |:--|:--|
 |title|title, text, urlの順で半角スペース結合されたものがトゥート本文としてデフォルト入力される|
 |text||
