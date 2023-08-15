@@ -45,7 +45,7 @@ WD 1.5 Beta2用に作られたControlNetモデルを使って、WD 1.5 Beta3でA
   - `kl-f8-anime2.ckpt [SHA256: df3c506e51]`
   - Hugging Face: [hakurei/waifu-diffusion-v1-4: kl-f8-anime2.ckpt](https://huggingface.co/hakurei/waifu-diffusion-v1-4/blob/6b239e9a5f0cdeba45131cde0fade1753179da4f/vae/kl-f8-anime2.ckpt)
 
-## furusu/ControlNet
+### furusu/ControlNet
 
 furusu氏によって、Waifu Diffusion 1.5 Beta2向けのControlNetモデルが配布されています。
 
@@ -67,3 +67,19 @@ ControlNetでは、ポーズを作成するデジタルデッサン人形がほ�
 有料ライセンスが￥7980で販売されているほか、一部の機能が制限された体験版を無料で使うことができます。
 
 v5.7以降、AI画像生成での需要に応えて、OpenPose形式のポーズ画像の出力に対応したようです（体験版でも利用可）。
+
+## プロンプト
+
+[WD 1.5 Beta3のリリースノート](https://saltacc.notion.site/saltacc/WD-1-5-Beta-3-Release-Notes-1e35a0ed1bb24c5b93ec79c45c217f63)におすすめプロンプトが載っているので使います。
+
+### ポジティブプロンプト
+
+```
+(exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
+```
+
+### ネガティブプロンプト
+
+```
+lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+```
