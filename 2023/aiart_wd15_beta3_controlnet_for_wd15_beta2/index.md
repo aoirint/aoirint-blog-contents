@@ -1,7 +1,7 @@
 ---
 title: 'AIアート WD 1.5 Beta3 + ControlNet for WD 1.5 Beta2 (furusu/ControlNet)'
 date: '2023-08-15T10:30:00+09:00'
-draft: false
+draft: true
 noindex: false
 channel: 技術ノート
 category: aiart
