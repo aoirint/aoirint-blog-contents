@@ -63,10 +63,12 @@ furusu氏によって、Waifu Diffusion 1.5 Beta2向けのControlNetモデルが
 
 ControlNetでは、ポーズを作成するデジタルデッサン人形がほしくなります。
 
-デザインドールは、商用・非商用問わず利用できる、デジタルデッサン人形の個人開発ソフトウェアです。
+[デザインドール](https://terawell.net/ja/)は、商用・非商用問わず利用できる、デジタルデッサン人形の個人開発ソフトウェアです。
 有料ライセンスが￥7980で販売されているほか、一部の機能が制限された体験版を無料で使うことができます。
 
 v5.7以降、AI画像生成での需要に応えて、OpenPose形式のポーズ画像の出力に対応したようです（体験版でも利用可）。
+
+![](images/designdoll_ui.png)
 
 ## プロンプト
 
@@ -82,4 +84,65 @@ v5.7以降、AI画像生成での需要に応えて、OpenPose形式のポーズ
 
 ```
 lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+```
+
+## 生成例1
+
+お腹の前で手を合わせている女の子を生成しようとしてみます。
+
+### ControlNetなし
+
+![](images/example1_image_nocontrolnet.png)
+
+```
+1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
+
+Negative prompt: lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+
+Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 1392229581, Size: 768x768, Model hash: fe8d7785d6, Model: wd-1-5-beta3-radiance-fp16, Version: v1.5.1
+```
+
+### ControlNetあり
+
+![](images/example1_pose_image.png)
+
+![](images/example1_pose_openpose.png)
+
+![](images/example1_image_controlnet.png)
+
+```
+1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
+
+Negative prompt: lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+
+Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 1392229581, Size: 768x768, Model hash: fe8d7785d6, Model: wd-1-5-beta3-radiance-fp16, ControlNet 0: "preprocessor: none, model: diff_control_wd15beta2_pose [c289a7fa], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 0.5, 200)", Version: v1.5.1
+```
+
+
+## 生成例2
+
+シード値を変えたもの
+
+### ControlNetなし
+
+![](images/example2_image_nocontrolnet.png)
+
+```
+1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
+
+Negative prompt: lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+
+Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 605589586, Size: 768x768, Model hash: fe8d7785d6, Model: wd-1-5-beta3-radiance-fp16, Version: v1.5.1
+```
+
+### ControlNetあり
+
+![](images/example2_image_controlnet.png)
+
+```
+1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
+
+Negative prompt: lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digits, blurry, ((mutated hands and fingers)), (poorly drawn face), ((mutation)), ((deformed face)), (ugly), ((bad proportions)), ((extra limbs)), extra face, (double head), (extra head), ((extra feet)), monster, logo, cropped, worst quality, jpeg, humpbacked, long body, long neck, ((jpeg artifacts)), deleted, old, oldest, ((censored)), ((bad aesthetic)), (mosaic censoring, bar censor, blur censor)
+
+Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 472385953, Size: 768x768, Model hash: fe8d7785d6, Model: wd-1-5-beta3-radiance-fp16, ControlNet 0: "preprocessor: none, model: diff_control_wd15beta2_pose [c289a7fa], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 0.5, 200)", Version: v1.5.1
 ```
