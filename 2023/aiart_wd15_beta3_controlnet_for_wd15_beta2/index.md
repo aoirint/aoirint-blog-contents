@@ -118,7 +118,6 @@ Negative prompt: lowres, ((bad anatomy)), ((bad hands)), missing finger, extra d
 Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 1392229581, Size: 768x768, Model hash: fe8d7785d6, Model: wd-1-5-beta3-radiance-fp16, ControlNet 0: "preprocessor: none, model: diff_control_wd15beta2_pose [c289a7fa], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 0.5, 200)", Version: v1.5.1
 ```
 
-
 ## 生成例2
 
 シード値を変えたもの
