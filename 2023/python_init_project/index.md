@@ -316,8 +316,6 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 
 ## GitHub Actions Workflowの作成
 
-TBW。気が向いたら書きます。
-
 ### リンターによる静的検査
 
 ```yaml
@@ -360,6 +358,67 @@ jobs:
 ### PyInstallerによるバイナリビルド・リリース
 
 ### Dockerイメージのビルド・デプロイ
+
+GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHUB_TOKEN`を設定する必要があります。
+
+```yaml
+# build-docker.yml
+name: Build Docker
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types:
+      - created
+  workflow_dispatch:
+
+env:
+  IMAGE_NAME: aoirint/my_project
+  IMAGE_TAG: ${{ github.event.release.tag_name != '' && github.event.release.tag_name || 'latest' }}
+  VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
+
+jobs:
+  docker-build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Setup Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Replace Version
+        shell: bash
+        run: |
+          sed -i "s/__VERSION__ = \"0.0.0\"/__VERSION__ = \"${{ env.VERSION }}\"/" myproject/__init__.py
+          sed -i "s/version = \"0.0.0\"/version = \"${{ env.VERSION }}\"/" pyproject.toml
+
+      - name: Build and Deploy Docker image
+        uses: docker/build-push-action@v5
+        env:
+          IMAGE_NAME_AND_TAG: ${{ format('{0}:{1}', env.IMAGE_NAME, env.IMAGE_TAG) }}
+          IMAGE_CACHE_FROM: ${{ format('type=registry,ref={0}:latest-buildcache,mode=max', env.IMAGE_NAME) }}
+          IMAGE_CACHE_TO: ${{ env.IMAGE_TAG == 'latest' && format('type=registry,ref={0}:latest-buildcache,mode=max', env.IMAGE_NAME) || '' }}
+        with:
+          context: .
+          builder: ${{ steps.buildx.outputs.name }}
+          file: ./Dockerfile
+          push: true
+          tags: ${{ env.IMAGE_NAME_AND_TAG }}
+          cache-from: ${{ env.IMAGE_CACHE_FROM }}
+          cache-to: ${{ env.IMAGE_CACHE_TO }} 
+```
 
 ## GitLab CI Pipelineの作成
 
