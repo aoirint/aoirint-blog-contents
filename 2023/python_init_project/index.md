@@ -264,6 +264,8 @@ Dockerイメージは様々な作り方が考えられますが、一例とし�
 
 ### CPUだけ使う場合
 
+<details>
+
 ```dockerfile
 # syntax=docker/dockerfile:1.5
 FROM python:3.11
@@ -312,6 +314,8 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 # ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
 ```
 
+</details>
+
 ### NVIDIA GPUを使う場合
 
 ||--build-arg BASE_RUNTIME_IMAGE|リポジトリ|
@@ -321,6 +325,7 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 |CUDA 11.8 + cuDNN 8|`nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
 |CUDA 11.8 + cuDNN 8（開発用ライブラリ入）|`nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
 
+<details>
 
 ```dockerfile
 # syntax=docker/dockerfile:1.5
@@ -427,9 +432,13 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 # ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
 ```
 
+</details>
+
 ## GitHub Actions Workflowの作成
 
 ### リンターによる静的検査
+
+<details>
 
 ```yaml
 # lint.yml
@@ -468,6 +477,8 @@ jobs:
         run: pysen run lint
 ```
 
+</details>
+
 ### PyInstallerによるバイナリビルド・リリース
 
 ### Dockerイメージのビルド・リリース
@@ -479,6 +490,8 @@ GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHU
 これらのバージョンは、開発中は`0.0.0`となり、リリース時はリリースバージョンに置換されます。
 
 #### CPUだけ使うDockerfileの場合
+
+<details>
 
 ```yaml
 # build-docker.yml
@@ -539,7 +552,11 @@ jobs:
           cache-to: ${{ env.IMAGE_CACHE_TO }} 
 ```
 
+</details>
+
 #### CPU版イメージとGPU版イメージをビルドする場合
+
+<details>
 
 ```yaml
 # build-docker.yml
@@ -621,6 +638,8 @@ jobs:
           cache-to: |
             type=registry,ref=${{ env.IMAGE_NAME_AND_TAG }}-buildcache,mode=max
 ```
+
+</details>
 
 ## GitLab CI Pipelineの作成
 
