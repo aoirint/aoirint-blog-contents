@@ -470,7 +470,7 @@ jobs:
 
 ### PyInstallerによるバイナリビルド・リリース
 
-### Dockerイメージのビルド・デプロイ
+### Dockerイメージのビルド・リリース
 
 GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHUB_TOKEN`を設定する必要があります。
 
@@ -545,4 +545,4 @@ TBW。気が向いたら書きます。
 
 ### PyInstallerによるバイナリビルド・リリース
 
-### Dockerイメージのビルド・デプロイ
+### Dockerイメージのビルド・リリース
