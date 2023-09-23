@@ -300,6 +300,7 @@ RUN <<EOF
 EOF
 
 ADD ./scripts /code
+ADD ./my_project /code/my_project
 
 # 引数を受け付けない場合（環境変数や設定ファイルで設定する場合、docker compose up -dでの実行を想定する場合）
 CMD [ "gosu", "user", "python", "/code/main.py" ]
