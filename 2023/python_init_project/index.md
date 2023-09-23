@@ -321,6 +321,7 @@ TBW。気が向いたら書きます。
 ### リンターによる静的検査
 
 ```yaml
+# lint.yml
 name: Lint
 
 on:
