@@ -320,6 +320,42 @@ TBW。気が向いたら書きます。
 
 ### リンターによる静的検査
 
+```yaml
+name: Lint
+
+on:
+  push:
+  pull_request:
+    branches:
+      - "**"
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.11.5'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "${{ env.PYTHON_VERSION }}"
+          cache: 'pip'
+          cache-dependency-path: '**/requirements-dev.txt'
+
+      - name: Install Dependencies
+        shell: bash
+        run: pip install -r requirements-dev.txt
+
+      - name: Run lint
+        shell: bash
+        run: pysen run lint
+```
+
 ### PyInstallerによるバイナリビルド・リリース
 
 ### Dockerイメージのビルド・デプロイ
