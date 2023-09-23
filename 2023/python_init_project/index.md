@@ -314,7 +314,7 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 
 ### NVIDIA GPUを使う場合
 
-||BASE_RUNTIME_IMAGE|リポジトリ|
+||--build-arg BASE_RUNTIME_IMAGE|リポジトリ|
 |:--|:--|:--|
 |CPU|`ubuntu:22.04`|[Docker Hub: ubuntu](https://hub.docker.com/_/ubuntu)|
 |NVIDIA Driver v525|`nvcr.io/nvidia/driver:525-signed-ubuntu22.04`|[NGC: NVIDIA GPU Driver](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver)|
