@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # https://github.com/marketplace/actions/markdownlint-cli2-action
       # https://github.com/DavidAnson/markdownlint-cli2-action
