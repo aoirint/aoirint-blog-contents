@@ -12,11 +12,11 @@ tags:
 ---
 # Pythonプロジェクトの作成（Python 3.11, pyenv + Poetry, VSCode）
 
-## 記事作成時点のバージョン情報
+## バージョン情報
 
-- [pyenv 2.3.23](https://github.com/pyenv/pyenv)
-- [Poetry 1.5.1](https://python-poetry.org/docs/#installation)
-- [Python 3.11.4](https://www.python.org/downloads/)
+- [pyenv 2.3.27](https://github.com/pyenv/pyenv)
+- [Poetry 1.6.1](https://python-poetry.org/docs/#installation)
+- [Python 3.11.5](https://www.python.org/downloads/)
 
 ## 定義・ディレクトリ構成
 
@@ -47,7 +47,7 @@ pyenvでPythonをインストールします。
 マイナーバージョン（`0.x.0`）を変更する場合、依存する予定のライブラリが動作するかなど、プロジェクトの要件と相談してください。
 
 ```shell
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.4
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.5
 ```
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
@@ -85,7 +85,7 @@ cd my_project
 pyenvのPythonバージョン指定ファイル`.python-version`を作成します。
 
 ```shell
-pyenv local 3.11.4
+pyenv local 3.11.5
 ```
 
 現在のディレクトリにPoetryプロジェクトを作成します。
