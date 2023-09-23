@@ -322,7 +322,7 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 |CUDA 11.8 + cuDNN 8（開発用ライブラリ入）|`nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
 
 
-```shell
+```dockerfile
 # syntax=docker/dockerfile:1.5
 ARG BASE_IMAGE=ubuntu:22.04
 ARG BASE_RUNTIME_IMAGE=${BASE_IMAGE}
