@@ -314,6 +314,119 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 
 ### NVIDIA GPUを使う場合
 
+||BASE_RUNTIME_IMAGE|リポジトリ|
+|:--|:--|:--|
+|CPU|`ubuntu:22.04`|[Docker Hub: ubuntu](https://hub.docker.com/_/ubuntu)|
+|NVIDIA Driver v525|`nvcr.io/nvidia/driver:525-signed-ubuntu22.04`|[NGC: NVIDIA GPU Driver](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver)|
+|CUDA 11.8 + cuDNN 8|`nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
+|CUDA 11.8 + cuDNN 8（開発用ライブラリ入）|`nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
+
+
+```shell
+# syntax=docker/dockerfile:1.5
+ARG BASE_IMAGE=ubuntu:22.04
+ARG BASE_RUNTIME_IMAGE=${BASE_IMAGE}
+
+FROM ${BASE_IMAGE} AS python-env
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG PIP_NO_CACHE_DIR=1
+ENV PYTHONUNBUFFERED=1
+
+ARG PYENV_VERSION=v2.3.27
+ARG PYTHON_VERSION=3.11.5
+
+RUN <<EOF
+    set -eu
+
+    apt-get update
+
+    apt-get install -y \
+        make \
+        build-essential \
+        libssl-dev \
+        zlib1g-dev \
+        libbz2-dev \
+        libreadline-dev \
+        libsqlite3-dev \
+        wget \
+        curl \
+        llvm \
+        libncursesw5-dev \
+        xz-utils \
+        tk-dev \
+        libxml2-dev \
+        libxmlsec1-dev \
+        libffi-dev \
+        liblzma-dev \
+        git
+
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+EOF
+
+RUN <<EOF
+    set -eu
+
+    git clone https://github.com/pyenv/pyenv.git /opt/pyenv
+    cd /opt/pyenv
+    git checkout "${PYENV_VERSION}"
+
+    PREFIX=/opt/python-build /opt/pyenv/plugins/python-build/install.sh
+    /opt/python-build/bin/python-build -v "${PYTHON_VERSION}" /opt/python
+
+    rm -rf /opt/python-build /opt/pyenv
+EOF
+
+
+FROM ${BASE_RUNTIME_IMAGE} AS runtime-env
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG PIP_NO_CACHE_DIR=1
+ENV PYTHONUNBUFFERED=1
+ENV PATH=/home/user/.local/bin:/opt/python/bin:${PATH}
+
+RUN <<EOF
+    set -eu
+
+    apt-get update
+
+    apt-get install -y \
+        gosu
+
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+EOF
+
+RUN <<EOF
+    set -eu
+
+    groupadd -o -g 1000 user
+    useradd -m -o -u 1000 -g user user
+EOF
+
+COPY --from=python-env /opt/python /opt/python
+
+ADD ./requirements.txt /tmp/
+RUN <<EOF
+    set -eu
+
+    gosu user pip install -r /tmp/requirements.txt
+EOF
+
+ADD ./scripts /code
+ADD ./my_project /code/my_project
+
+# 引数を受け付けない場合（環境変数や設定ファイルで設定する場合、docker compose up -dでの実行を想定する場合）
+CMD [ "gosu", "user", "python", "/code/main.py" ]
+
+# FastAPI + uvicorn（docker compose up -dでの実行を想定する場合）
+# CMD [ "gosu", "user", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000" ]
+
+# main.pyが引数を受け付ける場合（docker runコマンドやdocker compose runでの実行を想定する場合）
+# ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
+```
+
 ## GitHub Actions Workflowの作成
 
 ### リンターによる静的検査
