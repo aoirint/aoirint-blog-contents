@@ -325,6 +325,8 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 |CUDA 11.8 + cuDNN 8|`nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
 |CUDA 11.8 + cuDNN 8（開発用ライブラリ入）|`nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04`|[Docker Hub: nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)|
 
+ビルド環境、実行環境に[NVIDIA Container Toolkitのインストール](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)が必要です。
+
 <details>
 
 ```dockerfile
