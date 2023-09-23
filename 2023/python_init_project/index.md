@@ -478,6 +478,8 @@ GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHU
 `pyproject.toml`に`version = "0.0.0"`を記述します。
 これらのバージョンは、開発中は`0.0.0`となり、リリース時はリリースバージョンに置換されます。
 
+#### CPUだけ使うDockerfileの場合
+
 ```yaml
 # build-docker.yml
 name: Build Docker
@@ -535,6 +537,88 @@ jobs:
           tags: ${{ env.IMAGE_NAME_AND_TAG }}
           cache-from: ${{ env.IMAGE_CACHE_FROM }}
           cache-to: ${{ env.IMAGE_CACHE_TO }} 
+```
+
+#### CPU版イメージとGPU版イメージをビルドする場合
+
+```yaml
+# build-docker.yml
+name: Build Docker
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types:
+      - created
+
+env:
+  IMAGE_NAME: aoirint/my_project
+  IMAGE_VERSION_NAME: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || 'latest' }}
+  VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
+  PYTHON_VERSION: '3.11.5'
+
+jobs:
+  docker-build-and-push:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          -
+            base_image: 'ubuntu:22.04'
+            base_runtime_image: 'ubuntu:22.04'
+            image_variant_name: 'ubuntu'
+          -
+            base_image: 'ubuntu:22.04'
+            base_runtime_image: 'nvcr.io/nvidia/driver:525-signed-ubuntu22.04'
+            image_variant_name: 'nvidia'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Setup Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Replace Version
+        shell: bash
+        run: |
+          sed -i "s/__VERSION__ = \"0.0.0\"/__VERSION__ = \"${{ env.VERSION }}\"/" my_project/__init__.py
+          sed -i "s/version = \"0.0.0\"/version = \"${{ env.VERSION }}\"/" pyproject.toml
+
+      - name: Build and Deploy Docker image
+        uses: docker/build-push-action@v5
+        env:
+          IMAGE_NAME_AND_TAG: ${{ format('{0}:{1}-{2}', env.IMAGE_NAME, matrix.image_variant_name, env.IMAGE_VERSION_NAME) }}
+          LATEST_IMAGE_NAME_AND_TAG: ${{ format('{0}:{1}-{2}', env.IMAGE_NAME, matrix.image_variant_name, 'latest') }}
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ env.IMAGE_NAME_AND_TAG }}
+          build-args: |
+            BASE_IMAGE=${{ matrix.base_image }}
+            BASE_RUNTIME_IMAGE=${{ matrix.base_runtime_image }}
+            PYTHON_VERSION=${{ env.PYTHON_VERSION }}
+          target: runtime-env
+          cache-from: |
+            type=registry,ref=${{ env.IMAGE_NAME_AND_TAG }}-buildcache
+            type=registry,ref=${{ env.LATEST_IMAGE_NAME_AND_TAG }}-buildcache
+          cache-to: |
+            type=registry,ref=${{ env.IMAGE_NAME_AND_TAG }}-buildcache,mode=max
 ```
 
 ## GitLab CI Pipelineの作成
