@@ -361,7 +361,7 @@ jobs:
 
 GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHUB_TOKEN`を設定する必要があります。
 
-`myproject/__init__.py`に`__VERSION__ = "0.0.0"`を記述し、
+`my_project/__init__.py`に`__VERSION__ = "0.0.0"`を記述し、
 `pyproject.toml`に`version = "0.0.0"`を記述します。
 これらのバージョンは、開発中は`0.0.0`となり、リリース時はリリースバージョンに置換されます。
 
