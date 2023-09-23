@@ -327,6 +327,10 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 
 ビルド環境、実行環境に[NVIDIA Container Toolkitのインストール](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)が必要です。
 
+ビルド時、`docker build --build-arg BASE_RUNTIME_IMAGE=nvcr.io/nvidia/driver:525-signed-ubuntu22.04`のようにベースイメージを切り替える想定のDockerfileになっています。
+
+Dockerイメージ実行時、GPUを使用するには`docker run --gpus all`のように`--gpus`オプションでGPUの使用を明示する必要があります。
+
 <details>
 
 ```dockerfile
