@@ -262,9 +262,54 @@ poetry export --without-hashes --with dev -o requirements-dev.txt
 
 Dockerイメージは様々な作り方が考えられますが、一例として紹介します。
 
-TBW。気が向いたら書きます。
-
 ### CPUだけ使う場合
+
+```dockerfile
+# syntax=docker/dockerfile:1.5
+FROM python:3.11
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG PIP_NO_CACHE_DIR=1
+ENV PYTHONUNBUFFERED=1
+ENV PATH=/home/user/.local/bin:${PATH}
+
+RUN <<EOF
+    set -eu
+
+    apt-get update
+
+    apt-get install -y \
+        gosu
+
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+EOF
+
+RUN <<EOF
+    set -eu
+
+    groupadd -o -g 1000 user
+    useradd -m -o -u 1000 -g user user
+EOF
+
+ADD ./requirements.txt /tmp/
+RUN <<EOF
+    set -eu
+
+    gosu user pip install -r /tmp/requirements.txt
+EOF
+
+ADD ./scripts /code
+
+# 引数を受け付けない場合（環境変数や設定ファイルで設定する場合、docker compose up -dでの実行を想定する場合）
+CMD [ "gosu", "user", "python", "/code/main.py" ]
+
+# FastAPI + uvicorn（docker compose up -dでの実行を想定する場合）
+# CMD [ "gosu", "user", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000" ]
+
+# main.pyが引数を受け付ける場合（docker runコマンドやdocker compose runでの実行を想定する場合）
+# ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
+```
 
 ### NVIDIA GPUを使う場合
 
