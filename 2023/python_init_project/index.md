@@ -552,6 +552,7 @@ on:
   release:
     types:
       - created
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: aoirint/my_project
