@@ -16,7 +16,7 @@ tags:
 
 [前回の記事（2021年版）](/entry/2021/gitlab_ci_docker_registry/)から、以下の内容でアップデートしました。
 
-- Docker Engine 23.0
+- Docker Engine 24.0
 - BuildKit
 - レイヤーキャッシュ（Registry cache）
 - タグによるバージョン付け
