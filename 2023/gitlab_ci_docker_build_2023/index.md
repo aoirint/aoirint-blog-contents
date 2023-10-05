@@ -1,6 +1,7 @@
 ---
 title: 'GitLab CI, DockerイメージをビルドしてContainer Registryにpushする（2023年版）'
 date: '2023-05-18T11:00:00+09:00'
+updated: '2023-10-05T19:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -44,7 +45,7 @@ stages:
 
 build:
   stage: build
-  image: docker:23.0
+  image: docker:24.0
   services:
     - docker:dind
   rules:
