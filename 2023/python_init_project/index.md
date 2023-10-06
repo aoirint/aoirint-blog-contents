@@ -96,6 +96,10 @@ pyenv local 3.11.5
 poetry init
 ```
 
+（おすすめ）最後に依存ライブラリを聞かれますが、個人的には、操作がややこしく間違ったライブラリをインストールしてしまうのが怖いので、いったんスキップして後で設定することが多いです。
+
+### Pythonパッケージ名の仕様
+
 パッケージ名には、以下の文字が使用できます。
 
 - ラテン文字（A-Z、大文字・小文字は区別されない）
@@ -109,7 +113,7 @@ poetry init
 - [PEP 566 – Metadata for Python Software Packages 2.1](https://peps.python.org/pep-0566/)
 - [PEP 508 – Dependency specification for Python Software Packages](https://peps.python.org/pep-0508/)
 
-（おすすめ）依存ライブラリを聞かれますが、個人的には、操作がややこしく間違ったライブラリをインストールしてしまうのが怖いので、いったんスキップして後で設定することが多いです。
+### .gitignoreの作成
 
 GitHubの`.gitignore`テンプレートをプロジェクトディレクトリにコピーします。
 
@@ -130,6 +134,8 @@ GitHubの`.gitignore`テンプレートをプロジェクトディレクトリ�
 .python-version
 ```
 
+### 必須ファイルの作成
+
 主要なドキュメント`README.md`、主要なモジュールのディレクトリ`my_project/`、ファイル`my_project/__init__.py`を作成します。
 これらのファイルは、プロジェクトに対してPoetryを動作させるために必要です（Poetry実行時にファイルが存在しない旨のエラーが出ます）。
 
@@ -139,6 +145,8 @@ echo "# my_project" > README.md
 mkdir my_project
 touch my_project/__init__.py
 ```
+
+### Gitリポジトリの作成
 
 ローカルGitリポジトリを作成します。
 名前、メールアドレスは適宜変更してください。
