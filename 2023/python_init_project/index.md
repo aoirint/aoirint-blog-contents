@@ -1,7 +1,7 @@
 ---
 title: 'Pythonプロジェクトの作成（pyenv + Poetry）'
 date: '2023-08-07T15:45:00+09:00'
-updated: '2023-10-06T09:45:00+09:00'
+updated: '2023-10-11T11:52:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -276,7 +276,7 @@ Dockerイメージは様々な作り方が考えられますが、一例とし�
 <details>
 
 ```dockerfile
-# syntax=docker/dockerfile:1.5
+# syntax=docker/dockerfile:1.6
 FROM python:3.11
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -343,7 +343,7 @@ Dockerイメージ実行時、GPUを使用するには`docker run --gpus all`の
 <details>
 
 ```dockerfile
-# syntax=docker/dockerfile:1.5
+# syntax=docker/dockerfile:1.6
 ARG BASE_IMAGE=ubuntu:22.04
 ARG BASE_RUNTIME_IMAGE=${BASE_IMAGE}
 
