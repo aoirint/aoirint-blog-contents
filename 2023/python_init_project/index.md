@@ -15,9 +15,9 @@ tags:
 
 ## バージョン情報
 
-- [pyenv 2.3.27](https://github.com/pyenv/pyenv)
+- [pyenv 2.3.29](https://github.com/pyenv/pyenv)
 - [Poetry 1.6.1](https://python-poetry.org/docs/#installation)
-- [Python 3.11.5](https://www.python.org/downloads/)
+- [Python 3.11.6](https://www.python.org/downloads/)
 
 ## 定義・ディレクトリ構成
 
@@ -48,7 +48,7 @@ pyenvでPythonをインストールします。
 マイナーバージョン（`0.x.0`）を変更する場合、依存する予定のライブラリが動作するかなど、プロジェクトの要件と相談してください。
 
 ```shell
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.5
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.6
 ```
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
@@ -86,7 +86,7 @@ cd my_project
 pyenvのPythonバージョン指定ファイル`.python-version`を作成します。
 
 ```shell
-pyenv local 3.11.5
+pyenv local 3.11.6
 ```
 
 現在のディレクトリにPoetryプロジェクトを作成します。
@@ -353,8 +353,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG PIP_NO_CACHE_DIR=1
 ENV PYTHONUNBUFFERED=1
 
-ARG PYENV_VERSION=v2.3.27
-ARG PYTHON_VERSION=3.11.5
+ARG PYENV_VERSION=v2.3.29
+ARG PYTHON_VERSION=3.11.6
 
 RUN <<EOF
     set -eu
@@ -467,7 +467,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_VERSION: '3.11.5'
+  PYTHON_VERSION: '3.11.6'
 
 jobs:
   lint:
@@ -590,7 +590,7 @@ env:
   IMAGE_NAME: aoirint/my_project
   IMAGE_VERSION_NAME: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || 'latest' }}
   VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
-  PYTHON_VERSION: '3.11.5'
+  PYTHON_VERSION: '3.11.6'
 
 jobs:
   docker-build-and-push:
