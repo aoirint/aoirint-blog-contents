@@ -1,4 +1,14 @@
-# Dockerfileでイメージ内の既存ディレクトリ宛にADD/COPYした場合の挙動
+---
+title: 'Dockerfileでイメージ内の既存ディレクトリ宛にADD/COPYした場合の挙動を調べた'
+date: '2023-10-13T12:50:00+09:00'
+draft: false
+noindex: false
+channel: 技術ノート
+category: Docker
+tags:
+  - Docker
+---
+# Dockerfileでイメージ内の既存ディレクトリ宛にADD/COPYした場合の挙動を調べた
 
 - Docker Engine 24.0
 
