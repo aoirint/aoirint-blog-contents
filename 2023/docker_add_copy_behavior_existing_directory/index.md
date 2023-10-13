@@ -130,11 +130,11 @@ Dockerfileを以下のように書き換える。
 COPY ./hoge /hoge/
 ```
 
-```plain
-$ docker run --rm -it doco
+```shell
+docker run --rm -it doco
 ```
 
-```shell
+```plain
 # tree /hoge
 /hoge
 |-- fuga
