@@ -68,7 +68,7 @@ ControlNetでは、ポーズを作成するデジタルデッサン人形がほ�
 
 v5.7以降、AI画像生成での需要に応えて、OpenPose形式のポーズ画像の出力に対応したようです（体験版でも利用可）。
 
-![](images/designdoll_ui.png)
+![デザインドール UI](images/designdoll_ui.png)
 
 ## プロンプト
 
@@ -92,7 +92,7 @@ lowres, ((bad anatomy)), ((bad hands)), missing finger, extra digits, fewer digi
 
 ### ControlNetなし
 
-![](images/example1_image_nocontrolnet.png)
+![生成例1 ControlNetなし](images/example1_image_nocontrolnet.png)
 
 ```
 1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
@@ -104,11 +104,11 @@ Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 1392229581, Size: 7
 
 ### ControlNetあり
 
-![](images/example1_pose_image.png)
+![生成例1 ControlNetあり デザインドール](images/example1_pose_image.png)
 
-![](images/example1_pose_openpose.png)
+![生成例1 ControlNetあり OpenPose](images/example1_pose_openpose.png)
 
-![](images/example1_image_controlnet.png)
+![生成例1 ControlNetあり 生成画像](images/example1_image_controlnet.png)
 
 ```
 1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
@@ -124,7 +124,7 @@ Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 1392229581, Size: 7
 
 ### ControlNetなし
 
-![](images/example2_image_nocontrolnet.png)
+![生成例2 ControlNetなし](images/example2_image_nocontrolnet.png)
 
 ```
 1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
@@ -136,7 +136,7 @@ Steps: 20, Sampler: DPM++ 2M SDE Karras, CFG scale: 7, Seed: 605589586, Size: 76
 
 ### ControlNetあり
 
-![](images/example2_image_controlnet.png)
+![生成例2 ControlNetあり](images/example2_image_controlnet.png)
 
 ```
 1girl, upper body, own hands together, (exceptional, best aesthetic, new, newest, best quality, masterpiece, extremely detailed, anime, waifu:1.2)
