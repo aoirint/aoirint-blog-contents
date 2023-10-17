@@ -23,7 +23,7 @@ watchmedo shell-command -R --command 'make build' ./src
 watchmedo auto-restart -R -d ./src -- make serve
 ```
 
-### インストール
+### watchmedo インストール
 
 ```shell
 pip3 install watchdog[watchmedo]==2.1.3
@@ -61,7 +61,7 @@ watchexec -r -w ./src -- make serve
 watchexec -p -w ./src -- make event-trigger
 ```
 
-### インストール
+### watchexec インストール
 
 #### Rustのインストール
 
