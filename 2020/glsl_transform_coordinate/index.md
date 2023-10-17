@@ -11,7 +11,7 @@ tags:
 ---
 # GLSL 座標変換 テンプレート
 
-### Vertex shader
+## Vertex shader
 
 ```glsl
 #version 410 core
@@ -29,7 +29,7 @@ void main(void) {
 }
 ```
 
-### Fragment shader
+## Fragment shader
 
 ```glsl
 #version 410 core
