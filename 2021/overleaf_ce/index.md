@@ -195,7 +195,7 @@ docker-compose up -d --force-recreate
 
 コンテナ内のシステム（`/usr/share/fonts`もしくは`/usr/local/share/fonts`）にフォントを追加すれば認識する。
 
-### Dockerfile
+### Noto Sans CJK JP Dockerfile
 
 ```dockerfile
 # syntax=docker/dockerfile:1.3-labs
@@ -209,7 +209,7 @@ RUN <<EOF
 EOF
 ```
 
-### docker-compose.yml
+### Noto Sans CJK JP docker-compose.yml
 
 ```yaml
 # ...
