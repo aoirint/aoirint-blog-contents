@@ -37,7 +37,7 @@ tags:
 > I'm using Elasticsearch to put a search box on my cat-picture SaaS product.
 >
 > This is permitted under ELv2. Meow!
-
+>
 > I am a Managed Service Provider (MSP) running Elasticsearch and Kibana for my customers.
 >
 > If your customers do not access Elasticsearch and Kibana, this is permitted under ELv2. If your customers do have access to substantial portions of the functionality of either Elasticsearch and Kibana as part of your service, this may not be permitted.
