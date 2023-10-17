@@ -24,11 +24,11 @@ VOICEVOXの新機能であるマルチエンジン機能をユーザと開発者
 VOICEVOX（ボイスボックス）は、ヒホ氏が2021年8月にリリースした無料の音声合成ソフトで、キャラクターの要素を含まない部分がOSS化されており、現在GitHub上でオープンに開発が行われています。
 用途としては主に、ニコニコ動画やYouTubeなどの動画投稿サイトで、ゲーム実況やキャラクター劇場、解説などの読み上げ音声として使われています。2023年2月9日 1:31時点で、ニコニコ動画上には関連する動画が48000件ほど投稿されています。
 
-![](images/voicevox_2023-02-09_014600.png)
+![VOICEVOX UI](images/voicevox_2023-02-09_014600.png)
 
 - [VOICEVOX | 無料のテキスト読み上げソフトウェア](https://voicevox.hiroshiba.jp/)
 
-![](images/voicevox_nicovideo_search_2023-02-09_013100.png)
+![VOICEVOX ニコニコ動画 動画件数](images/voicevox_nicovideo_search_2023-02-09_013100.png)
 
 - [キーワードで動画検索 VOICEVOX - ニコニコ動画](https://www.nicovideo.jp/search/VOICEVOX)
 
@@ -57,7 +57,7 @@ VOICEVOXは、主にエディタ・エンジン・コアの3つのコンポー�
 
 マルチエンジン機能の実装には1年ほどかかりましたが、2021年12月ごろから仕様の検討やエディタの内部APIの改修を進めており、その後、UIの主要な変更やエンジン側のAPIの検討・実装を主に[名無し。](https://github.com/sevenc-nanashi)さんや[takana-v](https://github.com/takana-v)さんが進めてくださり、リリースにこぎ着けました。
 
-![](images/voicevox_2023-02-09_014609.png)
+![VOICEVOX UI エンジンの追加](images/voicevox_2023-02-09_014609.png)
 
 ## 最後に
 
