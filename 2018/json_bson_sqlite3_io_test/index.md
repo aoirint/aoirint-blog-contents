@@ -29,8 +29,13 @@ N = 500
 start = time.time()
 entries = []
 for i in range(N):
-    title = ''.join([ chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(32) ])
-    body = ''.join([ chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(30000) ])
+    title = ''.join([
+        chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(32)
+    ])
+    body = ''.join([
+        chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(30000)
+    ])
+
     entries.append({
         'id': i,
         'title': title,
