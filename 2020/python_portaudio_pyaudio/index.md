@@ -61,7 +61,7 @@ for i in range(api_count):
 pa.terminate()
 ```
 
-```
+```plain
 Host API: 1
 {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 2, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
 {'index': 0, 'structVersion': 2, 'name': 'Built-in Microphone', 'hostApi': 0, 'maxInputChannels': 2, 'maxOutputChannels': 0, 'defaultLowInputLatency': 0.0029478458049886623, 'defaultLowOutputLatency': 0.01, 'defaultHighInputLatency': 0.01310657596371882, 'defaultHighOutputLatency': 0.1, 'defaultSampleRate': 44100.0}
@@ -85,7 +85,7 @@ for i in range(device_count):
 pa.terminate()
 ```
 
-```
+```plain
 Device: 2
 {'index': 0, 'structVersion': 2, 'name': 'Built-in Microphone', 'hostApi': 0, 'maxInputChannels': 2, 'maxOutputChannels': 0, 'defaultLowInputLatency': 0.0029478458049886623, 'defaultLowOutputLatency': 0.01, 'defaultHighInputLatency': 0.01310657596371882, 'defaultHighOutputLatency': 0.1, 'defaultSampleRate': 44100.0}
 {'index': 1, 'structVersion': 2, 'name': 'Built-in Output', 'hostApi': 0, 'maxInputChannels': 0, 'maxOutputChannels': 2, 'defaultLowInputLatency': 0.01, 'defaultLowOutputLatency': 0.007800453514739229, 'defaultHighInputLatency': 0.1, 'defaultHighOutputLatency': 0.017959183673469388, 'defaultSampleRate': 44100.0}
