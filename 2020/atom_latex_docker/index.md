@@ -40,8 +40,8 @@ Atomからこれを利用できるようにする。
 - アウトライン表示
   - [document-outline](https://atom.io/packages/document-outline)
 - PDFプレビュー
-  - [pdf-view]()（メモリリーク? Atomを一度閉じれば解消する）
-  - または [pdf-view-plus]()（メモリリーク対策版らしい。`latex`との連携はないので注意）
+  - [pdf-view](https://atom.io/packages/pdf-view)（メモリリーク? Atomを一度閉じれば解消する）
+  - または [pdf-view-plus](https://atom.io/packages/pdf-view-plus)（メモリリーク対策版らしい。`latex`との連携はないので注意）
 
 ## Dockerイメージ
 
