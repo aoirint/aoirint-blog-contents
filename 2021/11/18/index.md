@@ -4,6 +4,7 @@ draft: false
 noindex: true
 channel: ダイアリー
 ---
+# 2021-11-18
 
 VOICEVOXのコア、Raspberry Pi版のプルリクエストがマージされた。うれしい。
 
