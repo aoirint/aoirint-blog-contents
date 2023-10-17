@@ -92,7 +92,7 @@ distorted_points = cv2.fisheye.distortPoints(undistorted_points, K, D)
 distorted_points
 ```
 
-```
+```plain
 array([[[320.     , 240.     ],
         [320.     , 244.65497],
         [324.65497, 240.     ],
