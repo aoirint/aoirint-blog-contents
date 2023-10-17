@@ -57,7 +57,7 @@ print('Exported as wav: %f s' % elapsed)
 
 ```
 
-```
+```plain
 song_kouichi_the_milky_way.m4a
 Sample width (Num of bytes of a sample): 2
 Frame rate (Num of samples per second): 44100
