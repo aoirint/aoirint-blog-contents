@@ -26,8 +26,7 @@ Ubuntu 18.04、Windows 10のデュアルブート環境を構築する。
 
 Windows上で管理者権限でコマンドプロンプトを起動し、以下のコマンドを実行する。
 
-```
-#!cmd
+```cmd
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 
@@ -43,14 +42,12 @@ Settings > Details > Date & Timeで使われるNTPサービスは`systemd-timesy
 
 設定ファイルの`/etc/systemd/timesyncd.conf`を開いて編集する。
 
-```
-#!systemd
+```systemd
 [Time]
 NTP=YOUR_NTP_SERVER
 ```
 
-```
-#!bash
+```shell
 sudo systemctl restart systemd-timesyncd
 ```
 
@@ -62,24 +59,21 @@ Settings > Networkからプロキシを設定する。設定した内容は`HTTP
 
 また/etc/apt/apt.confを作成し、プロキシ設定を追記する
 
-```
-#!apt
+```apt
 Acquire::http::proxy "http://YOUR_HTTP_PROXY";
 Acquire::https::proxy "http://YOUR_HTTP_PROXY";
 ```
 
 ## Package Indexの更新とPackageの更新
 
-```
-#!bash
+```shell
 sudo apt update
 sudo apt upgrade -y
 ```
 
 ## git、ビルドツールほかのインストール
 
-```
-#!bash
+```shell
 sudo apt install -y \
   git \
   build-essential \
@@ -88,8 +82,7 @@ sudo apt install -y \
   vim
 ```
 
-```
-#!bash
+```shell
 git config --global core.editor vim
 git config --global credential.helper cache
 git config --global user.name YOUR_NAME
@@ -98,8 +91,7 @@ git config --global user.email YOUR_EMAIL
 
 ~/.vimrc
 
-```
-#!vim
+```vim
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -115,23 +107,20 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 ## 日本語IME（ibus-mozc）、言語サポートのインストール
 
-```
-#!bash
+```shell
 sudo apt install -y ibus-mozc
 
 ibus restart
 gsettings set org.gnome.desktop.input-sources sources "[('ibus', 'mozc-jp'), ('xkb', 'jp')]"
 ```
 
-```
-#!bash
+```shell
 sudo apt install -y $(check-language-support)
 ```
 
 ## プロキシの設定 (2) git
 
-```
-#!bash
+```shell
 git config --global http.proxy ${HTTP_PROXY}
 git config --global https.proxy ${HTTPS_PROXY}
 ```
@@ -142,8 +131,7 @@ git config --global https.proxy ${HTTPS_PROXY}
 
 新しいPythonを使うため、それからシステムと開発環境を分離してモジュール管理をaptとpipで分けて衝突事故を起こさないようにするため、pyenvを使うのが安定。
 
-```
-#!bash
+```shell
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -156,8 +144,7 @@ source ~/.bashrc
 
 - [Common build problems · pyenv/pyenv Wiki](https://github.com/pyenv/pyenv/wiki/common-build-problems "Common build problems · pyenv/pyenv Wiki")
 
-```
-#!bash
+```shell
 sudo apt install -y \
   libssl-dev \
   zlib1g-dev \
@@ -183,8 +170,7 @@ pyenv global 3.8.5
 
 [Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/ "Install Docker Engine on Ubuntu | Docker Documentation")
 
-```
-#!bash
+```shell
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt update
 sudo apt install -y \
@@ -210,8 +196,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 [Install Docker Compose | Docker Documentation](https://docs.docker.com/compose/install/ "Install Docker Compose | Docker Documentation")
 
-```
-#!bash
+```shell
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.3/docker-compose-$(uname -s)-$(uname -m)" \
   -o /usr/local/bin/docker-compose \
   -x "${HTTP_PROXY}"
@@ -223,30 +208,26 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 - [https://docs.docker.com/engine/security/rootless/](https://docs.docker.com/engine/security/rootless/)
 
-```
-#!bash
+```shell
 sudo groupadd docker
 sudo adduser $USER docker
 ```
 
 ## プロキシの設定 (3) Docker
 
-```
-#!bash
+```shell
 sudo systemctl edit docker
 ```
 
 このコマンドで開いたファイルに以下を追記する。
 
-```
-#!systemd
+```systemd
 [Service]
 Environment="HTTP_PROXY=YOUR_HTTP_PROXY"
 Environment="HTTPS_PROXY=YOUR_HTTP_PROXY"
 ```
 
-```
-#!bash
+```shell
 sudo systemctl restart docker
 
 docker pull hello-world
@@ -272,32 +253,28 @@ PyTorchの対応バージョンを見ながらCUDA Toolkitをインストール�
 
 CUIモードでないとインストールに失敗するので、ダウンロードが終わったら一度デスクトップからログアウトし、Ctrl+Alt+F2などでCUIモードにする。
 
-```
-#!bash
+```shell
 sudo systemctl stop gdm
 # sudo systemctl stop lightdm # for Ubuntu 16.04
 ```
 
 これでデスクトップマネージャを止めてからインストールを始める（再起動してGUIモードでログインせずにCUIモードにして実行でもいけるかも）。
 
-```
-#!bash
+```shell
 wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
 sudo sh cuda_10.2.89_440.33.01_linux.run
 ```
 
 ~/.bashrcに以下を追記する。
 
-```
-#!bash
+```shell
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
 
 PyTorchが入ったあと（どちらを先にいれてもいい）、
 
-```
-#!python
+```python
 import torch
 torch.cuda.is_available()
 ```
@@ -306,8 +283,7 @@ torch.cuda.is_available()
 
 ## OpenCV-Python, Numpy, PyTorchほかのインストール
 
-```
-#!bash
+```shell
 pip3 install -U pip
 pip3 install -U \
   opencv-python \
@@ -316,8 +292,7 @@ pip3 install -U \
   --proxy "${HTTP_PROXY}"
 ```
 
-```
-#!bash
+```shell
 pip3 install -U \
   torch \
   torchvision \
@@ -326,8 +301,7 @@ pip3 install -U \
   --proxy "${HTTP_PROXY}"
 ```
 
-```
-#!bash
+```shell
 pip3 install -U \
   matplotlib \
   tqdm \
@@ -339,25 +313,21 @@ pip3 install -U \
 
 ## SSH Serverほかのインストール
 
-```
-#!bash
+```shell
 sudo apt install -y openssh-server net-tools
 ```
 
-```
-#!bash
+```shell
 ifconfig
 ```
 
-```
-#!bash
+```shell
 sudo vim /etc/ssh/sshd_config
 ```
 
 必要に応じてパスワード認証を無効にする。
 
-```
-#!sshd
+```sshd
 PasswordAuthentication no
 ```
 
@@ -365,8 +335,7 @@ PasswordAuthentication no
 
 [Install package isv:ownCloud:desktop / owncloud-client](https://software.opensuse.org/download/package?project=isv:ownCloud:desktop&package=owncloud-client "Install package isv:ownCloud:desktop / owncloud-client")
 
-```
-#!bash
+```shell
 echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/isv:ownCloud:desktop.list
 curl -fsSL https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/isv:ownCloud:desktop.gpg > /dev/null
 sudo apt update
@@ -375,13 +344,11 @@ sudo apt install owncloud-client
 
 ## その他のインストール
 
-```
-#!bash
+```shell
 ssh-keygen -f KEYNAME
 ```
 
-```
-#!bash
+```shell
 sudo apt install tmux autossh
 ```
 
@@ -396,8 +363,7 @@ sudo apt install tmux autossh
 
 ~/.ssh/configの`Host`の下に書く。Windowsの場合は`connect`をビルドする必要がある。
 
-```
-#!ssh
+```ssh
     # Linux
     ProxyCommand nc -X connect -x YOUR_HTTP_PROXY %h %p
 
@@ -408,8 +374,7 @@ sudo apt install tmux autossh
     ProxyCommand ncat --proxy-type http --proxy YOUR_HTTP_PROXY %h %p
 ```
 
-```
-#!cmd
+```cmd
 # for build `connect.c` on Windows
 gcc -o connect -lwsock32 connect.c -lws2_32
 ```
