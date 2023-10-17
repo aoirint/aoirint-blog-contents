@@ -278,7 +278,7 @@ ppa:teejee2008/ppaとコードベースは残っていた。
 > January 22, 2019 at 1:18 am
 >
 > So ukuu now completely turned into a closed source project?
-
+>
 > Tony George
 > January 22, 2019 at 12:09 pm
 >
