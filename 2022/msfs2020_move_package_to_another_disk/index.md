@@ -20,13 +20,13 @@ MSFSはSteamライブラリで見ると1GBくらいだけれど、
 
 `%APPDATA%\Microsoft Flight Simulator\UserCfg.opt`を開く。末尾の
 
-```
+```plain
 InstalledPackagesPath "C:\Users\myuser\AppData\Roaming\Microsoft Flight Simulator\Packages"
 ```
 
 を好きなディレクトリに書き換える。
 
-```
+```plain
 InstalledPackagesPath "D:\Microsoft Flight Simulator\Packages"
 ```
 
