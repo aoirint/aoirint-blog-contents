@@ -223,13 +223,13 @@ services:
 
 ### .dockerignore
 
-```
+```plain
 /data
 ```
 
 ### .gitignore
 
-```
+```plain
 /data
 .env*
 ```
