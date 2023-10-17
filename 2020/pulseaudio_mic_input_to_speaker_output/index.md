@@ -21,7 +21,7 @@ pactl list short sources
 # pactl list sources
 ```
 
-```
+```plain
 3 alsa_output.pci-0000_00_1f.3.analog-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
 4 alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
 5 alsa_output.usb-GeneralPlus_USB_Audio_Device-00.iec958-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz RUNNING
