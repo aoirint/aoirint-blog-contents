@@ -51,7 +51,7 @@ Defaults env_keep+="EDITOR"
 システム全体の環境変数として設定される。影響範囲が大きいので注意。
 デスクトップユーザではSettings側の設定（Disabledなら設定されない）が優先されるようだった。
 
-```
+```env
 HTTP_PROXY=http://proxy:port
 HTTPS_PROXY=http://proxy:port
 NO_PROXY=localhost, 127.0.0.0/8, ::1
@@ -59,7 +59,7 @@ NO_PROXY=localhost, 127.0.0.0/8, ::1
 
 ## apt: /etc/apt/apt.conf
 
-```
+```apt
 Acquire::http::proxy "http://proxy:port";                             
 Acquire::https::proxy "http://proxy:port";
 ```
