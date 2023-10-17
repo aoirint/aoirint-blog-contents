@@ -81,7 +81,7 @@ classes=CLASS_NUM
 filters=(CLASS_NUM + 5) * 3
 ```
 
-#### 例
+#### Yolo v3の例
 
 ```plain
 # L610, 696, 783
@@ -105,7 +105,7 @@ classes=CLASS_NUM
 filters=(CLASS_NUM + 5) * 3
 ```
 
-#### 例
+#### Tiny Yolo v3の例
 
 ```plain
 # L135, 177
