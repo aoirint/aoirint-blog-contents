@@ -177,7 +177,7 @@ list-players:
 
 コマンドの実行には`ADMIN_PASSWORD`が必要。
 
-```
+```plain
 EnableCheats ADMIN_PASSWORD
 
 SetCheatPlayer true
@@ -185,7 +185,7 @@ SetCheatPlayer true
 
 作業後、
 
-```
+```plain
 SetCheatPlayer false
 ```
 
@@ -195,7 +195,7 @@ Tabキーで表示されるコマンドのログでパスワードはマスク�
 
 ### TribeIDを調べる
 
-```
+```plain
 SetCheatPlayer true
 ```
 
