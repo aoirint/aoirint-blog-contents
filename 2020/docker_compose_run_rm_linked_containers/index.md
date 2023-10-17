@@ -28,7 +28,7 @@ tags:
 
 compose_run.sh
 
-```
+```shell
 #!/bin/bash
 
 docker-compose run --rm "$@"
