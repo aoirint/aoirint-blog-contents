@@ -21,13 +21,13 @@ sudo certbot --nginx
 
 エラー1（初期状態）
 
-```
+```plain
 ImportError: cannot import name 'constants'
 ```
 
 エラー2（`pip3 uninstall certbot`の後）
 
-```
+```plain
 AttributeError: module 'acme.challenges' has no attribute 'TLSSNI01Response'
 ```
 
