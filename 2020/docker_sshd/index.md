@@ -26,7 +26,7 @@ SSHではプロトコル上、HTTPのようにホスト名を使ってバーチ�
 本記事では、以下のようにリバースプロキシ・HTTPプロキシを
 SSHサーバの前段階に設けることでHTTPと同様なアクセス振り分けを可能にする。
 
-```
+```plain
 クライアント
 →クライアント側ネットワーク（:80 or :443のみ通過可）
 →リバースプロキシ（Webサーバ） :80 or :443
@@ -44,7 +44,7 @@ debianのリポジトリとリンクして自動ビルドされるようなこ�
 ちょっと古いので、ローカルでビルドすることにする。
 `docker-compose.yml`を書いたら`docker-compose build`を実行してビルドする。
 
-```
+```plain
 Commit ID: 24a1f32f6060054c64e294d3b074885c856b29d2
 ```
 
@@ -87,7 +87,7 @@ ssh localhost -p 2222 -l myuser -i ~/.ssh/YOUR_PRIVATE_KEY
 
 HTTPプロキシを立てる。[Squid](https://github.com/squid-cache/squid)を使う。Dockerイメージは[sameersbn/squid](https://github.com/sameersbn/docker-squid)を使う。
 
-```
+```plain
 Docker Image Tag: 3.5.27-2
 Commit ID: 924b0855440442a4be330ef4dba7a85681e9a49d
 ```
