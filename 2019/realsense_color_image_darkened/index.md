@@ -17,7 +17,7 @@ pyrealsense2からget_color_frameで取得したカラー画像が暗かった�
 
 RealSense SDKをインストールしてRealSense Viewerで確認してみると、RGB Cameraの項の`Enable Auto Exposure`の値がOFFになっていた。これをONにしたらプレビュー画像が明るくなった（露光の自動調整機能かな）。
 
-![](images/20220206054907.png)
+![RealSense SDKのスクリーンショット](images/20220206054907.png)
 
 次はコード（Python）からこのオプションを有効にする。（Pythonの）サンプルにはオプションをいじってるいい感じのものが見つからなかったので、以下を参考にしつつipythonで探した。
 

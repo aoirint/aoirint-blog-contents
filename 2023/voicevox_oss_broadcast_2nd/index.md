@@ -15,7 +15,7 @@ tags:
 VOICEVOXプロジェクトオーナーのヒホさんにお声がけいただいて、
 VOICEVOXの新機能であるマルチエンジン機能をユーザと開発者に紹介する趣旨で、2023年2月4日（土）の生放送に開発者ゲストとして出演しました。アーカイブは、ニコニコ動画のプレミアム会員であれば、2月11日（土） 23:59まで視聴できます。
 
-- [【VOICEVOX OSS 放送 第２回】マルチエンジン実装 - 2023/2/4(土) 21:00開始 - ニコニコ生放送]()
+- [【VOICEVOX OSS 放送 第２回】マルチエンジン実装 - 2023/2/4(土) 21:00開始 - ニコニコ生放送](https://live.nicovideo.jp/watch/lv340125951)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">📢VOICEVOX OSS 放送の告知 📢<br />2月4日(土)の21時から、VOICEVOXのマルチエンジン機能を、メインで実装してくださったおふたりをゲストに招いてご紹介する放送をします！<br />VOICEVOXのコントリビューターの方はもちろん、VOICEVOXのOSS活動にご興味ある方もぜひお越しください！<a href="https://t.co/hlNU6cWoXi">https://t.co/hlNU6cWoXi</a></p>&mdash; ヒホ（ヒロシバ）🗑️ (@hiho_karuta) <a href="https://twitter.com/hiho_karuta/status/1620382357344911360?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
 
@@ -24,11 +24,11 @@ VOICEVOXの新機能であるマルチエンジン機能をユーザと開発者
 VOICEVOX（ボイスボックス）は、ヒホ氏が2021年8月にリリースした無料の音声合成ソフトで、キャラクターの要素を含まない部分がOSS化されており、現在GitHub上でオープンに開発が行われています。
 用途としては主に、ニコニコ動画やYouTubeなどの動画投稿サイトで、ゲーム実況やキャラクター劇場、解説などの読み上げ音声として使われています。2023年2月9日 1:31時点で、ニコニコ動画上には関連する動画が48000件ほど投稿されています。
 
-![](images/voicevox_2023-02-09_014600.png)
+![VOICEVOX UI](images/voicevox_2023-02-09_014600.png)
 
 - [VOICEVOX | 無料のテキスト読み上げソフトウェア](https://voicevox.hiroshiba.jp/)
 
-![](images/voicevox_nicovideo_search_2023-02-09_013100.png)
+![VOICEVOX ニコニコ動画 動画件数](images/voicevox_nicovideo_search_2023-02-09_013100.png)
 
 - [キーワードで動画検索 VOICEVOX - ニコニコ動画](https://www.nicovideo.jp/search/VOICEVOX)
 
@@ -57,7 +57,7 @@ VOICEVOXは、主にエディタ・エンジン・コアの3つのコンポー�
 
 マルチエンジン機能の実装には1年ほどかかりましたが、2021年12月ごろから仕様の検討やエディタの内部APIの改修を進めており、その後、UIの主要な変更やエンジン側のAPIの検討・実装を主に[名無し。](https://github.com/sevenc-nanashi)さんや[takana-v](https://github.com/takana-v)さんが進めてくださり、リリースにこぎ着けました。
 
-![](images/voicevox_2023-02-09_014609.png)
+![VOICEVOX UI エンジンの追加](images/voicevox_2023-02-09_014609.png)
 
 ## 最後に
 

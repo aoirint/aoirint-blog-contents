@@ -23,7 +23,7 @@ watchmedo shell-command -R --command 'make build' ./src
 watchmedo auto-restart -R -d ./src -- make serve
 ```
 
-### インストール
+### watchmedo インストール
 
 ```shell
 pip3 install watchdog[watchmedo]==2.1.3
@@ -31,7 +31,7 @@ pip3 install watchdog[watchmedo]==2.1.3
 
 ※ 2.1.4 on Ubuntuはバグがありそう
 
-```
+```plain
 Exception in thread Thread-1:
 Traceback (most recent call last):
   File "$HOME/.pyenv/versions/3.9.6/lib/python3.9/threading.py", line 973, in _bootstrap_inner
@@ -61,7 +61,7 @@ watchexec -r -w ./src -- make serve
 watchexec -p -w ./src -- make event-trigger
 ```
 
-### インストール
+### watchexec インストール
 
 #### Rustのインストール
 

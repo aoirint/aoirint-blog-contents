@@ -18,8 +18,7 @@ GitHub Actions実行中に生成した`build`ディレクトリの内容を別�
 
 - [github:s0/git-publish-subdir-action](https://github.com/s0/git-publish-subdir-action)
 
-```
-#!yaml
+```yaml
 name: Build
 on:
   push:

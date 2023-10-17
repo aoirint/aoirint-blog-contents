@@ -40,15 +40,14 @@ Atomからこれを利用できるようにする。
 - アウトライン表示
   - [document-outline](https://atom.io/packages/document-outline)
 - PDFプレビュー
-  - [pdf-view]()（メモリリーク? Atomを一度閉じれば解消する）
-  - または [pdf-view-plus]()（メモリリーク対策版らしい。`latex`との連携はないので注意）
+  - [pdf-view](https://atom.io/packages/pdf-view)（メモリリーク? Atomを一度閉じれば解消する）
+  - または [pdf-view-plus](https://atom.io/packages/pdf-view-plus)（メモリリーク対策版らしい。`latex`との連携はないので注意）
 
 ## Dockerイメージ
 
 [paperist/alpine-texlive-ja](https://hub.docker.com/r/paperist/alpine-texlive-ja/)を使う。
 
-```
-#!bash
+```shell
 sudo docker pull paperist/alpine-texlive-ja
 ```
 
@@ -63,8 +62,7 @@ sudo docker pull paperist/alpine-texlive-ja
 
 ユーザをdockerグループに追加したあと再ログインする。新しくdockerグループが作られた直後は`newgrp docker`しなければならないことがあり、シェルごとにこれを実行する必要があるようなのでAtomに反映されず、この場合OSの再起動が必要。
 
-```
-#!bash
+```shell
 sudo groupadd docker
 sudo adduser $USER docker
 ```
@@ -75,7 +73,7 @@ sudo adduser $USER docker
 
 `${HOME}/.atom/packages/latex/resources`のマウントは`latex`の`Extended Build Mode`が有効のときに`${HOME}/.atom/packages/latex/resources/latexmkrc`が読み出されるため設定している（このパスはホストのAtomから渡されるのでマウント先パスもホストと同じ）。この機能を無効にしていれば不要。
 
-```
+```shell
 #!/bin/sh
 docker run --rm \
   -v "${PWD}:/workdir" \
@@ -86,8 +84,7 @@ docker run --rm \
 
 ## サンプルTeXファイル
 
-```
-#!tex
+```tex
 \documentclass[10pt,a4paper]{jsarticle}
 
 \title{My Title}
@@ -110,7 +107,7 @@ docker run --rm \
 
 ### stderrにコマンドを吐き出してエラー終了するスクリプト
 
-```
+```shell
 #!/bin/sh
 echo $0 $@ >&2
 exit 1;

@@ -39,7 +39,7 @@ OAuth AppをZoom上に作成。
 touch .env
 ```
 
-```
+```env
 clientID=Zoom OAuth AppのClient ID
 clientSecret=Zoom OAuth AppのClient Secret
 redirectURL=ngrokのURL

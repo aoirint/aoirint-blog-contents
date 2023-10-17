@@ -43,7 +43,7 @@ sudo systemctl status my_service
 
 If you are using python, maybe you need to set environment `PYTHONUNBUFFERED=1` to see log.
 
-```
+```systemd
 # In [Service] Section
 Environment="PYTHONUNBUFFERED=1"
 

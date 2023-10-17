@@ -21,7 +21,7 @@ git clone https://github.com/pjreddie/darknet.git
 
 ### mydata.data
 
-```
+```plain
 classes = CLASS_NUM
 train = mydata-train.txt
 test = mydata-test.txt
@@ -33,7 +33,7 @@ backup = backup/mydata/
 
 ### mydata.names
 
-```
+```plain
 category1
 category2
 category3
@@ -51,7 +51,7 @@ categoryCLASS_NUM
 
 ### IMAGE.txt
 
-```
+```plain
 label center_x center_y width height
 ```
 
@@ -73,7 +73,7 @@ cfgディレクトリ以下のファイルをベースに使う。
 
 CLASS_NUM=クラス数
 
-```
+```plain
 # L610, 696, 783
 classes=CLASS_NUM
 
@@ -81,9 +81,9 @@ classes=CLASS_NUM
 filters=(CLASS_NUM + 5) * 3
 ```
 
-#### 例
+#### Yolo v3の例
 
-```
+```plain
 # L610, 696, 783
 classes=1
 
@@ -97,7 +97,7 @@ filters=18
 
 CLASS_NUM=クラス数
 
-```
+```plain
 # L135, 177
 classes=CLASS_NUM
 
@@ -105,9 +105,9 @@ classes=CLASS_NUM
 filters=(CLASS_NUM + 5) * 3
 ```
 
-#### 例
+#### Tiny Yolo v3の例
 
-```
+```plain
 # L135, 177
 classes=1
 

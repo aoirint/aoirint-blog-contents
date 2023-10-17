@@ -60,7 +60,7 @@ cat text.txt | docker run --rm -i -v "$PWD:/data" aoirint/open_jtalk -x /var/lib
 
 ffmpegで出力されたwavファイルを見るとこのような形式。
 
-```
+```plain
 Input #0, wav, from 'output.wav':
   Duration: 00:00:01.61, bitrate: 768 kb/s
     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s

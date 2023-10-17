@@ -11,20 +11,20 @@ tags:
 ---
 # nginx basic auth, reverse proxy, static files
 
-### Basic auth
+## Basic auth
 
 - [Nginx で Basic 認証 - Qiita](https://qiita.com/kotarella1110/items/be76b17cdbe61ff7b5ca)
 
-```
+```nginx
         auth_basic "Authentication Required";
         auth_basic_user_file DIRECTORY/.htpasswd;
 ```
 
-### Reverse proxy
+## Reverse proxy
 
 - [Nginxによるリバースプロキシの設定方法 - Qiita](https://qiita.com/schwarz471/items/9b44adfbec006eab60b0)
 
-```
+```nginx
         proxy_set_header HOST $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-Host $host;
@@ -36,11 +36,11 @@ tags:
         }
 ```
 
-### Static files
+## Static files
 
 - [Nginxの静的ファイル配信でハマった - shoya\.io](https://shoya.io/ja/posts/nginx-root/)
 
-```
+```nginx
         location /static/ {
                 root PARENT_OF_STATIC_DIRECTORY;
         }

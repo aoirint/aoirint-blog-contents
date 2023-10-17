@@ -67,7 +67,7 @@ sudo sh -c 'echo SUBSYSTEM==\"usb\", ACTION==\"add\", ATTRS{idVendor}==\"054c\",
 
 `/etc/udev/rules.d/nfcdev.rules`はこうなる。
 
-```
+```plain
 SUBSYSTEM=="usb", ACTION=="add", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c3", GROUP="plugdev"
 ...
 ```
@@ -194,4 +194,4 @@ Type3Tag ID=$$$$$$$$$$$$$$$$ PMM=$$$$$$$$$$$$$$$$ SYS=0003
 
 ---
 
-- [[PASMO] FeliCa から情報を吸い出してみる - FeliCaの仕様編 [Android][Kotlin] - Qiita](https://qiita.com/YasuakiNakazawa/items/3109df682af2a7032f8d)
+- [\[PASMO\] FeliCa から情報を吸い出してみる - FeliCaの仕様編 \[Android\]\[Kotlin\] - Qiita](https://qiita.com/YasuakiNakazawa/items/3109df682af2a7032f8d)

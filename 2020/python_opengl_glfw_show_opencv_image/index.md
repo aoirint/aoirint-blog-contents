@@ -20,7 +20,7 @@ pip3 install PyOpenGL glfw
 
 モジュールバージョン
 
-```
+```plain
 PyOpenGL==3.1.5
 glfw==1.11.0
 ```
@@ -33,7 +33,7 @@ GPU : b'Intel Iris OpenGL Engine'
 OpenGL version : b'4.1 INTEL-14.4.23'
 ```
 
-### OpenGL 2.1
+## OpenGL 2.1
 
 - [mcfletch/pyopengl: Repository for the PyOpenGL Project](https://github.com/mcfletch/pyopengl)
 - [Python3で始めるOpenGL4 - CodeLabo](https://codelabo.com/posts/20200228175104)
@@ -46,7 +46,7 @@ GPU : b'Intel Iris OpenGL Engine'
 OpenGL version : b'2.1 INTEL-14.4.23'
 ```
 
-#### glDrawPixels
+### glDrawPixels
 
 ```python
 import cv2
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     glfw.terminate()
 ```
 
-#### Texture
+### Texture
 
 ```python
 import cv2
@@ -144,7 +144,7 @@ if __name__ == '__main__':
     glfw.terminate()
 ```
 
-### OpenGL 4.1 / GLSL
+## OpenGL 4.1 / GLSL
 
 - [PythonでVAOによるGLSLシェーダープログラミング！ - CodeLabo](https://codelabo.com/posts/20200228182137)
 - [Suspected fragment shader problem, No color, OpenGL 4, GLFW 3, GLEW - OpenGL / OpenGL: Basic Coding - Khronos Forums](https://community.khronos.org/t/suspected-fragment-shader-problem-no-color-opengl-4-glfw-3-glew/70399)

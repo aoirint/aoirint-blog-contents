@@ -53,7 +53,7 @@ Tesseract使ってOCR。たまに精度あやしいけどだいたいOK。すご
 
 ## Example
 
-![](images/20190721053044.png)
+![Example](images/20190721053044.png)
 
 ```shell
 {'fighters': {0: {'name': 'ふれいやー', 'damage': 141.3}, 1: {'name': 'KOOPA', 'damage': 101.5}}}

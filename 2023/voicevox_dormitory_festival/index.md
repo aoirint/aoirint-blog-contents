@@ -87,11 +87,11 @@ aoirintのアイコンは、どうにもCMYKで表現するのが難しい色域
 
 名刺の画面構成は、ローカルフォント（ラノベポップ V2）を使うため、diagrams.net（drawio）のデスクトップアプリを使いました。
 
-![](images/voivofest_card_aoirint.jpg)
+![ボイボ寮祭 名刺 aoirint](images/voivofest_card_aoirint.jpg)
 
 裏面は、動画投稿者名義の名札になっています。
 
-![](images/voivofest_card_kanomiya.jpg)
+![ボイボ寮祭 名刺 かのみや](images/voivofest_card_kanomiya.jpg)
 
 Twitterのロゴアイコンは、以下の公式ブランドツールキットから使っています。
 

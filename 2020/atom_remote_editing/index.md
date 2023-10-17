@@ -10,7 +10,7 @@ tags:
 ---
 # Remote editing with Atom (rmate, sshfs)
 
-### rmate
+## rmate
 
 - [AtomでSSH越しのファイルを編集する - Qiita](https://qiita.com/informationsea/items/d2576b1ab678965d9a02)
 
@@ -36,7 +36,7 @@ tree -L 1 -A
 
 ---
 
-### sshfs
+## sshfs
 
 ```sh
 # Mac

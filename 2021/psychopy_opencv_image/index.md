@@ -14,9 +14,9 @@ tags:
 
 - [Psychopy - GitHub](https://github.com/psychopy/psychopy)
 
-![](image.png)
+![Image](image.png)
 
-![](screenshot.png)
+![Screenshot](screenshot.png)
 
 y軸反転と画素値をfloat（0-1）に変換すればOK。
 

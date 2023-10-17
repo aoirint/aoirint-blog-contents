@@ -21,21 +21,21 @@ tags:
 
 ### 一部のテキスト（太字？）が右上に傾いて表示される
 
-![](images/strangely_rendered_1.png)
+![一部のテキストが右上に傾いて表示される](images/strangely_rendered_1.png)
 
 ### 一部のテキスト（ボタンのラベル？）が表示されない
 
-![](images/strangely_rendered_2.png)
+![一部のテキストが表示されない 1](images/strangely_rendered_2.png)
 
-![](images/strangely_rendered_5.png)
+![一部のテキストが表示されない 2](images/strangely_rendered_5.png)
 
 ### 一部のテキストが135度左回転して表示される
 
-![](images/strangely_rendered_4.png)
+![一部のテキストが135度左回転して表示される](images/strangely_rendered_4.png)
 
 ### ボタンのサイズが本来より大きくなる
 
-![](images/strangely_rendered_3.png)
+![ボタンのサイズが本来より大きくなる](images/strangely_rendered_3.png)
 
 ### 印刷UIを開くとクラッシュする
 
@@ -49,15 +49,15 @@ tags:
 
 #### 高DPI設定（Acrobat.exeのプロパティ＞互換性＞高DPI設定の変更）
 
-![](images/high_dpi_1.png)
+![高DPI設定](images/high_dpi_1.png)
 
 #### おかしい表示
 
-![](images/strangely_rendered_6.png)
+![おかしい表示](images/strangely_rendered_6.png)
 
 #### 正しい表示（解決後のスクリーンショット）
 
-![](images/good_rendered_1.png)
+![正しい表示](images/good_rendered_1.png)
 
 ## 自分の環境での原因・解決
 
@@ -69,7 +69,7 @@ Windowsのデフォルトフォントは、（おそらくこういった不具�
 
 - デフォルトフォントの変更方法を指南する記事: [https://techcult.com/change-default-system-font-in-windows-10/](https://techcult.com/change-default-system-font-in-windows-10/)
 
-![](images/registry_1.png)
+![レジストリエディター](images/registry_1.png)
 
 Acrobat Readerを正常に動作させるには、Segoe UIとして描画されるフォントが、正しくSegoe UIフォントである必要があるらしい。
 

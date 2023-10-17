@@ -40,7 +40,7 @@ tags:
 
 ### 蒲田
 
-![](./images/keikyu_kamata.jpg)
+![京急蒲田](./images/keikyu_kamata.jpg)
 
 <small>（シンゴジラでゴジラが初上陸したところの蒲田である。えっ蒲田に！？　というネタをやりたかった… ボイロ無関係だけれど）</small>
 

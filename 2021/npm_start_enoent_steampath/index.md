@@ -16,7 +16,7 @@ tags:
 gitでブランチを切り替えて依存関係に差分が生じたとき、
 node_modulesを修正していないときに起きる。
 
-```
+```plain
 Error: ENOENT: no such file or directory, stat '/home/USER/.steampath'
 ```
 

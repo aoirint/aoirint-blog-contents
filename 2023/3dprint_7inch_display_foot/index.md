@@ -20,13 +20,13 @@ Raspberry Pi向け7インチディスプレイを支える足を簡易的に作�
 - [Kuman 7インチHDMI モニターRaspberry Pi 用接続ディスプレイ1024x600解像度 ラズベリーパイ用 タッチスクリーン 保護ケース・スタンド付き Raspberry Pi 3 2Model B+ A BB 用ディスプレイ - Amazon](https://www.amazon.co.jp/dp/B0814SCNP4)
 - [aoirint🎐: "7インチディスプレイ（7inch HDMI display …" - mstdn.aoirint.com](https://mstdn.aoirint.com/@aoirint/110685800765768102)
 
-![](images/amazon_kuman_7inch_display.png)
+![Amazon Kuman 7inch HDMI display](images/amazon_kuman_7inch_display.png)
 
 すでにAmazonの商品ページがなくなっていたので、同じディスプレイ基板の代替品を購入しました。
 
 - [Longruner 7インチ Raspberry Pi用ディスプレイ LCD TFTモニタ 解像度1024*600 タッチスクリーン HDMI入力 Raspberry Pi 4 3 2 Model B B+ A A+ 用ディスプレイ ラズベリーパイ LSC7B (7インチ) - Amazon](https://www.amazon.co.jp/dp/B07ZHXC2VG)
 
-![](images/amazon_longruner_7inch_display.png)
+![Amazon Longruner 7inch HDMI display](images/amazon_longruner_7inch_display.png)
 
 同じ基板なので、以前に購入したもののアクリル製の枠を再利用できますが、ネジ留めする足の部分をなくしました。
 しばらく以下のような100均のアクリルスタンドを代わりに使っていましたが、安定感向上と角度調整がしたくなったので、遊ばせているEnder-3 Proを使って3Dプリントしてみることにしました。

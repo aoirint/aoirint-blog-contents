@@ -83,7 +83,7 @@ make html
 例えば `html_theme = 'sphinx_rtd_theme'` のような設定を追加し、
 `pip3 install sphinx-rtd-theme` してから `make html` することで、Read the Docsスタイルのドキュメントを生成できる。
 
-```
+```plain
 |- setup.py
 |
 |- docs/

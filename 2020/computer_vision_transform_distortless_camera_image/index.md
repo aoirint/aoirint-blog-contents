@@ -13,7 +13,7 @@ tags:
 
 - [OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html#details)
 
-### カメラ行列（内部パラメータ / intrinsic parameters）
+## カメラ行列（内部パラメータ / intrinsic parameters）
 
 $$
 A = \left(

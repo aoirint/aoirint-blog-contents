@@ -29,8 +29,13 @@ N = 500
 start = time.time()
 entries = []
 for i in range(N):
-    title = ''.join([ chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(32) ])
-    body = ''.join([ chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(30000) ])
+    title = ''.join([
+        chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(32)
+    ])
+    body = ''.join([
+        chr(random.randint(ord('あ'), ord('ん')+1)) for i in range(30000)
+    ])
+
     entries.append({
         'id': i,
         'title': title,
@@ -45,7 +50,7 @@ end = time.time()
 print('Generate: %.1fs' % (end - start, ))
 ```
 
-```
+```plain
 Generate: 38.6s
 ```
 
@@ -71,7 +76,7 @@ end = time.time()
 print('Read: %.3fs' % (end - start, ))
 ```
 
-```
+```plain
 Write: 0.252s
 42.98MB
 Read: 0.214s
@@ -115,7 +120,7 @@ end = time.time()
 print('Read: %.3fs (Load: %.3fs)' % (end - start, end - loadStart))
 ```
 
-```
+```plain
 42.98MB
 Write: 0.830s (Dump: 0.638s)
 Read: 0.156s (Load: 0.095s)
@@ -133,9 +138,18 @@ start = time.time()
 with sqlite3.connect(file) as db:
     cur = db.cursor()
 
-    cur.execute('CREATE TABLE entries(id INTEGER AUTO INCREMENT, title TEXT, body TEXT)')
+    cur.execute(
+        'CREATE TABLE entries(id INTEGER AUTO INCREMENT, title TEXT, body TEXT)'
+    )
     for entry in data['entries']:
-        cur.execute('INSERT INTO entries VALUES(?,?,?)', (entry['id'], entry['title'], entry['body'], ))
+        cur.execute(
+            'INSERT INTO entries VALUES(?,?,?)',
+            (
+                entry['id'],
+                entry['title'],
+                entry['body'],
+            ),
+        )
     
 end = time.time()
 
@@ -159,7 +173,7 @@ print('%.2fMB' % (os.path.getsize(file)/(1024**2), ))
 db.close()
 ```
 
-```
+```plain
 Write: 1.093s
 Read: 0.243s
 43.22MB

@@ -13,7 +13,7 @@ tags:
 - [https://www.amazon.co.jp/dp/B08QJ6Y27V](https://www.amazon.co.jp/dp/B08QJ6Y27V)
   - ときどきセール価格になる
 
-![](images/20210319202358.jpg)
+![Inspiron 1](images/20210319202358.jpg)
 
 持ち出し用Windows/Ubuntu機として購入。
 自前でPCを（一応でも）新品で買うのは初めて。
@@ -105,11 +105,11 @@ OS領域やOEM領域が悪質な（中間）所有者によって改ざんされ
 
 ---
 
-![](images/20210319202312.jpg)
+![Inspiron 2](images/20210319202312.jpg)
 梱包
 
-![](images/20210319202450.jpg)
+![Inspiron 3](images/20210319202450.jpg)
 クラムシェル（ふた）
 
-![](images/20210319202358.jpg)
+![Inspiron 4](images/20210319202358.jpg)
 起動画面・キーボード

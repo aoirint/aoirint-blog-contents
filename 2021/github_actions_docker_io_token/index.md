@@ -29,8 +29,7 @@ mainブランチにgit pushされたとき、Dockerイメージのビルドが�
 
 ## .github/workflows/docker.yml
 
-```
-#!yaml
+```yaml
 name: Push to Docker registry
 
 on:

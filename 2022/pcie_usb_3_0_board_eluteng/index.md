@@ -32,24 +32,24 @@ PC裏は電源やUSBケーブル・オーディオケーブル・LANケーブル
 
 ### 追加前のマザーボード全体
 
-![](images/motherboard_before.jpg)
+![追加前のマザーボード全体](images/motherboard_before.jpg)
 
 - 多少ほこりっぽかったり、メモリのメーカーがバラバラだったりするのは見逃してほしい
 - GPU2枚の間のPCIeポートが空いている
 
 ### 設置箇所 拡大
 
-![](images/motherboard_zoom_after.jpg)
+![設置箇所 拡大](images/motherboard_zoom_after.jpg)
 
 - GPUの排熱の影響を受けそうだけれど、しばらくフルパワーで回していないのでよくわからない
 - ここしかポートがないので、よしとする
 
 ### 追加後のマザーボード全体
 
-![](images/motherboard_after.jpg)
+![追加後のマザーボード全体](images/motherboard_after.jpg)
 
 ### ケース背面
 
-![](images/case_back_after.jpg)
+![ケース背面](images/case_back_after.jpg)
 
 - USBコネクタの穴が空いている方が上になっているのが標準的な向き（フロントパネルとかノートPCでは普通この向き）だと思っているけれど、この向きでしか設置できないので、よしとする

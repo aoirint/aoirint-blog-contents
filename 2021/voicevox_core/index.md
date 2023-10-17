@@ -16,7 +16,7 @@ tags:
 
 - [https://github.com/Hiroshiba/voicevox_core](https://github.com/Hiroshiba/voicevox_core)
 
-```
+```plain
 Ubuntu 20.04.3 LTS (Focal Fossa)
 
 Python 3.9.6 (pyenv)
@@ -169,7 +169,7 @@ rm -rf build/ core.cpp
 
 #### files.txt
 
-```
+```plain
 ***/lib/python3.9/site-packages/core.cpython-39-x86_64-linux-gnu.so
 ***/lib/python3.9/site-packages/core-0.0.0-py3.9.egg-info
 ```

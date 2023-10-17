@@ -99,7 +99,7 @@ WantedBy=sockets.target
 PulseAudioを手動で起動するときは`pulseaudio --start`を使いますが、
 ここではkillした上でサービスの自動起動を有効にし、`systemd`を使ってPulseAudioを再起動します。
 
-```
+```shell
 pulseaudio --kill
 
 systemctl --user daemon-reload

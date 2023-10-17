@@ -114,4 +114,4 @@ Gatsbyが2つのディレクトリを同じデータソースとして統合し�
 
 このおかげで、ローカルでのプレビューもできる（Gatsbyが重いのでレイアウト変えるとき以外は、多少表示崩れても手間なのでGatsbyでレンダリングしない方がいいと思っているけれど）。
 
-![](images/eyamigusa_new_workflow.png)
+![新しいワークフロー](images/eyamigusa_new_workflow.png)

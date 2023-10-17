@@ -14,7 +14,7 @@ tags:
 - [OpenCV: Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.2.0/d9/d0c/group__calib3d.html#details)
 - [歪みなしカメラ画像の座標変換 - えやみぐさ](https://blog.aoirint.com/entry/2020/computer_vision_transform_distortless_camera_image/)
 
-カメラ座標
+## カメラ座標
 
 $$
 P_c = \left(
@@ -32,14 +32,14 @@ y' = Y_c / Z_c \\
 r^2 = x'^2 + y'^2
 $$
 
-歪み補正 / Distortion correction
+## 歪み補正 / Distortion correction
 
 $$
 x'' = x' \frac{ 1 + k_1\ r^2 + k_2\ r^4 + k_3\ r^6 }{ 1 + k_4\ r^2 + k_5\ r^4 + k_6\ r^6 } + 2 p_1 x' y' + p_2 (r^2 + 2 x'^2) + s_1 r^2 + s_2 r^4 \\
 y'' = y' \frac{ 1 + k_1\ r^2 + k_2\ r^4 + k_3\ r^6 }{ 1 + k_4\ r^2 + k_5\ r^4 + k_6\ r^6 } + p_1 (r^2 + 2 y'^2) + 2 p_2 x' y' + s_1 r^2 + s_2 r^4
 $$
 
-カメラ座標変換
+## カメラ座標変換
 
 $$
 \left(
@@ -47,8 +47,7 @@ $$
 u \\
 v
 \end{array}
-\right)
-=
+\right) =
 
 \left(
 \begin{array}{ccc}

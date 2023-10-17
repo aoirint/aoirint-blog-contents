@@ -93,7 +93,7 @@ server {
 
 ## 拡張機能のインストール
 
-### 手順
+### インストール手順
 
 1. 拡張機能の配布ファイル（tar.gz）をサーバにダウンロード
 2. 配布ファイルを展開
@@ -119,7 +119,7 @@ server {
 
 ### ロゴを変更
 
-#### LocalSettings.php
+#### ロゴ変更 LocalSettings.php
 
 ```php
 ## The URL paths to the logo.  Make sure you change this from the default,
@@ -128,7 +128,7 @@ server {
 $wgLogos = [ '1x' => "$wgResourceBasePath/images/logo.png" ];
 ```
 
-#### 手順
+#### ロゴ変更 手順
 
 1. LocalSettings.phpを編集
 2. ロゴ画像を`app/images/logo.png`に配置
@@ -138,7 +138,7 @@ $wgLogos = [ '1x' => "$wgResourceBasePath/images/logo.png" ];
 
 - [Manual:Timezone - MediaWiki](https://www.mediawiki.org/wiki/Manual:Timezone)
 
-#### LocalSettings.php
+#### タイムゾーン変更 LocalSettings.php
 
 ```php
 # Time zone
@@ -146,7 +146,7 @@ $wgLogos = [ '1x' => "$wgResourceBasePath/images/logo.png" ];
 $wgLocaltimezone = "Asia/Tokyo";
 ```
 
-#### 手順
+#### タイムゾーン変更 手順
 
 1. LocalSettings.phpを編集
 2. 「メンテナンス：再起動」を実行

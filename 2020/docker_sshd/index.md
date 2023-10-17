@@ -26,7 +26,7 @@ SSHではプロトコル上、HTTPのようにホスト名を使ってバーチ�
 本記事では、以下のようにリバースプロキシ・HTTPプロキシを
 SSHサーバの前段階に設けることでHTTPと同様なアクセス振り分けを可能にする。
 
-```
+```plain
 クライアント
 →クライアント側ネットワーク（:80 or :443のみ通過可）
 →リバースプロキシ（Webサーバ） :80 or :443
@@ -44,7 +44,7 @@ debianのリポジトリとリンクして自動ビルドされるようなこ�
 ちょっと古いので、ローカルでビルドすることにする。
 `docker-compose.yml`を書いたら`docker-compose build`を実行してビルドする。
 
-```
+```plain
 Commit ID: 24a1f32f6060054c64e294d3b074885c856b29d2
 ```
 
@@ -87,12 +87,12 @@ ssh localhost -p 2222 -l myuser -i ~/.ssh/YOUR_PRIVATE_KEY
 
 HTTPプロキシを立てる。[Squid](https://github.com/squid-cache/squid)を使う。Dockerイメージは[sameersbn/squid](https://github.com/sameersbn/docker-squid)を使う。
 
-```
+```plain
 Docker Image Tag: 3.5.27-2
 Commit ID: 924b0855440442a4be330ef4dba7a85681e9a49d
 ```
 
-### docker-compose.yml
+### HTTPプロキシ docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -132,7 +132,7 @@ http_port 3128
 
 ```
 
-### テスト
+### HTTPプロキシ テスト
 
 ```sh
 ssh sshd -p 22 -l myuser \
@@ -150,7 +150,7 @@ ProxyCommand部の設定方法はOSによって変わるので注意（別記事
 
 リバースプロキシを立てる。nginxを使う。Dockerイメージは[_/nginx](https://hub.docker.com/_/nginx)を使う。
 
-### docker-compose.yml
+### リバースプロキシ docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -183,7 +183,7 @@ services:
       - 'http_proxy'
 ```
 
-### nginx/default.conf
+### リバースプロキシ nginx/default.conf
 
 ```nginx
 
@@ -218,7 +218,7 @@ server {
 - [Module ngx_stream_core_module | nginx.org](https://nginx.org/en/docs/stream/ngx_stream_core_module.html)
 - [NGINX 1.9が汎用TCPサーバとして使えるようになっていた件 - Qiita](https://qiita.com/dseg/items/75bf517738a1d8b2d036#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB)
 
-#### nginx/nginx.conf
+#### Stream Proxy nginx/nginx.conf
 
 ```nginx
 worker_processes auto;
@@ -242,7 +242,7 @@ stream {
 }
 ```
 
-#### docker-compose.yml
+#### Stream Proxy docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -266,7 +266,7 @@ services:
       - 'sshd'
 ```
 
-#### テスト
+#### Stream Proxy テスト
 
 ```sh
 ssh localhost -p 8000 -l myuser -i ./YOUR_PRIVATE_KEY

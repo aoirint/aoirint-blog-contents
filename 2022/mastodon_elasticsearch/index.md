@@ -37,7 +37,7 @@ tags:
 > I'm using Elasticsearch to put a search box on my cat-picture SaaS product.
 >
 > This is permitted under ELv2. Meow!
-
+>
 > I am a Managed Service Provider (MSP) running Elasticsearch and Kibana for my customers.
 >
 > If your customers do not access Elasticsearch and Kibana, this is permitted under ELv2. If your customers do have access to substantial portions of the functionality of either Elasticsearch and Kibana as part of your service, this may not be permitted.
@@ -90,7 +90,7 @@ tags:
 
 Elasticsearchを`docker compose up -d`で初回起動すると、ターミナルが割り当てられないため、パスワードが設定されない（以下、Elasticsearchのログ）。
 
-```
+```plain
 Auto-configuration will not generate a password for the elastic built-in superuser, as we cannot  determine if there is a terminal attached to the elasticsearch process. You can use the `bin/elasticsearch-reset-password` tool to set the password for the elastic user.
 ```
 
@@ -128,7 +128,7 @@ sudo docker compose exec web bundle exec bin/tootctl search deploy
 
 以下のようなログが`web`サービスから出た場合、Elasticsearchのユーザ名やパスワードが正しいか、パスワードが設定されているか確認する（Elasticsearchのパスワード設定の項）。
 
-```
+```plain
 bundler: failed to load command: bin/tootctl (bin/tootctl)
 /opt/mastodon/vendor/bundle/ruby/3.0.0/gems/elasticsearch-transport-7.13.3/lib/elasticsearch/transport/transport/base.rb:218:in `__raise_transport_error': [401] {"error":{"root_cause":[{"type":"security_exception","reason":"missing authentication credentials for REST request [/chewy_specifications/_search]","header":{"WWW-Authenticate":["Basic realm=\\"security\\" charset=\\"UTF-8\\"","ApiKey"]}}],"type":"security_exception","reason":"missing authentication credentials for REST request [/chewy_specifications/_search]","header":{"WWW-Authenticate":["Basic realm=\\"security\\" charset=\\"UTF-8\\"","ApiKey"]}},"status":401} (Elasticsearch::Transport::Transport::Errors::Unauthorized)
 ```
@@ -137,7 +137,7 @@ bundler: failed to load command: bin/tootctl (bin/tootctl)
 
 GeoIPデータベースの更新が`exception during geoip databases update`というメッセージでなぜか失敗することがある。
 
-```
+```plain
 {"@timestamp":"2022-11-19T08:03:05.924Z", "log.level":"ERROR", "message":"exception during geoip databases update", "ecs.version": "1.2.0","service.name":"ES_ECS","event.dataset":"elasticsearch.server","process.thread.name":"elasticsearch[86daa7202fdd][generic][T#3]","log.logger":"org.elasticsearch.ingest.geoip.GeoIpDownloader","elasticsearch.cluster.uuid":"hheOc5duSHeHSeLuX2UJuw","elasticsearch.node.id":"7Bqa7bvcRvq_xxEEyVwflw","elasticsearch.node.name":"86daa7202fdd","elasticsearch.cluster.name":"es-mastodon","error.type":"java.net.SocketTimeoutException","error.message":"Connect timed out","error.stack_trace":"java.net.SocketTimeoutException: Connect timed out\n\tat java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)\n\tat java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)\n\tat java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\n\tat java.base/java.net.Socket.connect(Socket.java:666)\n\tat java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)\n\tat java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)\n\tat java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)\n\tat java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)\n\tat java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)\n\tat java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378)\n\tat java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)\n\tat java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241)\n\tat java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127)\n\tat java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)\n\tat java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1661)\n\tat java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1585)\n\tat java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)\n\tat java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:308)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.HttpClient.lambda$get$0(HttpClient.java:46)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:569)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.HttpClient.doPrivileged(HttpClient.java:88)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.HttpClient.get(HttpClient.java:40)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.HttpClient.getBytes(HttpClient.java:36)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.GeoIpDownloader.fetchDatabasesOverview(GeoIpDownloader.java:155)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:143)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:274)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:102)\n\tat org.elasticsearch.ingest.geoip@8.5.1/org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:48)\n\tat org.elasticsearch.server@8.5.1/org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42)\n\tat org.elasticsearch.server@8.5.1/org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:892)\n\tat org.elasticsearch.server@8.5.1/org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1589)\n"}
 ```
 

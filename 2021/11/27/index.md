@@ -4,6 +4,7 @@ draft: false
 noindex: true
 channel: ダイアリー
 ---
+# 2021-11-27
 
 ## VOICEVOX
 
@@ -107,7 +108,7 @@ ffmpeg -i input.wav -ar 48000 output.mp3
 
 ## ごはん
 
-```
+```plain
 豚肉こまぎれ 200g
 中華ペースト
 にんにくペースト

@@ -32,7 +32,7 @@ SEIKAサブカルフェスタ2022は、2022年11月20日（日）に京都府精
 - 声音の宴 運営Twitter: [https://twitter.com/kowa_uta](https://twitter.com/kowa_uta)
 - けいはんなオープンイノベーションセンター 公式サイト: [http://kick.kyoto/](http://kick.kyoto/)
 
-![](images/website.png)
+![SEIKAサブカルフェスタ2022 公式サイト](images/website.png)
 （SEIKAサブカルフェスタ2022 公式サイト より）
 
 ## セイカフェス2022

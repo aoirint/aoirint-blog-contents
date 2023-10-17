@@ -22,6 +22,6 @@ tags:
 
 ---
 
-### VOICEVOX ENGINEのLinux対応
+## VOICEVOX ENGINEのLinux対応
 
-### VOICEVOX ENGINEのビルド自動化
+## VOICEVOX ENGINEのビルド自動化
