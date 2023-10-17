@@ -62,7 +62,7 @@ DNSでは、MXレコード、SPFレコードを設定しています。
 
 ### IMAPサーバ imap.aoirint.com
 
-##### IMAPS
+#### IMAPS
 
 |||
 |:--|:--|
