@@ -127,7 +127,7 @@ Wikiページの言語にあたる、ロケールの設定が悩ましいとこ�
 これは空コミットでなくてもよい。
 ブランチが存在しない場合、以下のエラーが発生する。
 
-```
+```plain
 Invalid branch! Make sure it exists on the remote first.
 ```
 
