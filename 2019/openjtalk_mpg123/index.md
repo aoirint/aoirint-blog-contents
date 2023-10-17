@@ -28,14 +28,14 @@ mpg123 b.mp3
 
 ffmpegのinfo
 
-```
+```plain
 Guessed Channel Layout for Input Stream #0.0 : mono
 Input #0, wav, from 'b.wav':
   Duration: 00:00:01.17, bitrate: 768 kb/s
     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
 ```
 
-```
+```plain
 Input #0, mp3, from 'b.mp3':
   Metadata:
     encoder         : Lavf57.56.101
@@ -49,7 +49,7 @@ ffmpeg -i b.wav c.wav
 
 これもダメ
 
-```
+```plain
 Guessed Channel Layout for Input Stream #0.0 : mono
 Input #0, wav, from 'c.wav':
   Metadata:
@@ -64,7 +64,7 @@ ffmpeg -i b.mp3 d.wav
 
 これもダメ
 
-```
+```plain
 Guessed Channel Layout for Input Stream #0.0 : mono
 Input #0, wav, from 'd.wav':
   Metadata:
@@ -79,7 +79,7 @@ ffmpeg -i b.wav -ac 2 e.wav
 
 ステレオにしてみたけどこれもダメ
 
-```
+```plain
 Guessed Channel Layout for Input Stream #0.0 : stereo
 Input #0, wav, from 'e.wav':
   Metadata:
