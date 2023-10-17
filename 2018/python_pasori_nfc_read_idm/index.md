@@ -194,4 +194,4 @@ Type3Tag ID=$$$$$$$$$$$$$$$$ PMM=$$$$$$$$$$$$$$$$ SYS=0003
 
 ---
 
-- [[PASMO] FeliCa から情報を吸い出してみる - FeliCaの仕様編 [Android][Kotlin] - Qiita](https://qiita.com/YasuakiNakazawa/items/3109df682af2a7032f8d)
+- [\[PASMO\] FeliCa から情報を吸い出してみる - FeliCaの仕様編 \[Android\]\[Kotlin\] - Qiita](https://qiita.com/YasuakiNakazawa/items/3109df682af2a7032f8d)
