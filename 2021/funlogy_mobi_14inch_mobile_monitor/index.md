@@ -13,7 +13,7 @@ tags:
 - [https://www.amazon.co.jp/dp/B08NCJMYNT](https://www.amazon.co.jp/dp/B08NCJMYNT)
   - ときどきセール価格になる
 
-![](images/20210319192529.jpg)
+![FunLogy Mobi 1](images/20210319192529.jpg)
 
 3枚目兼持ち出し用ディスプレイとして購入。
 家ではTwitter用、持ち出しではカフェでノートPCを開いて作業するときなどに使いたい。
@@ -37,49 +37,49 @@ Raspberry Piの場合、給電中は別のUSB機器を使えないかもしれ�
 
 ---
 
-![](images/20210319191103.jpg)
+![FunLogy Mobi 2](images/20210319191103.jpg)
 梱包
 
-![](images/20210319191113.jpg)
+![FunLogy Mobi 3](images/20210319191113.jpg)
 クッション・保護シートを取り外したところ、右は付属スタンド
 
-![](images/20210319191643.jpg)
+![FunLogy Mobi 4](images/20210319191643.jpg)
 表面（カバーは折り返したときに裏にくる面、内側にディスプレイがある）
 
-![](images/20210319191647.jpg)
+![FunLogy Mobi 5](images/20210319191647.jpg)
 裏面（カバーを折り返したときに内側に隠れる面）
 
-![](images/20210319191656.jpg)
+![FunLogy Mobi 6](images/20210319191656.jpg)
 付属品（HDMI-mini HDMIケーブル、Type C-TypeCケーブル、Type A-Type Cケーブル、クロス、説明書）、
 付属ケーブルはすべておおむね1m程度の長さ、
 HDMI-mini HDMIケーブルは太め
 
-![](images/20210319192551.jpg)
+![FunLogy Mobi 7](images/20210319192551.jpg)
 カバーはマグネットで付いている
 
-![](images/20210319192547.jpg)
+![FunLogy Mobi 8](images/20210319192547.jpg)
 ボタン（表面から見て左側、写真左側が下）
 
-![](images/20210319192542.jpg)
+![FunLogy Mobi 9](images/20210319192542.jpg)
 端子（表面から見て右側、写真右側が下）、下から給電用Type C、映像用mini HDMI（2本接続用）、映像/給電用Type C（1本接続用）
 
-![](images/20210319192533.jpg)
+![FunLogy Mobi 10](images/20210319192533.jpg)
 カバーを使って立てた様子
 
-![](images/20210319192537.jpg)
+![FunLogy Mobi 11](images/20210319192537.jpg)
 付属スタンドを使って立てた様子
 
-![](images/20210319191240.jpg)
+![FunLogy Mobi 12](images/20210319191240.jpg)
 付属スタンド（5段のうち下から2段目）
 
-![](images/20210319191249.jpg)
+![FunLogy Mobi 13](images/20210319191249.jpg)
 付属スタンド（5段のうち下から5段目）
 
-![](images/20210319192526.jpg)
+![FunLogy Mobi 14](images/20210319192526.jpg)
 付属スタンドで立てたときの根元（5段のうち下から2段目）
 
-![](images/20210319192529.jpg)
+![FunLogy Mobi 15](images/20210319192529.jpg)
 設置の様子（スタンドは5段のうち下から2段目、明るさ100%に設定、USB 5V 2.4A電源、HDMI mini接続）
 
-![](images/20210319194324.jpg)
+![FunLogy Mobi 16](images/20210319194324.jpg)
 HDMIケーブルの接続（取り外しやすくするため、HDMI延長アダプタを使用）
