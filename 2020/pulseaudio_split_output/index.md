@@ -41,7 +41,7 @@ pacmd unload-module module-null-sink
 
 ## ログイン時に自動作成する
 
-### /etc/pulse/default.pa
+### ログイン時自動作成 /etc/pulse/default.pa
 
 ```pulseaudio
 # Custom
@@ -58,7 +58,7 @@ load-module module-null-sink sink_name=DummyOutputGeneral1 sink_properties=devic
 load-module module-loopback source=DummyOutputGeneral1.monitor source_dont_move=true
 ```
 
-### PulseAudioの再起動
+### ログイン時自動作成 PulseAudioの再起動
 
 ```shell
 pulseaudio --kill
@@ -71,7 +71,7 @@ pulseaudio --start
 
 新しい出力デバイスが検出されたとき、デフォルト出力デバイスが切り替わるのを防ぐ。
 
-### /etc/pulse/default.pa
+### 自動切り換え無効化 /etc/pulse/default.pa
 
 `load-module module-switch-on-port-available`、`load-module module-switch-on-connect`をコメントアウトする。
 
@@ -85,7 +85,7 @@ pulseaudio --start
 #.endif
 ```
 
-### PulseAudioの再起動
+### 自動切り換え無効化 PulseAudioの再起動
 
 ```shell
 pulseaudio --kill
