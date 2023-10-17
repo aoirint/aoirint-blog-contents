@@ -138,9 +138,18 @@ start = time.time()
 with sqlite3.connect(file) as db:
     cur = db.cursor()
 
-    cur.execute('CREATE TABLE entries(id INTEGER AUTO INCREMENT, title TEXT, body TEXT)')
+    cur.execute(
+        'CREATE TABLE entries(id INTEGER AUTO INCREMENT, title TEXT, body TEXT)'
+    )
     for entry in data['entries']:
-        cur.execute('INSERT INTO entries VALUES(?,?,?)', (entry['id'], entry['title'], entry['body'], ))
+        cur.execute(
+            'INSERT INTO entries VALUES(?,?,?)',
+            (
+                entry['id'],
+                entry['title'],
+                entry['body'],
+            ),
+        )
     
 end = time.time()
 
