@@ -33,7 +33,7 @@ PCでゲームを遊ぶ割合が増えたことでJava版に移行すること�
 
 ワールドデータをアップロードすると、異なるプラットフォーム・バージョン向けに変換してくれるWebツール。
 
-![](images/chunker_start.png)
+![Chunker 開始画面](images/chunker_start.png)
 
 右下のベルボタンから確認できる更新履歴を見る限り、少なくとも2020年5月にはChunker 1.4.1が存在していたようだ。
 
@@ -61,9 +61,9 @@ Hive GamesというMinecraft公式パートナー（Minecraftのマーケット�
 
 十数日遊んだくらいの、35MB程度のBedrock版ワールドがあったので、ChunkerでJava版に変換してみた。
 
-![](images/liteworld_map.png)
+![軽量ワールド 額縁に入った地図](images/liteworld_map.png)
 
-![](images/liteworld_half_block.png)
+![軽量ワールド ハーフブロック](images/liteworld_half_block.png)
 
 見た目には、ハーフブロックが一部消えたり入れ替わったりしていそうなくらいで、
 いくらか手を入れれば遊べそうだった。
@@ -79,9 +79,9 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 
 手元に733MBある本命のBedrock版ワールドがあり、これをアップロードしようとしたところ、サイズ制限のバリデーションに引っかかった（ディレクトリ・zipと2方式のアップロードボタンがあるが、どちらも同じ）。
 
-![](images/chunker_733mb.png)
+![Chunker 733MB](images/chunker_733mb.png)
 
-![](images/chunker_size_limit.png)
+![Chunker サイズ制限](images/chunker_size_limit.png)
 
 ワールドサイズを減らすため、不要なチャンクを削除してみることにした。
 
@@ -90,17 +90,17 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 - [https://www.amuletmc.com/](https://www.amuletmc.com/)
 - [https://github.com/Amulet-Team/Amulet-Map-Editor](https://github.com/Amulet-Team/Amulet-Map-Editor)
 
-![](images/amulet_start.png)
+![Amulet 開始画面](images/amulet_start.png)
 
-![](images/amulet_load_world.png)
+![Amulet ワールド読み込み](images/amulet_load_world.png)
 
-![](images/amulet_loaded.png)
+![Amulet ワールド読み込み済み](images/amulet_loaded.png)
 
-![](images/amulet_3d_editor.png)
+![Amulet 3Dエディタ画面](images/amulet_3d_editor.png)
 
 ワールドを読み込んだあと、Ctrl+Aでワールド全体を選択する。
 
-![](images/amulet_all_selected.png)
+![Amulet 全選択済み](images/amulet_all_selected.png)
 
 左の選択範囲フォームからXZを編集して、適当なサイズにする。
 適当に試したところ、以下のようなサイズになったので、-5000～+5000を切り取ることにした。
@@ -109,52 +109,52 @@ Chunkerにアップロードできるワールドのサイズ制限はおそら�
 - 12000x12000（-6000～+6000）: 530MB
 - 10000x10000（-5000～+5000）: 480MB
 
-![](images/amulet_selection_edit.png)
+![Amulet 選択範囲の変更](images/amulet_selection_edit.png)
 
 フォームの数字をキーボードで編集するときは、フォームからマウスを外さないようにする。
 右の3D表示にマウスカーソルが乗ると、入力欄から選択が外れてしまう（画像中では-10000～+10000になっているが、スクリーンショットを撮り直していないだけ）。
 
-![](images/amulet_selection_edited.png)
+![Amulet 選択範囲の変更済み](images/amulet_selection_edited.png)
 
 下の「Chunk」ボタンを押す。
 
-![](images/amulet_chunk.png)
+![Amulet チャンク編集](images/amulet_chunk.png)
 
 「選択範囲外のチャンクを削除」ボタンを押す。
 
-![](images/amulet_chunk_delete_unselected.png)
+![Amulet 非選択チャンクの削除](images/amulet_chunk_delete_unselected.png)
 
 出てくるモーダルで、現在のチャンクデータを読み込んでUndo可能にするか聞かれるが、
 Noを選ぶとUndoできないが高速に作業を進められる。
 Yesを選ぶと、Undoポイントの作成に数分以上かかることがある。
 
-![](images/amulet_chunk_undo.png)
+![Amulet チャンク操作 Undo確認](images/amulet_chunk_undo.png)
 
 右上の保存ボタンを押す。
 保存完了の時点ではワールドサイズは減っていないので注意。
 
-![](images/amulet_save.png)
+![Amulet 編集内容を保存](images/amulet_save.png)
 
 ワールドを閉じる。
 この操作が完了すると、ワールドサイズが変化する。
 
-![](images/amulet_close.png)
+![Amulet ワールドを閉じる](images/amulet_close.png)
 
 10000x10000（-5000～+5000）を切り取ったことで、zip圧縮状態で473MBにすることができた（上のチャンク削除前サイズは圧縮前だが、圧縮時は725MBだった）。
 
-![](images/chunker_473mb.png)
+![Chunker 473MB](images/chunker_473mb.png)
 
 500MBを下回ったことで、Chunkerを使って変換することができた。
 
-![](images/chunker_converting.png)
+![Chunker 変換中](images/chunker_converting.png)
 
-![](images/chunker_ready_to_download.png)
+![Chunker 変換したワールドをダウンロード](images/chunker_ready_to_download.png)
 
 こちらのワールドでは、地図や旗が壊れてしまっていた。
 軽量ワールドの方では地図を変換できていたようだったので、Amuletを挟んだ影響かもしれないが、
 地図の縮尺・複製の違いや、ワールドサイズが大きいことなど、他にも原因が考えられる。
 
-![](images/heavyworld_banner.png)
+![Chunker 大きいワールドのバナー](images/heavyworld_banner.png)
 
 また、すべてのエンティティが消えてしまっているようだったので、村人なども引き継げなさそうだった。
 これもChunker単体では不明。
