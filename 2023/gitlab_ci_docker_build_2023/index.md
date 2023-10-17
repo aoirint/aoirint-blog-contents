@@ -79,7 +79,7 @@ build:
 
 `docker buildx build`実行時に、以下のようなエラーが出るため追加しています。
 
-```
+```plain
 ERROR: cache export feature is currently not supported for docker driver. Please switch to a different driver (eg. "docker buildx create --use")
 ```
 
