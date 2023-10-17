@@ -64,13 +64,13 @@ e1000eの自動ビルドはおそらく無駄で（4.10から4.15では意味が
 Ubuntu 18.04の場合、`linux-generic-hwe-18.04`が安定版、`linux-generic-hwe-18.04-edge`が開発版ということだろうか。
 今回は安定性を重視するので安定版を選んでアップデートする。
 
-```
+```shell
 sudo apt install linux-generic-hwe-18.04
 ```
 
 このあとから以下のようになったので、このシステムでaptが管理していたカーネルバージョンは`4.15.0-115`だったことがわかる。
 
-```
+```plain
 The following packages were automatically installed and are no longer required:
   linux-headers-4.15.0-115 linux-headers-4.15.0-115-generic
   linux-image-4.15.0-115-generic linux-modules-4.15.0-115-generic
@@ -204,7 +204,7 @@ while [ "x$list" != "x" ] ; do
 
 `$list`は以下のように生成される。
 
-```
+```shell
         list=
         for i in /boot/vmlinuz-* /vmlinuz-* /boot/kernel-* ; do
             if grub_file_is_not_garbage "$i" ; then list="$list $i" ; fi
@@ -423,7 +423,7 @@ WantedBy=multi-user.target
 
 /etc/uscript/e1000e
 
-```
+```shell
 #!/bin/bash
 
 modprobe -r e1000e
@@ -467,7 +467,7 @@ dkms.confの細かい説明：[Ubuntu Manpage: dkms - Dynamic Kernel Module Supp
 
 ディレクトリ構造
 
-```
+```plain
 | /usr/src/e1000e-3.8.4/
 |-- README
 |-- dkms.conf  <-- New!
