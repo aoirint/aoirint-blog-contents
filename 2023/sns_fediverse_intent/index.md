@@ -22,7 +22,7 @@ Twitter (X)、Misskey、Mastodonには、URLのGETパラメータに投稿本文
 
 - ドキュメント: [Web Intent | Docs | Twitter Developer Platform](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent)
 
-```
+```plain
 https://twitter.com/intent/tweet
 ```
 
@@ -41,7 +41,7 @@ https://twitter.com/intent/tweet
 
 [Misskey.io](https://misskey.io/)を例とします。
 
-```
+```plain
 https://misskey.io/share?text=hello
 ```
 
@@ -67,7 +67,7 @@ https://misskey.io/share?text=hello
 
 [mstdn.aoirint.com](https://mstdn.aoirint.com/)を例とします。
 
-```
+```plain
 https://mstdn.aoirint.com/share?text=hello
 ```
 
@@ -98,7 +98,7 @@ ActivityPubに対応したマイクロブログ実装の間で統一された仕
 
 ブラウザのlocalStorageにサーバ一覧を保存する形式。
 
-```
+```plain
 https://mastoshare.net/share?text=Hello%20Mastoshare!&url=https://mastoshare.net
 ```
 
