@@ -120,7 +120,7 @@ end = time.time()
 print('Read: %.3fs (Load: %.3fs)' % (end - start, end - loadStart))
 ```
 
-```
+```plain
 42.98MB
 Write: 0.830s (Dump: 0.638s)
 Read: 0.156s (Load: 0.095s)
@@ -164,7 +164,7 @@ print('%.2fMB' % (os.path.getsize(file)/(1024**2), ))
 db.close()
 ```
 
-```
+```plain
 Write: 1.093s
 Read: 0.243s
 43.22MB
