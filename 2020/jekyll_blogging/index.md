@@ -49,7 +49,7 @@ sudo docker run --rm -v `pwd`/myblog:/code -e BUNDLE_PATH=vendor/bundle myjekyll
 
 `vendor`を除いたフォルダ構成はこんな感じ。
 
-```
+```plain
 myblog/
 ├── 404.html
 ├── about.markdown
