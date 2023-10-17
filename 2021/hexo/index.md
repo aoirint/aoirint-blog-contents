@@ -108,6 +108,6 @@ npm install hexo-hide-posts
 
 - [https://github.com/hexojs/hexo-filter-nofollow](https://github.com/hexojs/hexo-filter-nofollow)
 
-```
+```shell
 npm install hexo-filter-nofollow
 ```
