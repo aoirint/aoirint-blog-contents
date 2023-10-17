@@ -15,7 +15,7 @@ tags:
 
 # arduino-cliの使い方
 
-```
+```shell
 $ arduino-cli version
 arduino-cli Version: 0.13.0 Commit: 693a045
 ```
@@ -129,7 +129,7 @@ arduino-cli compile -b arduino:megaavr:nona4809
 arduino-cli compile -b arduino:megaavr:nona4809:mode=off
 ```
 
-```
+```shell
 $ arduino-cli board details arduino:megaavr:nona4809
 Board name:                Arduino Nano Every                                                            
 FQBN:                      arduino:megaavr:nona4809                                                      
