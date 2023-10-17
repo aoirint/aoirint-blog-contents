@@ -50,7 +50,7 @@ end = time.time()
 print('Generate: %.1fs' % (end - start, ))
 ```
 
-```
+```plain
 Generate: 38.6s
 ```
 
@@ -76,7 +76,7 @@ end = time.time()
 print('Read: %.3fs' % (end - start, ))
 ```
 
-```
+```plain
 Write: 0.252s
 42.98MB
 Read: 0.214s
