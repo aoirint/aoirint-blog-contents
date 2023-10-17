@@ -14,7 +14,7 @@ tags:
 
 # Docker Desktop for Mac上のX ClientをホストのXQuartz（X Window Server）で表示する
 
-```
+```shell
 $ docker -v
 Docker version 20.10.0, build 7287ab3
 
@@ -43,7 +43,7 @@ Open-source version of the X.Org X Window System
 XQuartzの場合は`--cask`をつけなくても内部で勝手に`brew cask`としてインストールしてくれた。
 Homebrew CaskというのはGUIアプリケーション向けのHomebrewの拡張らしいが、Homebrewと何が違うのかわからん。
 
-```
+```plain
 Warning: Calling brew cask install is deprecated! Use brew install [--cask] instead.
 ```
 
@@ -102,7 +102,7 @@ docker build . -t xeyes
 具体的には、Docker Desktop for Macのタスクバーアイコン > Preferences > Docker EngineのJSON設定欄に
 `"dns": [ "primary dns address", "secondary dns address" ]`のように設定を書き足して解決していた。
 
-```
+```plain
 failed to solve with frontend dockerfile.v0:
 failed to create LLB definition:
 failed to authorize:
