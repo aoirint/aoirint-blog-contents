@@ -26,4 +26,4 @@ aoirint.com関連サービスにBetter Uptimeを導入し、死活監視情報�
 
 - [https://status.aoirint.com](https://status.aoirint.com)
 
-![](images/status_page.png)
+![ステータスページ](images/status_page.png)
