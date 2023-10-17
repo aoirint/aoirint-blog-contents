@@ -69,7 +69,7 @@ OBS Studioを開いてStreamingの設定をする。SettingsからStreamを選�
 
 Encoderはなにかかけてもffmpegが自動で認識して（rawvideoに）変換してくれそうだけど、ローカルでエンコードする必要ないはずなのではじめからrawvideoでStreamingしたいけど、選択肢がなさそう..。しかたないのでh264で転送した。
 
-```
+```plain
 # ffmpegのログ
 
 Stream mapping:
