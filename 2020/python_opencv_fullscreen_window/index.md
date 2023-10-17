@@ -20,7 +20,7 @@ cv2.namedWindow('screen', cv2.WINDOW_NORMAL)
 cv2.setProperty('screen', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 ```
 
-```
+```plain
 This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
 ```
 
