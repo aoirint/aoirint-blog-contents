@@ -16,7 +16,7 @@ tags:
 - [OpenCV: Fisheye camera model](https://docs.opencv.org/4.2.0/db/d58/group__calib3d__fisheye.html#details)
 - [歪みなしカメラ画像の座標変換 - えやみぐさ](https://blog.aoirint.com/entry/2020/computer_vision_transform_distortless_camera_image/)
 
-カメラ座標
+## カメラ座標
 
 $$
 P_c = \left(
@@ -35,7 +35,7 @@ r^2 = x'^2 + y'^2 \\
 \theta = {\rm atan}(r)
 $$
 
-歪み補正 / Distortion correction
+## 歪み補正 / Distortion correction
 
 $$
 \theta_d = \theta ( 1 + k_1 \theta^2 + k_2 \theta^4 + k_3 \theta^6 + k_4 \theta^8 )\\
@@ -43,7 +43,7 @@ x'' = \frac{ \theta_d }{r} x' \\
 y'' = \frac{ \theta_d }{r} y'
 $$
 
-カメラ座標変換
+## カメラ座標変換
 
 $$
 \left(
