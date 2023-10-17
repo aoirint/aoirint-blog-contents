@@ -451,7 +451,7 @@ CMD [ "gosu", "user", "python", "/code/main.py" ]
 
 ## GitHub Actions Workflowの作成
 
-### リンターによる静的検査
+### GitHub Actions リンターによる静的検査
 
 <details>
 
@@ -494,9 +494,9 @@ jobs:
 
 </details>
 
-### PyInstallerによるバイナリビルド・リリース
+### GitHub Actions PyInstallerによるバイナリビルド・リリース
 
-### Dockerイメージのビルド・リリース
+### GitHub Actions Dockerイメージのビルド・リリース
 
 GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHUB_TOKEN`を設定する必要があります。
 
@@ -660,8 +660,8 @@ jobs:
 
 TBW。気が向いたら書きます。
 
-### リンターによる静的検査
+### GitLab CI リンターによる静的検査
 
-### PyInstallerによるバイナリビルド・リリース
+### GitLab CI PyInstallerによるバイナリビルド・リリース
 
-### Dockerイメージのビルド・リリース
+### GitLab CI Dockerイメージのビルド・リリース
