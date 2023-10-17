@@ -17,7 +17,7 @@ tags:
 
 環境の整理を兼ねて、UbuntuのKernelのアップデートをしたので、そのときのメモ。
 
-## Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
+## メイン Ubuntu 18.04のKernelをアップデートした（HWE Kernel）
 
 ### カーネルバージョンについて
 
