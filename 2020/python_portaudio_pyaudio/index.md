@@ -39,7 +39,7 @@ pip3 install pyaudio
 
 - [macOSにpyaudioをインストールする - Qiita](https://qiita.com/mayfair/items/abb59ebf503cc294a581)
 
-### Check Host APIs
+## Check Host APIs
 
 ```python
 import pyaudio
@@ -68,7 +68,7 @@ Host API: 1
 {'index': 1, 'structVersion': 2, 'name': 'Built-in Output', 'hostApi': 0, 'maxInputChannels': 0, 'maxOutputChannels': 2, 'defaultLowInputLatency': 0.01, 'defaultLowOutputLatency': 0.007800453514739229, 'defaultHighInputLatency': 0.1, 'defaultHighOutputLatency': 0.017959183673469388, 'defaultSampleRate': 44100.0}
 ```
 
-### Check Devices
+## Check Devices
 
 ```python
 import pyaudio
@@ -91,7 +91,7 @@ Device: 2
 {'index': 1, 'structVersion': 2, 'name': 'Built-in Output', 'hostApi': 0, 'maxInputChannels': 0, 'maxOutputChannels': 2, 'defaultLowInputLatency': 0.01, 'defaultLowOutputLatency': 0.007800453514739229, 'defaultHighInputLatency': 0.1, 'defaultHighOutputLatency': 0.017959183673469388, 'defaultSampleRate': 44100.0}
 ```
 
-### Stream
+## Stream
 
 ※ waveだけ鳴らせればいい場合は`wave`モジュールを使ってください（[参照](https://people.csail.mit.edu/hubert/pyaudio/docs/#example-blocking-mode-audio-i-o)）
 
