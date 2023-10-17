@@ -70,7 +70,7 @@ y'' \\
 \right)
 $$
 
-### OpenCV
+## OpenCV
 
 ```python
 K = np.array([
