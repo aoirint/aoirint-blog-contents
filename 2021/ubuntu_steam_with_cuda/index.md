@@ -30,7 +30,7 @@ sudo mv NVIDIA-Linux-x86_64-495.29.05 /opt/
 
 32bitライブラリの入ったディレクトリをldに読み込ませるようにする。
 
-```
+```plain
 /opt/NVIDIA-Linux-x86_64-495.29.05/32
 ```
 
