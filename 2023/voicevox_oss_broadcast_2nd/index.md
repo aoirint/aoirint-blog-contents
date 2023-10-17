@@ -15,7 +15,7 @@ tags:
 VOICEVOXプロジェクトオーナーのヒホさんにお声がけいただいて、
 VOICEVOXの新機能であるマルチエンジン機能をユーザと開発者に紹介する趣旨で、2023年2月4日（土）の生放送に開発者ゲストとして出演しました。アーカイブは、ニコニコ動画のプレミアム会員であれば、2月11日（土） 23:59まで視聴できます。
 
-- [【VOICEVOX OSS 放送 第２回】マルチエンジン実装 - 2023/2/4(土) 21:00開始 - ニコニコ生放送]()
+- [【VOICEVOX OSS 放送 第２回】マルチエンジン実装 - 2023/2/4(土) 21:00開始 - ニコニコ生放送](https://live.nicovideo.jp/watch/lv340125951)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">📢VOICEVOX OSS 放送の告知 📢<br />2月4日(土)の21時から、VOICEVOXのマルチエンジン機能を、メインで実装してくださったおふたりをゲストに招いてご紹介する放送をします！<br />VOICEVOXのコントリビューターの方はもちろん、VOICEVOXのOSS活動にご興味ある方もぜひお越しください！<a href="https://t.co/hlNU6cWoXi">https://t.co/hlNU6cWoXi</a></p>&mdash; ヒホ（ヒロシバ）🗑️ (@hiho_karuta) <a href="https://twitter.com/hiho_karuta/status/1620382357344911360?ref_src=twsrc%5Etfw">January 31, 2023</a></blockquote>
 
