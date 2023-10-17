@@ -92,7 +92,7 @@ Docker Image Tag: 3.5.27-2
 Commit ID: 924b0855440442a4be330ef4dba7a85681e9a49d
 ```
 
-### docker-compose.yml
+### HTTPプロキシ docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -132,7 +132,7 @@ http_port 3128
 
 ```
 
-### テスト
+### HTTPプロキシ テスト
 
 ```sh
 ssh sshd -p 22 -l myuser \
@@ -150,7 +150,7 @@ ProxyCommand部の設定方法はOSによって変わるので注意（別記事
 
 リバースプロキシを立てる。nginxを使う。Dockerイメージは[_/nginx](https://hub.docker.com/_/nginx)を使う。
 
-### docker-compose.yml
+### リバースプロキシ docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -183,7 +183,7 @@ services:
       - 'http_proxy'
 ```
 
-### nginx/default.conf
+### リバースプロキシ nginx/default.conf
 
 ```nginx
 
@@ -218,7 +218,7 @@ server {
 - [Module ngx_stream_core_module | nginx.org](https://nginx.org/en/docs/stream/ngx_stream_core_module.html)
 - [NGINX 1.9が汎用TCPサーバとして使えるようになっていた件 - Qiita](https://qiita.com/dseg/items/75bf517738a1d8b2d036#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB)
 
-#### nginx/nginx.conf
+#### Stream Proxy nginx/nginx.conf
 
 ```nginx
 worker_processes auto;
@@ -242,7 +242,7 @@ stream {
 }
 ```
 
-#### docker-compose.yml
+#### Stream Proxy docker-compose.yml
 
 ```yaml
 version: '3.8'
@@ -266,7 +266,7 @@ services:
       - 'sshd'
 ```
 
-#### テスト
+#### Stream Proxy テスト
 
 ```sh
 ssh localhost -p 8000 -l myuser -i ./YOUR_PRIVATE_KEY
