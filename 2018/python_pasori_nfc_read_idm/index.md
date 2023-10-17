@@ -67,7 +67,7 @@ sudo sh -c 'echo SUBSYSTEM==\"usb\", ACTION==\"add\", ATTRS{idVendor}==\"054c\",
 
 `/etc/udev/rules.d/nfcdev.rules`はこうなる。
 
-```
+```plain
 SUBSYSTEM=="usb", ACTION=="add", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c3", GROUP="plugdev"
 ...
 ```
