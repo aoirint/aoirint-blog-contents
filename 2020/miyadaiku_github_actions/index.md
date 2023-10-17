@@ -73,8 +73,7 @@ HTTPサーバを介して（オプションで指定したテーマなどで）�
 
 GitHub Actionsを動かすには`.github/workflows`以下にYAMLファイルを配置する。例えばこのような感じ。GitHub Pagesへのデプロイ（gh-pagesブランチの更新）には[github:peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)を使っている。
 
-```
-#!yaml
+```yaml
 # deploy.yml
 name: Deploy
 
@@ -150,13 +149,13 @@ PC上で文書を書いているときには、ブラウザの更新がかかっ
 
 このような4つのコミット履歴のあるブランチがあるとする。
 
-```
+```plain
 branch A: W--X--Y--Z
 ```
 
 まず`git log --oneline`で対象のcommit IDを調べる。
 
-```
+```plain
 ZZZZZZ COMMIT Z
 YYYYYY COMMIT Y
 XXXXXX COMMIT X
@@ -165,7 +164,7 @@ WWWWWW COMMIT W
 
 `git rebase -i COMMIT_ID`は指定したIDのcommitの次のcommitから最新のcommitまでの履歴を操作するコマンド。エディタが開き、上から古い順にコミットが表示される。`git rebase -i WWWWWW`を実行すると、このようになる。
 
-```
+```plain
 pick XXXXXX COMMIT X
 pick YYYYYY COMMIT Y
 pick ZZZZZZ COMMIT Z
@@ -173,13 +172,13 @@ pick ZZZZZZ COMMIT Z
 
 頭の`pick`を`squash`か`s`に変えることで1つ上（前）のcommitに差分が統合される。保存してエディタを閉じるとコミットメッセージの編集が始まる。なお、失敗してエラーが出たときは`git rebase --abort`でrebaseを中断できる。
 
-```
+```plain
 pick XXXXXX COMMIT X
 pick YYYYYY COMMIT Y
 s    ZZZZZZ COMMIT Z
 ```
 
-```
+```plain
 branch A: W--X--Y'
 ```
 
@@ -191,7 +190,7 @@ branch A: W--X--Y'
 
 まず、masterブランチ、記事Aを書いているブランチA、記事Bを書いているブランチBがあるとする。ブランチAとブランチBはmasterブランチの最終commit Xから分岐している。
 
-```
+```plain
 master  : X
            \
 branch A:   |--Y
@@ -200,7 +199,7 @@ branch B:   |--Z
 
 ここで記事Aを書き終わったので、GitHub上でPull Requestを作成し、masterブランチにmergeした。ここでmasterブランチの最終commitはcommit Yになる。ブランチBは記事Bのcommit Zをすでに作成していて、masterブランチに対し、1 commit behind、1 commit aheadの状態になった。
 
-```
+```plain
 master  : X--------Y
            \
 branch B:   |--Z
@@ -208,7 +207,7 @@ branch B:   |--Z
 
 ここでローカルでの作業に移りる。まずmasterブランチをcheckoutし、`git pull`してcommit履歴を最新にする。次にブランチBをcheckoutし、`git pull`してcommit履歴を最新にしたあと、`git rebase master`を実行することでcommit Yの次にcommit Zがくる1 commit aheadの状態にすることができる。ローカルでブランチBをいじっていた場合は、一度commitしてから同様にrebaseすれば同じことができる（`git rebase origin/master`というのもできる）。
 
-```
+```plain
 master  : X--------Y
                     \
 branch B:            |--Z
@@ -220,8 +219,7 @@ branch B:            |--Z
 
 ## Miyadaikuを使う
 
-```
-#!bash
+```shell
 pip3 install miyadaiku
 ```
 
@@ -230,8 +228,7 @@ Miyadaikuをpipで入れると`miyadaiku-start`、`miyadaiku-build`コマンド�
 
 `miyadaiku-start`は空のMiyadaikuプロジェクトを作成するコマンド。といっても空の`files`、`templates`ディレクトリ、サンプルのMarkdownファイル`index.md`の入った`contents`ディレクトリ、デフォルトのシンプルなコンフィグファイル`config.yml`が生成されるだけ。
 
-```
-#!yaml
+```yaml
 # Miyadaiku config file
 
 # Base URL of the site
@@ -264,15 +261,14 @@ timezone: Asia/Tokyo
 
 `.gitignore`を次のようにして、記事用のリポジトリを作った。`_depends.pickle`というファイルはビルド時に生成されるが、バイナリなのでとりあえず載せないようにしている。
 
-```
+```plain
 /_depends.pickle
 /outputs
 ```
 
 `config.yml`は`pip3 install aoirint_miyadaiku_theme_blog`したうえで、次のようにしている。
 
-```
-#!yaml
+```yaml
 # Miyadaiku config file
 
 # Base URL of the site
@@ -308,7 +304,7 @@ themes:
 
 ディレクトリ構成はこのような感じ。
 
-```
+```plain
 blog-repository/
 |- .git/            # git管理
 |- .github/         # GitHub Action用

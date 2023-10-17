@@ -22,7 +22,7 @@ tags:
 
 内容はコミットID`44d5c6bc8ffd92cd201380dabe35748e50b6af68`、Mastodon Dockerイメージバージョン`v3.2.1`（Digest：`sha256:41cd5fb48d8b15ec806f08ab06fec98df33ec9b83a1f879e0fb30da9994018dc`）におけるもの。`docker-compose`の設定ファイルバージョンは`3`。
 
-```
+```shell
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -95,7 +95,7 @@ Federationのセクションにいき、`LOCAL_DOMAIN`を編集する。
 起動テスト目的なら適当なドメイン、またはngrokでHTTP 3000番（Mastodonのデフォルトポート）を開けておいてそのドメインを使うというのでいいと思う（そうした場合、実運用時は初期化した方がよさそうだが）。
 ひとまずメールアドレス検証で送られるメールの確認リンクに使用されていた（適当なドメインを使用した場合はパスをコピーして使用すればよい）。
 
-```
+```env
 # Federation
 # ----------
 # This identifies your server and cannot be changed safely later
@@ -217,7 +217,7 @@ HTTP 3000番から接続し、ブラウザ上でアカウントを作成する�
 検証メールが届く。
 その後アカウント`hoge`を管理者に設定する。
 
-```
+```shell
 docker-compose run --rm web bundle exec bin/tootctl accounts modify hoge --role admin
 ```
 
@@ -237,7 +237,7 @@ ngrok http 3000
 プロフィール画像アップロード時にエラーが出てしまった。
 `./public/system`をマウント時にdockerが作成しているために`root`所有になっているのが原因。
 
-```
+```plain
 Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/accounts)
 ```
 
@@ -247,7 +247,7 @@ Errno::EACCES (Permission denied @ dir_s_mkdir - /opt/mastodon/public/system/acc
 
 一人専用サーバの場合、`.env.production`に以下の設定を追加すると便利。`/`へのアクセスをユーザページにリダイレクトしてくれるようになり、新規登録を停止する。
 
-```
+```env
 SINGLE_USER_MODE=true
 ```
 
