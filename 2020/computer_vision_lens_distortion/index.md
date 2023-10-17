@@ -47,8 +47,7 @@ $$
 u \\
 v
 \end{array}
-\right)
-=
+\right) =
 
 \left(
 \begin{array}{ccc}
