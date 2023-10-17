@@ -60,7 +60,7 @@ apm install --packages-file atom_packages.txt
 
 おすすめパッケージリスト
 
-```
+```plain
 # atom_packages.txt
 
 Sublime-Style-Column-Selection
