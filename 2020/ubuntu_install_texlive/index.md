@@ -39,7 +39,7 @@ cd install-tl-*
 sudo ./install-tl
 ```
 
-```
+```plain
 Actions:
  <I> start installation to hard disk
  <P> save installation profile to 'texlive.profile' and exit
@@ -54,7 +54,7 @@ Installing [0002/3978, time/total: 00:01/02:06:37]: texlive.infra.x86_64-linux [
 
 おうちの回線では1h-2hくらい。おやすみなさい..
 
-```
+```plain
 Welcome to TeX Live!
 
 
