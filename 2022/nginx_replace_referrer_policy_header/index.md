@@ -35,7 +35,7 @@ Mastodonでは`Referrer-Policy: same-origin`に設定した。
 
 単純に`add_header`するだけだと、Mastodonが返す`Referrer-Policy`とnginxが追加する`Referrer-Policy`で2つのヘッダになってしまった。
 
-```
+```plain
 referrer-policy: origin
 referrer-policy: no-referrer
 ```
