@@ -20,6 +20,8 @@ tags:
 ボイボ寮祭ではアフターまでいたのですが、今回は総合的に勘案して早めに撤収してしまいました。
 次回は準備を整えて、アフターまで残ったり、いずれ二次会ができるといいな...
 
+## 戦利品
+
 以下は戦利品です。300を超えるサークルと15企業が参加するイベントということで、なかなかの数になりました。
 ゆっくり楽しませていただいております。
 
@@ -31,6 +33,8 @@ tags:
 ![ボイスコネクト3 戦利品 6](images/voiceconnect3_collected_006.webp)
 ![ボイスコネクト3 戦利品 7](images/voiceconnect3_collected_007.webp)
 ![ボイスコネクト3 戦利品 8](images/voiceconnect3_collected_008.webp)
+
+## 今回の反省
 
 さて、以下は今回の反省になります。
 
@@ -54,7 +58,11 @@ tags:
 あとすごく汗をかいてしまって、衛生的によろしくないので途中で替えの服を買おうか迷いました。
 余裕のある移動計画を立てるとか、制汗剤や消臭剤を用意するとか、次回に活かしたいですね...（ご迷惑をおかけしました）。
 
+## 勝手に宣伝コーナー
+
 以下は、勝手に宣伝コーナーになります。
+
+### 青春系トークボイス 双葉湊音 制作プロジェクト (2023-10-20 ～ 2023-11-29)
 
 2023年10月20日から、株式会社ガソリンアレイさんの音声合成キャラクター「青春系トークボイス 双葉湊音 制作プロジェクト」のクラウドファンディングが始まりました。
 記事執筆時点では、開始3時間ほどで第一ゴールの450万円を達成し、第二、第三ゴールの達成を目指しているところでございます。
@@ -72,6 +80,8 @@ tags:
 
 - 支援報告: [かのみや: "パートナーになりました！ 青春系トークボイス 双葉湊音 制作…" - mstdn.aoirint.com](https://mstdn.aoirint.com/@kanomiyanic/111266939770714781)
 
+### Each of Voice.2023 (2023-10-22)
+
 2023年10月22日には、横浜産貿ホール マリネリアで、今回が最後となるEach of Voice.2023（EofV2023）が開催されます。
 私は残念ながら参加を予定していないのですが、参加される皆さま、お気を付けて、楽しんでいってらっしゃいませ。
 
@@ -80,13 +90,17 @@ tags:
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【一般参加チケット発売中💫】<br />一般参加にはチケットが必要です🎫当日券では、開会同時（12:00）に入場することはできません⚠️<br />前売券（1200円）はLivePocketで販売中！<br />当日券（1000円）は、開会後12:30以降入場が可能です。<br />詳しくはこちら<a href="https://t.co/p1VNspTVCs">https://t.co/p1VNspTVCs</a></p>&mdash; Each of Voice.#EofV (@Each_of_Voice) <a href="https://twitter.com/Each_of_Voice/status/1713882861294809594?ref_src=twsrc%5Etfw">October 16, 2023</a></blockquote>
 
-2023年10月31日から11月19日にかけて、秋葉原のメイドカフェWhite & CrossLoadさんで、VOICEVOX2周年記念コラボカフェが開催されます（執筆者はVOICEVOXの開発に協力しています）。
+### VOICEVOX 2周年記念コラボカフェ (2023-10-31 ～ 2023-11-19)
+
+2023年10月31日から11月19日にかけて、秋葉原のメイドカフェWhite & CrossLoadさんで、VOICEVOX 2周年記念コラボカフェが開催されます（執筆者はVOICEVOXの開発に協力しています）。
 
 - [White ＆ CrossLoad〔ホワイトアンドクロスロード〕](https://whitecrossload.girly.jp/)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【イベント告知】<br />VOICEVOX2周年記念コラボカフェ開催‼️<br /><br />無料で使える中品質なテキスト読み上げソフトウェアVOICEVOXの2周年記念コラボカフェイベントを秋葉原で開催します🏤… <a href="https://t.co/0QqOZoBewa">pic.twitter.com/0QqOZoBewa</a></p>&mdash; ホワクロ【公式】秋葉原White&amp;CrossLoadカフェ🏤 (@whitecrossload) <a href="https://twitter.com/whitecrossload/status/1710578700784443442?ref_src=twsrc%5Etfw">October 7, 2023</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【🎉 コラボカフェのお知らせ 🎉】<br /><br />ホワイトクロスロード様 <a href="https://twitter.com/whitecrossload?ref_src=twsrc%5Etfw">@whitecrossload</a> のご厚意で、VOICEVOXのコラボカフェが実現しました！🎊<br /><br />10月31日(火)～11月19日(日)の期間、秋葉原の店舗にて開催されます！ぜひご来店ください！<a href="https://twitter.com/hashtag/VOICEVOX?src=hash&amp;ref_src=twsrc%5Etfw">#VOICEVOX</a> <a href="https://twitter.com/hashtag/%E7%A7%8B%E8%91%89%E5%8E%9F?src=hash&amp;ref_src=twsrc%5Etfw">#秋葉原</a> <a href="https://twitter.com/hashtag/%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;ref_src=twsrc%5Etfw">#コラボカフェ</a> <a href="https://t.co/0EMdqce0CV">https://t.co/0EMdqce0CV</a></p>&mdash; VOICEVOX (@voicevox_pj) <a href="https://twitter.com/voicevox_pj/status/1710596044021711078?ref_src=twsrc%5Etfw">October 7, 2023</a></blockquote>
+
+### SEIKAサブカルフェスタ2023 & SEIKAクリエイターズ祭 (2023-11-19)
 
 2023年11月19日には、京都府精華町 けいはんなオープンイノベーションセンターKICKで、SEIKAサブカルフェスタ2023、SEIKAクリエイターズ祭が開催されます。
 京都府精華町の音声合成キャラクター 京町セイカは、クラウドファンディング [京町セイカRebootプロジェクト](https://greenfunding.jp/lab/projects/6727)を通じて、2023年10月5日に音声合成ソフトVOICEPEAKが発売されております。
