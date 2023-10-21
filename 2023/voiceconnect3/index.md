@@ -62,7 +62,7 @@ tags:
 ご支援される際には、CeVIO AIトークボイスの動作にはCeVIO AIトークエディタが別途必要な点、支援金額とは別にうぶごえのシステム利用料がそこそこかかる点など、十分に注意してくださいませ。
 
 - 双葉湊音 公式Xアカウント: [@futabaminato](https://twitter.com/futabaminato)
-- うぶごえ（クラウドファンディングサイト）: [青春系トークボイス 双葉湊音 制作プロジェクト](https://ubgoe.com/projects/509) 
+- うぶごえ（クラウドファンディングサイト）: [青春系トークボイス 双葉湊音 制作プロジェクト](https://ubgoe.com/projects/509)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">『青春系トークボイス <a href="https://twitter.com/hashtag/%E5%8F%8C%E8%91%89%E6%B9%8A%E9%9F%B3?src=hash&amp;ref_src=twsrc%5Etfw">#双葉湊音</a> 制作プロジェクト』<br>クラウドファンディング開始しました！<br><br>あらためて、しっかりとお目通しいただいた上で、<br>コースのお間違い等ないようご確認いただき、ご支援いただけますと幸いです。<br><br>ご支援、応援のほど宜しくお願いいたします。<a href="https://t.co/pCDGPnqVwi">https://t.co/pCDGPnqVwi</a> <a href="https://t.co/VGIr0mmQqY">pic.twitter.com/VGIr0mmQqY</a></p>&mdash; 双葉湊音（ふたば みなと）【公式】トークボイス始動！🎤 (@futabaminato) <a href="https://twitter.com/futabaminato/status/1715306867994333623?ref_src=twsrc%5Etfw">October 20, 2023</a></blockquote>
 
