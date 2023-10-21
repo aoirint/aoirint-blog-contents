@@ -70,7 +70,7 @@ tags:
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「ふたばこみなと」実現へ🌱<br />第二ゴールに向けて、引き続きご支援よろしくお願いいたします！ <a href="https://twitter.com/hashtag/%E5%8F%8C%E8%91%89%E6%B9%8A%E9%9F%B3?src=hash&amp;ref_src=twsrc%5Etfw">#双葉湊音</a> <a href="https://t.co/pCDGPnrtlQ">https://t.co/pCDGPnrtlQ</a> <a href="https://t.co/IRfa88hy4d">https://t.co/IRfa88hy4d</a> <a href="https://t.co/nlHA0iA523">pic.twitter.com/nlHA0iA523</a></p>&mdash; 双葉湊音（ふたば みなと）【公式】トークボイス始動！🎤 (@futabaminato) <a href="https://twitter.com/futabaminato/status/1715384696006447493?ref_src=twsrc%5Etfw">October 20, 2023</a></blockquote>
 
-- [かのみや: "パートナーになりました！ 青春系トークボイス 双葉湊音 制作…" - mstdn.aoirint.com](https://mstdn.aoirint.com/@kanomiyanic/111266939770714781)
+- 支援報告: [かのみや: "パートナーになりました！ 青春系トークボイス 双葉湊音 制作…" - mstdn.aoirint.com](https://mstdn.aoirint.com/@kanomiyanic/111266939770714781)
 
 2023年10月22日には、今回が最後となるEach of Voice.2023（EofV2023）が開催されます。
 私は残念ながら参加を予定していないのですが、参加される皆さま、お気を付けて、楽しんでいってらっしゃいませ。
