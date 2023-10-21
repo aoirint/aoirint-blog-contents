@@ -72,10 +72,15 @@ tags:
 
 - 支援報告: [かのみや: "パートナーになりました！ 青春系トークボイス 双葉湊音 制作…" - mstdn.aoirint.com](https://mstdn.aoirint.com/@kanomiyanic/111266939770714781)
 
-2023年10月22日には、今回が最後となるEach of Voice.2023（EofV2023）が開催されます。
+2023年10月22日には、横浜産貿ホール マリネリアで、今回が最後となるEach of Voice.2023（EofV2023）が開催されます。
 私は残念ながら参加を予定していないのですが、参加される皆さま、お気を付けて、楽しんでいってらっしゃいませ。
 
 - [Each of Voice.2023](https://eachofvoice.com/): 合成音声キャラクターのオンリーイベントが集まった同人即売会
   - 運営Xアカウント: [@Each_of_Voice](https://twitter.com/Each_of_Voice)
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【一般参加チケット発売中💫】<br />一般参加にはチケットが必要です🎫当日券では、開会同時（12:00）に入場することはできません⚠️<br />前売券（1200円）はLivePocketで販売中！<br />当日券（1000円）は、開会後12:30以降入場が可能です。<br />詳しくはこちら<a href="https://t.co/p1VNspTVCs">https://t.co/p1VNspTVCs</a></p>&mdash; Each of Voice.#EofV (@Each_of_Voice) <a href="https://twitter.com/Each_of_Voice/status/1713882861294809594?ref_src=twsrc%5Etfw">October 16, 2023</a></blockquote>
+
+2023年11月19日には、京都府精華町 けいはんなオープンイノベーションセンターKICKで、SEIKAサブカルフェスタ2023、SEIKAクリエイターズ祭が開催されます。
+
+- [SEIKAサブカルフェスタ2023](https://subculfesta.kyomachi-seika.jp/): 京都府精華町で開催されるサブカルチャーの祭典
+- [SEIKAクリエイターズ祭](https://seika-creators.com/): SEIKAサブカルフェスタ2023と同時開催のオールジャンル即売会
