@@ -22,6 +22,9 @@ sudo docker update --cpus "1" "$CONTAINER_ID"
 
 # CPU 0.01個（最小）
 sudo docker update --cpus "0.01" "$CONTAINER_ID"
+
+# 制限を解除
+sudo docker update --cpus "0" "$CONTAINER_ID"
 ```
 
 ## Docker Compose
