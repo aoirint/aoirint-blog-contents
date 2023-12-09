@@ -11,8 +11,8 @@ tags:
 ---
 # DockerコンテナのCPU使用量を制限する
 
-- Docker Engine 24
-- Docket Compose V2
+- Docker Engine 24.0
+- Docket Compose 2.21
 
 ## Docker
 
