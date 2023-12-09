@@ -62,7 +62,7 @@ sudo docker compose up -d
 コンテナのTCP 5000番ポートでDocker Registry HTTP APIがリッスンします。
 このポート宛にCloudflaredやリバースプロキシを設定して、`https://docker.example.com`のようにサービスを公開します。
 
-設定後、`docker`コマンドから以下のように利用できます。
+設定後、`docker`コマンドから以下のように利用できます（プッシュ・プルいずれも認証が必要）。
 
 ```shell
 sudo docker login -u myuser docker.example.com
