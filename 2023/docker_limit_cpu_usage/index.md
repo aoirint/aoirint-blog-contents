@@ -1,6 +1,6 @@
 ---
 title: 'DockerコンテナのCPU使用量を制限する'
-date: '2023-12-0914:00:00+09:00'
+date: '2023-12-09T14:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
