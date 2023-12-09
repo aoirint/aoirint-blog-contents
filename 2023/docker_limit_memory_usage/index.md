@@ -22,6 +22,9 @@ sudo docker update --memory "100m" "$CONTAINER_ID"
 
 # 1 GB
 sudo docker update --memory "1g" "$CONTAINER_ID"
+
+# 制限を解除
+sudo docker update --memory "0" "$CONTAINER_ID"
 ```
 
 ## Docker Compose
