@@ -61,7 +61,7 @@ sudo docker compose up -d
 
 TCP 5000番ポートでDocker Registry APIにアクセスできます。
 
-Cloudflaredやリバースプロキシを設定して、`docker.example.com`のようにサービスを公開した場合、
+Cloudflaredやリバースプロキシを設定して、`https://docker.example.com`のようにサービスを公開した場合、
 `docker`コマンドから以下のように利用できます。
 
 ```shell
