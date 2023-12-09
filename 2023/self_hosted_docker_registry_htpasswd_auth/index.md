@@ -46,8 +46,8 @@ services:
       REGISTRY_AUTH: htpasswd
       REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
       REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
-    ports: 
-      - "0.0.0.0:5000:5000"
+    # ports:
+    #   - "0.0.0.0:5000:5000"
     volumes:
       - ./data:/var/lib/registry
       - ./auth:/auth
@@ -59,14 +59,16 @@ services:
 sudo docker compose up -d
 ```
 
-TCP 5000番ポートでDocker Registry APIにアクセスできます。
+コンテナのTCP 5000番ポートでDocker Registry HTTP APIがリッスンします。
+このポート宛にCloudflaredやリバースプロキシを設定して、`https://docker.example.com`のようにサービスを公開します。
 
-Cloudflaredやリバースプロキシを設定して、`https://docker.example.com`のようにサービスを公開した場合、
-`docker`コマンドから以下のように利用できます。
+設定後、`docker`コマンドから以下のように利用できます。
 
 ```shell
 sudo docker login -u myuser docker.example.com
 
 sudo docker build -t docker.example.com/myuser/myimage:0.1.0 .
 sudo docker push docker.example.com/myuser/myimage:0.1.0
+
+sudo docker pull docker.example.com/myuser/myimage:0.1.0
 ```
