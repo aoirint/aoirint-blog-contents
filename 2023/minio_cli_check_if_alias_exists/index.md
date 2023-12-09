@@ -12,6 +12,14 @@ tags:
 ---
 # MinIO CLI（mcコマンド）でエイリアスが登録されているか確認する
 
+```shell
+$ mc --version
+mc version RELEASE.2023-12-02T11-24-10Z (commit-id=d920e2b34b22a15bca4cd081201d3b301c623d87)
+Runtime: go1.21.5 linux/amd64
+Copyright (c) 2015-2023 MinIO, Inc.
+License GNU AGPLv3 <https://www.gnu.org/licenses/agpl-3.0.html>
+```
+
 MinIO CLI（mcコマンド）では、サーバーURLや認証情報などを`mc alias set`コマンドで保存して、
 設定したエイリアスを使って操作します。
 
