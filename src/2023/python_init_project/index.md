@@ -1,7 +1,7 @@
 ---
 title: 'Pythonプロジェクトの作成（pyenv + Poetry）'
 date: '2023-08-07T15:45:00+09:00'
-updated: '2023-10-11T11:52:00+09:00'
+updated: '2024-01-21T13:00:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -15,9 +15,9 @@ tags:
 
 ## バージョン情報
 
-- [pyenv 2.3.29](https://github.com/pyenv/pyenv)
-- [Poetry 1.6.1](https://python-poetry.org/docs/#installation)
-- [Python 3.11.6](https://www.python.org/downloads/)
+- [pyenv 2.3.35](https://github.com/pyenv/pyenv)
+- [Poetry 1.7.1](https://python-poetry.org/docs/#installation)
+- [Python 3.11.7](https://www.python.org/downloads/)
 
 ## 定義・ディレクトリ構成
 
@@ -48,7 +48,7 @@ pyenvでPythonをインストールします。
 マイナーバージョン（`0.x.0`）を変更する場合、依存する予定のライブラリが動作するかなど、プロジェクトの要件と相談してください。
 
 ```shell
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.6
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.7
 ```
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
@@ -86,7 +86,7 @@ cd my_project
 pyenvのPythonバージョン指定ファイル`.python-version`を作成します。
 
 ```shell
-pyenv local 3.11.6
+pyenv local 3.11.7
 ```
 
 現在のディレクトリにPoetryプロジェクトを作成します。
@@ -353,8 +353,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG PIP_NO_CACHE_DIR=1
 ENV PYTHONUNBUFFERED=1
 
-ARG PYENV_VERSION=v2.3.29
-ARG PYTHON_VERSION=3.11.6
+ARG PYENV_VERSION=v2.3.35
+ARG PYTHON_VERSION=3.11.7
 
 RUN <<EOF
     set -eu
@@ -467,7 +467,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_VERSION: '3.11.6'
+  PYTHON_VERSION: '3.11.7'
 
 jobs:
   lint:
@@ -477,7 +477,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
           cache: 'pip'
@@ -590,7 +590,7 @@ env:
   IMAGE_NAME: aoirint/my_project
   IMAGE_VERSION_NAME: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || 'latest' }}
   VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
-  PYTHON_VERSION: '3.11.6'
+  PYTHON_VERSION: '3.11.7'
 
 jobs:
   docker-build-and-push:
