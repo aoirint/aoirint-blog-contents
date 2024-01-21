@@ -476,20 +476,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Poetry
+        shell: bash
+        run: pipx install poetry
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
-          cache: 'pip'
-          cache-dependency-path: '**/requirements-dev.txt'
+          cache: 'poetry'
 
       - name: Install Dependencies
         shell: bash
-        run: pip install -r requirements-dev.txt
+        run: poetry install
 
       - name: Run lint
         shell: bash
-        run: pysen run lint
+        run: poetry run pysen run lint
 ```
 
 </details>
