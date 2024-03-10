@@ -45,7 +45,7 @@ Windows Registry Editor Version 5.00
 
 PowerShellを使ってまとめてリネームするには、以下の記事を参照。
 
-- [PowerShell, ディレクトリ内のファイルの拡張子をまとめて変更する](https://blog.aoirint.com/entry/2024/powershell_change_file_extension_in_a_directory/)
+- [PowerShell, ディレクトリ内のファイルの拡張子をまとめてリネームする](https://blog.aoirint.com/entry/2024/powershell_change_file_extension_in_a_directory/)
 
 ## 参考
 
