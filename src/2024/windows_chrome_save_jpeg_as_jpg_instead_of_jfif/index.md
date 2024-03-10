@@ -17,7 +17,7 @@ Windows版のGoogle Chromeで`image/jpeg`の画像をダウンロードしよう
 また、`.jfif`拡張子をJPEG画像として認識することに対応してないプログラムがプレビューを生成しなかったり、
 Webアプリケーションがファイルの種類の判別に失敗してContent-Typeを`application/octet-stream`として扱い、リンクをクリックしたときにブラウザで開くのではなくダウンロードされるなど、不便になることがある。
 
-`regedit`を使って以下のレジストリ値を書き換えることで、`image/jpeg`の画像をダウンロードするときの拡張子を変更できる。予期しない影響が出る可能性があるため、変更する場合は注意すること。
+`regedit`を使って以下のレジストリ値を書き換えることで、新規に`image/jpeg`の画像をダウンロードするときの拡張子を変更できる。予期しない影響が出る可能性があるため、変更する場合は注意すること。
 
 - `HKEY_CURRENT_USER\Software\Classes\MIME\Database\Content Type\image/jpeg`
 
@@ -40,6 +40,12 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Classes\MIME\Database\Content Type\image/jpeg]
 "Extension"=".jfif"
 ```
+
+## すでにダウンロード済みのファイルの拡張子を変更する
+
+PowerShellを使ってまとめてリネームするには、以下の記事を参照。
+
+- [PowerShell, ディレクトリ内のファイルの拡張子をまとめて変更する](https://blog.aoirint.com/entry/2024/powershell_change_file_extension_in_a_directory/)
 
 ## 参考
 
