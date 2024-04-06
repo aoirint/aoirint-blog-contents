@@ -14,4 +14,4 @@ jobs:
 
       # https://github.com/marketplace/actions/markdownlint-cli2-action
       # https://github.com/DavidAnson/markdownlint-cli2-action
-      - uses: DavidAnson/markdownlint-cli2-action@v13
+      - uses: DavidAnson/markdownlint-cli2-action@v15
