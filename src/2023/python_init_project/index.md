@@ -611,7 +611,7 @@ env:
   IMAGE_NAME: aoirint/my_project
   IMAGE_VERSION_NAME: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || 'latest' }}
   VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
-  PYTHON_VERSION: '3.11.7'
+  PYTHON_VERSION: '3.11.8'
 
 jobs:
   docker-build-and-push:
