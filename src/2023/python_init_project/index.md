@@ -482,8 +482,6 @@ name: Lint
 on:
   push:
   pull_request:
-    branches:
-      - "**"
   workflow_dispatch:
 
 env:
