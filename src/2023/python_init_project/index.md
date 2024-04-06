@@ -485,7 +485,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_VERSION: '3.11.7'
+  PYTHON_VERSION: '3.11.8'
 
 jobs:
   lint:
