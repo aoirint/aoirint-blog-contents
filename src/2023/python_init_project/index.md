@@ -441,8 +441,8 @@ ARG CONTAINER_GID=1000
 RUN <<EOF
     set -eu
 
-    groupadd -o -g "${CONTAINER_GID}" user
-    useradd -m -o -u "${CONTAINER_UID}" -g "${CONTAINER_GID}" user
+    groupadd --non-unique --gid "${CONTAINER_GID}" user
+    useradd --non-unique --uid "${CONTAINER_UID}" --gid "${CONTAINER_GID}" --create-home user
 EOF
 
 COPY --from=python-env /opt/python /opt/python
