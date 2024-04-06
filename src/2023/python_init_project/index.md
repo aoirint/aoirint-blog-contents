@@ -53,7 +53,7 @@ env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.8
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
 
-- [pyenv and PyInstaller — PyInstaller 5.13.0 documentation](https://pyinstaller.org/en/stable/development/venv.html)
+- [pyenv and PyInstaller — PyInstaller 6.5.0 documentation](https://pyinstaller.org/en/stable/development/venv.html)
 
 Poetryをインストールします。
 
