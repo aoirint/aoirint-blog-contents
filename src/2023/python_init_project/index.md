@@ -421,7 +421,6 @@ EOF
 FROM ${BASE_RUNTIME_IMAGE} AS runtime-env
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG PIP_NO_CACHE_DIR=1
 ENV PYTHONUNBUFFERED=1
 ENV PATH=/home/user/.local/bin:/opt/python/bin:${PATH}
 
@@ -437,17 +436,19 @@ RUN <<EOF
     rm -rf /var/lib/apt/lists/*
 EOF
 
+ARG CONTAINER_UID=1000
+ARG CONTAINER_GID=1000
 RUN <<EOF
     set -eu
 
-    groupadd -o -g 1000 user
-    useradd -m -o -u 1000 -g user user
+    groupadd -o -g "${CONTAINER_GID}" user
+    useradd -m -o -u "${CONTAINER_UID}" -g "${CONTAINER_GID}" user
 EOF
 
 COPY --from=python-env /opt/python /opt/python
 
 ADD ./requirements.txt /tmp/
-RUN <<EOF
+RUN --mount=type=cache,uid=${CONTAINER_UID},gid=${CONTAINER_GID},target=/home/user/.cache/pip <<EOF
     set -eu
 
     gosu user pip install -r /tmp/requirements.txt
