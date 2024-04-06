@@ -173,20 +173,20 @@ git commit -m "Initial Commit" --allow-empty
 poetry add --group dev pysen black isort flake8 flake8-bugbear mypy pytest
 ```
 
-記事作成時点のバージョン
+この記事で想定しているバージョン情報
 
-- pysen 0.10.5: [GitHub pfnet/pysen](https://github.com/pfnet/pysen), [PyPI pysen](https://pypi.org/project/pysen/)
+- pysen 0.11.0: [GitHub pfnet/pysen](https://github.com/pfnet/pysen), [PyPI pysen](https://pypi.org/project/pysen/)
   - black, isort, flake8のラッパー
-- black 23.7.0: [GitHub psf/black](https://github.com/psf/black), [PyPI black](https://pypi.org/project/black/)
+- black 24.3.0: [GitHub psf/black](https://github.com/psf/black), [PyPI black](https://pypi.org/project/black/)
   - 「Python公式のスタイルガイド [PEP 8](https://peps.python.org/pep-0008/)」に基づくフォーマッター
-- isort 5.12.0: [GitHub PyCQA/isort](https://github.com/PyCQA/isort), [PyPI isort](https://pypi.org/project/isort/)
+- isort 5.13.2: [GitHub PyCQA/isort](https://github.com/PyCQA/isort), [PyPI isort](https://pypi.org/project/isort/)
   - `import`をソートするフォーマッター
-- flake8 6.1.0: [GitHub PyCQA/flake8](https://github.com/PyCQA/flake8), [PyPI flake8](https://pypi.org/project/flake8/)
+- flake8 7.0.0: [GitHub PyCQA/flake8](https://github.com/PyCQA/flake8), [PyPI flake8](https://pypi.org/project/flake8/)
   - いくつかのリンターのラッパー
-- flake8-bugbear 23.7.10: [GitHub PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear), [PyPI flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
+- flake8-bugbear 24.2.6: [GitHub PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear), [PyPI flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
   - flake8のプラグイン、バグの原因になりやすい記述を見つけてくれる
-- mypy 1.4.1: [GitHub python/mypy](https://github.com/python/mypy), [PyPI mypy](https://pypi.org/project/mypy/)
-- pytest 7.4.0: [GitHub pytest-dev/pytest](https://github.com/pytest-dev/pytest), [PyPI pytest](https://pypi.org/project/pytest/)
+- mypy 1.9.0: [GitHub python/mypy](https://github.com/python/mypy), [PyPI mypy](https://pypi.org/project/mypy/)
+- pytest 8.1.1: [GitHub pytest-dev/pytest](https://github.com/pytest-dev/pytest), [PyPI pytest](https://pypi.org/project/pytest/)
 
 プロジェクトに追加したPythonパッケージをインストールします。
 
