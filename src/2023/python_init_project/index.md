@@ -15,9 +15,9 @@ tags:
 
 ## バージョン情報
 
-- [pyenv 2.3.35](https://github.com/pyenv/pyenv)
-- [Poetry 1.7.1](https://python-poetry.org/docs/#installation)
-- [Python 3.11.7](https://www.python.org/downloads/)
+- [pyenv 2.3.36](https://github.com/pyenv/pyenv)
+- [Poetry 1.8.2](https://python-poetry.org/docs/#installation)
+- [Python 3.11.8](https://www.python.org/downloads/)
 
 ## 定義・ディレクトリ構成
 
