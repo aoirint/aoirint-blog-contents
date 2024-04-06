@@ -86,7 +86,7 @@ cd my_project
 pyenvのPythonバージョン指定ファイル`.python-version`を作成します。
 
 ```shell
-pyenv local 3.11.7
+pyenv local 3.11.8
 ```
 
 現在のディレクトリにPoetryプロジェクトを作成します。
