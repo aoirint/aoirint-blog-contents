@@ -263,6 +263,19 @@ poetry add --group dev types-requests
 
 ### requirements.txtの出力
 
+NOTE: この項目で扱うエクスポート機能は、Poetry 1.2からPoetry 1.7までPoetry本体に実装されていましたが、
+Poetry 1.8からプラグイン`poetry-plugin-export`として分離されました。
+
+Poetry 1.8では`poetry-plugin-export`がPoetryの実行環境にデフォルトでインストールされているため、
+Poetry 1.7までと同じ挙動が維持されていますが、今後のアップデートでデフォルトではインストールされなくなります。
+また、`poetry-plugin-export`を明示的にインストールしていない場合、明示的にインストールするように促すメッセージが表示されます。以下のコマンドで、明示的にインストールしておきましょう。
+
+- Poetry 1.8.0のリリースノート: [Upcoming Changes: Removing poetry-plugin-export from the default installation](https://python-poetry.org/blog/announcing-poetry-1.8.0/#removing-poetry-plugin-export-from-the-default-installation)
+
+```shell
+poetry self add poetry-plugin-export
+```
+
 Poetryが管理する依存関係に基づいて、`requirements.txt`を作成します。
 Poetryを使わずに実行する場合や、Dockerイメージを作る場合に有用です。
 インストール先の環境が限定されるのを避けるため、ハッシュ値を含めないようにするオプション`--without-hashes`を指定しています。
