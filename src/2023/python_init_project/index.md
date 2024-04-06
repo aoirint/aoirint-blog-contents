@@ -1,7 +1,7 @@
 ---
 title: 'Pythonプロジェクトの作成（pyenv + Poetry）'
 date: '2023-08-07T15:45:00+09:00'
-updated: '2024-04-06T10:20:00+09:00'
+updated: '2024-04-06T10:30:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
