@@ -1,0 +1,10 @@
+- key: 技術ノート
+  description: 技術に関するメモ書き
+  indexNoIndex: false
+  indexCategoryIndex: true
+  topPostCount: true
+- key: ダイアリー
+  description: 個人的な記事、趣味
+  indexNoIndex: true
+  indexCategoryIndex: false
+  topPostCount: false

@@ -18,7 +18,7 @@ jobs:
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'aoirint',
-              repo: 'blog.aoirint.com-deploy',
-              workflow_id: 'deploy.yml',
+              repo: 'aoirint-blog-deploy',
+              workflow_id: 'docker-deploy.yml',
               ref: 'main',
             })
