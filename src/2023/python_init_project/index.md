@@ -48,7 +48,7 @@ pyenvでPythonをインストールします。
 マイナーバージョン（`0.x.0`）を変更する場合、依存する予定のライブラリが動作するかなど、プロジェクトの要件と相談してください。
 
 ```shell
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.7
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.8
 ```
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
