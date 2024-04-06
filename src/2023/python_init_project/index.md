@@ -238,8 +238,13 @@ poetry add requests
 ### PyPI以外のパッケージリポジトリに登録されたパッケージのインストール
 
 ```shell
+# PyTorch for CUDA 11.8
 poetry source add --priority=explicit pytorch-cu118 "https://download.pytorch.org/whl/cu118"
 poetry add --source pytorch-cu118 torch torchvision torchaudio
+
+# PyTorch for CUDA 12.1
+poetry source add --priority=explicit pytorch-cu121 "https://download.pytorch.org/whl/cu121"
+poetry add --source pytorch-cu121 torch torchvision torchaudio
 ```
 
 ### Gitリポジトリで管理されたパッケージをインストール
