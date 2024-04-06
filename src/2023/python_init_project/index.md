@@ -200,7 +200,7 @@ poetry install
 
 ```toml
 [tool.pysen]
-version = "0.10"
+version = "0.11"
 
 [tool.pysen.lint]
 enable_black = true
