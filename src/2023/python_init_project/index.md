@@ -1,7 +1,7 @@
 ---
 title: 'Pythonプロジェクトの作成（pyenv + Poetry）'
 date: '2023-08-07T15:45:00+09:00'
-updated: '2024-01-21T13:00:00+09:00'
+updated: '2024-04-06T10:30:00+09:00'
 draft: false
 noindex: false
 channel: 技術ノート
@@ -15,9 +15,9 @@ tags:
 
 ## バージョン情報
 
-- [pyenv 2.3.35](https://github.com/pyenv/pyenv)
-- [Poetry 1.7.1](https://python-poetry.org/docs/#installation)
-- [Python 3.11.7](https://www.python.org/downloads/)
+- [pyenv 2.3.36](https://github.com/pyenv/pyenv)
+- [Poetry 1.8.2](https://python-poetry.org/docs/#installation)
+- [Python 3.11.8](https://www.python.org/downloads/)
 
 ## 定義・ディレクトリ構成
 
@@ -48,12 +48,12 @@ pyenvでPythonをインストールします。
 マイナーバージョン（`0.x.0`）を変更する場合、依存する予定のライブラリが動作するかなど、プロジェクトの要件と相談してください。
 
 ```shell
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.7
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.8
 ```
 
 `PYTHON_CONFIGURE_OPTS="--enable-shared"`は、PyInstallerが動作するようにするために設定しています。
 
-- [pyenv and PyInstaller — PyInstaller 5.13.0 documentation](https://pyinstaller.org/en/stable/development/venv.html)
+- [pyenv and PyInstaller — PyInstaller 6.5.0 documentation](https://pyinstaller.org/en/stable/development/venv.html)
 
 Poetryをインストールします。
 
@@ -86,7 +86,7 @@ cd my_project
 pyenvのPythonバージョン指定ファイル`.python-version`を作成します。
 
 ```shell
-pyenv local 3.11.7
+pyenv local 3.11.8
 ```
 
 現在のディレクトリにPoetryプロジェクトを作成します。
@@ -173,20 +173,20 @@ git commit -m "Initial Commit" --allow-empty
 poetry add --group dev pysen black isort flake8 flake8-bugbear mypy pytest
 ```
 
-記事作成時点のバージョン
+この記事で想定しているバージョン情報
 
-- pysen 0.10.5: [GitHub pfnet/pysen](https://github.com/pfnet/pysen), [PyPI pysen](https://pypi.org/project/pysen/)
+- pysen 0.11.0: [GitHub pfnet/pysen](https://github.com/pfnet/pysen), [PyPI pysen](https://pypi.org/project/pysen/)
   - black, isort, flake8のラッパー
-- black 23.7.0: [GitHub psf/black](https://github.com/psf/black), [PyPI black](https://pypi.org/project/black/)
+- black 24.3.0: [GitHub psf/black](https://github.com/psf/black), [PyPI black](https://pypi.org/project/black/)
   - 「Python公式のスタイルガイド [PEP 8](https://peps.python.org/pep-0008/)」に基づくフォーマッター
-- isort 5.12.0: [GitHub PyCQA/isort](https://github.com/PyCQA/isort), [PyPI isort](https://pypi.org/project/isort/)
+- isort 5.13.2: [GitHub PyCQA/isort](https://github.com/PyCQA/isort), [PyPI isort](https://pypi.org/project/isort/)
   - `import`をソートするフォーマッター
-- flake8 6.1.0: [GitHub PyCQA/flake8](https://github.com/PyCQA/flake8), [PyPI flake8](https://pypi.org/project/flake8/)
+- flake8 7.0.0: [GitHub PyCQA/flake8](https://github.com/PyCQA/flake8), [PyPI flake8](https://pypi.org/project/flake8/)
   - いくつかのリンターのラッパー
-- flake8-bugbear 23.7.10: [GitHub PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear), [PyPI flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
+- flake8-bugbear 24.2.6: [GitHub PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear), [PyPI flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
   - flake8のプラグイン、バグの原因になりやすい記述を見つけてくれる
-- mypy 1.4.1: [GitHub python/mypy](https://github.com/python/mypy), [PyPI mypy](https://pypi.org/project/mypy/)
-- pytest 7.4.0: [GitHub pytest-dev/pytest](https://github.com/pytest-dev/pytest), [PyPI pytest](https://pypi.org/project/pytest/)
+- mypy 1.9.0: [GitHub python/mypy](https://github.com/python/mypy), [PyPI mypy](https://pypi.org/project/mypy/)
+- pytest 8.1.1: [GitHub pytest-dev/pytest](https://github.com/pytest-dev/pytest), [PyPI pytest](https://pypi.org/project/pytest/)
 
 プロジェクトに追加したPythonパッケージをインストールします。
 
@@ -200,7 +200,7 @@ poetry install
 
 ```toml
 [tool.pysen]
-version = "0.10"
+version = "0.11"
 
 [tool.pysen.lint]
 enable_black = true
@@ -238,8 +238,13 @@ poetry add requests
 ### PyPI以外のパッケージリポジトリに登録されたパッケージのインストール
 
 ```shell
+# PyTorch for CUDA 11.8
 poetry source add --priority=explicit pytorch-cu118 "https://download.pytorch.org/whl/cu118"
 poetry add --source pytorch-cu118 torch torchvision torchaudio
+
+# PyTorch for CUDA 12.1
+poetry source add --priority=explicit pytorch-cu121 "https://download.pytorch.org/whl/cu121"
+poetry add --source pytorch-cu121 torch torchvision torchaudio
 ```
 
 ### Gitリポジトリで管理されたパッケージをインストール
@@ -257,6 +262,19 @@ poetry add --group dev types-requests
 ```
 
 ### requirements.txtの出力
+
+NOTE: この項目で扱うエクスポート機能は、Poetry 1.2からPoetry 1.7までPoetry本体に実装されていましたが、
+Poetry 1.8からプラグイン`poetry-plugin-export`として分離されました。
+
+Poetry 1.8では`poetry-plugin-export`がPoetryの実行環境にデフォルトでインストールされているため、
+Poetry 1.7までと同じ挙動が維持されていますが、今後のアップデートでデフォルトではインストールされなくなります。
+また、`poetry-plugin-export`を明示的にインストールしていない場合、明示的にインストールするように促すメッセージが表示されます。以下のコマンドで、明示的にインストールしておきましょう。
+
+- Poetry 1.8.0のリリースノート: [Upcoming Changes: Removing poetry-plugin-export from the default installation](https://python-poetry.org/blog/announcing-poetry-1.8.0/#removing-poetry-plugin-export-from-the-default-installation)
+
+```shell
+poetry self add poetry-plugin-export
+```
 
 Poetryが管理する依存関係に基づいて、`requirements.txt`を作成します。
 Poetryを使わずに実行する場合や、Dockerイメージを作る場合に有用です。
@@ -353,8 +371,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG PIP_NO_CACHE_DIR=1
 ENV PYTHONUNBUFFERED=1
 
-ARG PYENV_VERSION=v2.3.35
-ARG PYTHON_VERSION=3.11.7
+ARG PYENV_VERSION=v2.3.36
+ARG PYTHON_VERSION=3.11.8
 
 RUN <<EOF
     set -eu
@@ -467,7 +485,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_VERSION: '3.11.7'
+  PYTHON_VERSION: '3.11.8'
 
 jobs:
   lint:
@@ -593,7 +611,7 @@ env:
   IMAGE_NAME: aoirint/my_project
   IMAGE_VERSION_NAME: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || 'latest' }}
   VERSION: ${{ (github.event.release.tag_name != '' && github.event.release.tag_name) || '0.0.0' }}
-  PYTHON_VERSION: '3.11.7'
+  PYTHON_VERSION: '3.11.8'
 
 jobs:
   docker-build-and-push:
