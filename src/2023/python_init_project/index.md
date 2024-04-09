@@ -35,7 +35,7 @@ tags:
     - cli.py
   - tests/
     - __init__.py
-    - test_my_module.py
+    - test_my_project.py
 ```
 
 ## Python/Poetryのインストール
