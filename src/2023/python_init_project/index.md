@@ -397,7 +397,7 @@ EOF
 ADD ./pyproject.toml ./README.md /code/my_project/
 ADD ./my_project /code/my_project/my_project
 
-RUN <<EOF
+RUN --mount=type=cache,uid=${CONTAINER_UID},gid=${CONTAINER_GID},target=/home/user/.cache/pip <<EOF
     set -eu
 
     gosu user pip install -e /code/my_project
@@ -534,7 +534,7 @@ EOF
 ADD ./pyproject.toml ./README.md /code/my_project/
 ADD ./my_project /code/my_project/my_project
 
-RUN <<EOF
+RUN --mount=type=cache,uid=${CONTAINER_UID},gid=${CONTAINER_GID},target=/home/user/.cache/pip <<EOF
     set -eu
 
     gosu user pip install -e /code/my_project
