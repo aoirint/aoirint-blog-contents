@@ -31,10 +31,8 @@ tags:
   - Dockerfile
   - my_project/
     - __init__.py
-    - my_module.py
-  - scripts/
-    - __init__.py
-    - main.py
+    - __main__.py
+    - cli.py
   - tests/
     - __init__.py
     - test_my_module.py
@@ -144,6 +142,73 @@ echo "# my_project" > README.md
 
 mkdir my_project
 touch my_project/__init__.py
+```
+
+### メインスクリプトの作成
+
+#### `my_project/__init__.py`
+
+```python
+__version__ = "0.0.0"
+```
+
+#### `my_project/___main__.py`
+
+```python
+from .cli import main
+
+if __name__ == "__main__":
+    main()
+```
+
+#### `my_project/cli.py`
+
+```python
+import logging
+from argparse import ArgumentParser, Namespace
+from logging import getLogger
+
+from . import __version__ as APP_VERSION
+
+logger = getLogger(__name__)
+
+
+def execute_command(
+    args: Namespace,
+) -> None:
+    pass
+
+
+def execute_subcommand_mysubcommand(
+    args: Namespace,
+) -> None:
+    pass
+
+
+def main() -> None:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=APP_VERSION,
+    )
+    parser.set_defaults(handler=execute_command)
+
+    subparsers = parser.add_subparsers()
+
+    subparser_mysubcommand = subparsers.add_parser("mysubcommand")
+    subparser_mysubcommand.set_defaults(handler=execute_subcommand_mysubcommand)
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s : %(message)s",
+    )
+
+    args = parser.parse_args()
+    if hasattr(args, "handler"):
+        args.handler(args)
+    else:
+        parser.print_help()
 ```
 
 ### Gitリポジトリの作成
@@ -329,17 +394,29 @@ RUN --mount=type=cache,uid=${CONTAINER_UID},gid=${CONTAINER_GID},target=/home/us
     gosu user pip install -r /tmp/requirements.txt
 EOF
 
-ADD ./scripts /code
-ADD ./my_project /code/my_project
+ADD ./pyproject.toml ./README.md /code/my_project/
+ADD ./my_project /code/my_project/my_project
+
+RUN <<EOF
+    set -eu
+
+    gosu user pip install -e /code/my_project
+EOF
+
+RUN <<EOF
+    set -eu
+
+    mkdir -p /work
+    chown -R "${CONTAINER_UID}:${CONTAINER_GID}" /work
+EOF
+
+WORKDIR /work
 
 # 引数を受け付けない場合（環境変数や設定ファイルで設定する場合、docker compose up -dでの実行を想定する場合）
-CMD [ "gosu", "user", "python", "/code/main.py" ]
-
-# FastAPI + uvicorn（docker compose up -dでの実行を想定する場合）
-# CMD [ "gosu", "user", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000" ]
+CMD [ "gosu", "user", "python", "-m", "my_project" ]
 
 # main.pyが引数を受け付ける場合（docker runコマンドやdocker compose runでの実行を想定する場合）
-# ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
+# ENTRYPOINT [ "gosu", "user", "python", "-m", "my_project" ]
 ```
 
 </details>
@@ -454,17 +531,29 @@ RUN --mount=type=cache,uid=${CONTAINER_UID},gid=${CONTAINER_GID},target=/home/us
     gosu user pip install -r /tmp/requirements.txt
 EOF
 
-ADD ./scripts /code
-ADD ./my_project /code/my_project
+ADD ./pyproject.toml ./README.md /code/my_project/
+ADD ./my_project /code/my_project/my_project
+
+RUN <<EOF
+    set -eu
+
+    gosu user pip install -e /code/my_project
+EOF
+
+RUN <<EOF
+    set -eu
+
+    mkdir -p /work
+    chown -R "${CONTAINER_UID}:${CONTAINER_GID}" /work
+EOF
+
+WORKDIR /work
 
 # 引数を受け付けない場合（環境変数や設定ファイルで設定する場合、docker compose up -dでの実行を想定する場合）
-CMD [ "gosu", "user", "python", "/code/main.py" ]
-
-# FastAPI + uvicorn（docker compose up -dでの実行を想定する場合）
-# CMD [ "gosu", "user", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000" ]
+CMD [ "gosu", "user", "python", "-m", "my_project" ]
 
 # main.pyが引数を受け付ける場合（docker runコマンドやdocker compose runでの実行を想定する場合）
-# ENTRYPOINT [ "gosu", "user", "python", "/code/main.py" ]
+# ENTRYPOINT [ "gosu", "user", "python", "-m", "my_project" ]
 ```
 
 </details>
@@ -521,7 +610,7 @@ jobs:
 
 GitHub Variablesに`DOCKERHUB_USERNAME`を設定し、GitHub Secretsに`DOCKERHUB_TOKEN`を設定する必要があります。
 
-`my_project/__init__.py`に`__VERSION__ = "0.0.0"`を記述し、
+`my_project/__init__.py`に`__version__ = "0.0.0"`を記述し、
 `pyproject.toml`に`version = "0.0.0"`を記述します。
 これらのバージョンは、開発中は`0.0.0`となり、リリース時はリリースバージョンに置換されます。
 
@@ -569,7 +658,7 @@ jobs:
       - name: Replace Version
         shell: bash
         run: |
-          sed -i "s/__VERSION__ = \"0.0.0\"/__VERSION__ = \"${{ env.VERSION }}\"/" my_project/__init__.py
+          sed -i "s/__version__ = \"0.0.0\"/__version__ = \"${{ env.VERSION }}\"/" my_project/__init__.py
           sed -i "s/version = \"0.0.0\"/version = \"${{ env.VERSION }}\"/" pyproject.toml
 
       - name: Build and Deploy Docker image
@@ -649,7 +738,7 @@ jobs:
       - name: Replace Version
         shell: bash
         run: |
-          sed -i "s/__VERSION__ = \"0.0.0\"/__VERSION__ = \"${{ env.VERSION }}\"/" my_project/__init__.py
+          sed -i "s/__version__ = \"0.0.0\"/__version__ = \"${{ env.VERSION }}\"/" my_project/__init__.py
           sed -i "s/version = \"0.0.0\"/version = \"${{ env.VERSION }}\"/" pyproject.toml
 
       - name: Build and Deploy Docker image
