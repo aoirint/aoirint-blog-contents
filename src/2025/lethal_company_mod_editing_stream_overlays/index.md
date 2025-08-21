@@ -18,8 +18,8 @@ Zehs-StreamOverlaysの手元での改変を試したので、他のMOD改変で�
 
 Zehs-StreamOverlaysのソースコードは、MIT Licenseで配布されており、改変箇所を示すため、一部引用します。
 
-- <https://github.com/ZehsTeam/Lethal-Company-StreamOverlays>
-- <https://thunderstore.io/c/lethal-company/p/Zehs/StreamOverlays/>
+- [GitHub](https://github.com/ZehsTeam/Lethal-Company-StreamOverlays)
+- [Thunderstore](https://thunderstore.io/c/lethal-company/p/Zehs/StreamOverlays/)
 
 ## バージョン情報
 
@@ -29,22 +29,22 @@ Zehs-StreamOverlaysのソースコードは、MIT Licenseで配布されてお�
 - Windows 11 24H2
 - .NET SDK 9.0.201
 - BepInEx v5.4.21
-- <https://github.com/ZehsTeam/Lethal-Company-StreamOverlays/commit/8ba3632a2ba7b8f5a4e9564d0c737ea80f7e2847>
+- [ZehsTeam/Lethal-Company-StreamOverlays@8ba3632](https://github.com/ZehsTeam/Lethal-Company-StreamOverlays/commit/8ba3632a2ba7b8f5a4e9564d0c737ea80f7e2847)
 
 ## BeplnEx プラグイン開発環境の設定
 
 BeplnEx公式チュートリアルの開発環境の設定手順に従って、プラグイン開発環境を構築します。
 
-- <https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html>
-- <https://github.com/BepInEx/bepinex-docs/blob/ca4a9972db33ba98034ba461aa820b110390241f/articles/dev_guide/plugin_tutorial/1_setup.md>
+- [Basic plugin: Setting up the development environment | BepInEx Docs](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html)
+  - [GitHub: 記事執筆時点のソース@ca4a997](https://github.com/BepInEx/bepinex-docs/blob/ca4a9972db33ba98034ba461aa820b110390241f/articles/dev_guide/plugin_tutorial/1_setup.md)
 
 ## 依存関係のセットアップ
 
-- LethalConfig: <https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig/>
-- ShipInventoryUpdated: <https://thunderstore.io/c/lethal-company/p/LethalCompanyModding/ShipInventoryUpdated/>
-- CSync: <https://thunderstore.io/c/lethal-company/p/Sigurd/CSync/>
+- [Thunderstore: LethalConfig](https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig/) v1.4.6
+- [Thunderstore: ShipInventoryUpdated](https://thunderstore.io/c/lethal-company/p/LethalCompanyModding/ShipInventoryUpdated/) v1.2.13
+- [Thunderstore: CSync](https://thunderstore.io/c/lethal-company/p/Sigurd/CSync/) v5.0.1
 
-「Manual Download」からzipファイルをダウンロードして、中のDLLファイルを取り出します。
+Thunderstoreの「Manual Download」からzipファイルをダウンロードして、中のDLLファイルを取り出します。
 
 そのままビルドに使うと、以下のようなエラーが発生します。
 
@@ -62,7 +62,7 @@ Build failed with 4 error(s) in 1.1s
 
 `BepInEx.AssemblyPublicizer`を使って、エラーの原因のアクセス制御を無効化したDLLを作成します。これらのDLLはビルド時のみ使用します。
 
-- <https://github.com/BepInEx/BepInEx.AssemblyPublicizer>
+- [GitHub: BepInEx/BepInEx.AssemblyPublicizer](https://github.com/BepInEx/BepInEx.AssemblyPublicizer)
 
 ```shell
 dotnet tool install -g BepInEx.AssemblyPublicizer.Cli
