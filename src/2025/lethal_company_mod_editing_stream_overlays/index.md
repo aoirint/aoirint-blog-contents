@@ -1,5 +1,5 @@
 ---
-title: 'Lethal Company MOD Zehs-StreamOverlaysを例としたMOD改変手順'
+title: 'Lethal Company Mod Zehs-StreamOverlaysを例としたMod改変手順'
 date: '2025-08-21T22:30:00+09:00'
 draft: false
 noindex: false
@@ -10,9 +10,9 @@ tags:
   - Lethal Company
   - Modding
 ---
-# Lethal Company MOD Zehs-StreamOverlaysを例としたMOD改変手順
+# Lethal Company Mod Zehs-StreamOverlaysを例としたMod改変手順
 
-Zehs-StreamOverlaysの手元での改変を試したので、他のMOD改変で共通して使える知見として、メモしておきます。
+Zehs-StreamOverlaysの手元での改変を試したので、他のMod改変で共通して使える知見として、メモしておきます。
 
 今回は公開を目的としたものではなく、知見も持っていないので、Thunderstoreへの公開は内容に含まれていません。
 
