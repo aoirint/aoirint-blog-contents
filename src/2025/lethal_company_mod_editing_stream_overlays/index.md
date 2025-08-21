@@ -36,7 +36,7 @@ Zehs-StreamOverlaysのソースコードは、MIT Licenseで配布されてお�
 BeplnEx公式チュートリアルの開発環境の設定手順に従って、プラグイン開発環境を構築します。
 
 - [Basic plugin: Setting up the development environment | BepInEx Docs](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html)
-    - [GitHub: 記事執筆時点のソース@ca4a997](https://github.com/BepInEx/bepinex-docs/blob/ca4a9972db33ba98034ba461aa820b110390241f/articles/dev_guide/plugin_tutorial/1_setup.md)
+  - [GitHub: 記事執筆時点のソース@ca4a997](https://github.com/BepInEx/bepinex-docs/blob/ca4a9972db33ba98034ba461aa820b110390241f/articles/dev_guide/plugin_tutorial/1_setup.md)
 
 ## 依存関係のセットアップ
 
